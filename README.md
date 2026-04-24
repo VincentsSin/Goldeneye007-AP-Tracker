@@ -1,4 +1,4 @@
-### Majora’s Mask Recompiled Randomizer tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with auto-tracking, made by Seto and maintained by G4M3R L1F3.
+### GoldenEye 007 tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with auto-tracking, made by VincentsSin.
 
 PopTracker 0.32.0 is the earliest fully functional version. Any previous one will lack the latest features and some operations might not function properly.
 
@@ -6,7 +6,7 @@ PopTracker 0.32.0 is the earliest fully functional version. Any previous one wil
 
 ## Installation
 - Download [PopTracker](https://github.com/black-sliver/PopTracker/releases/latest) and extract (unzip) it. It may be installed anywhere, but avoid installing it in either `Program Files` or `Program Files (x86)` (these directories have some special permissions, which might cause issues).
-- [Download the latest release from source](https://github.com/G4M3RL1F3/Majoras-Mask-AP-PopTracker-Pack/releases/latest) and move the `.zip` file into the `packs` folder, located inside the PopTracker directory.
+- [Download the latest release from source](https://github.com/VincentsSin/Goldeneye007-AP-Tracker/releases/latest) and move the `.zip` file into the `packs` folder, located inside the PopTracker directory.
   - Alternatively, it can be dragged on top of a PopTracker window, which will give a prompt to install the pack.
 
 ## Autotracking
