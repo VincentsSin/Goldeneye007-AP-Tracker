@@ -1,0 +1,298 @@
+﻿{
+	"layouts": {
+		"tracker_default": {
+      "type": "container",
+      "background": "#000000",
+      "content": {
+        "type": "dock",
+        "dropshadow": true,
+        "content": [
+          {
+            "type": "dock",
+            "dock": "bottom",
+            "content": [
+              {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Loadouts",
+                    "content": [
+                      {
+                        "type": "dock",
+                        "dock": "left",
+                        "content": [
+                          {
+                            "type": "group",
+                            "header": "Dam",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "damloadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Bunker1",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "bunker1loadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Silo",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "siloloadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Frigate",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "frigateloadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Surface2",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "surface2loadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Bunker2",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "bunker2loadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Aztec",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "aztecloadout_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Missions",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "missions_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Weapons",
+                            "dock": "center",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "weapons_grid"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Key Items",
+                    "content": [
+                      {
+                        "type": "dock",
+                        "dock": "left",
+                        "content": [
+                          {
+                            "type": "group",
+                            "header": "Facility",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "facilitykey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Runway",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "runwaykey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Surface1",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "surface1key_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Bunker1",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "bunker1key_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Silo",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "silokey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Surface2",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "surface2key_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Bunker2",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "bunker2key_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Statue",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "statuekey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Archives",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "archiveskey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Depot",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "depotkey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Train",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "trainkey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Caverns",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "cavernskey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Aztec",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "azteckey_grid"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "dock",
+            "content": [
+              {
+                "type": "layout",
+                "key": "map_tabs"
+              }
+            ]
+          }
+        ]
+      }
+    }
+	}
+}

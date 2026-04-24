@@ -1,0 +1,128 @@
+[
+    {
+        "name": "mission_select",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/mission_select.png"
+    },
+    {
+        "name": "dam",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/dam.png"
+    },
+    {
+        "name": "facility",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/facility.png"
+    },
+    {
+        "name": "runway",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/runway.png"
+    },
+    {
+        "name": "surface_one",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/surface_one.png"
+    },
+    {
+        "name": "bunker_one",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/bunker_one.png"
+    },
+    {
+        "name": "silo",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/silo.png"
+    },
+    {
+        "name": "frigate",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/frigate.png"
+    },
+    {
+        "name": "surface_two",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/surface_two.png"
+    },
+    {
+        "name": "bunker_two",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/bunker_two.png"
+    },
+    {
+        "name": "statue",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/statue.png"
+    },
+    {
+        "name": "archives",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/archives.png"
+    },
+    {
+        "name": "streets",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/streets.png"
+    },
+    {
+        "name": "depot",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/depot.png"
+    },
+    {
+        "name": "train",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/train.png"
+    },
+    {
+        "name": "jungle",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/jungle.png"
+    },
+    {
+        "name": "control",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/control.png"
+    },
+    {
+        "name": "caverns",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/caverns.png"
+    },
+    {
+        "name": "cradle",
+        "location_size": 20,
+        "location_border_thickness": 2,
+        "img": "images/maps/cradle.png"
+    },
+    {
+        "name": "aztec",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/aztec.png"
+    },
+    {
+        "name": "egyptian",
+        "location_size": 20,
+        "location_border_thickness": 1,
+        "img": "images/maps/egyptian.png"
+    }
+]

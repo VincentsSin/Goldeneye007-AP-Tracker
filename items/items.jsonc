@@ -1,0 +1,733 @@
+[
+  {
+    "name": "Dam",
+    "type": "toggle",
+    "img": "images/missions/dam.png",
+    "codes": "dam"
+  },
+  {
+    "name": "Facility",
+    "type": "toggle",
+    "img": "images/missions/facility.png",
+    "codes": "facility"
+  },
+  {
+    "name": "Runway",
+    "type": "toggle",
+    "img": "images/missions/runway.png",
+    "codes": "runway"
+  },
+  {
+    "name": "Surface 1",
+    "type": "toggle",
+    "img": "images/missions/surface_one.png",
+    "codes": "surface1"
+  },
+  {
+    "name": "Bunker 1",
+    "type": "toggle",
+    "img": "images/missions/bunker_one.png",
+    "codes": "bunker1"
+  },
+  {
+    "name": "Silo",
+    "type": "toggle",
+    "img": "images/missions/silo.png",
+    "codes": "silo"
+  },
+  {
+    "name": "Frigate",
+    "type": "toggle",
+    "img": "images/missions/frigate.png",
+    "codes": "frigate"
+  },
+  {
+    "name": "Surface 2",
+    "type": "toggle",
+    "img": "images/missions/surface_two.png",
+    "codes": "surface2"
+  },
+  {
+    "name": "Bunker 2",
+    "type": "toggle",
+    "img": "images/missions/bunker_two.png",
+    "codes": "bunker2"
+  },
+  {
+    "name": "Statue",
+    "type": "toggle",
+    "img": "images/missions/statue.png",
+    "codes": "statue"
+  },
+  {
+    "name": "Archives",
+    "type": "toggle",
+    "img": "images/missions/archives.png",
+    "codes": "archives"
+  },
+  {
+    "name": "Streets",
+    "type": "toggle",
+    "img": "images/missions/streets.png",
+    "codes": "streets"
+  },
+  {
+    "name": "Depot",
+    "type": "toggle",
+    "img": "images/missions/depot.png",
+    "codes": "depot"
+  },
+  {
+    "name": "Train",
+    "type": "toggle",
+    "img": "images/missions/train.png",
+    "codes": "train"
+  },
+  {
+    "name": "Jungle",
+    "type": "toggle",
+    "img": "images/missions/jungle.png",
+    "codes": "jungle"
+  },
+  {
+    "name": "Control",
+    "type": "toggle",
+    "img": "images/missions/control.png",
+    "codes": "control"
+  },
+  {
+    "name": "Caverns",
+    "type": "toggle",
+    "img": "images/missions/caverns.png",
+    "codes": "caverns"
+  },
+  {
+    "name": "Cradle",
+    "type": "toggle",
+    "img": "images/missions/cradle.png",
+    "codes": "cradle"
+  },
+  {
+    "name": "Aztec",
+    "type": "toggle",
+    "img": "images/missions/aztec.png",
+    "codes": "aztec"
+  },
+  {
+    "name": "Egyptian",
+    "type": "toggle",
+    "img": "images/missions/egyptian.png",
+    "codes": "egyptian"
+  },
+  {
+    "name": "Covert Modem",
+    "type": "toggle",
+    "img": "images/items/covert_modem.png",
+    "codes": "covertmodem"
+  },
+  {
+    "name": "Door Decoder",
+    "type": "toggle",
+    "img": "images/items/door_decoder.png",
+    "codes": "doordecoder"
+  },
+  {
+    "name": "Facility Keycard B",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "fackeycardb"
+  },
+  {
+    "name": "Facility Keycard A",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "fackeycarda"
+  },
+  {
+    "name": "Ignition Key",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "planekey"
+  },
+  {
+    "name": "Hut Door Key",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "hutkey"
+  },
+  {
+    "name": "Surface Safe Key",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "surfacesafe"
+  },
+  {
+    "name": "Bunker Blueprints",
+    "type": "toggle",
+    "img": "images/items/bunker_blueprints.png",
+    "codes": "bunkerprints"
+  },
+  {
+    "name": "Camera",
+    "type": "toggle",
+    "img": "images/items/camera.png",
+    "codes": "camera"
+  },
+  {
+    "name": "Key Analyzer",
+    "type": "toggle",
+    "img": "images/items/key_analyzer.png",
+    "codes": "keyanalyzer"
+  },
+  {
+    "name": "Goldeneye Key",
+    "type": "toggle",
+    "img": "images/items/goldeneye_key.png",
+    "codes": "gekey"
+  },
+  {
+    "name": "Datathief",
+    "type": "toggle",
+    "img": "images/items/datathief.png",
+    "codes": "datathief"
+  },
+  {
+    "name": "Computer Room Keycard",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "comproomkey"
+  },
+  {
+    "name": "Security Keycard",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "securitykey"
+  },
+  {
+    "name": "Plastique",
+    "type": "toggle",
+    "img": "images/items/plastique.png",
+    "codes": "plastique"
+  },
+  {
+    "name": "I/O Circuit Board",
+    "type": "toggle",
+    "img": "images/items/circuit_board.png",
+    "codes": "ioboard"
+  },
+  {
+    "name": "CPU Circuit Board",
+    "type": "toggle",
+    "img": "images/items/circuit_board.png",
+    "codes": "cpuboard"
+  },
+  {
+    "name": "RSP Circuit Board",
+    "type": "toggle",
+    "img": "images/items/circuit_board.png",
+    "codes": "rspboard"
+  },
+  {
+    "name": "RDP Circuit Board",
+    "type": "toggle",
+    "img": "images/items/circuit_board.png",
+    "codes": "rdpboard"
+  },
+  {
+    "name": "Keycard 4-H4",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "keycard4h4"
+  },
+  {
+    "name": "Keycard 4-C3",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "keycard4c3"
+  },
+  {
+    "name": "Keycard 4-52",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "keycard452"
+  },
+  {
+    "name": "DAT",
+    "type": "toggle",
+    "img": "images/items/dat.png",
+    "codes": "dat"
+  },
+  {
+    "name": "Tracker Bug",
+    "type": "toggle",
+    "img": "images/items/tracker_bug.png",
+    "codes": "tracker"
+  },
+  {
+    "name": "Bomb Defuser",
+    "type": "toggle",
+    "img": "images/items/bomb_defuser.png",
+    "codes": "bombdefuser"
+  },
+  {
+    "name": "Comms Room Key",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "commskey"
+  },
+  {
+    "name": "Special Timed Mine",
+    "type": "toggle",
+    "img": "images/weapons/remote_mine.png",
+    "codes": "stmine"
+  },
+  {
+    "name": "Watch Magnet Attract",
+    "type": "toggle",
+    "img": "images/weapons/watch_laser.png",
+    "codes": "watchmag"
+  },
+  {
+    "name": "Cell Key 1",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "cellkey1"
+  },
+  {
+    "name": "Cell Key 2",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "cellkey2"
+  },
+  {
+    "name": "Bunker Safe Key 1",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "bunkersafe1"
+  },
+  {
+    "name": "Bunker Safe Key 2",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "bunkersafe2"
+  },
+  {
+    "name": "Goldeneye Operations Manual",
+    "type": "toggle",
+    "img": "images/items/goldeneye_manual.png",
+    "codes": "geopmanual"
+  },
+  {
+    "name": "Staff List",
+    "type": "toggle",
+    "img": "images/items/staff_list.png",
+    "codes": "stafflist"
+  },
+  {
+    "name": "Casualty List",
+    "type": "toggle",
+    "img": "images/items/casualty_list.png",
+    "codes": "casualtylist"
+  },
+  {
+    "name": "CCTV Tape",
+    "type": "toggle",
+    "img": "images/items/videotape.png",
+    "codes": "cctv"
+  },
+  {
+    "name": "Bunker Keycard B",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "b2keycardb"
+  },
+  {
+    "name": "Bunker Keycard A",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "b2keycarda"
+  },
+  {
+    "name": "Flight Recorder",
+    "type": "toggle",
+    "img": "images/items/flight_recorder.png",
+    "codes": "recorder"
+  },
+  {
+    "name": "Interrogation Room Key",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "archivekey"
+  },
+  {
+    "name": "Archive Safe Key",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "archivesafe"
+  },
+  {
+    "name": "Depot Safe Key",
+    "type": "toggle",
+    "img": "images/items/key_2.png",
+    "codes": "depotsafe"
+  },
+  {
+    "name": "Helicopter Blueprints",
+    "type": "toggle",
+    "img": "images/items/helicopter_blueprints.png",
+    "codes": "heliprints"
+  },
+  {
+    "name": "Train Door Key",
+    "type": "toggle",
+    "img": "images/items/key_1.png",
+    "codes": "trainkey"
+  },
+  {
+    "name": "Code Card 1",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "codecard1"
+  },
+  {
+    "name": "Code Card 2",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "codecard2"
+  },
+  {
+    "name": "Code Card 3",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "codecard3"
+  },
+  {
+    "name": "Security Smart Card",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "smartcard"
+  },
+  {
+    "name": "Guidance Data",
+    "type": "toggle",
+    "img": "images/items/guidance_data.png",
+    "codes": "guidance"
+  },
+  {
+    "name": "Launch Protocol Data",
+    "type": "toggle",
+    "img": "images/items/dat.png",
+    "codes": "launchdata"
+  },
+  {
+    "name": "Throwing Knife",
+    "type": "toggle",
+    "img": "images/weapons/throwing_knife.png",
+    "codes": "throwknife"
+  },
+  {
+    "name": "Hunting Knife",
+    "type": "toggle",
+    "img": "images/weapons/hunting_knife.png",
+    "codes": "huntknife"
+  },
+  {
+    "name": "PP7",
+    "type": "toggle",
+    "img": "images/weapons/pp7.png",
+    "codes": "pp7"
+  },
+  {
+    "name": "Silenced PP7",
+    "type": "toggle",
+    "img": "images/weapons/silenced_pp7.png",
+    "codes": "silentpp7"
+  },
+  {
+    "name": "DD44 Dostovei",
+    "type": "toggle",
+    "img": "images/weapons/dd44_dostovei.png",
+    "codes": "dd44"
+  },
+  {
+    "name": "Klobb",
+    "type": "toggle",
+    "img": "images/weapons/klobb.png",
+    "codes": "klobb"
+  },
+  {
+    "name": "KF7 Soviet",
+    "type": "toggle",
+    "img": "images/weapons/kf7_soviet.png",
+    "codes": "kf7"
+  },
+  {
+    "name": "ZMG (9mm)",
+    "type": "toggle",
+    "img": "images/weapons/zmg_9mm.png",
+    "codes": "zmg"
+  },
+  {
+    "name": "D5K Deutsche",
+    "type": "toggle",
+    "img": "images/weapons/d5k_deutsche.png",
+    "codes": "d5k"
+  },
+  {
+    "name": "D5K (Silenced)",
+    "type": "toggle",
+    "img": "images/weapons/d5k_silenced.png",
+    "codes": "silentd5k"
+  },
+  {
+    "name": "Phantom",
+    "type": "toggle",
+    "img": "images/weapons/phantom.png",
+    "codes": "phantom"
+  },
+  {
+    "name": "AR33 Assault Rifle",
+    "type": "toggle",
+    "img": "images/weapons/ar33.png",
+    "codes": "ar33"
+  },
+  {
+    "name": "RC-P90",
+    "type": "toggle",
+    "img": "images/weapons/rcp90.png",
+    "codes": "rcp90"
+  },
+  {
+    "name": "Shotgun",
+    "type": "toggle",
+    "img": "images/weapons/shotgun.png",
+    "codes": "shotgun"
+  },
+  {
+    "name": "Automatic Shotgun",
+    "type": "toggle",
+    "img": "images/weapons/auto_shotgun.png",
+    "codes": "autoshotgun"
+  },
+  {
+    "name": "Sniper Rifle",
+    "type": "toggle",
+    "img": "images/weapons/sniper_rifle.png",
+    "codes": "sniper"
+  },
+  {
+    "name": "Cougar Magnum",
+    "type": "toggle",
+    "img": "images/weapons/magnum.png",
+    "codes": "magnum"
+  },
+  {
+    "name": "Golden Gun",
+    "type": "toggle",
+    "img": "images/weapons/golden_gun.png",
+    "codes": "goldgun"
+  },
+  {
+    "name": "Silver PP7",
+    "type": "toggle",
+    "img": "images/weapons/silver_pp7.png",
+    "codes": "silverpp"
+  },
+  {
+    "name": "Gold PP7",
+    "type": "toggle",
+    "img": "images/weapons/gold_pp7.png",
+    "codes": "goldpp"
+  },
+  {
+    "name": "Moonraker Laser",
+    "type": "toggle",
+    "img": "images/weapons/laser.png",
+    "codes": "laser"
+  },
+  {
+    "name": "Watch Laser",
+    "type": "toggle",
+    "img": "images/weapons/watch_laser.png",
+    "codes": "watchlaser"
+  },
+  {
+    "name": "Grenade Launcher",
+    "type": "toggle",
+    "img": "images/weapons/grenade_launcher.png",
+    "codes": "glauncher"
+  },
+  {
+    "name": "Rocket Launcher",
+    "type": "toggle",
+    "img": "images/weapons/rocket_launcher.png",
+    "codes": "rlauncher"
+  },
+  {
+    "name": "Grenade",
+    "type": "toggle",
+    "img": "images/weapons/hand_grenade.png",
+    "codes": "grenade"
+  },
+  {
+    "name": "Timed Mine",
+    "type": "toggle",
+    "img": "images/weapons/timed_mine.png",
+    "codes": "tmine"
+  },
+  {
+    "name": "Proximity Mine",
+    "type": "toggle",
+    "img": "images/weapons/proxy_mine.png",
+    "codes": "pmine"
+  },
+  {
+    "name": "Remote Mine",
+    "type": "toggle",
+    "img": "images/weapons/remote_mine.png",
+    "codes": "rmine"
+  },
+  {
+    "name": "Taser",
+    "type": "toggle",
+    "img": "images/weapons/taser.png",
+    "codes": "taser"
+  },
+  {
+    "name": "Tank",
+    "type": "toggle",
+    "img": "images/weapons/tank.png",
+    "codes": "tank"
+  },
+  {
+    "name": "Progressive Weapon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/weapons/klobb.png",
+        "codes": "klobb"
+      },
+      {
+        "img": "images/weapons/hunting_knife.png",
+        "codes": "huntknife"
+      },
+      {
+        "img": "images/weapons/throwing_knife.png",
+        "codes": "throwknife"
+      },
+      {
+        "img": "images/weapons/taser.png",
+        "codes": "taser"
+      },
+      {
+        "img": "images/weapons/pp7.png",
+        "codes": "pp7"
+      },
+      {
+        "img": "images/weapons/silenced_pp7.png",
+        "codes": "silentpp7"
+      },
+      {
+        "img": "images/weapons/dd44_dostovei.png",
+        "codes": "dd44"
+      },
+      {
+        "img": "images/weapons/kf7_soviet.png",
+        "codes": "kf7"
+      },
+      {
+        "img": "images/weapons/zmg_9mm.png",
+        "codes": "zmg"
+      },
+      {
+        "img": "images/weapons/d5k_deutsche.png",
+        "codes": "d5k"
+      },
+      {
+        "img": "images/weapons/d5k_silenced.png",
+        "codes": "silentd5k"
+      },
+      {
+        "img": "images/weapons/sniper_rifle.png",
+        "codes": "sniper"
+      },
+      {
+        "img": "images/weapons/hand_grenade.png",
+        "codes": "grenade"
+      },
+      {
+        "img": "images/weapons/phantom.png",
+        "codes": "phantom"
+      },
+      {
+        "img": "images/weapons/timed_mine.png",
+        "codes": "tmine"
+      },
+      {
+        "img": "images/weapons/ar33.png",
+        "codes": "ar33"
+      },
+      {
+        "img": "images/weapons/proxy_mine.png",
+        "codes": "pmine"
+      },
+      {
+        "img": "images/weapons/rcp90.png",
+        "codes": "rcp90"
+      },
+      {
+        "img": "images/weapons/remote_mine.png",
+        "codes": "rmine"
+      },
+      {
+        "img": "images/weapons/watch_laser.png",
+        "codes": "watchlaser"
+      },
+      {
+        "img": "images/weapons/shotgun.png",
+        "codes": "shotgun"
+      },
+      {
+        "img": "images/weapons/magnum.png",
+        "codes": "magnum"
+      },      
+      {
+        "img": "images/weapons/hunting_knife.png",
+        "codes": "huntknife"
+      },
+      {
+        "img": "images/weapons/silver_pp7.png",
+        "codes": "silverpp7"
+      },
+      {
+        "img": "images/weapons/auto_shotgun.png",
+        "codes": "autoshotgun"
+      },
+      {
+        "img": "images/weapons/laser.png",
+        "codes": "laser"
+      },
+      {
+        "img": "images/weapons/grenade_launcher.png",
+        "codes": "glauncher"
+      },
+      {
+        "img": "images/weapons/rocket_launcher.png",
+        "codes": "rlauncher"
+      },
+      {
+        "img": "images/weapons/tank.png",
+        "codes": "tank"
+      },
+      {
+        "img": "images/weapons/golden_gun.png",
+        "codes": "goldgun"
+      },
+      {
+        "img": "images/weapons/gold_pp7.png",
+        "codes": "goldpp7"
+      }
+    ]
+  }
+]

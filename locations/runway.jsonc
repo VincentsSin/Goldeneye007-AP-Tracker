@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Runway",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Airplane Key (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Airplane Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Airplane Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Airplane Key"
+          },
+          {
+            "ref": "Missions/Runway/Find Plane Ignition Key (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Find Plane Ignition Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Find Plane Ignition Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Find Plane Ignition Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 80,
+            "y": 750,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Escape In Plane (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Escape In Plane (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Escape In Plane (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Escape In Plane"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 300,
+            "y": 250,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Destroy Missile Battery (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Destroy Missile Battery (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Destroy Missile Battery"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 305,
+            "y": 320,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Destroy Heavy Gun Emplacements (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Destroy Heavy Gun Emplacements"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 325,
+            "y": 30,
+            "size": 15
+          },
+          {
+            "map": "runway",
+            "x": 220,
+            "y": 30,
+            "size": 15
+          },
+          {
+            "map": "runway",
+            "x": 220,
+            "y": 375,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Runway - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Runway - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Runway - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Runway - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 0,
+            "y": 50,
+            "size": 15
+          }
+        ]
+      }
+    ]
+  }
+]

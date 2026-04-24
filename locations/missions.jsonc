@@ -1,0 +1,3195 @@
+[
+  {
+    "name": "Missions",
+    "chest_unopened_img": "images/missions/dossier.png",
+    "chest_opened_img": "images/missions/you_did_it.png",
+    "children": [
+      {
+        "name": "Dam",
+        "sections": [
+          {
+            "name": "Sniper Rifle (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/sniper_rifle.png",
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Bungee Jump From Platform (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Dam - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Sniper Rifle (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/sniper_rifle.png",
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Neutralize All Alarms (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Bungee Jump From Platform (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Dam - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Sniper Rifle (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/sniper_rifle.png",
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Neutralize All Alarms (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Install Covert Modem (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam, covertmodem"]
+          },
+          {
+            "name": "Intercept Data Backup (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam, covertmodem"]
+          },
+          {
+            "name": "Bungee Jump From Platform (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Dam - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["dam, covertmodem"]
+          },
+          {
+            "name": "Sniper Rifle",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/sniper_rifle.png",
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Neutralize All Alarms",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Install Covert Modem",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["dam, covertmodem"]
+          },
+          {
+            "name": "Intercept Data Backup",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["dam, covertmodem"]
+          },
+          {
+            "name": "Bungee Jump From Platform",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["dam"]
+          },
+          {
+            "name": "Dam - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["dam, covertmodem"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 110,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Facility",
+        "sections": [
+          {
+            "name": "Keycard B (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility"]
+          },
+          {
+            "name": "Keycard A (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Gain Entry To Laboratory Area (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Rendezvous With 006 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Destroy All Tanks In Bottling Room (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, rmine"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Facility - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb", "facility, fackeycarda"]
+          },
+          {
+            "name": "Keycard B (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility"]
+          },
+          {
+            "name": "Keycard A (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Gain Entry To Laboratory Area (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Contact Double Agent (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Rendezvous With 006 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": [
+              "facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Destroy All Tanks In Bottling Room (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder, rmine", "facility, fackeycarda, doordecoder, rmine"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Facility - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Keycard B (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility"]
+          },
+          {
+            "name": "Keycard A (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Gain Entry To Laboratory Area (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Contact Double Agent (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Rendezvous With 006 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Destroy All Tanks In Bottling Room (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder, rmine", "facility, fackeycardb, fackeycarda, rmine"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Facility - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Keycard B",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility"]
+          },
+          {
+            "name": "Keycard A",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Gain Entry To Laboratory Area",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Contact Double Agent",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb"]
+          },
+          {
+            "name": "Rendezvous With 006",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Destroy All Tanks In Bottling Room",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb, doordecoder, rmine", "facility, fackeycardb, fackeycarda, rmine"]
+          },
+          {
+            "name": "Minimize Scientist Casualties",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          },
+          {
+            "name": "Facility - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 330,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Runway",
+        "sections": [
+          {
+            "name": "Airplane Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Find Plane Ignition Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Escape In Plane (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey"]
+          },
+          {
+            "name": "Runway - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey"]
+          },
+          {
+            "name": "Airplane Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Find Plane Ignition Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Destroy Missile Battery (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, tmine", "runway, tank"]
+          },
+          {
+            "name": "Escape In Plane (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey"]
+          },
+          {
+            "name": "Runway - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey, tmine", "runway, planekey, tank"]
+          },
+          {
+            "name": "Airplane Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Find Plane Ignition Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Destroy Heavy Gun Emplacements (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, tmine", "runway, tank"]
+          },
+          {
+            "name": "Destroy Missile Battery (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, tmine", "runway, tank"]
+          },
+          {
+            "name": "Escape In Plane (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey"]
+          },
+          {
+            "name": "Runway - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["runway, planekey, tmine", "runway, planekey, tank"]
+          },
+          {
+            "name": "Airplane Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Find Plane Ignition Key",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["runway"]
+          },
+          {
+            "name": "Destroy Heavy Gun Emplacements",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["runway, tmine", "runway, tank"]
+          },
+          {
+            "name": "Destroy Missile Battery",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["runway, tmine", "runway, tank"]
+          },
+          {
+            "name": "Escape In Plane",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["runway, planekey"]
+          },
+          {
+            "name": "Runway - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["runway, planekey, tmine", "runway, planekey, tank"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 540,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Surface 1",
+        "sections": [
+          {
+            "name": "Grenade Launcher (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/grenade_launcher.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Hut Door Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Safe Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Bunker Blueprints (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/bunker_blueprints.png",
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Power Down Communications Dish (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Enter Base Via Ventilation Tower (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Surface 1 - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Grenade Launcher (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/grenade_launcher.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Hut Door Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Safe Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Bunker Blueprints (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/bunker_blueprints.png",
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Power Down Communications Dish (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Obtain Safe Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Steal Building Plans (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Enter Base Via Ventilation Tower (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Surface 1 - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Grenade Launcher (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/grenade_launcher.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Hut Door Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Safe Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Bunker Blueprints (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/bunker_blueprints.png",
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Power Down Communications Dish (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Obtain Safe Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Steal Building Plans (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Enter Base Via Ventilation Tower (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Surface 1 - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Grenade Launcher",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/grenade_launcher.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Hut Door Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Safe Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Bunker Blueprints",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/bunker_blueprints.png",
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Power Down Communications Dish",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Obtain Safe Key",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface1, hutkey"]
+          },
+          {
+            "name": "Steal Building Plans",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          },
+          {
+            "name": "Enter Base Via Ventilation Tower",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface1"]
+          },
+          {
+            "name": "Surface 1 - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface1, hutkey, surfacesafe"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 745,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Bunker 1",
+        "sections": [
+          {
+            "name": "Security Keycard (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Computer Room Keycard (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Goldeneye Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_key.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Copy Goldeneye Key And Leave Original (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey"]
+          },
+          {
+            "name": "Photograph Main Video Screen (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, camera"]
+          },
+          {
+            "name": "Bunker 1 - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey, camera"]
+          },
+          {
+            "name": "Security Keycard (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Computer Room Keycard (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Goldeneye Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_key.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Disrupt All Surveillance Equipment (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Copy Goldeneye Key And Leave Original (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey"]
+          },
+          {
+            "name": "Photograph Main Video Screen (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, camera"]
+          },
+          {
+            "name": "Bunker 1 - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey, camera"]
+          },
+          {
+            "name": "Security Keycard (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Computer Room Keycard (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Goldeneye Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_key.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Disrupt All Surveillance Equipment (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Copy Goldeneye Key And Leave Original (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey"]
+          },
+          {
+            "name": "Photograph Main Video Screen (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, camera"]
+          },
+          {
+            "name": "Get Personnel To Activate Computer (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Download Data From Computer (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, datathief"]
+          },
+          {
+            "name": "Bunker 1 - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker1, keyanalyzer, gekey, camera, datathief"]
+          },
+          {
+            "name": "Security Keycard",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Computer Room Keycard",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Goldeneye Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/goldeneye_key.png",
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Disrupt All Surveillance Equipment",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Copy Goldeneye Key And Leave Original",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1, keyanalyzer, gekey"]
+          },
+          {
+            "name": "Photograph Main Video Screen",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1, camera"]
+          },
+          {
+            "name": "Get Personnel To Activate Computer",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1"]
+          },
+          {
+            "name": "Download Data From Computer",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1, datathief"]
+          },
+          {
+            "name": "Bunker 1 - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker1, keyanalyzer, gekey, camera"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 960,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Silo",
+        "sections": [
+          {
+            "name": "Keycard 4-H4 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "Keycard 4-C3 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "Keycard 4-52 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "I-O Circuit Board (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "CPU Circuit Board (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "RSP Circuit Board (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "RDP Circuit Board (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "DAT (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "Photograph Satellite (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452"]
+          },
+          {
+            "name": "Silo - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          },
+          {
+            "name": "Keycard 4-H4 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "Keycard 4-C3 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "Keycard 4-52 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "I-O Circuit Board (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "CPU Circuit Board (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "RSP Circuit Board (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "RDP Circuit Board (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "DAT (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "Obtain Telemetric Data (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, dat"]
+          },
+          {
+            "name": "Retrieve Satellite Circuitry (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"]
+          },
+          {
+            "name": "Photograph Satellite (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452"]
+          },
+          {
+            "name": "Silo - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera"]
+          },
+          {
+            "name": "Keycard 4-H4 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "Keycard 4-C3 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "Keycard 4-52 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "I-O Circuit Board (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "CPU Circuit Board (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "RSP Circuit Board (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "RDP Circuit Board (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "DAT (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "Obtain Telemetric Data (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, dat"]
+          },
+          {
+            "name": "Retrieve Satellite Circuitry (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"]
+          },
+          {
+            "name": "Plant Bombs In Fuel Rooms (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, plastique"]
+          },
+          {
+            "name": "Photograph Satellite (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452"]
+          },
+          {
+            "name": "Silo - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera, plastique"]
+          },
+          {
+            "name": "Keycard 4-H4",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "Keycard 4-C3",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "Keycard 4-52",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "I-O Circuit Board",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "CPU Circuit Board",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo"]
+          },
+          {
+            "name": "RSP Circuit Board",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4"]
+          },
+          {
+            "name": "RDP Circuit Board",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/circuit_board.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "DAT",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["silo, keycard4h4, keycard4c3"]
+          },
+          {
+            "name": "Obtain Telemetric Data",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, dat"]
+          },
+          {
+            "name": "Retrieve Satellite Circuitry",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"]
+          },
+          {
+            "name": "Plant Bombs In Fuel Rooms",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, plastique"]
+          },
+          {
+            "name": "Photograph Satellite",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          },
+          {
+            "name": "Minimize Scientist Casualties",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452"]
+          },
+          {
+            "name": "Silo - (Clear)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 110,
+            "y": 225,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Frigate",
+        "sections": [
+          {
+            "name": "Rescue Hostages (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate"]
+          },
+          {
+            "name": "Plant Tracking Bug On Helicopter (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, tracker"]
+          },
+          {
+            "name": "Frigate - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, tracker"]
+          },
+          {
+            "name": "Rescue Hostages (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate"]
+          },
+          {
+            "name": "Disarm Bridge Bomb (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Disarm Engine Room Bomb (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Plant Tracking Bug On Helicopter (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, tracker"]
+          },
+          {
+            "name": "Frigate - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser, tracker"]
+          },
+          {
+            "name": "Rescue Hostages (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate"]
+          },
+          {
+            "name": "Disarm Bridge Bomb (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Disarm Engine Room Bomb (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Plant Tracking Bug On Helicopter (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, tracker"]
+          },
+          {
+            "name": "Frigate - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["frigate, bombdefuser, tracker"]
+          },
+          {
+            "name": "Rescue Hostages",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["frigate"]
+          },
+          {
+            "name": "Disarm Bridge Bomb",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Disarm Engine Room Bomb",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["frigate, bombdefuser"]
+          },
+          {
+            "name": "Plant Tracking Bug On Helicopter",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["frigate, tracker"]
+          },
+          {
+            "name": "Frigate - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["frigate, bombdefuser, tracker"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 330,
+            "y": 225,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Surface 2",
+        "sections": [
+          {
+            "name": "Comms Room Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Break Communications Link To Bunker (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey"]
+          },
+          {
+            "name": "Gain Entry To Bunker (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Surface 2 - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey"]
+          },
+          {
+            "name": "Comms Room Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Break Communications Link To Bunker (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey"]
+          },
+          {
+            "name": "Disable Spetznaz Support Aircraft (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, stmine"]
+          },
+          {
+            "name": "Gain Entry To Bunker (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Surface 2 - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey, stmine"]
+          },
+          {
+            "name": "Comms Room Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Break Communications Link To Bunker (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey"]
+          },
+          {
+            "name": "Disrupt All Surveillance Equipment (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Disable Spetznaz Support Aircraft (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, stmine"]
+          },
+          {
+            "name": "Gain Entry To Bunker (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Surface 2 - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["surface2, commskey, stmine"]
+          },
+          {
+            "name": "Comms Room Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Break Communications Link To Bunker",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface2, commskey"]
+          },
+          {
+            "name": "Disrupt All Surveillance Equipment",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Disable Spetznaz Support Aircraft",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface2, stmine"]
+          },
+          {
+            "name": "Gain Entry To Bunker",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface2"]
+          },
+          {
+            "name": "Surface 2 - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["surface2, commskey"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 540,
+            "y": 225,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Bunker 2",
+        "sections": [
+          {
+            "name": "Throwing Knives (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/throwing_knife.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Cell Key 1 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag"]
+          },
+          {
+            "name": "Cell Key 2 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard A (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard B (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 1 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 2 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "CCTV Tape (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/videotape.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Casualty List (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/casualty_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda"]
+          },
+          {
+            "name": "Severnaya Stafflist (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/staff_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Goldeneye Operations Manual (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_manual.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Recover CCTV Tape (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cctv"]
+          },
+          {
+            "name": "Escape With Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1"]
+          },
+          {
+            "name": "Bunker 2 - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1, cctv"]
+          },
+          {
+            "name": "Throwing Knives (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/throwing_knife.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Cell Key 1 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag"]
+          },
+          {
+            "name": "Cell Key 2 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard A (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard B (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 1 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 2 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "CCTV Tape (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/videotape.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Casualty List (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/casualty_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda"]
+          },
+          {
+            "name": "Severnaya Stafflist (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/staff_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Goldeneye Operations Manual (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_manual.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Recover CCTV Tape (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cctv"]
+          },
+          {
+            "name": "Compare Staff & Casualty Lists (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda, stafflist, casualtylist"]
+          },
+          {
+            "name": "Disable All Security Cameras (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Escape With Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1"]
+          },
+          {
+            "name": "Bunker 2 - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist"]
+          },
+          {
+            "name": "Throwing Knives (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/throwing_knife.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Cell Key 1 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag"]
+          },
+          {
+            "name": "Cell Key 2 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard A (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard B (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 1 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 2 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "CCTV Tape (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/videotape.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Casualty List (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/casualty_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda"]
+          },
+          {
+            "name": "Severnaya Stafflist (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/staff_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Goldeneye Operations Manual (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/goldeneye_manual.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Recover CCTV Tape (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cctv"]
+          },
+          {
+            "name": "Compare Staff & Casualty Lists (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda, stafflist, casualtylist"]
+          },
+          {
+            "name": "Recover Goldeneye Operations Manual (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Disable All Security Cameras (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Escape With Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1"]
+          },
+          {
+            "name": "Bunker 2 - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist"]
+          },
+          {
+            "name": "Throwing Knives",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/throwing_knife.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Cell Key 1",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag"]
+          },
+          {
+            "name": "Cell Key 2",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard A",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Keycard B",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 1",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Safe Key 2",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "CCTV Tape",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/videotape.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Casualty List",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/casualty_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda"]
+          },
+          {
+            "name": "Severnaya Stafflist",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/staff_list.png",
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Goldeneye Operations Manual",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/goldeneye_manual.png",
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Recover CCTV Tape",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cctv"]
+          },
+          {
+            "name": "Compare Staff & Casualty Lists",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2, b2keycarda, stafflist, casualtylist"]
+          },
+          {
+            "name": "Recover Goldeneye Operations Manual",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"]
+          },
+          {
+            "name": "Disable All Security Cameras",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2"]
+          },
+          {
+            "name": "Escape With Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1"]
+          },
+          {
+            "name": "Bunker 2 - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["bunker2, watchmag, cellkey2, cellkey1, cctv"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 745,
+            "y": 225,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Statue",
+        "sections": [
+          {
+            "name": "Flight Recorder (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Contact Valentin (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Confront And Unmask Janus (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Locate Helicopter (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Rescue Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Find Flight Recorder (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Statue - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Flight Recorder (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Contact Valentin (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Confront And Unmask Janus (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Locate Helicopter (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Rescue Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Find Flight Recorder (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Statue - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Flight Recorder (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Contact Valentin (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Confront And Unmask Janus (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Locate Helicopter (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Rescue Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Find Flight Recorder (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Statue - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Flight Recorder",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Contact Valentin",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Confront And Unmask Janus",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Locate Helicopter",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Rescue Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue"]
+          },
+          {
+            "name": "Find Flight Recorder",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue, recorder"]
+          },
+          {
+            "name": "Statue - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["statue, recorder"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 960,
+            "y": 225,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Archives",
+        "sections": [
+          {
+            "name": "PP7 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/pp7.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Interrogation Room Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Safe Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Flight Recorder (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["archives, archivekey, archivesafe"]
+          },
+          {
+            "name": "Escape From Interrogation Room (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Find Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Escape With Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Archives - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "PP7 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/pp7.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Interrogation Room Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Safe Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Flight Recorder (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["archives, archivekey, archivesafe"]
+          },
+          {
+            "name": "Escape From Interrogation Room (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Find Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Recover Helicopter Black Box (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          },
+          {
+            "name": "Escape With Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Archives - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          },
+          {
+            "name": "PP7 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/pp7.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Interrogation Room Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Safe Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Flight Recorder (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["archives, archivekey, archivesafe"]
+          },
+          {
+            "name": "Escape From Interrogation Room (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Find Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Recover Helicopter Black Box (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          },
+          {
+            "name": "Escape With Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Archives - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          },
+          {
+            "name": "PP7",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/pp7.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Interrogation Room Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_1.png",
+            "access_rules": ["archives"]
+          },
+          {
+            "name": "Safe Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Flight Recorder",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/flight_recorder.png",
+            "access_rules": ["archives, archivekey, archivesafe"]
+          },
+          {
+            "name": "Escape From Interrogation Room",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Find Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Recover Helicopter Black Box",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          },
+          {
+            "name": "Escape With Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["archives, archivekey"]
+          },
+          {
+            "name": "Archives - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["archives, archivekey, archivesafe, recorder"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 110,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Streets",
+        "sections": [
+          {
+            "name": "Pursue Ouromov And Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Minimize Civilian Casualties (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Streets - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Contact Valentin (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Pursue Ouromov And Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Minimize Civilian Casualties (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Streets - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Contact Valentin (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Pursue Ouromov And Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Minimize Civilian Casualties (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Streets - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Contact Valentin",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Pursue Ouromov And Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Minimize Civilian Casualties",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["streets"]
+          },
+          {
+            "name": "Streets - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["streets"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 330,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Depot",
+        "sections": [
+          {
+            "name": "Rocket Launcher (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/rocket_launcher.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Safe Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Blueprints (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/helicopter_blueprints.png",
+            "access_rules": ["depot, depotsafe"]
+          },
+          {
+            "name": "Locate Trevelyan's Train (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Depot - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Rocket Launcher (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/rocket_launcher.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Safe Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Blueprints (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/helicopter_blueprints.png",
+            "access_rules": ["depot, depotsafe"]
+          },
+          {
+            "name": "Destroy Computer Network (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Obtain Safe Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Recover Helicopter Blueprints (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot, depotsafe, heliprints"]
+          },
+          {
+            "name": "Locate Trevelyan's Train (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Depot - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Rocket Launcher (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/rocket_launcher.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Safe Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Blueprints (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/helicopter_blueprints.png",
+            "access_rules": ["depot, depotsafe"]
+          },
+          {
+            "name": "Destroy Computer Network (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Destroy Illegal Arms Cache (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Obtain Safe Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Recover Helicopter Blueprints (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot, depotsafe, heliprints"]
+          },
+          {
+            "name": "Locate Trevelyan's Train (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Depot - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Rocket Launcher",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/rocket_launcher.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Safe Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Blueprints",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/helicopter_blueprints.png",
+            "access_rules": ["depot, depotsafe"]
+          },
+          {
+            "name": "Destroy Computer Network",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Destroy Illegal Arms Cache",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Obtain Depot Safe Key",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Recover Helicopter Blueprints",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot, depotsafe, heliprints"]
+          },
+          {
+            "name": "Locate Trevelyan's Train",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot"]
+          },
+          {
+            "name": "Depot - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["depot"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 540,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Train",
+        "sections": [
+          {
+            "name": "RC-P90 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/rcp90.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Train Door Key (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Destroy Brake Units (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Rescue Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Escape To Safety (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Train - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "DD44 Dostovei (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/dd44_dostovei.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Train Door Key (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Destroy Brake Units (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Rescue Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Locate Janus Secret Base (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Escape To Safety (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Train - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Train Door Key (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Destroy Brake Units (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Rescue Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Locate Janus Secret Base (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Crack Boris' Password (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Escape To Safety (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Train - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "RC-P90",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/rcp90.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Train Door Key",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/key_2.png",
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Destroy Brake Units",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train"]
+          },
+          {
+            "name": "Rescue Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Locate Janus Secret Base",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Crack Boris' Password",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Escape To Safety",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train, trainkey"]
+          },
+          {
+            "name": "Train - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["train, trainkey"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 745,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Jungle",
+        "sections": [
+          {
+            "name": "Destroy Drone Guns (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Eliminate Xenia (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Escort Natalya To Janus Base (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Jungle - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Destroy Drone Guns (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Eliminate Xenia (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Blow Up Ammo Dump (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Escort Natalya To Janus Base (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Jungle - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Destroy Drone Guns (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Eliminate Xenia (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Blow Up Ammo Dump (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Escort Natalya To Janus Base (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Jungle - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Destroy Drone Guns",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Eliminate Xenia",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Blow Up Ammo Dump",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Escort Natalya To Janus Base",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["jungle"]
+          },
+          {
+            "name": "Jungle - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["jungle"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 960,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Control",
+        "sections": [
+          {
+            "name": "Protect Natalya (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Disable Goldeneye Satellite (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Destroy Armored Mainframes (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Control - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Protect Natalya (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Disable Goldeneye Satellite (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Destroy Armored Mainframes (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Control - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Protect Natalya (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Disable Goldeneye Satellite (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Destroy Armored Mainframes (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Control - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Protect Natalya",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Disable Goldeneye Satellite",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["control"]
+          },
+          {
+            "name": "Destroy Armored Mainframes",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["control, rmine"]
+          },
+          {
+            "name": "Control - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["control, rmine"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 110,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Caverns",
+        "sections": [
+          {
+            "name": "AR33 Assault Rifle (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/ar33.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 1 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 2 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 3 (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "Caverns - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "AR33 Assault Rifle (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/ar33.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 1 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 2 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns, codecard1"]
+          },
+          {
+            "name": "Code Card 3 (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Inlet Pump Controls (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Outlet Pump Controls (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Master Control Console (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "Caverns - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "AR33 Assault Rifle (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/ar33.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 1 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 2 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns, codecard1"]
+          },
+          {
+            "name": "Code Card 3 (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Inlet Pump Controls (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Outlet Pump Controls (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Master Control Console (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Use Radio To Contact Jack Wade (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Minimize Scientist Casualties (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "Caverns - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "AR33 Assault Rifle",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/ar33.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 1",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Code Card 2",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns, codecard1"]
+          },
+          {
+            "name": "Code Card 3",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Inlet Pump Controls",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Outlet Pump Controls",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Destroy Master Control Console",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns"]
+          },
+          {
+            "name": "Use Radio To Contact Jack Wade",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns, codecard1"]
+          },
+          {
+            "name": "Minimize Scientist Casualties",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          },
+          {
+            "name": "Caverns - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["caverns, codecard1, codecard3", "caverns, codecard2, codecard3"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 330,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Cradle",
+        "sections": [
+          {
+            "name": "Destroy Console Control (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Settle The Score With Trevelyan (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Cradle - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Destroy Console Control (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Settle The Score With Trevelyan (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Cradle - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Destroy Console Control (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Settle The Score With Trevelyan (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Cradle - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Destroy Console Control",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Settle The Score With Trevelyan",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Cradle - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["cradle"]
+          },
+          {
+            "name": "Stopped Goldeneye",
+            "access_rules": ["cradle"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 540,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Aztec",
+        "sections": [
+          {
+            "name": "Security Smart Card (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["aztec"]
+          },
+          {
+            "name": "Launch Protocol Data (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["aztec, smartcard"]
+          },
+          {
+            "name": "Reprogram Shuttle Guidance (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance"]
+          },
+          {
+            "name": "Launch Shuttle (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Aztec - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Security Smart Card (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["aztec"]
+          },
+          {
+            "name": "Launch Protocol Data (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["aztec, smartcard"]
+          },
+          {
+            "name": "Reprogram Shuttle Guidance (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance"]
+          },
+          {
+            "name": "Launch Shuttle (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Aztec - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Security Smart Card (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["aztec"]
+          },
+          {
+            "name": "Launch Protocol Data (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["aztec, smartcard"]
+          },
+          {
+            "name": "Reprogram Shuttle Guidance (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance"]
+          },
+          {
+            "name": "Launch Shuttle (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Aztec - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Security Smart Card",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/keycard.png",
+            "access_rules": ["aztec"]
+          },
+          {
+            "name": "Launch Protocol Data",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/items/dat.png",
+            "access_rules": ["aztec, smartcard"]
+          },
+          {
+            "name": "Reprogram Shuttle Guidance",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["aztec, smartcard, guidance"]
+          },
+          {
+            "name": "Launch Shuttle",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          },
+          {
+            "name": "Aztec - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["aztec, smartcard, guidance, launchdata"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 745,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Egyptian",
+        "sections": [
+          {
+            "name": "Golden Gun (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/golden_gun.png",
+            "access_rules": ["egyptian"]
+          },
+          {
+            "name": "Recover The Golden Gun (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Defeat Baron Samedi? (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Egyptian - Clear (Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Golden Gun (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/golden_gun.png",
+            "access_rules": ["egyptian"]
+          },
+          {
+            "name": "Recover The Golden Gun (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Defeat Baron Samedi? (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Egyptian - Clear (Secret Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Golden Gun (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "chest_unopened_img": "images/weapons/golden_gun.png",
+            "access_rules": ["egyptian"]
+          },
+          {
+            "name": "Recover The Golden Gun (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Defeat Baron Samedi? (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Egyptian - Clear (Double Agent)",
+            //"visibility_rules": ["$per_difficulty"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Golden Gun",
+            //"visibility_rules": ["$shared"],
+            "chest_unopened_img": "images/weapons/golden_gun.png",
+            "access_rules": ["egyptian"]
+          },
+          {
+            "name": "Recover The Golden Gun",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Defeat Baron Samedi?",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["egyptian, goldgun"]
+          },
+          {
+            "name": "Egyptian - (Clear)",
+            //"visibility_rules": ["$shared"],
+            "access_rules": ["egyptian, goldgun"]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mission_select",
+            "x": 960,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

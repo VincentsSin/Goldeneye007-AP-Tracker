@@ -1,0 +1,440 @@
+{
+  "damloadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "covertmodem"
+          ]
+        ]
+      }
+    ]
+  },
+  "facilitykey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "doordecoder"
+          ],
+          [
+            "fackeycarda"
+          ],
+          [
+            "fackeycardb"
+          ]
+        ]
+      }
+    ]
+  },
+  "runwaykey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "planekey"
+          ]
+        ]
+      }
+    ]
+  },
+  "surface1key_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "bunkerprints"
+          ],
+          [
+            "hutkey"
+          ],
+          [
+            "surfacesafe"
+          ]
+        ]
+      }
+    ]
+  },
+  "bunker1loadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "camera"
+          ],
+          [
+            "datathief"
+          ],
+          [
+            "keyanalyzer"
+          ]
+        ]
+      }
+    ]
+  },
+  "bunker1key_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "securitykey"
+          ],
+          [
+            "gekey"
+          ],
+          [
+            "comproomkey"
+          ]
+        ]
+      }
+    ]
+  },
+  "siloloadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "camera"
+          ],
+          [
+            "plastique"
+          ]
+        ]
+      }
+    ]
+  },
+  "silokey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "ioboard",
+            "keycard4h4"
+          ],
+          [
+            "cpuboard",
+            "keycard4c3"
+          ],
+          [
+            "rspboard",
+            "keycard452"
+          ],
+          [
+            "rdpboard",
+            "dat"
+          ]
+        ]
+      }
+    ]
+  },
+  "frigateloadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "bombdefuser"
+          ],
+          [
+            "tracker"
+          ]
+        ]
+      }
+    ]
+  },
+  "surface2loadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "stmine"
+          ]
+        ]
+      }
+    ]
+  },
+  "surface2key_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "commskey"
+          ]
+        ]
+      }
+    ]
+  },
+  "bunker2loadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "watchmag"
+          ]
+        ]
+      }
+    ]
+  },
+  "bunker2key_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "cctv",
+            "cellkey1"
+          ],
+          [
+            "stafflist",
+            "cellkey2"
+          ],
+          [
+            "casualtylist",
+            "bunkersafe1"
+          ],
+          [
+            "geopmanual",
+            "bunkersafe2"
+          ],
+          [
+            "b2keycarda",
+            "b2keycardb"
+          ]
+        ]
+      }
+    ]
+  },
+  "statuekey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "recorder"
+          ]
+        ]
+      }
+    ]
+  },
+  "archiveskey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "recorder"
+          ],
+          [
+            "archivekey"
+          ],
+          [
+            "archivesafe"
+          ]
+        ]
+      }
+    ]
+  },
+  "depotkey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "heliprints"
+          ],
+          [
+            "depotsafe"
+          ]
+        ]
+      }
+    ]
+  },
+  "trainkey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "trainkey"
+          ]
+        ]
+      }
+    ]
+  },
+  "cavernskey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "codecard1"
+          ],
+          [
+            "codecard2"
+          ],
+          [
+            "codecard3"
+          ]
+        ]
+      }
+    ]
+  },
+  "aztecloadout_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "guidance"
+          ]
+        ]
+      }
+    ]
+  },
+  "azteckey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "launchdata"
+          ],
+          [
+            "smartcard"
+          ]
+        ]
+      }
+    ]
+  }
+}

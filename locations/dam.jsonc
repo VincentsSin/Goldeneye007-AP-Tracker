@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Dam",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Bungee Jump From Platform (Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Bungee Jump From Platform (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Bungee Jump From Platform (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Bungee Jump From Platform"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 1160,
+            "y": 375
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Neutralize All Alarms"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 550,
+            "y": 600,
+            "size": 15
+          },
+          {
+            "map": "dam",
+            "x": 990,
+            "y": 525,
+            "size": 15
+          },
+          {
+            "map": "dam",
+            "x": 1190,
+            "y": 455,
+            "size": 15
+          },
+          {
+            "map": "dam",
+            "x": 1360,
+            "y": 315,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Install Covert Modem (Double Agent)"
+          },
+          {
+            "ref":"Missions/Dam/Install Covert Modem"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 660,
+            "y": 640,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Intercept Data Backup (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Intercept Data Backup"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 100,
+            "y": 800,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Sniper Rifle (Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Sniper Rifle (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Sniper Rifle (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Sniper Rifle"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 150,
+            "y": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Dam - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Dam - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Dam - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Dam - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 0,
+            "y": 10
+          }
+        ]
+      }
+    ]
+  }
+]

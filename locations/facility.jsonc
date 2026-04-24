@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Facility",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Keycard B (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard B (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard B (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard B"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 300,
+            "y": 425,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Keycard A (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard A (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard A (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Keycard A"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 975,
+            "y": 325,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          
+          {
+            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Gain Entry To Laboratory Area"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 925,
+            "y": 470,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 1135,
+            "y": 135,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Rendezvous With 006 (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Rendezvous With 006 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Rendezvous With 006 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Rendezvous With 006"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 1090,
+            "y": 150,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "One Of These Is Doak, I Pwesume",
+        "sections": [
+          {
+            "ref": "Missions/Facility/Contact Double Agent (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Contact Double Agent (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Contact Double Agent"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 615,
+            "y": 460,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 625,
+            "y": 575,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 1200,
+            "y": 440,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 1100,
+            "y": 440,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 1100,
+            "y": 510,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 1200,
+            "y": 550,
+            "size": 15
+          },
+          {
+            "map": "facility",
+            "x": 945,
+            "y": 750,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Minimize Scientist Casualties (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Minimize Scientist Casualties (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Minimize Scientist Casualties (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Minimize Scientist Casualties"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 985,
+            "y": 50,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Facility - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Facility - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Facility - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Facility - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 0,
+            "y": 50,
+            "size": 15
+          }
+        ]
+      }
+    ]
+  }
+]

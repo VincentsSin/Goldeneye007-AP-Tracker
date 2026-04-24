@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Cradle",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Destroy Console Control (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Destroy Console Control (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Destroy Console Control (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Destroy Console Control"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 650,
+            "y": 525,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Trevelyan Runs Around To Any Of These Spots",
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 365,
+            "y": 345,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 540,
+            "y": 260,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 525,
+            "y": 460,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 675,
+            "y": 725,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 750,
+            "y": 500,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 870,
+            "y": 315,
+            "size": 20
+          },
+          {
+            "map": "cradle",
+            "x": 980,
+            "y": 890,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "'Finish The Job, James - If You Can' (Final Location)",
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Settle The Score With Trevelyan"
+          },
+          {
+            "ref": "Missions/Cradle/Stopped Goldeneye"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 1075,
+            "y": 600,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Cradle - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Cradle - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Cradle - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Cradle - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 0,
+            "y": 25,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

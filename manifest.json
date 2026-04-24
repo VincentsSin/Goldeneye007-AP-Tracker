@@ -1,0 +1,24 @@
+﻿{
+    "name": "GoldenEye",
+    "game_name": "GoldenEye 007",
+    "package_version": "1.0.0",
+    "package_uid": "GE007_AP",
+    "platform": "Nintendo 64",
+    "author": "VincentsSin, FamilyJules",
+    "min_poptracker_version": "0.32.0",
+    "target_poptracker_version": "0.34.0",
+    "variants": {
+        "standard": {
+            "display_name": "Maps and items",
+            "flags": ["ap"]
+        },
+        "itemsonly": {
+            "display_name": "Items only",
+            "flags": ["ap"]
+        },
+        "mapsonly": {
+            "display_name": "Maps only",
+            "flags": ["ap"]
+        }
+    }
+}

@@ -1,0 +1,195 @@
+[
+  {
+    "name": "Train",
+    "children": [
+      {
+        "name": "Enemy Spawns After Destroying Brake Panels",
+        "sections": [
+          {
+            "ref": "Missions/Train/Train Door Key (Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train Door Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train Door Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train Door Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 1700,
+            "y": 225,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Train/RC-P90 (Agent)"
+          },
+          {
+            "ref": "Missions/Train/DD44 Dostovei (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/RC-P90"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 615,
+            "y": 90,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Train/Destroy Brake Units (Agent)"
+          },
+          {
+            "ref": "Missions/Train/Destroy Brake Units (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Destroy Brake Units (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Destroy Brake Units"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 640,
+            "y": 150,
+            "size": 20
+          },
+          {
+            "map": "train",
+            "x": 1365,
+            "y": 150,
+            "size": 20
+          },
+          {
+            "map": "train",
+            "x": 2080,
+            "y": 150,
+            "size": 20
+          },
+          {
+            "map": "train",
+            "x": 45,
+            "y": 225,
+            "size": 20
+          },
+          {
+            "map": "train",
+            "x": 1375,
+            "y": 230,
+            "size": 20
+          },
+          {
+            "map": "train",
+            "x": 1460,
+            "y": 290,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Shoot Xenia Before Door Closes For Extra Time",
+        "sections": [
+          {
+            "ref": "Missions/Train/Rescue Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Train/Rescue Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Rescue Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Rescue Natalya"
+          },
+          {
+            "ref": "Missions/Train/Locate Janus Secret Base (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Locate Janus Secret Base (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Locate Janus Secret Base"
+          },
+          {
+            "ref": "Missions/Train/Crack Boris' Password (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Crack Boris' Password"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 1880,
+            "y": 245,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Train/Escape To Safety (Agent)"
+          },
+          {
+            "ref": "Missions/Train/Escape To Safety (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Escape To Safety (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Escape To Safety"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 1785,
+            "y": 225,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Train/Train - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Train/Train - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "train",
+            "x": 20,
+            "y": 20,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,408 @@
+[
+  {
+    "name": "Bunker 2",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Throwing Knives (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Throwing Knives (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Throwing Knives (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Throwing Knives"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 1200,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Cell Key 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 1"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 1025,
+            "y": 75,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Cell Key 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Cell Key 2"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 1100,
+            "y": 50,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Should Be Here Shortly After Leaving Cells. Has 2 Klobbs",
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Keycard A (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard A (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard A (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard A"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 850,
+            "y": 350,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Grab Keycard A First, Should Be Here Shortly After. Has 2 Klobbs",
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Keycard B (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard B (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard B (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Keycard B"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 395,
+            "y": 80,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Safe Key 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 1"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 640,
+            "y": 250,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Safe Key 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Safe Key 2"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 640,
+            "y": 1125,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/CCTV Tape (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/CCTV Tape (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/CCTV Tape (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/CCTV Tape"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover CCTV Tape (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover CCTV Tape (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover CCTV Tape (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover CCTV Tape"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 625,
+            "y": 600,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Severnaya Stafflist (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Severnaya Stafflist (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Severnaya Stafflist (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Severnaya Stafflist"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 750,
+            "y": 600,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Casualty List (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Casualty List (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Casualty List (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Casualty List"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 50,
+            "y": 250,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Escape With Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Escape With Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Escape With Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Escape With Natalya"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 350,
+            "y": 1850,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Goldeneye Operations Manual"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 500,
+            "y": 150,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Disable All Security Cameras (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Disable All Security Cameras (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Disable All Security Cameras"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 395,
+            "y": 475,
+            "size": 40
+          },
+          {
+            "map": "bunker_two",
+            "x": 240,
+            "y": 1400,
+            "size": 40
+          },
+          {
+            "map": "bunker_two",
+            "x": 500,
+            "y": 920,
+            "size": 40
+          },
+          {
+            "map": "bunker_two",
+            "x": 600,
+            "y": 775,
+            "size": 40
+          },
+          {
+            "map": "bunker_two",
+            "x": 725,
+            "y": 840,
+            "size": 40
+          },
+          {
+            "map": "bunker_two",
+            "x": 725,
+            "y": 1075,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Bunker 2 - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 0,
+            "y": 50,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Statue",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Statue/Contact Valentin (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Contact Valentin (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Contact Valentin (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Contact Valentin"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 650,
+            "y": 510,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Statue/Confront And Unmask Janus (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Confront And Unmask Janus (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Confront And Unmask Janus (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Confront And Unmask Janus"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 875,
+            "y": 710,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Statue/Locate Helicopter (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Locate Helicopter (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Locate Helicopter (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Locate Helicopter"
+          },
+          {
+            "ref": "Missions/Statue/Rescue Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Rescue Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Rescue Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Rescue Natalya"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 200,
+            "y": 100,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Recorder Falls At One Spot At Random",
+        "sections": [
+          {
+            "ref": "Missions/Statue/Flight Recorder (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Flight Recorder (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Flight Recorder (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Flight Recorder"
+          },
+          {
+            "ref": "Missions/Statue/Find Flight Recorder (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Find Flight Recorder (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Find Flight Recorder (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Find Flight Recorder"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 300,
+            "y": 140,
+            "size": 20
+          },
+          {
+            "map": "statue",
+            "x": 375,
+            "y": 175,
+            "size": 20
+          },
+          {
+            "map": "statue",
+            "x": 400,
+            "y": 100,
+            "size": 20
+          },
+          {
+            "map": "statue",
+            "x": 425,
+            "y": 140,
+            "size": 20
+          },
+          {
+            "map": "statue",
+            "x": 475,
+            "y": 80,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Statue/Statue - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Statue - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Statue - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Statue - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

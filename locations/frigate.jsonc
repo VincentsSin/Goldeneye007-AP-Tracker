@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Frigate",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Rescue Hostages (Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Rescue Hostages (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Rescue Hostages (Double Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Rescue Hostages"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 600,
+            "y": 460,
+            "size": 20
+          },
+          {
+            "map": "frigate",
+            "x": 950,
+            "y": 425,
+            "size": 20
+          },
+          {
+            "map": "frigate",
+            "x": 1080,
+            "y": 500,
+            "size": 20
+          },
+          {
+            "map": "frigate",
+            "x": 945,
+            "y": 950,
+            "size": 20
+          },
+          {
+            "map": "frigate",
+            "x": 1025,
+            "y": 810,
+            "size": 20
+          },
+          {
+            "map": "frigate",
+            "x": 1360,
+            "y": 860,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Double Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1450,
+            "y": 200,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Disarm Bridge Bomb (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Disarm Bridge Bomb (Double Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Disarm Bridge Bomb"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 590,
+            "y": 500,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Disarm Engine Room Bomb (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Disarm Engine Room Bomb (Double Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Disarm Engine Room Bomb"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1275,
+            "y": 975,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Frigate - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Frigate - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Frigate - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Frigate - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

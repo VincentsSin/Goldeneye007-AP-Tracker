@@ -1,0 +1,193 @@
+[
+  {
+    "name": "Dam",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Power Down Communications Dish (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Power Down Communications Dish (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Power Down Communications Dish (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Power Down Communications Dish"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 390,
+            "y": 725,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Enter Base Via Ventilation Tower (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Enter Base Via Ventilation Tower (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Enter Base Via Ventilation Tower (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Enter Base Via Ventilation Tower"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 220,
+            "y": 840,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Hut Door Key (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Hut Door Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Hut Door Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Hut Door Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 250,
+            "y": 425,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Safe Key (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Safe Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Safe Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Safe Key"
+          },
+          {
+            "ref": "Missions/Surface 1/Obtain Safe Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Obtain Safe Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Obtain Safe Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 535,
+            "y": 235,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Bunker Blueprints (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Bunker Blueprints (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Bunker Blueprints (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Bunker Blueprints"
+          },
+          {
+            "ref": "Missions/Surface 1/Steal Building Plans (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Steal Building Plans (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Steal Building Plans"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 550,
+            "y": 765,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Grenade Launcher (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Grenade Launcher (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Grenade Launcher (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Grenade Launcher"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 260,
+            "y": 445,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Surface 1 - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Surface 1 - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Surface 1 - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Surface 1 - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 0,
+            "y": 50,
+            "size": 15
+          }
+        ]
+      }
+    ]
+  }
+]

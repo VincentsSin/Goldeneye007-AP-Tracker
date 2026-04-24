@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Aztec",
+    "children": [
+      {
+        "name": "Snatch From The Jaws Of Defeat",
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Security Smart Card (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Security Smart Card (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Security Smart Card (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Security Smart Card"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 25,
+            "y": 325,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Launch Protocol Data (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Protocol Data (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Protocol Data (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Protocol Data"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 400,
+            "y": 525,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Reprogram Shuttle Guidance (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Reprogram Shuttle Guidance (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Reprogram Shuttle Guidance (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Reprogram Shuttle Guidance"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 325,
+            "y": 525,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Upload Launch Protocol Data",
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 500,
+            "y": 25,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Open/Close Exhaust Doors",
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Launch Shuttle"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 525,
+            "y": 275,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Aztec - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Aztec - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Aztec - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Aztec - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 0,
+            "y": 25,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

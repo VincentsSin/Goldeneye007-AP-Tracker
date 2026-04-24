@@ -1,0 +1,356 @@
+[
+  {
+    "name": "Silo",
+    "children": [
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/Keycard 4-H4 (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-H4 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-H4 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-H4"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 100,
+            "y": 300,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/I-O Circuit Board (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/I-O Circuit Board (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/I-O Circuit Board (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/I-O Circuit Board"
+          },
+          {
+            "ref": "Missions/Silo/CPU Circuit Board (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/CPU Circuit Board (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/CPU Circuit Board (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/CPU Circuit Board"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 150,
+            "y": 290,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/Keycard 4-C3 (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-C3 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-C3 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-C3"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 340,
+            "y": 720,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/RSP Circuit Board (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RSP Circuit Board (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RSP Circuit Board (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RSP Circuit Board"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 375,
+            "y": 750,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/DAT (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/DAT (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/DAT (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/DAT"
+          },
+          {
+            "ref": "Missions/Silo/Obtain Telemetric Data (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Obtain Telemetric Data (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Obtain Telemetric Data"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 1175,
+            "y": 825,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/Keycard 4-52 (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-52 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-52 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Keycard 4-52"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 1090,
+            "y": 815,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/RDP Circuit Board (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RDP Circuit Board (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RDP Circuit Board (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/RDP Circuit Board"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Retrieve Satellite Circuitry"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 1110,
+            "y": 775,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Hold Up A Scientist",
+        "sections": [
+          {
+            "ref": "Missions/Silo/Photograph Satellite (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Photograph Satellite (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Photograph Satellite (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Photograph Satellite"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 800,
+            "y": 750,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Photograph Satellite (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Photograph Satellite"
+          },
+          {
+            "ref": "Missions/Silo/Plant Bombs In Fuel Rooms (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Plant Bombs In Fuel Rooms"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 800,
+            "y": 750,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Minimize Scientist Casualties (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Minimize Scientist Casualties (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Minimize Scientist Casualties (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Minimize Scientist Casualties"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 1555,
+            "y": 540,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Plant Bombs In Fuel Rooms (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Plant Bombs In Fuel Rooms"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 100,
+            "y": 350,
+            "size": 20
+          },
+          {
+            "map": "silo",
+            "x": 380,
+            "y": 720,
+            "size": 20
+          },
+          {
+            "map": "silo",
+            "x": 1150,
+            "y": 775,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Silo - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Silo - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Silo - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Silo - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 0,
+            "y": 50,
+            "size": 30
+          }
+        ]
+      }
+    ]
+  }
+]

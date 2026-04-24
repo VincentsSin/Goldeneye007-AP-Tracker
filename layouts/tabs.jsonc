@@ -1,0 +1,162 @@
+﻿{
+  "map_tabs": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Mission Select",
+        "content": {
+          "type": "map",
+          "maps": ["mission_select"]
+        }
+      },
+      {
+        "title": "Missions",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Dam",
+              "content": {
+                "type": "map",
+                "maps": ["dam"]
+              }
+            },
+            {
+              "title": "Facility",
+              "content": {
+                "type": "map",
+                "maps": ["facility"]
+              }
+            },
+            {
+              "title": "Runway",
+              "content": {
+                "type": "map",
+                "maps": ["runway"]
+              }
+            },
+            {
+              "title": "Surface 1",
+              "content": {
+                "type": "map",
+                "maps": ["surface_one"]
+              }
+            },
+            {
+              "title": "Bunker 1",
+              "content": {
+                "type": "map",
+                "maps": ["bunker_one"]
+              }
+            },
+            {
+              "title": "Silo",
+              "content": {
+                "type": "map",
+                "maps": ["silo"]
+              }
+            },
+            {
+              "title": "Frigate",
+              "content": {
+                "type": "map",
+                "maps": ["frigate"]
+              }
+            },
+            {
+              "title": "Surace 2",
+              "content": {
+                "type": "map",
+                "maps": ["surface_two"]
+              }
+            },
+            {
+              "title": "Bunker 2",
+              "content": {
+                "type": "map",
+                "maps": ["bunker_two"]
+              }
+            },
+            {
+              "title": "Statue",
+              "content": {
+                "type": "map",
+                "maps": ["statue"]
+              }
+            },
+            {
+              "title": "Archives",
+              "content": {
+                "type": "map",
+                "maps": ["archives"]
+              }
+            },
+            {
+              "title": "Streets",
+              "content": {
+                "type": "map",
+                "maps": ["streets"]
+              }
+            },
+            {
+              "title": "Depot",
+              "content": {
+                "type": "map",
+                "maps": ["depot"]
+              }
+            },
+            {
+              "title": "Train",
+              "content": {
+                "type": "map",
+                "maps": ["train"]
+              }
+            },
+            {
+              "title": "Jungle",
+              "content": {
+                "type": "map",
+                "maps": ["jungle"]
+              }
+            },
+            {
+              "title": "Control",
+              "content": {
+                "type": "map",
+                "maps": ["control"]
+              }
+            },
+            {
+              "title": "Caverns",
+              "content": {
+                "type": "map",
+                "maps": ["caverns"]
+              }
+            },
+            {
+              "title": "Cradle",
+              "content": {
+                "type": "map",
+                "maps": ["cradle"]
+              }
+            },
+            {
+              "title": "Aztec",
+              "content": {
+                "type": "map",
+                "maps": ["aztec"]
+              }
+            },
+            {
+              "title": "Egyptian",
+              "content": {
+                "type": "map",
+                "maps": ["egyptian"]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

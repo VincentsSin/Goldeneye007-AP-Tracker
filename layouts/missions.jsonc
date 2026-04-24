@@ -1,0 +1,45 @@
+{
+  "missions_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "dam",
+            "facility",
+            "runway",
+            "surface1",
+            "bunker1"
+          ],
+          [
+            "silo",
+            "frigate",
+            "surface2",
+            "bunker2",
+            "statue"
+          ],
+          [
+            "archives",
+            "streets",
+            "depot",
+            "train",
+            "jungle"
+          ],
+          [
+            "control",
+            "caverns",
+            "cradle",
+            "aztec",
+            "egyptian"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "name": "Surface 2",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Comms Room Key (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Comms Room Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Comms Room Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Comms Room Key"
+          },
+          {
+            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 250,
+            "y": 430,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Break Communications Link To Bunker"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 360,
+            "y": 720,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Gain Entry To Bunker (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Gain Entry To Bunker (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Gain Entry To Bunker (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Gain Entry To Bunker"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 125,
+            "y": 650,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 80,
+            "y": 675,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 420,
+            "y": 850,
+            "size": 20
+          },
+          {
+            "map": "surface_two",
+            "x": 375,
+            "y": 690,
+            "size": 20
+          },
+          {
+            "map": "surface_two",
+            "x": 555,
+            "y": 770,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Surface 2 - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Surface 2 - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Surface 2 - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Surface 2 - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

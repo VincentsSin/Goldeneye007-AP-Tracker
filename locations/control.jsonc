@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Control",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Control/Protect Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Protect Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Protect Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Protect Natalya"
+          },
+          {
+            "ref": "Missions/Control/Disable Goldeneye Satellite (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Disable Goldeneye Satellite (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Disable Goldeneye Satellite (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Disable Goldeneye Satellite"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 500,
+            "y": 500,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Control/Destroy Armored Mainframes (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Destroy Armored Mainframes (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Destroy Armored Mainframes (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Destroy Armored Mainframes"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 25,
+            "y": 75,
+            "size": 25
+          },
+          {
+            "map": "control",
+            "x": 475,
+            "y": 75,
+            "size": 25
+          },
+          {
+            "map": "control",
+            "x": 75,
+            "y": 600,
+            "size": 25
+          },
+          {
+            "map": "control",
+            "x": 400,
+            "y": 675,
+            "size": 25
+          },
+          {
+            "map": "control",
+            "x": 625,
+            "y": 675,
+            "size": 25
+          },
+          {
+            "map": "control",
+            "x": 335,
+            "y": 800,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Control/Control - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Control - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Control - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Control - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 0,
+            "y": 25,
+            "size": 25
+          }
+        ]
+      }
+    ]
+  }
+]

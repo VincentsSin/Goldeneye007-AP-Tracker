@@ -1,0 +1,53 @@
+{
+  "weapons_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "huntknife",
+            "throwknife",
+            "pp7",
+            "silentpp7",
+            "dd44",
+            "klobb",
+            "kf7",
+            "zmg",
+            "d5k",
+            "silentd5k"
+          ],
+          [
+            "phantom",
+            "ar33",
+            "rcp90",
+            "shotgun",
+            "autoshotgun",
+            "sniper",
+            "magnum",
+            "goldgun",
+            "silverpp",
+            "goldpp"
+          ],
+          [
+            "laser",
+            "watchlaser",
+            "glauncher",
+            "rlauncher",
+            "grenade",
+            "tmine",
+            "pmine",
+            "rmine",
+            "taser",
+            "tank"
+          ]
+        ]
+      }
+    ]
+  }
+}

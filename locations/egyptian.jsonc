@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Egyptian",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Golden Gun (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Golden Gun (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Golden Gun (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Golden Gun"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 950,
+            "y": 340,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "name": "Baron Moves Around The Stage",
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Defeat Baron Samedi? (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Defeat Baron Samedi? (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Defeat Baron Samedi? (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Defeat Baron Samedi?"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 450,
+            "y": 100,
+            "size": 20
+          },
+          {
+            "map": "egyptian",
+            "x": 25,
+            "y": 400,
+            "size": 20
+          },
+          {
+            "map": "egyptian",
+            "x": 430,
+            "y": 575,
+            "size": 20
+          },
+          {
+            "map": "egyptian",
+            "x": 510,
+            "y": 400,
+            "size": 20
+          },
+          {
+            "map": "egyptian",
+            "x": 645,
+            "y": 475,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Egyptian - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Egyptian - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Egyptian - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Egyptian - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Depot",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Safe Key (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Safe Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Safe Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Safe Key"
+          },
+          {
+            "ref": "Missions/Depot/Obtain Safe Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Obtain Safe Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Obtain Safe Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 110,
+            "y": 475,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Blueprints (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Blueprints (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Blueprints (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Blueprints"
+          },
+          {
+            "ref": "Missions/Depot/Recover Helicopter Blueprints (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Recover Helicopter Blueprints (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Recover Helicopter Blueprints"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 540,
+            "y": 20,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Locate Trevelyan's Train (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Locate Trevelyan's Train (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Locate Trevelyan's Train (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Locate Trevelyan's Train"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 680,
+            "y": 200,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Destroy Computer Network (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Destroy Computer Network (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Destroy Computer Network"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 130,
+            "y": 575,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Rocket Launcher (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rocket Launcher (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rocket Launcher (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rocket Launcher"
+          },
+          {
+            "ref": "Missions/Depot/Destroy Illegal Arms Cache (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Destroy Illegal Arms Cache"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 650,
+            "y": 825,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Depot - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Depot - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Depot - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Depot - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 0,
+            "y": 50,
+            "size": 30
+          }
+        ]
+      }
+    ]
+  }
+]

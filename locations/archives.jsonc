@@ -1,0 +1,199 @@
+[
+  {
+    "name": "Archives",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/PP7 (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/PP7 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/PP7 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/PP7"
+          },
+          {
+            "ref": "Missions/Archives/Interrogation Room Key (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Interrogation Room Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Interrogation Room Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Interrogation Room Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 200,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Safe Key (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Safe Key (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Safe Key (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Safe Key"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 130,
+            "y": 400,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Flight Recorder (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Flight Recorder (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Flight Recorder (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Flight Recorder"
+          },
+          {
+            "ref": "Missions/Archives/Recover Helicopter Black Box (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Recover Helicopter Black Box (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Recover Helicopter Black Box (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Recover Helicopter Black Box"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 130,
+            "y": 440,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Escape From Interrogation Room (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape From Interrogation Room (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape From Interrogation Room (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape From Interrogation Room"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 250,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Find Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Find Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Find Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Find Natalya"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 1050,
+            "y": 775,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Escape With Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape With Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape With Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Escape With Natalya"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 550,
+            "y": 600,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Archives - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Archives - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Archives - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Archives - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

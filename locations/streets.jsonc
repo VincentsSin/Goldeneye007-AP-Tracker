@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Streets",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Pursue Ouromov And Natalya (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Pursue Ouromov And Natalya (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Pursue Ouromov And Natalya (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Pursue Ouromov And Natalya"
+          },
+          {
+            "ref": "Missions/Streets/Minimize Civilian Casualties (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Minimize Civilian Casualties (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Minimize Civilian Casualties (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Minimize Civilian Casualties"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 1040,
+            "y": 125,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Contact Valentin (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Contact Valentin (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Contact Valentin (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Contact Valentin"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 215,
+            "y": 450,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Streets - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Streets - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Streets - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Streets - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 0,
+            "y": 50,
+            "size": 20
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "name": "Jungle",
+    "children": [
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Destroy Drone Guns (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Destroy Drone Guns (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Destroy Drone Guns (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Destroy Drone Guns"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 130,
+            "y": 675,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 1350,
+            "y": 475,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 600,
+            "y": 675,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 660,
+            "y": 175,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 975,
+            "y": 125,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 1150,
+            "y": 360,
+            "size": 25
+          },
+          {
+            "map": "jungle",
+            "x": 1425,
+            "y": 520,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Eliminate Xenia (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Eliminate Xenia (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Eliminate Xenia (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Eliminate Xenia"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 900,
+            "y": 140,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Escort Natalya To Janus Base"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 1300,
+            "y": 775,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Blow Up Ammo Dump (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Blow Up Ammo Dump (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Blow Up Ammo Dump"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 1400,
+            "y": 425,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Jungle - Clear (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Jungle - Clear (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Jungle - Clear (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Jungle - (Clear)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 0,
+            "y": 50,
+            "size": 25
+          }
+        ]
+      }
+    ]
+  }
+]
