@@ -1,5 +1,7 @@
 ### GoldenEye 007 tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with auto-tracking, made by VincentsSin.
 
+[Example of tracker](images/example.png)
+
 PopTracker 0.32.0 is the earliest fully functional version. Any previous one will lack the latest features and some operations might not function properly.
 
 ## Installation
