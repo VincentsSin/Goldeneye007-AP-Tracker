@@ -2,8 +2,6 @@
 
 PopTracker 0.32.0 is the earliest fully functional version. Any previous one will lack the latest features and some operations might not function properly.
 
-![Screenshot of the pack](images/preview.png)
-
 ## Installation
 - Download [PopTracker](https://github.com/black-sliver/PopTracker/releases/latest) and extract (unzip) it. It may be installed anywhere, but avoid installing it in either `Program Files` or `Program Files (x86)` (these directories have some special permissions, which might cause issues).
 - [Download the latest release from source](https://github.com/VincentsSin/Goldeneye007-AP-Tracker/releases/latest) and move the `.zip` file into the `packs` folder, located inside the PopTracker directory.
