@@ -10,7 +10,6 @@ PopTracker 0.32.0 is the earliest fully functional version. Any previous one wil
   - Alternatively, it can be dragged on top of a PopTracker window, which will give a prompt to install the pack.
 
 ## Autotracking
-Currently, the only autotracking method is by connecting to a slot in a Archipelago server. Therefore, it is not yet possible to autotrack in singleplayer (as in generated within Recomp). Follow these steps to connect to a server and autotrack your game:
 1. Click the grey `AP` button in the top left of the window; A new window will open.
 2. In the new window, type the server's host (`archipelago.gg` or `localhost`), followed by `:`, then the port (represented by five numbers and are unique to the session). Click `OK`.
 3. Enter the slot name. This is the player name that was written in the yaml used to generate. Click `OK`.
