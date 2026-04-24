@@ -17,6 +17,6 @@ Currently, the only autotracking method is by connecting to a slot in a Archipel
 If entered correctly, the `AP` button will turn green, meaning it is connected to the server and is autotracking. If it remains red, make sure the server is opened.
 
 ## More Info
-This pack is a work in progress and is developed as the logic and features are being worked on. It follows Majora's Mask Recompiled Randomizer logic, not necessarily matching standalone. If logic seems incorrect in the tracker, it might be an apworld issue, as it is supposed to mirror the apworld's logic. The tracker's logic will only be updated once the apworld's will be.
+This pack is a work in progress and is developed as the logic and features are being worked on. It follows GoldenEye 007 as it is being developed and maintained by FamilyJules.
 
-If you encounter any bugs or have any questions, feel free to ask by pinging the maintainer on Discord (@g4m3rl1f3), preferably in the [Archipelago](https://discord.gg/archipelago) server in the `majoras-mask` channel or in the [N64 Recomp](https://discord.gg/DptggHetGZ) server in the `mm-randomizer-general` channel.# Goldeneye007-AP-Tracker
+If you encounter any bugs or have any questions, feel free to ask by pinging the maintainer on Discord (@VincentsSin), preferably in the [Archipelago](https://discord.gg/archipelago) server in the `Goldeneye 007` channel.
