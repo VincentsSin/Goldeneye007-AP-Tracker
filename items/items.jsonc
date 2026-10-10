@@ -608,6 +608,7 @@
   {
     "name": "Progressive Weapon",
     "type": "progressive",
+    "codes": "progressive_weapon",
     "allow_disabled": false,
     "stages": [
       {
