@@ -15,7 +15,9 @@
             "throwknife",
             "pp7",
             "silentpp7",
-            "dd44",
+            "dd44"
+          ],
+          [
             "klobb",
             "kf7",
             "zmg",
@@ -27,19 +29,23 @@
             "ar33",
             "rcp90",
             "shotgun",
-            "autoshotgun",
+            "autoshotgun"
+          ],
+          [
             "sniper",
             "magnum",
             "goldgun",
-            "silverpp",
-            "goldpp"
+            "silverpp7",
+            "goldpp7"
           ],
           [
             "laser",
             "watchlaser",
             "glauncher",
             "rlauncher",
-            "grenade",
+            "grenade"
+          ],
+          [
             "tmine",
             "pmine",
             "rmine",

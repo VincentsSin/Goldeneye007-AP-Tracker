@@ -55,12 +55,6 @@
             "x": 1190,
             "y": 455,
             "size": 15
-          },
-          {
-            "map": "dam",
-            "x": 1360,
-            "y": 315,
-            "size": 15
           }
         ]
       },
@@ -126,6 +120,56 @@
       {
         "sections": [
           {
+            "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Neutralize All Alarms"
+          },
+          {
+            "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Body Armor (Guard Tower 2)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 1360,
+            "y": 315,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Dam/Body Armor (Last Dam Tower)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "dam",
+            "x": 260,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Dam/Dam - Clear (Agent)"
           },
           {
@@ -136,6 +180,9 @@
           },
           {
             "ref": "Missions/Dam/Dam - (Clear)"
+          },
+          {
+            "ref": "Missions/Dam/Cheat - Paintball Mode"
           }
         ],
         "map_locations": [

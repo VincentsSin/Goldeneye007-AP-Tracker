@@ -21,6 +21,12 @@
           },
           {
             "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment"
+          },
+          {
+            "ref": "Missions/Surface 2/Body Armor (Cabin With Camera) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Body Armor (Cabin With Camera)"
           }
         ],
         "map_locations": [
@@ -127,6 +133,24 @@
             "map": "surface_two",
             "x": 555,
             "y": 770,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_two",
+            "x": 565,
+            "y": 800,
             "size": 20
           }
         ]

@@ -1,120 +1,120 @@
 [
   {
-    "name": "Dam",
+    "name": "Dam Unlocked",
     "type": "toggle",
     "img": "images/missions/dam.png",
     "codes": "dam"
   },
   {
-    "name": "Facility",
+    "name": "Facility Unlocked",
     "type": "toggle",
     "img": "images/missions/facility.png",
     "codes": "facility"
   },
   {
-    "name": "Runway",
+    "name": "Runway Unlocked",
     "type": "toggle",
     "img": "images/missions/runway.png",
     "codes": "runway"
   },
   {
-    "name": "Surface 1",
+    "name": "Surface 1 Unlocked",
     "type": "toggle",
     "img": "images/missions/surface_one.png",
     "codes": "surface1"
   },
   {
-    "name": "Bunker 1",
+    "name": "Bunker 1 Unlocked",
     "type": "toggle",
     "img": "images/missions/bunker_one.png",
     "codes": "bunker1"
   },
   {
-    "name": "Silo",
+    "name": "Silo Unlocked",
     "type": "toggle",
     "img": "images/missions/silo.png",
     "codes": "silo"
   },
   {
-    "name": "Frigate",
+    "name": "Frigate Unlocked",
     "type": "toggle",
     "img": "images/missions/frigate.png",
     "codes": "frigate"
   },
   {
-    "name": "Surface 2",
+    "name": "Surface 2 Unlocked",
     "type": "toggle",
     "img": "images/missions/surface_two.png",
     "codes": "surface2"
   },
   {
-    "name": "Bunker 2",
+    "name": "Bunker 2 Unlocked",
     "type": "toggle",
     "img": "images/missions/bunker_two.png",
     "codes": "bunker2"
   },
   {
-    "name": "Statue",
+    "name": "Statue Unlocked",
     "type": "toggle",
     "img": "images/missions/statue.png",
     "codes": "statue"
   },
   {
-    "name": "Archives",
+    "name": "Archives Unlocked",
     "type": "toggle",
     "img": "images/missions/archives.png",
     "codes": "archives"
   },
   {
-    "name": "Streets",
+    "name": "Streets Unlocked",
     "type": "toggle",
     "img": "images/missions/streets.png",
     "codes": "streets"
   },
   {
-    "name": "Depot",
+    "name": "Depot Unlocked",
     "type": "toggle",
     "img": "images/missions/depot.png",
     "codes": "depot"
   },
   {
-    "name": "Train",
+    "name": "Train Unlocked",
     "type": "toggle",
     "img": "images/missions/train.png",
     "codes": "train"
   },
   {
-    "name": "Jungle",
+    "name": "Jungle Unlocked",
     "type": "toggle",
     "img": "images/missions/jungle.png",
     "codes": "jungle"
   },
   {
-    "name": "Control",
+    "name": "Control Unlocked",
     "type": "toggle",
     "img": "images/missions/control.png",
     "codes": "control"
   },
   {
-    "name": "Caverns",
+    "name": "Caverns Unlocked",
     "type": "toggle",
     "img": "images/missions/caverns.png",
     "codes": "caverns"
   },
   {
-    "name": "Cradle",
+    "name": "Cradle Unlocked",
     "type": "toggle",
     "img": "images/missions/cradle.png",
     "codes": "cradle"
   },
   {
-    "name": "Aztec",
+    "name": "Aztec Unlocked",
     "type": "toggle",
     "img": "images/missions/aztec.png",
     "codes": "aztec"
   },
   {
-    "name": "Egyptian",
+    "name": "Egyptian Unlocked",
     "type": "toggle",
     "img": "images/missions/egyptian.png",
     "codes": "egyptian"
@@ -132,16 +132,16 @@
     "codes": "doordecoder"
   },
   {
-    "name": "Facility Keycard B",
-    "type": "toggle",
-    "img": "images/items/keycard.png",
-    "codes": "fackeycardb"
-  },
-  {
-    "name": "Facility Keycard A",
+    "name": "Keycard A (Facility)",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "fackeycarda"
+  },
+  {
+    "name": "Keycard B (Facility)",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "fackeycardb"
   },
   {
     "name": "Ignition Key",
@@ -198,7 +198,7 @@
     "codes": "comproomkey"
   },
   {
-    "name": "Security Keycard",
+    "name": "Security Room Keycard",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "securitykey"
@@ -234,19 +234,19 @@
     "codes": "rdpboard"
   },
   {
-    "name": "Keycard 4-H4",
+    "name": "Keycard Level 1",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "keycard4h4"
   },
   {
-    "name": "Keycard 4-C3",
+    "name": "Keycard Level 2",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "keycard4c3"
   },
   {
-    "name": "Keycard 4-52",
+    "name": "Keycard Level 3",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "keycard452"
@@ -336,16 +336,16 @@
     "codes": "cctv"
   },
   {
-    "name": "Bunker Keycard B",
-    "type": "toggle",
-    "img": "images/items/keycard.png",
-    "codes": "b2keycardb"
-  },
-  {
-    "name": "Bunker Keycard A",
+    "name": "Keycard A (Bunker 2)",
     "type": "toggle",
     "img": "images/items/keycard.png",
     "codes": "b2keycarda"
+  },
+  {
+    "name": "Keycard B (Bunker 2)",
+    "type": "toggle",
+    "img": "images/items/keycard.png",
+    "codes": "b2keycardb"
   },
   {
     "name": "Flight Recorder",
@@ -531,13 +531,13 @@
     "name": "Silver PP7",
     "type": "toggle",
     "img": "images/weapons/silver_pp7.png",
-    "codes": "silverpp"
+    "codes": "silverpp7"
   },
   {
     "name": "Gold PP7",
     "type": "toggle",
     "img": "images/weapons/gold_pp7.png",
-    "codes": "goldpp"
+    "codes": "goldpp7"
   },
   {
     "name": "Moonraker Laser",
@@ -594,10 +594,16 @@
     "codes": "taser"
   },
   {
-    "name": "Tank",
+    "name": "Tank (Runway)",
     "type": "toggle",
     "img": "images/weapons/tank.png",
-    "codes": "tank"
+    "codes": "runtank"
+  },
+  {
+    "name": "Tank (Streets)",
+    "type": "toggle",
+    "img": "images/weapons/tank.png",
+    "codes": "streettank"
   },
   {
     "name": "Progressive Weapon",
@@ -729,5 +735,119 @@
         "codes": "goldpp7"
       }
     ]
+  },
+  {
+    "name": "Cheat Unlock - Paintball Mode",
+    "type": "toggle",
+    "img": "images/cheats/dam.png",
+    "codes": "paintball"
+  },
+  {
+    "name": "Cheat Unlock - Invincibility",
+    "type": "toggle",
+    "img": "images/cheats/facility.png",
+    "codes": "invincibility"
+  },
+  {
+    "name": "Cheat Unlock - DK Mode",
+    "type": "toggle",
+    "img": "images/cheats/runway.png",
+    "codes": "dkmode"
+  },
+  {
+    "name": "Cheat Unlock - 2x Grenade Launcher",
+    "type": "toggle",
+    "img": "images/cheats/surface_one.png",
+    "codes": "2xgrenade"
+  },
+  {
+    "name": "Cheat Unlock - 2x Rocket Launcher",
+    "type": "toggle",
+    "img": "images/cheats/bunker_one.png",
+    "codes": "2xrocket"
+  },
+  {
+    "name": "Cheat Unlock - Turbo Mode",
+    "type": "toggle",
+    "img": "images/cheats/silo.png",
+    "codes": "turbomode"
+  },
+  {
+    "name": "Cheat Unlock - Tiny Bond",
+    "type": "toggle",
+    "img": "images/cheats/surface_two.png",
+    "codes": "tinybond"
+  },
+  {
+    "name": "Cheat Unlock - 2x Throwing Knives",
+    "type": "toggle",
+    "img": "images/cheats/bunker_two.png",
+    "codes": "2xthrow"
+  },
+  {
+    "name": "Cheat Unlock - Fast Animation",
+    "type": "toggle",
+    "img": "images/cheats/statue.png",
+    "codes": "fastanim"
+  },
+  {
+    "name": "Cheat Unlock - Invisibility",
+    "type": "toggle",
+    "img": "images/cheats/archives.png",
+    "codes": "invisibility"
+  },
+  {
+    "name": "Cheat Unlock - Enemy Rockets",
+    "type": "toggle",
+    "img": "images/cheats/streets.png",
+    "codes": "badrocket"
+  },
+  {
+    "name": "Cheat Unlock - Slow Animation",
+    "type": "toggle",
+    "img": "images/cheats/depot.png",
+    "codes": "slowanim"
+  },
+  {
+    "name": "Cheat Unlock - Silver PP7",
+    "type": "toggle",
+    "img": "images/cheats/train.png",
+    "codes": "silverpp"
+  },
+  {
+    "name": "Cheat Unlock - 2x Hunting Knives",
+    "type": "toggle",
+    "img": "images/cheats/jungle.png",
+    "codes": "2xhunt"
+  },
+  {
+    "name": "Cheat Unlock - Infinite Ammo",
+    "type": "toggle",
+    "img": "images/cheats/control.png",
+    "codes": "infammo"
+  },
+  {
+    "name": "Cheat Unlock - 2x RC-P90s",
+    "type": "toggle",
+    "img": "images/cheats/caverns.png",
+    "codes": "2xrcp90"
+  },
+  {
+    "name": "Cheat Unlock - Gold PP7",
+    "type": "toggle",
+    "img": "images/cheats/cradle.png",
+    "codes": "goldpp"
+  },
+  {
+    "name": "Cheat Unlock - 2x Lasers",
+    "type": "toggle",
+    "img": "images/cheats/aztec.png",
+    "codes": "2xlaser"
+  },
+  {
+    "name": "Cheat Unlock - All Guns",
+    "type": "toggle",
+    "img": "images/cheats/egyptian.png",
+    "codes": "allguns"
   }
 ]

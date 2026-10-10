@@ -1,0 +1,44 @@
+{
+  "cheats_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "paintball",
+            "invincibility",
+            "dkmode",
+            "2xgrenade",
+            "2xrocket"
+          ],
+          [
+            "turbomode",
+            "tinybond",
+            "2xthrow",
+            "fastanim",
+            "invisibility"
+          ],
+          [
+            "badrocket",
+            "slowanim",
+            "silverpp",
+            "2xhunt",
+            "infammo"
+          ],
+          [
+            "2xrcp90",
+            "goldpp",
+            "2xlaser",
+            "allguns"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,26 +1,25 @@
-CURRENT_ROOM = nil
+CURRENT_ROOM = "Missions"
 
 TABS_MAPPING =
 {
-    ["0x00"] = "Mission Select",
-    ["0x07"] = "Dam",
-    ["0x08"] = "Facility",
-    ["0x0a"] = "Runway",
-    ["0x0b"] = "Surface 1",
-    ["0x0c"] = "Bunker 1",
-    ["0x0d"] = "Silo",
-    ["0x10"] = "Frigate",
-    ["0x11"] = "Surface 2",
-    ["0x12"] = "Bunker 2",
-    ["0x13"] = "Statue",
-    ["0x14"] = "Archives",
-    ["0x15"] = "Streets",
-    ["0x16"] = "Depot",
-    ["0x17"] = "Train",
-    ["0x18"] = "Jungle",
-    ["0x19"] = "Control",
-    ["0x1a"] = "Caverns",
-    ["0x1b"] = "Cradle",
-    ["0x1c"] = "Aztec",
-    ["0x1d"] = "Egyptian"
+    ["0x7F000"] = "Dam",
+    ["0x7F001"] = "Facility",
+    ["0x7F002"] = "Runway",
+    ["0x7F003"] = "Surface 1",
+    ["0x7F004"] = "Bunker 1",
+    ["0x7F005"] = "Silo",
+    ["0x7F006"] = "Frigate",
+    ["0x7F007"] = "Surface 2",
+    ["0x7F008"] = "Bunker 2",
+    ["0x7F009"] = "Statue",
+    ["0x7F00A"] = "Archives",
+    ["0x7F00B"] = "Streets",
+    ["0x7F00C"] = "Depot",
+    ["0x7F00D"] = "Train",
+    ["0x7F00E"] = "Jungle",
+    ["0x7F00F"] = "Control",
+    ["0x7F010"] = "Caverns",
+    ["0x7F011"] = "Cradle",
+    ["0x7F012"] = "Aztec",
+    ["0x7F013"] = "Egyptian"
 }

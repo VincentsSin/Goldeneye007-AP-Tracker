@@ -116,6 +116,78 @@
       {
         "sections": [
           {
+            "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 240,
+            "y": 895,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 210,
+            "y": 875,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 60,
+            "y": 805,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Runway/Runway - Clear (Agent)"
           },
           {
@@ -126,6 +198,9 @@
           },
           {
             "ref": "Missions/Runway/Runway - (Clear)"
+          },
+          {
+            "ref": "Missions/Runway/Cheat - DK Mode"
           }
         ],
         "map_locations": [

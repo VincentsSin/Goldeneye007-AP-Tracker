@@ -317,6 +317,30 @@
           },
           {
             "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 1"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Silenced PP7 2"
           }
         ],
         "map_locations": [
@@ -375,6 +399,45 @@
             "map": "bunker_two",
             "x": 725,
             "y": 1075,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel) (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 925,
+            "y": 850,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 2/Body Armor (Shooting Range)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_two",
+            "x": 50,
+            "y": 350,
             "size": 40
           }
         ]

@@ -101,7 +101,7 @@
         ]
       },
       {
-        "name": "Open/Close Exhaust Doors",
+        "name": "Open Exhaust Doors",
         "sections": [
           {
             "ref": "Missions/Aztec/Launch Shuttle (Agent)"
@@ -121,6 +121,30 @@
             "map": "aztec",
             "x": 525,
             "y": 275,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Aztec/Body Armor (Inside Turret Tunnels) (Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Body Armor (Inside Turret Tunnels) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Body Armor (Inside Turret Tunnels) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Aztec/Body Armor (Inside Turret Tunnels)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "aztec",
+            "x": 585,
+            "y": 635,
             "size": 20
           }
         ]

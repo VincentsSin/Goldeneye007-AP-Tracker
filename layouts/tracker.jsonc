@@ -119,6 +119,17 @@
                               "v_alignment": "center",
                               "key": "weapons_grid"
                             }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Cheat Unlocks",
+                            "dock": "center",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "cheats_grid"
+                            }
                           }
                         ]
                       }
@@ -228,6 +239,17 @@
                               "h_alignment": "center",
                               "v_alignment": "center",
                               "key": "archiveskey_grid"
+                            }
+                          },
+                          {
+                            "type": "group",
+                            "header": "Streets",
+                            "dock": "left",
+                            "content": {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "streetskey_grid"
                             }
                           },
                           {

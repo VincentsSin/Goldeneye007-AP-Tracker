@@ -150,6 +150,30 @@
       {
         "sections": [
           {
+            "ref": "Missions/Statue/Body Armor (Near Hand) (Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Body Armor (Near Hand) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Body Armor (Near Hand) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Statue/Body Armor (Near Hand)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "statue",
+            "x": 950,
+            "y": 460,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Statue/Statue - Clear (Agent)"
           },
           {

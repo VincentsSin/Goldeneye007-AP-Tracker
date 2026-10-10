@@ -5,6 +5,18 @@
       {
         "sections": [
           {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Recover The Golden Gun"
+          },
+          {
             "ref": "Missions/Egyptian/Golden Gun (Agent)"
           },
           {
@@ -17,16 +29,16 @@
             "ref": "Missions/Egyptian/Golden Gun"
           },
           {
-            "ref": "Missions/Egyptian/Recover The Golden Gun (Agent)"
+            "ref": "Missions/Egyptian/Golden Gun Ammo (Agent)"
           },
           {
-            "ref": "Missions/Egyptian/Recover The Golden Gun (Secret Agent)"
+            "ref": "Missions/Egyptian/Golden Gun Ammo (Secret Agent)"
           },
           {
-            "ref": "Missions/Egyptian/Recover The Golden Gun (Double Agent)"
+            "ref": "Missions/Egyptian/Golden Gun Ammo (Double Agent)"
           },
           {
-            "ref": "Missions/Egyptian/Recover The Golden Gun"
+            "ref": "Missions/Egyptian/Golden Gun Ammo"
           }
         ],
         "map_locations": [
@@ -83,6 +95,78 @@
             "map": "egyptian",
             "x": 645,
             "y": 475,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Corridor Northwest Of Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 475,
+            "y": 370,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Body Armor (After Golden Gun) (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (After Golden Gun) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (After Golden Gun) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (After Golden Gun)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 825,
+            "y": 60,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Egyptian/Body Armor (Left Of Secret Corridor)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "egyptian",
+            "x": 100,
+            "y": 400,
             "size": 20
           }
         ]

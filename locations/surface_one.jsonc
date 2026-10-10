@@ -153,6 +153,18 @@
           },
           {
             "ref": "Missions/Surface 1/Grenade Launcher"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut)"
           }
         ],
         "map_locations": [
@@ -160,6 +172,66 @@
             "map": "surface_one",
             "x": 260,
             "y": 445,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 390,
+            "y": 240,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surface_one",
+            "x": 425,
+            "y": 845,
             "size": 15
           }
         ]
@@ -177,6 +249,9 @@
           },
           {
             "ref": "Missions/Surface 1/Surface 1 - (Clear)"
+          },
+          {
+            "ref": "Missions/Surface 1/Cheat - 2x Grenade Launcher"
           }
         ],
         "map_locations": [

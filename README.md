@@ -17,6 +17,6 @@ Currently, the only autotracking method is by connecting to a slot in a Archipel
 If entered correctly, the `AP` button will turn green, meaning it is connected to the server and is autotracking. If it remains red, make sure the server is opened.
 
 ## More Info
-This pack is a work in progress and is developed as the logic and features are being worked on. It follows GoldenEye 007 as it is being developed and maintained by FamilyJules.
+This pack is a work in progress and is developed as the logic and features are being worked on. It follows the [GoldenEye 007 Archipelago](https://github.com/NotFamilyJules/goldeneye_ap) as it is being developed and maintained by FamilyJules.
 
 If you encounter any bugs or have any questions, feel free to ask by pinging the maintainer on Discord (@VincentsSin), preferably in the [Archipelago](https://discord.gg/archipelago) server in the `Goldeneye 007` channel.

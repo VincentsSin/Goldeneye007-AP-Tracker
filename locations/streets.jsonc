@@ -41,9 +41,6 @@
       {
         "sections": [
           {
-            "ref": "Missions/Streets/Contact Valentin (Agent)"
-          },
-          {
             "ref": "Missions/Streets/Contact Valentin (Secret Agent)"
           },
           {
@@ -58,6 +55,126 @@
             "map": "streets",
             "x": 215,
             "y": 450,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Grenade Launcher (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Grenade Launcher (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Grenade Launcher (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Grenade Launcher"
+          },
+          {
+            "ref": "Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Through Window Past Valentin) (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Through Window Past Valentin) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Through Window Past Valentin) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Through Window Past Valentin)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 312,
+            "y": 485,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Body Armor (Mid-Level Checkpoint) (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Mid-Level Checkpoint) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Mid-Level Checkpoint) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Mid-Level Checkpoint)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 705,
+            "y": 685,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Left Side Checkpoint)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 990,
+            "y": 410,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Streets/Body Armor (Ending Right Side Checkpoint)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "streets",
+            "x": 1080,
+            "y": 470,
             "size": 20
           }
         ]
