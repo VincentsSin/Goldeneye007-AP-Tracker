@@ -173,6 +173,45 @@
       {
         "sections": [
           {
+            "ref": "Missions/Archives/Body Armor (Room Across From Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Body Armor (Room Across From Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Body Armor (Room Across From Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 350,
+            "y": 125,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate) (Agent)"
+          },
+          {
+            "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "archives",
+            "x": 480,
+            "y": 550,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Archives/Archives - Clear (Agent)"
           },
           {

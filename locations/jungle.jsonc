@@ -134,6 +134,75 @@
       {
         "sections": [
           {
+            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (First Area Back Corner)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 90,
+            "y": 610,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Second Turret)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 725,
+            "y": 675,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "jungle",
+            "x": 600,
+            "y": 90,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Jungle/Jungle - Clear (Agent)"
           },
           {

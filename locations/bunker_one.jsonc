@@ -178,6 +178,69 @@
       {
         "sections": [
           {
+            "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 435,
+            "y": 320,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 1/Body Armor (Kitchen) (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Body Armor (Kitchen)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 100,
+            "y": 555,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel) (Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 590,
+            "y": 410,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Bunker 1/Bunker 1 - Clear (Agent)"
           },
           {
@@ -188,6 +251,9 @@
           },
           {
             "ref": "Missions/Bunker 1/Bunker 1 - (Clear)"
+          },
+          {
+            "ref": "Missions/Bunker 1/Cheat - 2x Rocket Launcher"
           }
         ],
         "map_locations": [

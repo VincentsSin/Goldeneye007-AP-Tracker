@@ -1,5 +1,5 @@
 Tracker:AddLayouts("layouts/items.jsonc")
-Tracker:AddLayouts("layouts/keys.jsonc")
 Tracker:AddLayouts("layouts/weapons.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/missions.jsonc")
+Tracker:AddLayouts("layouts/cheats.jsonc")

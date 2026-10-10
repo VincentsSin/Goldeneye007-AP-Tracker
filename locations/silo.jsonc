@@ -98,7 +98,6 @@
         ]
       },
       {
-        "name": "Hold Up A Scientist",
         "sections": [
           {
             "ref": "Missions/Silo/RSP Circuit Board (Agent)"
@@ -191,7 +190,6 @@
         ]
       },
       {
-        "name": "Hold Up A Scientist",
         "sections": [
           {
             "ref": "Missions/Silo/RDP Circuit Board (Agent)"
@@ -225,7 +223,6 @@
         ]
       },
       {
-        "name": "Hold Up A Scientist",
         "sections": [
           {
             "ref": "Missions/Silo/Photograph Satellite (Agent)"
@@ -233,24 +230,6 @@
           {
             "ref": "Missions/Silo/Photograph Satellite (Secret Agent)"
           },
-          {
-            "ref": "Missions/Silo/Photograph Satellite (Double Agent)"
-          },
-          {
-            "ref": "Missions/Silo/Photograph Satellite"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "silo",
-            "x": 800,
-            "y": 750,
-            "size": 20
-          }
-        ]
-      },
-      {
-        "sections": [
           {
             "ref": "Missions/Silo/Photograph Satellite (Double Agent)"
           },
@@ -323,6 +302,69 @@
             "map": "silo",
             "x": 1150,
             "y": 775,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Body Armor (Second Fuel Room) (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Second Fuel Room)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 420,
+            "y": 690,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Walkway After Third Fuel Room)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 135,
+            "y": 1075,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Silo/Body Armor (Fourth Fuel Room) (Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Fourth Fuel Room) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Silo/Body Armor (Fourth Fuel Room)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "silo",
+            "x": 820,
+            "y": 800,
             "size": 20
           }
         ]

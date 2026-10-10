@@ -54,6 +54,9 @@
         "rows": [
           [
             "planekey"
+          ],
+          [
+            "runtank"
           ]
         ]
       }
@@ -330,6 +333,24 @@
           ],
           [
             "archivesafe"
+          ]
+        ]
+      }
+    ]
+  },
+  "streetskey_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "1,1",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "center",
+        "v_alignment": "center",
+        "item_margin": "1,1",
+        "rows": [
+          [
+            "streettank"
           ]
         ]
       }

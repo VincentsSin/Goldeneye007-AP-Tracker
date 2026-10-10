@@ -118,6 +118,102 @@
       {
         "sections": [
           {
+            "ref": "Missions/Cradle/Body Armor (Start Tower) (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Start Tower) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Start Tower) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Start Tower)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 575,
+            "y": 875,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Body Armor (Left Tower) (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Left Tower) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Left Tower) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Left Tower)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 25,
+            "y": 135,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Body Armor (Right Tower) (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Right Tower) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Right Tower) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Right Tower)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 900,
+            "y": 25,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Cradle/Body Armor (Behind Antenna Control)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 815,
+            "y": 725,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Cradle/Cradle - Clear (Agent)"
           },
           {

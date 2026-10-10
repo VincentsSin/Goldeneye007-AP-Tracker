@@ -1,3 +1,10 @@
+-- GoldenEye 007 Tracker
+
+print("=============== GOLDENEYE 007 MOVE TRACKER INITIALIZATION =================")
+
+print("Goldeneye Move Tracker loaded successfully!")
+print("================ INITIALIZATION COMPLETE ================")
+
 ENABLE_DEBUG_LOG = true -- Disable before any releases
 
 local variant = Tracker.ActiveVariantUID
@@ -10,9 +17,6 @@ if ENABLE_DEBUG_LOG then
 end
 
 ScriptHost:LoadScript("scripts/utils.lua")
-ScriptHost:LoadScript("scripts/logic.lua")
-ScriptHost:LoadScript("scripts/inverse_rules.lua")
-ScriptHost:LoadScript("scripts/regions.lua")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
 ScriptHost:LoadScript("scripts/items.lua")
 
@@ -32,7 +36,6 @@ if IS_MAPS_ONLY then
     Tracker:AddLayouts("layouts/tabs.jsonc")
     ScriptHost:LoadScript("scripts/locations.lua")
     Tracker:AddLayouts("layouts/settings_popup.jsonc")
-    Tracker:AddLayouts("layouts/settings.jsonc")
     Tracker:AddLayouts("var_z_maps_only/layouts/tracker.jsonc")
 end
 

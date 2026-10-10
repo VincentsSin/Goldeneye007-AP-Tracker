@@ -237,6 +237,45 @@
       {
         "sections": [
           {
+            "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate) (Agent)"
+          },
+          {
+            "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "caverns",
+            "x": 400,
+            "y": 350,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Caverns/Body Armor (Comms Room) (Agent)"
+          },
+          {
+            "ref": "Missions/Caverns/Body Armor (Comms Room) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Caverns/Body Armor (Comms Room)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "caverns",
+            "x": 1975,
+            "y": 1250,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Caverns/Caverns - Clear (Agent)"
           },
           {

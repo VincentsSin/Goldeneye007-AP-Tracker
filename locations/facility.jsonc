@@ -208,6 +208,45 @@
       {
         "sections": [
           {
+            "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Body Armor (On Hallway Crate)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 455,
+            "y": 550,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Facility/Body Armor (Inside Security Room 2) (Agent)"
+          },
+          {
+            "ref": "Missions/Facility/Body Armor (Inside Security Room 2)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "facility",
+            "x": 885,
+            "y": 535,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Facility/Facility - Clear (Agent)"
           },
           {
@@ -218,6 +257,9 @@
           },
           {
             "ref": "Missions/Facility/Facility - (Clear)"
+          },
+          {
+            "ref": "Missions/Facility/Cheat - Invincibility"
           }
         ],
         "map_locations": [

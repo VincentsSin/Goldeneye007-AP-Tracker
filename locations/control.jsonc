@@ -95,6 +95,78 @@
       {
         "sections": [
           {
+            "ref": "Missions/Control/Boris' PP7 (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Boris' PP7 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Boris' PP7 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Boris' PP7"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 515,
+            "y": 675,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Control/Body Armor (Locker Room Corner) (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Locker Room Corner) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Locker Room Corner) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Locker Room Corner)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 625,
+            "y": 850,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Control/Body Armor (Top Floor Behind Grate) (Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Top Floor Behind Grate) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Top Floor Behind Grate) (Double Agent)"
+          },
+          {
+            "ref": "Missions/Control/Body Armor (Top Floor Behind Grate)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "control",
+            "x": 625,
+            "y": 25,
+            "size": 25
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Control/Control - Clear (Agent)"
           },
           {

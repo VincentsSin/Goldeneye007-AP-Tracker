@@ -21,7 +21,7 @@ ITEM_MAPPING = {
   [73037019] = {"aztec","toggle"}
   [73037020] = {"egyptian","toggle"}
 
-  --Item Unlocks
+  --Weapon Unlocks
   [17310000] = {"Progressive Weapon","toggle"}
   [17310001] = {"klobb","toggle"}
   [17310002] = {"huntknife","toggle"}
@@ -53,6 +53,8 @@ ITEM_MAPPING = {
   [17310028] = {"tank","toggle"}
   [17310029] = {"goldgun","toggle"}
   [17310030] = {"goldpp7","toggle"}
+
+  --Stage Loadout Items
   [17330000] = {"covertmodem","toggle"}
   [17330001] = {"doordecoder","toggle"}
   [17330002] = {"keyanalyzer","toggle"}
@@ -63,6 +65,8 @@ ITEM_MAPPING = {
   [17330007] = {"bombdefuser","toggle"}
   [17330008] = {"stmine","toggle"}
   [17330009] = {"watchmagnet","toggle"}
+
+  --Stage Key Items
   [17330011] = {"fackeycarda","toggle"}
   [17330012] = {"fackeycardb","toggle"}
   [17330013] = {"planekey","toggle"}
@@ -103,6 +107,29 @@ ITEM_MAPPING = {
   [17330048] = {"guidance","toggle"}
   [17330049] = {"smartcard","toggle"}
   [17330050] = {"launchdata","toggle"}
+  [17330051] = {"runtank", "toggle"}
+  [17330052] = {"streettank", "toggle"}
+
+  --Cheat Unlocks
+  [17340000] = {"paintball", "toggle"}
+  [17340001] = {"invincibility", "toggle"}
+  [17340002] = {"dkmode", "toggle"}
+  [17340003] = {"2xgrenade", "toggle"}
+  [17340004] = {"2xrocket", "toggle"}
+  [17340005] = {"turbomode", "toggle"}
+  [17340006] = {"tinybond", "toggle"}
+  [17340007] = {"2xthrow", "toggle"}
+  [17340008] = {"fastanim", "toggle"}
+  [17340009] = {"invisibility", "toggle"}
+  [17340010] = {"badrocket", "toggle"}
+  [17340011] = {"slowanim", "toggle"}
+  [17340012] = {"silverpp", "toggle"}
+  [17340013] = {"2xhunt", "toggle"}
+  [17340014] = {"infammo", "toggle"}
+  [17340015] = {"2xrcp90", "toggle"}
+  [17340016] = {"goldpp", "toggle"}
+  [17340017] = {"2xlaser", "toggle"}
+  [17340018] = {"allguns", "toggle"}
 
   --Victory
   [17390000] = {"victory"}

@@ -125,6 +125,45 @@
       {
         "sections": [
           {
+            "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 750,
+            "y": 500,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold) (Agent)"
+          },
+          {
+            "ref": "Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1000,
+            "y": 680,
+            "size": 20
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
             "ref": "Missions/Frigate/Frigate - Clear (Agent)"
           },
           {

@@ -116,6 +116,12 @@
       {
         "sections": [
           {
+            "ref": "Missions/Depot/Destroy Illegal Arms Cache (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Destroy Illegal Arms Cache"
+          },
+          {
             "ref": "Missions/Depot/Rocket Launcher (Agent)"
           },
           {
@@ -128,17 +134,449 @@
             "ref": "Missions/Depot/Rocket Launcher"
           },
           {
-            "ref": "Missions/Depot/Destroy Illegal Arms Cache (Double Agent)"
+            "ref": "Missions/Depot/KF7 On Bottom-Right Table (Agent)"
           },
           {
-            "ref": "Missions/Depot/Destroy Illegal Arms Cache"
+            "ref": "Missions/Depot/KF7 On Bottom-Right Table (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Right Table (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Right Table"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 1"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 2"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 3 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 3 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 3 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 3"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 4 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 4 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 4 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 4"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 5 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 5 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 5 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/KF7 On Bottom-Left Table 5"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Floor (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Floor (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Floor (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Floor"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 1"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Left Table 2"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 1"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 2"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 3 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 3 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 3 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 3"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 4 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 4 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 4 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/D5K On Top-Right Table 4"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 1 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 1 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 1 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 1"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 2 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 2 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 2 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 2"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 3 (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 3 (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 3 (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Rockets 3"
+          },
+          {
+            "ref": "Missions/Depot/Proximity Mines (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Proximity Mines (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Proximity Mines (Double Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Proximity Mines"
           }
         ],
         "map_locations": [
           {
             "map": "depot",
             "x": 650,
-            "y": 825,
+            "y": 800,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 360,
+            "y": 1470,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Behind Crate In Front Of Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Behind Crate In Front Of Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 50,
+            "y": 1200,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Blue Hangar Near Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Blue Hangar Near Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Blue Hangar Near Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 560,
+            "y": 1275,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Grey Hangar Near Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Grey Hangar Near Start) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Grey Hangar Near Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 20,
+            "y": 1090,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 585,
+            "y": 1130,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 20,
+            "y": 975,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 880,
+            "y": 420,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Hangar Across From Ammo Cache) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Hangar Across From Ammo Cache)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 520,
+            "y": 520,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 730,
+            "y": 290,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 390,
+            "y": 210,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar) (Secret Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Back Of Last Hangar)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 300,
+            "y": 500,
+            "size": 30
+          }
+        ]
+      },
+      {
+        "sections": [
+          {
+            "ref": "Missions/Depot/Body Armor (Inside Train Station) (Agent)"
+          },
+          {
+            "ref": "Missions/Depot/Body Armor (Inside Train Station)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "depot",
+            "x": 665,
+            "y": 125,
             "size": 30
           }
         ]
