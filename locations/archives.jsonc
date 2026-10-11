@@ -4,30 +4,14 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/PP7 (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/PP7 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/PP7 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/PP7"
-          },
-          {
-            "ref": "Missions/Archives/Interrogation Room Key (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Interrogation Room Key (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Interrogation Room Key (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Interrogation Room Key"
-          }
+          { "name": "PP7 (Agent)", "ref": "Missions/Archives/PP7 (Agent)" },
+          { "name": "PP7 (Secret Agent)", "ref": "Missions/Archives/PP7 (Secret Agent)" },
+          { "name": "PP7 (Double Agent)", "ref": "Missions/Archives/PP7 (Double Agent)" },
+          { "name": "PP7", "ref": "Missions/Archives/PP7" },
+          { "name": "Interrogation Room Key (Agent)", "ref": "Missions/Archives/Interrogation Room Key (Agent)" },
+          { "name": "Interrogation Room Key (Secret Agent)", "ref": "Missions/Archives/Interrogation Room Key (Secret Agent)" },
+          { "name": "Interrogation Room Key (Double Agent)", "ref": "Missions/Archives/Interrogation Room Key (Double Agent)" },
+          { "name": "Interrogation Room Key", "ref": "Missions/Archives/Interrogation Room Key" }
         ],
         "map_locations": [
           {
@@ -40,18 +24,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Safe Key (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Safe Key (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Safe Key (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Safe Key"
-          }
+          { "name": "Safe Key (Agent)", "ref": "Missions/Archives/Safe Key (Agent)" },
+          { "name": "Safe Key (Secret Agent)", "ref": "Missions/Archives/Safe Key (Secret Agent)" },
+          { "name": "Safe Key (Double Agent)", "ref": "Missions/Archives/Safe Key (Double Agent)" },
+          { "name": "Safe Key", "ref": "Missions/Archives/Safe Key" }
         ],
         "map_locations": [
           {
@@ -64,27 +40,13 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Flight Recorder (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Flight Recorder (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Flight Recorder (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Flight Recorder"
-          },
-          {
-            "ref": "Missions/Archives/Recover Helicopter Black Box (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Recover Helicopter Black Box (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Recover Helicopter Black Box"
-          }
+          { "name": "Flight Recorder (Agent)", "ref": "Missions/Archives/Flight Recorder (Agent)" },
+          { "name": "Flight Recorder (Secret Agent)", "ref": "Missions/Archives/Flight Recorder (Secret Agent)" },
+          { "name": "Flight Recorder (Double Agent)", "ref": "Missions/Archives/Flight Recorder (Double Agent)" },
+          { "name": "Flight Recorder", "ref": "Missions/Archives/Flight Recorder" },
+          { "name": "Recover Helicopter Black Box (Secret Agent)", "ref": "Missions/Archives/Recover Helicopter Black Box (Secret Agent)" },
+          { "name": "Recover Helicopter Black Box (Double Agent)", "ref": "Missions/Archives/Recover Helicopter Black Box (Double Agent)" },
+          { "name": "Recover Helicopter Black Box", "ref": "Missions/Archives/Recover Helicopter Black Box" }
         ],
         "map_locations": [
           {
@@ -97,18 +59,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Escape From Interrogation Room (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape From Interrogation Room (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape From Interrogation Room (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape From Interrogation Room"
-          }
+          { "name": "Escape From Interrogation Room (Agent)", "ref": "Missions/Archives/Escape From Interrogation Room (Agent)" },
+          { "name": "Escape From Interrogation Room (Secret Agent)", "ref": "Missions/Archives/Escape From Interrogation Room (Secret Agent)" },
+          { "name": "Escape From Interrogation Room (Double Agent)", "ref": "Missions/Archives/Escape From Interrogation Room (Double Agent)" },
+          { "name": "Escape From Interrogation Room", "ref": "Missions/Archives/Escape From Interrogation Room" }
         ],
         "map_locations": [
           {
@@ -121,18 +75,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Find Natalya (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Find Natalya (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Find Natalya (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Find Natalya"
-          }
+          { "name": "Find Natalya (Agent)", "ref": "Missions/Archives/Find Natalya (Agent)" },
+          { "name": "Find Natalya (Secret Agent)", "ref": "Missions/Archives/Find Natalya (Secret Agent)" },
+          { "name": "Find Natalya (Double Agent)", "ref": "Missions/Archives/Find Natalya (Double Agent)" },
+          { "name": "Find Natalya", "ref": "Missions/Archives/Find Natalya" }
         ],
         "map_locations": [
           {
@@ -145,18 +91,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Escape With Natalya (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape With Natalya (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape With Natalya (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Escape With Natalya"
-          }
+          { "name": "Escape With Natalya (Agent)", "ref": "Missions/Archives/Escape With Natalya (Agent)" },
+          { "name": "Escape With Natalya (Secret Agent)", "ref": "Missions/Archives/Escape With Natalya (Secret Agent)" },
+          { "name": "Escape With Natalya (Double Agent)", "ref": "Missions/Archives/Escape With Natalya (Double Agent)" },
+          { "name": "Escape With Natalya", "ref": "Missions/Archives/Escape With Natalya" }
         ],
         "map_locations": [
           {
@@ -169,15 +107,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Body Armor (Room Across From Start) (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Body Armor (Room Across From Start) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Body Armor (Room Across From Start)"
-          }
+          { "name": "Body Armor (Room Across From Start) (Agent)", "ref": "Missions/Archives/Body Armor (Room Across From Start) (Agent)" },
+          { "name": "Body Armor (Room Across From Start) (Secret Agent)", "ref": "Missions/Archives/Body Armor (Room Across From Start) (Secret Agent)" },
+          { "name": "Body Armor (Room Across From Start)", "ref": "Missions/Archives/Body Armor (Room Across From Start)" }
         ],
         "map_locations": [
           {
@@ -190,12 +122,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate) (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate)"
-          }
+          { "name": "Body Armor (Bottom Floor On Crate) (Agent)", "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate) (Agent)" },
+          { "name": "Body Armor (Bottom Floor On Crate)", "ref": "Missions/Archives/Body Armor (Bottom Floor On Crate)" }
         ],
         "map_locations": [
           {
@@ -208,18 +136,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Archives/Archives - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Archives - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Archives - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Archives/Archives - (Clear)"
-          }
+          { "name": "Archives - Clear (Agent)", "ref": "Missions/Archives/Archives - Clear (Agent)" },
+          { "name": "Archives - Clear (Secret Agent)", "ref": "Missions/Archives/Archives - Clear (Secret Agent)" },
+          { "name": "Archives - Clear (Double Agent)", "ref": "Missions/Archives/Archives - Clear (Double Agent)" },
+          { "name": "Archives - (Clear)", "ref": "Missions/Archives/Archives - (Clear)" }
         ],
         "map_locations": [
           {

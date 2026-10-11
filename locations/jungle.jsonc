@@ -4,18 +4,10 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Destroy Drone Guns (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Destroy Drone Guns (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Destroy Drone Guns (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Destroy Drone Guns"
-          }
+          { "name": "Destroy Drone Guns (Agent)", "ref": "Missions/Jungle/Destroy Drone Guns (Agent)" },
+          { "name": "Destroy Drone Guns (Secret Agent)", "ref": "Missions/Jungle/Destroy Drone Guns (Secret Agent)" },
+          { "name": "Destroy Drone Guns (Double Agent)", "ref": "Missions/Jungle/Destroy Drone Guns (Double Agent)" },
+          { "name": "Destroy Drone Guns", "ref": "Missions/Jungle/Destroy Drone Guns" }
         ],
         "map_locations": [
           {
@@ -64,18 +56,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Eliminate Xenia (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Eliminate Xenia (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Eliminate Xenia (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Eliminate Xenia"
-          }
+          { "name": "Eliminate Xenia (Agent)", "ref": "Missions/Jungle/Eliminate Xenia (Agent)" },
+          { "name": "Eliminate Xenia (Secret Agent)", "ref": "Missions/Jungle/Eliminate Xenia (Secret Agent)" },
+          { "name": "Eliminate Xenia (Double Agent)", "ref": "Missions/Jungle/Eliminate Xenia (Double Agent)" },
+          { "name": "Eliminate Xenia", "ref": "Missions/Jungle/Eliminate Xenia" }
         ],
         "map_locations": [
           {
@@ -88,18 +72,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Escort Natalya To Janus Base (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Escort Natalya To Janus Base"
-          }
+          { "name": "Escort Natalya To Janus Base (Agent)", "ref": "Missions/Jungle/Escort Natalya To Janus Base (Agent)" },
+          { "name": "Escort Natalya To Janus Base (Secret Agent)", "ref": "Missions/Jungle/Escort Natalya To Janus Base (Secret Agent)" },
+          { "name": "Escort Natalya To Janus Base (Double Agent)", "ref": "Missions/Jungle/Escort Natalya To Janus Base (Double Agent)" },
+          { "name": "Escort Natalya To Janus Base", "ref": "Missions/Jungle/Escort Natalya To Janus Base" }
         ],
         "map_locations": [
           {
@@ -112,15 +88,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Blow Up Ammo Dump (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Blow Up Ammo Dump (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Blow Up Ammo Dump"
-          }
+          { "name": "Blow Up Ammo Dump (Secret Agent)", "ref": "Missions/Jungle/Blow Up Ammo Dump (Secret Agent)" },
+          { "name": "Blow Up Ammo Dump (Double Agent)", "ref": "Missions/Jungle/Blow Up Ammo Dump (Double Agent)" },
+          { "name": "Blow Up Ammo Dump", "ref": "Missions/Jungle/Blow Up Ammo Dump" }
         ],
         "map_locations": [
           {
@@ -133,18 +103,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (First Area Back Corner)"
-          }
+          { "name": "Body Armor (First Area Back Corner) (Agent)", "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Agent)" },
+          { "name": "Body Armor (First Area Back Corner) (Secret Agent)", "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Secret Agent)" },
+          { "name": "Body Armor (First Area Back Corner) (Double Agent)", "ref": "Missions/Jungle/Body Armor (First Area Back Corner) (Double Agent)" },
+          { "name": "Body Armor (First Area Back Corner)", "ref": "Missions/Jungle/Body Armor (First Area Back Corner)" }
         ],
         "map_locations": [
           {
@@ -157,18 +119,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Second Turret)"
-          }
+          { "name": "Body Armor (Behind Second Turret) (Agent)", "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Agent)" },
+          { "name": "Body Armor (Behind Second Turret) (Secret Agent)", "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Secret Agent)" },
+          { "name": "Body Armor (Behind Second Turret) (Double Agent)", "ref": "Missions/Jungle/Body Armor (Behind Second Turret) (Double Agent)" },
+          { "name": "Body Armor (Behind Second Turret)", "ref": "Missions/Jungle/Body Armor (Behind Second Turret)" }
         ],
         "map_locations": [
           {
@@ -181,15 +135,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Body Armor (Behind Guard Tower)"
-          }
+          { "name": "Body Armor (Behind Guard Tower) (Agent)", "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Agent)" },
+          { "name": "Body Armor (Behind Guard Tower) (Secret Agent)", "ref": "Missions/Jungle/Body Armor (Behind Guard Tower) (Secret Agent)" },
+          { "name": "Body Armor (Behind Guard Tower)", "ref": "Missions/Jungle/Body Armor (Behind Guard Tower)" }
         ],
         "map_locations": [
           {
@@ -202,18 +150,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Jungle/Jungle - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Jungle - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Jungle - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Jungle/Jungle - (Clear)"
-          }
+          { "name": "Jungle - Clear (Agent)", "ref": "Missions/Jungle/Jungle - Clear (Agent)" },
+          { "name": "Jungle - Clear (Secret Agent)", "ref": "Missions/Jungle/Jungle - Clear (Secret Agent)" },
+          { "name": "Jungle - Clear (Double Agent)", "ref": "Missions/Jungle/Jungle - Clear (Double Agent)" },
+          { "name": "Jungle - (Clear)", "ref": "Missions/Jungle/Jungle - (Clear)" }
         ],
         "map_locations": [
           {

@@ -4,18 +4,10 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Bungee Jump From Platform (Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Bungee Jump From Platform (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Bungee Jump From Platform (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Bungee Jump From Platform"
-          }
+          { "name": "Bungee Jump From Platform (Agent)", "ref": "Missions/Dam/Bungee Jump From Platform (Agent)" },
+          { "name": "Bungee Jump From Platform (Secret Agent)", "ref": "Missions/Dam/Bungee Jump From Platform (Secret Agent)" },
+          { "name": "Bungee Jump From Platform (Double Agent)", "ref": "Missions/Dam/Bungee Jump From Platform (Double Agent)" },
+          { "name": "Bungee Jump From Platform", "ref": "Missions/Dam/Bungee Jump From Platform" }
         ],
         "map_locations": [
           {
@@ -27,15 +19,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms"
-          }
+          { "name": "Neutralize All Alarms (Secret Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)" },
+          { "name": "Neutralize All Alarms (Double Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)" },
+          { "name": "Neutralize All Alarms", "ref": "Missions/Dam/Neutralize All Alarms" }
         ],
         "map_locations": [
           {
@@ -60,12 +46,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Install Covert Modem (Double Agent)"
-          },
-          {
-            "ref":"Missions/Dam/Install Covert Modem"
-          }
+          { "name": "Install Covert Modem (Double Agent)", "ref": "Missions/Dam/Install Covert Modem (Double Agent)" },
+          { "name": "Install Covert Modem", "ref": "Missions/Dam/Install Covert Modem" }
         ],
         "map_locations": [
           {
@@ -78,12 +60,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Intercept Data Backup (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Intercept Data Backup"
-          }
+          { "name": "Intercept Data Backup (Double Agent)", "ref": "Missions/Dam/Intercept Data Backup (Double Agent)" },
+          { "name": "Intercept Data Backup", "ref": "Missions/Dam/Intercept Data Backup" }
         ],
         "map_locations": [
           {
@@ -96,18 +74,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Sniper Rifle (Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Sniper Rifle (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Sniper Rifle (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Sniper Rifle"
-          }
+          { "name": "Sniper Rifle (Agent)", "ref": "Missions/Dam/Sniper Rifle (Agent)" },
+          { "name": "Sniper Rifle (Secret Agent)", "ref": "Missions/Dam/Sniper Rifle (Secret Agent)" },
+          { "name": "Sniper Rifle (Double Agent)", "ref": "Missions/Dam/Sniper Rifle (Double Agent)" },
+          { "name": "Sniper Rifle", "ref": "Missions/Dam/Sniper Rifle" }
         ],
         "map_locations": [
           {
@@ -119,24 +89,12 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Neutralize All Alarms"
-          },
-          {
-            "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Body Armor (Guard Tower 2)"
-          }
+          { "name": "Neutralize All Alarms (Secret Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)" },
+          { "name": "Neutralize All Alarms (Double Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)" },
+          { "name": "Neutralize All Alarms", "ref": "Missions/Dam/Neutralize All Alarms" },
+          { "name": "Body Armor (Guard Tower 2) (Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)" },
+          { "name": "Body Armor (Guard Tower 2) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)" },
+          { "name": "Body Armor (Guard Tower 2)", "ref": "Missions/Dam/Body Armor (Guard Tower 2)" }
         ],
         "map_locations": [
           {
@@ -149,15 +107,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Body Armor (Last Dam Tower)"
-          }
+          { "name": "Body Armor (Last Dam Tower) (Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)" },
+          { "name": "Body Armor (Last Dam Tower) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)" },
+          { "name": "Body Armor (Last Dam Tower)", "ref": "Missions/Dam/Body Armor (Last Dam Tower)" }
         ],
         "map_locations": [
           {
@@ -169,21 +121,11 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Dam/Dam - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Dam - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Dam - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Dam/Dam - (Clear)"
-          },
-          {
-            "ref": "Missions/Dam/Cheat - Paintball Mode"
-          }
+          { "name": "Dam - Clear (Agent)", "ref": "Missions/Dam/Dam - Clear (Agent)" },
+          { "name": "Dam - Clear (Secret Agent)", "ref": "Missions/Dam/Dam - Clear (Secret Agent)" },
+          { "name": "Dam - Clear (Double Agent)", "ref": "Missions/Dam/Dam - Clear (Double Agent)" },
+          { "name": "Dam - (Clear)", "ref": "Missions/Dam/Dam - (Clear)" },
+          { "name": "Cheat - Paintball Mode", "ref": "Missions/Dam/Cheat - Paintball Mode" }
         ],
         "map_locations": [
           {

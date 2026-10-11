@@ -19,3 +19,9 @@ The test uses a mocked PopTracker API. It checks all three loaders, receipt, pro
 Automatic mission tab switching is unavailable: the inspected GoldenEye client reads the mission internally but does not publish it through AP DataStorage. A client publication key and value format must be implemented and verified before adding tracker subscriptions.
 
 API reference: [PopTracker autotracking documentation](https://github.com/black-sliver/PopTracker/blob/master/doc/AUTOTRACKING.md).
+
+## Live validation
+
+On 2026-10-11, real PopTracker 0.35.4 connected to isolated Archipelago 0.6.7 servers using two existing GoldenEye test seeds. Item receipt, checked locations, reconnect replay, an in-session seed switch, all three variants, goal tracking, and sampled shared/per-difficulty visibility passed. The server console supplied test items and a test AP client submitted checks; actual BizHawk gameplay was not replayed. See ../../tests/live_results.json for exact scope and evidence paths.
+
+Named 850 map-section references to remove duplicate-section warnings observed in the real runtime. PopTracker still auto-renames unnamed map marker locations; those nonblocking duplicate-location warnings remain.

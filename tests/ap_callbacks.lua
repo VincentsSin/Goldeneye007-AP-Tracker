@@ -17,7 +17,7 @@ for _,variant in ipairs({'standard','itemsonly','mapsonly'}) do
   for _,node in ipairs(nodes) do
    local name=node.name and (parent..'/'..node.name) or parent
    for _,section in ipairs(node.sections or {}) do
-    if section.name then
+    if section.name and not section.ref then
     local code='@'..name:sub(2)..'/'..section.name
     check(not objects[code],'Duplicate section '..code)
     objects[code]={ChestCount=section.item_count or 1,AvailableChestCount=section.item_count or 1}

@@ -4,18 +4,10 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Keycard B (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard B (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard B (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard B"
-          }
+          { "name": "Keycard B (Agent)", "ref": "Missions/Facility/Keycard B (Agent)" },
+          { "name": "Keycard B (Secret Agent)", "ref": "Missions/Facility/Keycard B (Secret Agent)" },
+          { "name": "Keycard B (Double Agent)", "ref": "Missions/Facility/Keycard B (Double Agent)" },
+          { "name": "Keycard B", "ref": "Missions/Facility/Keycard B" }
         ],
         "map_locations": [
           {
@@ -28,18 +20,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Keycard A (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard A (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard A (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Keycard A"
-          }
+          { "name": "Keycard A (Agent)", "ref": "Missions/Facility/Keycard A (Agent)" },
+          { "name": "Keycard A (Secret Agent)", "ref": "Missions/Facility/Keycard A (Secret Agent)" },
+          { "name": "Keycard A (Double Agent)", "ref": "Missions/Facility/Keycard A (Double Agent)" },
+          { "name": "Keycard A", "ref": "Missions/Facility/Keycard A" }
         ],
         "map_locations": [
           {
@@ -53,18 +37,10 @@
       {
         "sections": [
           
-          {
-            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Gain Entry To Laboratory Area (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Gain Entry To Laboratory Area"
-          }
+          { "name": "Gain Entry To Laboratory Area (Agent)", "ref": "Missions/Facility/Gain Entry To Laboratory Area (Agent)" },
+          { "name": "Gain Entry To Laboratory Area (Secret Agent)", "ref": "Missions/Facility/Gain Entry To Laboratory Area (Secret Agent)" },
+          { "name": "Gain Entry To Laboratory Area (Double Agent)", "ref": "Missions/Facility/Gain Entry To Laboratory Area (Double Agent)" },
+          { "name": "Gain Entry To Laboratory Area", "ref": "Missions/Facility/Gain Entry To Laboratory Area" }
         ],
         "map_locations": [
           {
@@ -77,18 +53,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Destroy All Tanks In Bottling Room"
-          }
+          { "name": "Destroy All Tanks In Bottling Room (Agent)", "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Agent)" },
+          { "name": "Destroy All Tanks In Bottling Room (Secret Agent)", "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Secret Agent)" },
+          { "name": "Destroy All Tanks In Bottling Room (Double Agent)", "ref": "Missions/Facility/Destroy All Tanks In Bottling Room (Double Agent)" },
+          { "name": "Destroy All Tanks In Bottling Room", "ref": "Missions/Facility/Destroy All Tanks In Bottling Room" }
         ],
         "map_locations": [
           {
@@ -101,18 +69,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Rendezvous With 006 (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Rendezvous With 006 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Rendezvous With 006 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Rendezvous With 006"
-          }
+          { "name": "Rendezvous With 006 (Agent)", "ref": "Missions/Facility/Rendezvous With 006 (Agent)" },
+          { "name": "Rendezvous With 006 (Secret Agent)", "ref": "Missions/Facility/Rendezvous With 006 (Secret Agent)" },
+          { "name": "Rendezvous With 006 (Double Agent)", "ref": "Missions/Facility/Rendezvous With 006 (Double Agent)" },
+          { "name": "Rendezvous With 006", "ref": "Missions/Facility/Rendezvous With 006" }
         ],
         "map_locations": [
           {
@@ -126,15 +86,9 @@
       {
         "name": "One Of These Is Doak, I Pwesume",
         "sections": [
-          {
-            "ref": "Missions/Facility/Contact Double Agent (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Contact Double Agent (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Contact Double Agent"
-          }
+          { "name": "Contact Double Agent (Secret Agent)", "ref": "Missions/Facility/Contact Double Agent (Secret Agent)" },
+          { "name": "Contact Double Agent (Double Agent)", "ref": "Missions/Facility/Contact Double Agent (Double Agent)" },
+          { "name": "Contact Double Agent", "ref": "Missions/Facility/Contact Double Agent" }
         ],
         "map_locations": [
           {
@@ -183,18 +137,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Minimize Scientist Casualties (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Minimize Scientist Casualties (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Minimize Scientist Casualties (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Minimize Scientist Casualties"
-          }
+          { "name": "Minimize Scientist Casualties (Agent)", "ref": "Missions/Facility/Minimize Scientist Casualties (Agent)" },
+          { "name": "Minimize Scientist Casualties (Secret Agent)", "ref": "Missions/Facility/Minimize Scientist Casualties (Secret Agent)" },
+          { "name": "Minimize Scientist Casualties (Double Agent)", "ref": "Missions/Facility/Minimize Scientist Casualties (Double Agent)" },
+          { "name": "Minimize Scientist Casualties", "ref": "Missions/Facility/Minimize Scientist Casualties" }
         ],
         "map_locations": [
           {
@@ -207,15 +153,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Body Armor (On Hallway Crate)"
-          }
+          { "name": "Body Armor (On Hallway Crate) (Agent)", "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Agent)" },
+          { "name": "Body Armor (On Hallway Crate) (Secret Agent)", "ref": "Missions/Facility/Body Armor (On Hallway Crate) (Secret Agent)" },
+          { "name": "Body Armor (On Hallway Crate)", "ref": "Missions/Facility/Body Armor (On Hallway Crate)" }
         ],
         "map_locations": [
           {
@@ -228,12 +168,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Body Armor (Inside Security Room 2) (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Body Armor (Inside Security Room 2)"
-          }
+          { "name": "Body Armor (Inside Security Room 2) (Agent)", "ref": "Missions/Facility/Body Armor (Inside Security Room 2) (Agent)" },
+          { "name": "Body Armor (Inside Security Room 2)", "ref": "Missions/Facility/Body Armor (Inside Security Room 2)" }
         ],
         "map_locations": [
           {
@@ -246,21 +182,11 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Facility/Facility - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Facility - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Facility - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Facility/Facility - (Clear)"
-          },
-          {
-            "ref": "Missions/Facility/Cheat - Invincibility"
-          }
+          { "name": "Facility - Clear (Agent)", "ref": "Missions/Facility/Facility - Clear (Agent)" },
+          { "name": "Facility - Clear (Secret Agent)", "ref": "Missions/Facility/Facility - Clear (Secret Agent)" },
+          { "name": "Facility - Clear (Double Agent)", "ref": "Missions/Facility/Facility - Clear (Double Agent)" },
+          { "name": "Facility - (Clear)", "ref": "Missions/Facility/Facility - (Clear)" },
+          { "name": "Cheat - Invincibility", "ref": "Missions/Facility/Cheat - Invincibility" }
         ],
         "map_locations": [
           {

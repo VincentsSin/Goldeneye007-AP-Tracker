@@ -4,18 +4,10 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Throwing Knives (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Throwing Knives (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Throwing Knives (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Throwing Knives"
-          }
+          { "name": "Throwing Knives (Agent)", "ref": "Missions/Bunker 2/Throwing Knives (Agent)" },
+          { "name": "Throwing Knives (Secret Agent)", "ref": "Missions/Bunker 2/Throwing Knives (Secret Agent)" },
+          { "name": "Throwing Knives (Double Agent)", "ref": "Missions/Bunker 2/Throwing Knives (Double Agent)" },
+          { "name": "Throwing Knives", "ref": "Missions/Bunker 2/Throwing Knives" }
         ],
         "map_locations": [
           {
@@ -28,18 +20,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Cell Key 1 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 1 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 1 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 1"
-          }
+          { "name": "Cell Key 1 (Agent)", "ref": "Missions/Bunker 2/Cell Key 1 (Agent)" },
+          { "name": "Cell Key 1 (Secret Agent)", "ref": "Missions/Bunker 2/Cell Key 1 (Secret Agent)" },
+          { "name": "Cell Key 1 (Double Agent)", "ref": "Missions/Bunker 2/Cell Key 1 (Double Agent)" },
+          { "name": "Cell Key 1", "ref": "Missions/Bunker 2/Cell Key 1" }
         ],
         "map_locations": [
           {
@@ -52,18 +36,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Cell Key 2 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 2 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 2 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Cell Key 2"
-          }
+          { "name": "Cell Key 2 (Agent)", "ref": "Missions/Bunker 2/Cell Key 2 (Agent)" },
+          { "name": "Cell Key 2 (Secret Agent)", "ref": "Missions/Bunker 2/Cell Key 2 (Secret Agent)" },
+          { "name": "Cell Key 2 (Double Agent)", "ref": "Missions/Bunker 2/Cell Key 2 (Double Agent)" },
+          { "name": "Cell Key 2", "ref": "Missions/Bunker 2/Cell Key 2" }
         ],
         "map_locations": [
           {
@@ -77,18 +53,10 @@
       {
         "name": "Should Be Here Shortly After Leaving Cells. Has 2 Klobbs",
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Keycard A (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard A (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard A (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard A"
-          }
+          { "name": "Keycard A (Agent)", "ref": "Missions/Bunker 2/Keycard A (Agent)" },
+          { "name": "Keycard A (Secret Agent)", "ref": "Missions/Bunker 2/Keycard A (Secret Agent)" },
+          { "name": "Keycard A (Double Agent)", "ref": "Missions/Bunker 2/Keycard A (Double Agent)" },
+          { "name": "Keycard A", "ref": "Missions/Bunker 2/Keycard A" }
         ],
         "map_locations": [
           {
@@ -102,18 +70,10 @@
       {
         "name": "Grab Keycard A First, Should Be Here Shortly After. Has 2 Klobbs",
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Keycard B (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard B (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard B (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Keycard B"
-          }
+          { "name": "Keycard B (Agent)", "ref": "Missions/Bunker 2/Keycard B (Agent)" },
+          { "name": "Keycard B (Secret Agent)", "ref": "Missions/Bunker 2/Keycard B (Secret Agent)" },
+          { "name": "Keycard B (Double Agent)", "ref": "Missions/Bunker 2/Keycard B (Double Agent)" },
+          { "name": "Keycard B", "ref": "Missions/Bunker 2/Keycard B" }
         ],
         "map_locations": [
           {
@@ -126,18 +86,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Safe Key 1 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 1 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 1 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 1"
-          }
+          { "name": "Safe Key 1 (Agent)", "ref": "Missions/Bunker 2/Safe Key 1 (Agent)" },
+          { "name": "Safe Key 1 (Secret Agent)", "ref": "Missions/Bunker 2/Safe Key 1 (Secret Agent)" },
+          { "name": "Safe Key 1 (Double Agent)", "ref": "Missions/Bunker 2/Safe Key 1 (Double Agent)" },
+          { "name": "Safe Key 1", "ref": "Missions/Bunker 2/Safe Key 1" }
         ],
         "map_locations": [
           {
@@ -150,18 +102,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Safe Key 2 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 2 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 2 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Safe Key 2"
-          }
+          { "name": "Safe Key 2 (Agent)", "ref": "Missions/Bunker 2/Safe Key 2 (Agent)" },
+          { "name": "Safe Key 2 (Secret Agent)", "ref": "Missions/Bunker 2/Safe Key 2 (Secret Agent)" },
+          { "name": "Safe Key 2 (Double Agent)", "ref": "Missions/Bunker 2/Safe Key 2 (Double Agent)" },
+          { "name": "Safe Key 2", "ref": "Missions/Bunker 2/Safe Key 2" }
         ],
         "map_locations": [
           {
@@ -174,30 +118,14 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/CCTV Tape (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/CCTV Tape (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/CCTV Tape (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/CCTV Tape"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover CCTV Tape (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover CCTV Tape (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover CCTV Tape (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover CCTV Tape"
-          }
+          { "name": "CCTV Tape (Agent)", "ref": "Missions/Bunker 2/CCTV Tape (Agent)" },
+          { "name": "CCTV Tape (Secret Agent)", "ref": "Missions/Bunker 2/CCTV Tape (Secret Agent)" },
+          { "name": "CCTV Tape (Double Agent)", "ref": "Missions/Bunker 2/CCTV Tape (Double Agent)" },
+          { "name": "CCTV Tape", "ref": "Missions/Bunker 2/CCTV Tape" },
+          { "name": "Recover CCTV Tape (Agent)", "ref": "Missions/Bunker 2/Recover CCTV Tape (Agent)" },
+          { "name": "Recover CCTV Tape (Secret Agent)", "ref": "Missions/Bunker 2/Recover CCTV Tape (Secret Agent)" },
+          { "name": "Recover CCTV Tape (Double Agent)", "ref": "Missions/Bunker 2/Recover CCTV Tape (Double Agent)" },
+          { "name": "Recover CCTV Tape", "ref": "Missions/Bunker 2/Recover CCTV Tape" }
         ],
         "map_locations": [
           {
@@ -210,27 +138,13 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Severnaya Stafflist (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Severnaya Stafflist (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Severnaya Stafflist (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Severnaya Stafflist"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists"
-          }
+          { "name": "Severnaya Stafflist (Agent)", "ref": "Missions/Bunker 2/Severnaya Stafflist (Agent)" },
+          { "name": "Severnaya Stafflist (Secret Agent)", "ref": "Missions/Bunker 2/Severnaya Stafflist (Secret Agent)" },
+          { "name": "Severnaya Stafflist (Double Agent)", "ref": "Missions/Bunker 2/Severnaya Stafflist (Double Agent)" },
+          { "name": "Severnaya Stafflist", "ref": "Missions/Bunker 2/Severnaya Stafflist" },
+          { "name": "Compare Staff & Casualty Lists (Secret Agent)", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)" },
+          { "name": "Compare Staff & Casualty Lists (Double Agent)", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)" },
+          { "name": "Compare Staff & Casualty Lists", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists" }
         ],
         "map_locations": [
           {
@@ -243,27 +157,13 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Casualty List (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Casualty List (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Casualty List (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Casualty List"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists"
-          }
+          { "name": "Casualty List (Agent)", "ref": "Missions/Bunker 2/Casualty List (Agent)" },
+          { "name": "Casualty List (Secret Agent)", "ref": "Missions/Bunker 2/Casualty List (Secret Agent)" },
+          { "name": "Casualty List (Double Agent)", "ref": "Missions/Bunker 2/Casualty List (Double Agent)" },
+          { "name": "Casualty List", "ref": "Missions/Bunker 2/Casualty List" },
+          { "name": "Compare Staff & Casualty Lists (Secret Agent)", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)" },
+          { "name": "Compare Staff & Casualty Lists (Double Agent)", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)" },
+          { "name": "Compare Staff & Casualty Lists", "ref": "Missions/Bunker 2/Compare Staff & Casualty Lists" }
         ],
         "map_locations": [
           {
@@ -276,18 +176,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Escape With Natalya (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Escape With Natalya (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Escape With Natalya (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Escape With Natalya"
-          }
+          { "name": "Escape With Natalya (Agent)", "ref": "Missions/Bunker 2/Escape With Natalya (Agent)" },
+          { "name": "Escape With Natalya (Secret Agent)", "ref": "Missions/Bunker 2/Escape With Natalya (Secret Agent)" },
+          { "name": "Escape With Natalya (Double Agent)", "ref": "Missions/Bunker 2/Escape With Natalya (Double Agent)" },
+          { "name": "Escape With Natalya", "ref": "Missions/Bunker 2/Escape With Natalya" }
         ],
         "map_locations": [
           {
@@ -300,48 +192,20 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Goldeneye Operations Manual"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 1 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 1 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 1 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 1"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 2 (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 2 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 2 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Silenced PP7 2"
-          }
+          { "name": "Goldeneye Operations Manual (Agent)", "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Agent)" },
+          { "name": "Goldeneye Operations Manual (Secret Agent)", "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Secret Agent)" },
+          { "name": "Goldeneye Operations Manual (Double Agent)", "ref": "Missions/Bunker 2/Goldeneye Operations Manual (Double Agent)" },
+          { "name": "Goldeneye Operations Manual", "ref": "Missions/Bunker 2/Goldeneye Operations Manual" },
+          { "name": "Recover Goldeneye Operations Manual (Double Agent)", "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual (Double Agent)" },
+          { "name": "Recover Goldeneye Operations Manual", "ref": "Missions/Bunker 2/Recover Goldeneye Operations Manual" },
+          { "name": "Silenced PP7 1 (Agent)", "ref": "Missions/Bunker 2/Silenced PP7 1 (Agent)" },
+          { "name": "Silenced PP7 1 (Secret Agent)", "ref": "Missions/Bunker 2/Silenced PP7 1 (Secret Agent)" },
+          { "name": "Silenced PP7 1 (Double Agent)", "ref": "Missions/Bunker 2/Silenced PP7 1 (Double Agent)" },
+          { "name": "Silenced PP7 1", "ref": "Missions/Bunker 2/Silenced PP7 1" },
+          { "name": "Silenced PP7 2 (Agent)", "ref": "Missions/Bunker 2/Silenced PP7 2 (Agent)" },
+          { "name": "Silenced PP7 2 (Secret Agent)", "ref": "Missions/Bunker 2/Silenced PP7 2 (Secret Agent)" },
+          { "name": "Silenced PP7 2 (Double Agent)", "ref": "Missions/Bunker 2/Silenced PP7 2 (Double Agent)" },
+          { "name": "Silenced PP7 2", "ref": "Missions/Bunker 2/Silenced PP7 2" }
         ],
         "map_locations": [
           {
@@ -354,15 +218,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Disable All Security Cameras (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Disable All Security Cameras (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Disable All Security Cameras"
-          }
+          { "name": "Disable All Security Cameras (Secret Agent)", "ref": "Missions/Bunker 2/Disable All Security Cameras (Secret Agent)" },
+          { "name": "Disable All Security Cameras (Double Agent)", "ref": "Missions/Bunker 2/Disable All Security Cameras (Double Agent)" },
+          { "name": "Disable All Security Cameras", "ref": "Missions/Bunker 2/Disable All Security Cameras" }
         ],
         "map_locations": [
           {
@@ -405,12 +263,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel) (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel)"
-          }
+          { "name": "Body Armor (Auto Turret Tunnel) (Agent)", "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel) (Agent)" },
+          { "name": "Body Armor (Auto Turret Tunnel)", "ref": "Missions/Bunker 2/Body Armor (Auto Turret Tunnel)" }
         ],
         "map_locations": [
           {
@@ -423,15 +277,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Body Armor (Shooting Range)"
-          }
+          { "name": "Body Armor (Shooting Range) (Agent)", "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Agent)" },
+          { "name": "Body Armor (Shooting Range) (Secret Agent)", "ref": "Missions/Bunker 2/Body Armor (Shooting Range) (Secret Agent)" },
+          { "name": "Body Armor (Shooting Range)", "ref": "Missions/Bunker 2/Body Armor (Shooting Range)" }
         ],
         "map_locations": [
           {
@@ -444,18 +292,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Bunker 2 - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Bunker 2/Bunker 2 - (Clear)"
-          }
+          { "name": "Bunker 2 - Clear (Agent)", "ref": "Missions/Bunker 2/Bunker 2 - Clear (Agent)" },
+          { "name": "Bunker 2 - Clear (Secret Agent)", "ref": "Missions/Bunker 2/Bunker 2 - Clear (Secret Agent)" },
+          { "name": "Bunker 2 - Clear (Double Agent)", "ref": "Missions/Bunker 2/Bunker 2 - Clear (Double Agent)" },
+          { "name": "Bunker 2 - (Clear)", "ref": "Missions/Bunker 2/Bunker 2 - (Clear)" }
         ],
         "map_locations": [
           {

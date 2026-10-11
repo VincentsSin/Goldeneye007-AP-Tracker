@@ -4,30 +4,14 @@
     "children": [
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Comms Room Key (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Comms Room Key (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Comms Room Key (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Comms Room Key"
-          },
-          {
-            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment"
-          },
-          {
-            "ref": "Missions/Surface 2/Body Armor (Cabin With Camera) (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Body Armor (Cabin With Camera)"
-          }
+          { "name": "Comms Room Key (Agent)", "ref": "Missions/Surface 2/Comms Room Key (Agent)" },
+          { "name": "Comms Room Key (Secret Agent)", "ref": "Missions/Surface 2/Comms Room Key (Secret Agent)" },
+          { "name": "Comms Room Key (Double Agent)", "ref": "Missions/Surface 2/Comms Room Key (Double Agent)" },
+          { "name": "Comms Room Key", "ref": "Missions/Surface 2/Comms Room Key" },
+          { "name": "Disrupt All Surveillance Equipment (Double Agent)", "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)" },
+          { "name": "Disrupt All Surveillance Equipment", "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment" },
+          { "name": "Body Armor (Cabin With Camera) (Agent)", "ref": "Missions/Surface 2/Body Armor (Cabin With Camera) (Agent)" },
+          { "name": "Body Armor (Cabin With Camera)", "ref": "Missions/Surface 2/Body Armor (Cabin With Camera)" }
         ],
         "map_locations": [
           {
@@ -40,18 +24,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Break Communications Link To Bunker (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Break Communications Link To Bunker"
-          }
+          { "name": "Break Communications Link To Bunker (Agent)", "ref": "Missions/Surface 2/Break Communications Link To Bunker (Agent)" },
+          { "name": "Break Communications Link To Bunker (Secret Agent)", "ref": "Missions/Surface 2/Break Communications Link To Bunker (Secret Agent)" },
+          { "name": "Break Communications Link To Bunker (Double Agent)", "ref": "Missions/Surface 2/Break Communications Link To Bunker (Double Agent)" },
+          { "name": "Break Communications Link To Bunker", "ref": "Missions/Surface 2/Break Communications Link To Bunker" }
         ],
         "map_locations": [
           {
@@ -64,18 +40,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Gain Entry To Bunker (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Gain Entry To Bunker (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Gain Entry To Bunker (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Gain Entry To Bunker"
-          }
+          { "name": "Gain Entry To Bunker (Agent)", "ref": "Missions/Surface 2/Gain Entry To Bunker (Agent)" },
+          { "name": "Gain Entry To Bunker (Secret Agent)", "ref": "Missions/Surface 2/Gain Entry To Bunker (Secret Agent)" },
+          { "name": "Gain Entry To Bunker (Double Agent)", "ref": "Missions/Surface 2/Gain Entry To Bunker (Double Agent)" },
+          { "name": "Gain Entry To Bunker", "ref": "Missions/Surface 2/Gain Entry To Bunker" }
         ],
         "map_locations": [
           {
@@ -88,15 +56,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft"
-          }
+          { "name": "Disable Spetznaz Support Aircraft (Secret Agent)", "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Secret Agent)" },
+          { "name": "Disable Spetznaz Support Aircraft (Double Agent)", "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft (Double Agent)" },
+          { "name": "Disable Spetznaz Support Aircraft", "ref": "Missions/Surface 2/Disable Spetznaz Support Aircraft" }
         ],
         "map_locations": [
           {
@@ -109,12 +71,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment"
-          }
+          { "name": "Disrupt All Surveillance Equipment (Double Agent)", "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)" },
+          { "name": "Disrupt All Surveillance Equipment", "ref": "Missions/Surface 2/Disrupt All Surveillance Equipment" }
         ],
         "map_locations": [
           {
@@ -139,12 +97,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin) (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin)"
-          }
+          { "name": "Body Armor (Fenced Area Cabin) (Agent)", "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin) (Agent)" },
+          { "name": "Body Armor (Fenced Area Cabin)", "ref": "Missions/Surface 2/Body Armor (Fenced Area Cabin)" }
         ],
         "map_locations": [
           {
@@ -157,18 +111,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Surface 2/Surface 2 - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Surface 2 - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Surface 2 - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Surface 2/Surface 2 - (Clear)"
-          }
+          { "name": "Surface 2 - Clear (Agent)", "ref": "Missions/Surface 2/Surface 2 - Clear (Agent)" },
+          { "name": "Surface 2 - Clear (Secret Agent)", "ref": "Missions/Surface 2/Surface 2 - Clear (Secret Agent)" },
+          { "name": "Surface 2 - Clear (Double Agent)", "ref": "Missions/Surface 2/Surface 2 - Clear (Double Agent)" },
+          { "name": "Surface 2 - (Clear)", "ref": "Missions/Surface 2/Surface 2 - (Clear)" }
         ],
         "map_locations": [
           {

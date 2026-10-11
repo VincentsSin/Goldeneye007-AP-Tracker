@@ -5,18 +5,10 @@
       {
         "name": "Enemy Spawns After Destroying Brake Panels",
         "sections": [
-          {
-            "ref": "Missions/Train/Train Door Key (Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train Door Key (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train Door Key (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train Door Key"
-          }
+          { "name": "Train Door Key (Agent)", "ref": "Missions/Train/Train Door Key (Agent)" },
+          { "name": "Train Door Key (Secret Agent)", "ref": "Missions/Train/Train Door Key (Secret Agent)" },
+          { "name": "Train Door Key (Double Agent)", "ref": "Missions/Train/Train Door Key (Double Agent)" },
+          { "name": "Train Door Key", "ref": "Missions/Train/Train Door Key" }
         ],
         "map_locations": [
           {
@@ -29,15 +21,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Train/RC-P90 (Agent)"
-          },
-          {
-            "ref": "Missions/Train/DD44 Dostovei (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Gun In Box"
-          }
+          { "name": "RC-P90 (Agent)", "ref": "Missions/Train/RC-P90 (Agent)" },
+          { "name": "DD44 Dostovei (Secret Agent)", "ref": "Missions/Train/DD44 Dostovei (Secret Agent)" },
+          { "name": "Gun In Box", "ref": "Missions/Train/Gun In Box" }
         ],
         "map_locations": [
           {
@@ -50,18 +36,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Train/Destroy Brake Units (Agent)"
-          },
-          {
-            "ref": "Missions/Train/Destroy Brake Units (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Destroy Brake Units (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Destroy Brake Units"
-          }
+          { "name": "Destroy Brake Units (Agent)", "ref": "Missions/Train/Destroy Brake Units (Agent)" },
+          { "name": "Destroy Brake Units (Secret Agent)", "ref": "Missions/Train/Destroy Brake Units (Secret Agent)" },
+          { "name": "Destroy Brake Units (Double Agent)", "ref": "Missions/Train/Destroy Brake Units (Double Agent)" },
+          { "name": "Destroy Brake Units", "ref": "Missions/Train/Destroy Brake Units" }
         ],
         "map_locations": [
           {
@@ -105,33 +83,15 @@
       {
         "name": "Shoot Xenia Before Door Closes For Extra Time",
         "sections": [
-          {
-            "ref": "Missions/Train/Rescue Natalya (Agent)"
-          },
-          {
-            "ref": "Missions/Train/Rescue Natalya (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Rescue Natalya (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Rescue Natalya"
-          },
-          {
-            "ref": "Missions/Train/Locate Janus Secret Base (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Locate Janus Secret Base (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Locate Janus Secret Base"
-          },
-          {
-            "ref": "Missions/Train/Crack Boris' Password (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Crack Boris' Password"
-          }
+          { "name": "Rescue Natalya (Agent)", "ref": "Missions/Train/Rescue Natalya (Agent)" },
+          { "name": "Rescue Natalya (Secret Agent)", "ref": "Missions/Train/Rescue Natalya (Secret Agent)" },
+          { "name": "Rescue Natalya (Double Agent)", "ref": "Missions/Train/Rescue Natalya (Double Agent)" },
+          { "name": "Rescue Natalya", "ref": "Missions/Train/Rescue Natalya" },
+          { "name": "Locate Janus Secret Base (Secret Agent)", "ref": "Missions/Train/Locate Janus Secret Base (Secret Agent)" },
+          { "name": "Locate Janus Secret Base (Double Agent)", "ref": "Missions/Train/Locate Janus Secret Base (Double Agent)" },
+          { "name": "Locate Janus Secret Base", "ref": "Missions/Train/Locate Janus Secret Base" },
+          { "name": "Crack Boris' Password (Double Agent)", "ref": "Missions/Train/Crack Boris' Password (Double Agent)" },
+          { "name": "Crack Boris' Password", "ref": "Missions/Train/Crack Boris' Password" }
         ],
         "map_locations": [
           {
@@ -144,18 +104,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Train/Escape To Safety (Agent)"
-          },
-          {
-            "ref": "Missions/Train/Escape To Safety (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Escape To Safety (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Escape To Safety"
-          }
+          { "name": "Escape To Safety (Agent)", "ref": "Missions/Train/Escape To Safety (Agent)" },
+          { "name": "Escape To Safety (Secret Agent)", "ref": "Missions/Train/Escape To Safety (Secret Agent)" },
+          { "name": "Escape To Safety (Double Agent)", "ref": "Missions/Train/Escape To Safety (Double Agent)" },
+          { "name": "Escape To Safety", "ref": "Missions/Train/Escape To Safety" }
         ],
         "map_locations": [
           {
@@ -168,18 +120,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Train/Train - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Train/Train - (Clear)"
-          }
+          { "name": "Train - Clear (Agent)", "ref": "Missions/Train/Train - Clear (Agent)" },
+          { "name": "Train - Clear (Secret Agent)", "ref": "Missions/Train/Train - Clear (Secret Agent)" },
+          { "name": "Train - Clear (Double Agent)", "ref": "Missions/Train/Train - Clear (Double Agent)" },
+          { "name": "Train - (Clear)", "ref": "Missions/Train/Train - (Clear)" }
         ],
         "map_locations": [
           {

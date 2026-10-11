@@ -5,18 +5,10 @@
       {
         "name": "Box Holding A Box Holding A Box Holding A Box...",
         "sections": [
-          {
-            "ref": "Missions/Caverns/AR33 Assault Rifle (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/AR33 Assault Rifle (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/AR33 Assault Rifle (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/AR33 Assault Rifle"
-          }
+          { "name": "AR33 Assault Rifle (Agent)", "ref": "Missions/Caverns/AR33 Assault Rifle (Agent)" },
+          { "name": "AR33 Assault Rifle (Secret Agent)", "ref": "Missions/Caverns/AR33 Assault Rifle (Secret Agent)" },
+          { "name": "AR33 Assault Rifle (Double Agent)", "ref": "Missions/Caverns/AR33 Assault Rifle (Double Agent)" },
+          { "name": "AR33 Assault Rifle", "ref": "Missions/Caverns/AR33 Assault Rifle" }
         ],
         "map_locations": [
           {
@@ -29,18 +21,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Code Card 1 (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 1 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 1 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 1"
-          }
+          { "name": "Code Card 1 (Agent)", "ref": "Missions/Caverns/Code Card 1 (Agent)" },
+          { "name": "Code Card 1 (Secret Agent)", "ref": "Missions/Caverns/Code Card 1 (Secret Agent)" },
+          { "name": "Code Card 1 (Double Agent)", "ref": "Missions/Caverns/Code Card 1 (Double Agent)" },
+          { "name": "Code Card 1", "ref": "Missions/Caverns/Code Card 1" }
         ],
         "map_locations": [
           {
@@ -53,18 +37,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Code Card 2 (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 2 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 2 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 2"
-          }
+          { "name": "Code Card 2 (Agent)", "ref": "Missions/Caverns/Code Card 2 (Agent)" },
+          { "name": "Code Card 2 (Secret Agent)", "ref": "Missions/Caverns/Code Card 2 (Secret Agent)" },
+          { "name": "Code Card 2 (Double Agent)", "ref": "Missions/Caverns/Code Card 2 (Double Agent)" },
+          { "name": "Code Card 2", "ref": "Missions/Caverns/Code Card 2" }
         ],
         "map_locations": [
           {
@@ -77,18 +53,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Code Card 3 (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 3 (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 3 (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Code Card 3"
-          }
+          { "name": "Code Card 3 (Agent)", "ref": "Missions/Caverns/Code Card 3 (Agent)" },
+          { "name": "Code Card 3 (Secret Agent)", "ref": "Missions/Caverns/Code Card 3 (Secret Agent)" },
+          { "name": "Code Card 3 (Double Agent)", "ref": "Missions/Caverns/Code Card 3 (Double Agent)" },
+          { "name": "Code Card 3", "ref": "Missions/Caverns/Code Card 3" }
         ],
         "map_locations": [
           {
@@ -101,18 +69,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Minimize Scientist Casualties (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Minimize Scientist Casualties (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Minimize Scientist Casualties (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Minimize Scientist Casualties"
-          }
+          { "name": "Minimize Scientist Casualties (Agent)", "ref": "Missions/Caverns/Minimize Scientist Casualties (Agent)" },
+          { "name": "Minimize Scientist Casualties (Secret Agent)", "ref": "Missions/Caverns/Minimize Scientist Casualties (Secret Agent)" },
+          { "name": "Minimize Scientist Casualties (Double Agent)", "ref": "Missions/Caverns/Minimize Scientist Casualties (Double Agent)" },
+          { "name": "Minimize Scientist Casualties", "ref": "Missions/Caverns/Minimize Scientist Casualties" }
         ],
         "map_locations": [
           {
@@ -125,15 +85,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Destroy Inlet Pump Controls (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Inlet Pump Controls (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Inlet Pump Controls"
-          }
+          { "name": "Destroy Inlet Pump Controls (Secret Agent)", "ref": "Missions/Caverns/Destroy Inlet Pump Controls (Secret Agent)" },
+          { "name": "Destroy Inlet Pump Controls (Double Agent)", "ref": "Missions/Caverns/Destroy Inlet Pump Controls (Double Agent)" },
+          { "name": "Destroy Inlet Pump Controls", "ref": "Missions/Caverns/Destroy Inlet Pump Controls" }
         ],
         "map_locations": [
           {
@@ -164,15 +118,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Destroy Outlet Pump Controls (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Outlet Pump Controls (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Outlet Pump Controls"
-          }
+          { "name": "Destroy Outlet Pump Controls (Secret Agent)", "ref": "Missions/Caverns/Destroy Outlet Pump Controls (Secret Agent)" },
+          { "name": "Destroy Outlet Pump Controls (Double Agent)", "ref": "Missions/Caverns/Destroy Outlet Pump Controls (Double Agent)" },
+          { "name": "Destroy Outlet Pump Controls", "ref": "Missions/Caverns/Destroy Outlet Pump Controls" }
         ],
         "map_locations": [
           {
@@ -197,15 +145,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Destroy Master Control Console (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Master Control Console (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Destroy Master Control Console"
-          }
+          { "name": "Destroy Master Control Console (Secret Agent)", "ref": "Missions/Caverns/Destroy Master Control Console (Secret Agent)" },
+          { "name": "Destroy Master Control Console (Double Agent)", "ref": "Missions/Caverns/Destroy Master Control Console (Double Agent)" },
+          { "name": "Destroy Master Control Console", "ref": "Missions/Caverns/Destroy Master Control Console" }
         ],
         "map_locations": [
           {
@@ -218,12 +160,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Use Radio To Contact Jack Wade (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Use Radio To Contact Jack Wade"
-          }
+          { "name": "Use Radio To Contact Jack Wade (Double Agent)", "ref": "Missions/Caverns/Use Radio To Contact Jack Wade (Double Agent)" },
+          { "name": "Use Radio To Contact Jack Wade", "ref": "Missions/Caverns/Use Radio To Contact Jack Wade" }
         ],
         "map_locations": [
           {
@@ -236,12 +174,8 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate) (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate)"
-          }
+          { "name": "Body Armor (Under Walkway On Crate) (Agent)", "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate) (Agent)" },
+          { "name": "Body Armor (Under Walkway On Crate)", "ref": "Missions/Caverns/Body Armor (Under Walkway On Crate)" }
         ],
         "map_locations": [
           {
@@ -254,15 +188,9 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Body Armor (Comms Room) (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Body Armor (Comms Room) (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Body Armor (Comms Room)"
-          }
+          { "name": "Body Armor (Comms Room) (Agent)", "ref": "Missions/Caverns/Body Armor (Comms Room) (Agent)" },
+          { "name": "Body Armor (Comms Room) (Secret Agent)", "ref": "Missions/Caverns/Body Armor (Comms Room) (Secret Agent)" },
+          { "name": "Body Armor (Comms Room)", "ref": "Missions/Caverns/Body Armor (Comms Room)" }
         ],
         "map_locations": [
           {
@@ -275,18 +203,10 @@
       },
       {
         "sections": [
-          {
-            "ref": "Missions/Caverns/Caverns - Clear (Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Caverns - Clear (Secret Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Caverns - Clear (Double Agent)"
-          },
-          {
-            "ref": "Missions/Caverns/Caverns - (Clear)"
-          }
+          { "name": "Caverns - Clear (Agent)", "ref": "Missions/Caverns/Caverns - Clear (Agent)" },
+          { "name": "Caverns - Clear (Secret Agent)", "ref": "Missions/Caverns/Caverns - Clear (Secret Agent)" },
+          { "name": "Caverns - Clear (Double Agent)", "ref": "Missions/Caverns/Caverns - Clear (Double Agent)" },
+          { "name": "Caverns - (Clear)", "ref": "Missions/Caverns/Caverns - (Clear)" }
         ],
         "map_locations": [
           {

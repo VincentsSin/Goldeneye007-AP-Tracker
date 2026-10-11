@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-11",
+  "runtime": "PopTracker 0.35.4 and Archipelago 0.6.7",
+  "method": "Existing GoldenEye seeds from C:/goldeneye_ap, isolated real localhost AP servers, real PopTracker repair pack. Test AP client submitted LocationChecks; console supplied selected items. No emulator gameplay replay.",
+  "seeds": [
+    {
+      "seed": "80654586111552910020",
+      "enabledLocations": 243,
+      "bodyArmor": "per difficulty",
+      "ammoCrates": "per difficulty"
+    },
+    {
+      "seed": "20400658822001691407",
+      "enabledLocations": 172,
+      "bodyArmor": "shared",
+      "ammoCrates": "shared"
+    }
+  ],
+  "passed": [
+    "All three variants load and connect",
+    "Starting mission Dam activates",
+    "Three Progressive Weapon receipts unlock Klobb, Hunting Knife and Throwing Knife",
+    "Mission, keycard, cheat and Victory receipts activate correct toggles",
+    "Checked IDs 70101004 and 70115001 complete only their mapped sections",
+    "Reconnect rebuilds identical item state and preserves checked sections",
+    "Switching servers inside running PopTracker clears previous seed items and checks",
+    "Dam popup shows difficulty-specific armor for seed A and shared armor for seed B",
+    "Disabled Aztec and Egyptian mission markers hidden in both test seeds",
+    "Cradle clear 71800001 and goal 72110002 complete; Victory activates",
+    "850 map references now have unique section labels; duplicate-section startup warnings eliminated",
+    "Offline syntax, JSON, references and callback validation pass after edits"
+  ],
+  "unverified": [
+    "Actual BizHawk gameplay producing item/check messages",
+    "Every individual item and location through live network; complete coverage checked offline",
+    "All combinations of seed options",
+    "Automatic tab switching requires client publication"
+  ],
+  "remaining": [
+    "PopTracker auto-renames unnamed map marker locations and logs nonblocking duplicate-location warnings"
+  ],
+  "evidenceDirectory": "C:/trackers/trackers/GoldenEye_007_Tracker/_live_test",
+  "evidenceFiles": [
+    "server_a_controlled.log",
+    "server_b_controlled.log",
+    "received_and_checks.json",
+    "reconnect_state.json",
+    "seed_switch_state.json",
+    "itemsonly_state.json",
+    "mapsonly_state.json",
+    "checks_protocol.json"
+  ]
+}
