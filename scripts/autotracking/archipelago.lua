@@ -1124,6 +1124,42 @@ local function onLocation(location_id, location_name)
     end
 end
 
+-- Automatic mission tab switching
+
+local MISSION_KEY = nil
+
+local MISSION_TABS = {
+    [1] = "Dam",
+    [2] = "Facility",
+    [3] = "Runway",
+    [5] = "Surface 1",
+    [6] = "Bunker 1",
+    [8] = "Silo",
+    [10] = "Frigate",
+    [12] = "Surface 2",
+    [13] = "Bunker 2",
+    [15] = "Statue",
+    [16] = "Archives",
+    [17] = "Streets",
+    [18] = "Depot",
+    [19] = "Train",
+    [21] = "Jungle",
+    [22] = "Control",
+    [23] = "Caverns",
+    [24] = "Cradle",
+    [26] = "Aztec",
+    [28] = "Egyptian",
+}
+
+local function onMission(key, value)
+    if key ~= MISSION_KEY then return end
+    local tab = MISSION_TABS[value]
+    if tab then
+        Tracker:UiHint("ActivateTab", "Missions")
+        Tracker:UiHint("ActivateTab", tab)
+    end
+end
+
 local function onClear(slot_data)
     Tracker.BulkUpdate = true
     Tracker:FindObjectForCode("ap_session").Active = false
@@ -1175,8 +1211,16 @@ local function onClear(slot_data)
     end
     Tracker:FindObjectForCode("ap_session").Active = true
     Tracker.BulkUpdate = false
+
+    MISSION_KEY = "GoldenEye_007_"
+        .. Archipelago.TeamNumber .. "_"
+        .. Archipelago.PlayerNumber .. "_mission"
+    Archipelago:SetNotify({MISSION_KEY})
+    Archipelago:Get({MISSION_KEY})
 end
 
+Archipelago:AddSetReplyHandler("goldeneye_mission_update", onMission)
+Archipelago:AddRetrievedHandler("goldeneye_mission_current", onMission)
 Archipelago:AddClearHandler("goldeneye_clear", onClear)
 Archipelago:AddItemHandler("goldeneye_item", onItem)
 Archipelago:AddLocationHandler("goldeneye_location", onLocation)

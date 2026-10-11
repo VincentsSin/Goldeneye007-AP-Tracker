@@ -67,7 +67,7 @@
                           },
                           {
                             "type": "group",
-                            "header": "Surface2",
+                            "header": "Surface 2",
                             "dock": "left",
                             "content": {
                               "type": "layout",
@@ -199,7 +199,7 @@
                           },
                           {
                             "type": "group",
-                            "header": "Surface2",
+                            "header": "Surface 2",
                             "dock": "left",
                             "content": {
                               "type": "layout",

@@ -38,7 +38,13 @@ for _,variant in ipairs({'standard','itemsonly','mapsonly'}) do
  end
  ScriptHost={}
  function ScriptHost:LoadScript(p) check(not loaded[p],'Script loaded twice '..p);loaded[p]=true;dofile(p) end
- Archipelago={MissingLocations={},CheckedLocations={}}
+ Archipelago={MissingLocations={},CheckedLocations={},TeamNumber=0,PlayerNumber=1}
+ function Archipelago:SetNotify(keys) self.notify=keys end
+ function Archipelago:Get(keys) self.get=keys end
+ function Archipelago:AddSetReplyHandler(name,handler) self.missionUpdate=handler end
+ function Archipelago:AddRetrievedHandler(name,handler) self.missionCurrent=handler end
+ local hints={}
+ function Tracker:UiHint(action,tab) hints[#hints+1]={action,tab} end
  function Archipelago:AddClearHandler(name,handler) check(not self.clear,'Duplicate clear');self.clear=handler end
  function Archipelago:AddItemHandler(name,handler) check(not self.item,'Duplicate item');self.item=handler end
  function Archipelago:AddLocationHandler(name,handler) check(not self.location,'Duplicate location');self.location=handler end
@@ -58,6 +64,12 @@ for _,variant in ipairs({'standard','itemsonly','mapsonly'}) do
  Archipelago.CheckedLocations={}
  Archipelago.clear({options={starting_mission=1},goal_clear_groups={{first.id,second.id},{third.id}}})
  check(objects.dam.Active,'Starting mission')
+ check(Archipelago.notify[1]=='GoldenEye_007_0_1_mission','Mission subscription key')
+ check(Archipelago.get[1]==Archipelago.notify[1],'Mission retrieval key')
+ Archipelago.missionCurrent(Archipelago.get[1],12)
+ check(hints[#hints][2]=='Surface 2','Retrieved Surface 2 tab')
+ Archipelago.missionUpdate(Archipelago.get[1],1)
+ check(hints[#hints][2]=='Dam','Live mission handler')
  check(goldeneyeLocationEnabled(tostring(first.id)),'Enabled location')
  check(not goldeneyeLocationEnabled('0'),'Non-AP section hidden')
  for _,mapping in ipairs(ITEMS) do Archipelago.item(_-1,mapping.id,'',1) end

@@ -64,7 +64,7 @@
               }
             },
             {
-              "title": "Surace 2",
+              "title": "Surface 2",
               "content": {
                 "type": "map",
                 "maps": ["surface_two"]

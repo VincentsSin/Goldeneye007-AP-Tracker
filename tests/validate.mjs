@@ -11,7 +11,8 @@ function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.
 const files=walk(root);
 const docs=Object.fromEntries(files.filter(p=>/\.jsonc?$/.test(p)).map(p=>[path.relative(root,p).replaceAll('\\','/'),parseJsonc(fs.readFileSync(p,'utf8'))]));
 const core=fs.readFileSync(path.join(root,'scripts/autotracking/archipelago.lua'),'utf8');
-const items=[...core.matchAll(/\[(\d+)\]\s*=\s*"([^"@][^"]*)"/g)].map(m=>({id:+m[1],code:m[2]}));
+const itemTable=core.match(/local ITEM_MAPPING = \{([\s\S]*?)\n\}/)[1];
+const items=[...itemTable.matchAll(/\[(\d+)\]\s*=\s*"([^"@][^"]*)"/g)].map(m=>({id:+m[1],code:m[2]}));
 const locations=[...core.matchAll(/\[(\d+)\]\s*=\s*"(@[^"]+)"/g)].map(m=>({id:+m[1],code:m[2]}));
 const weapons=[...core.match(/local PROGRESSIVE_WEAPONS = \{([\s\S]*?)\}/)[1].matchAll(/"([^"]+)"/g)].map(m=>m[1]);
 const codes=new Set();
