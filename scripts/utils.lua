@@ -1,7 +1,32 @@
-function has(item)
-  return Tracker:ProviderCountForCode(item) == 1
+GOLDENEYE_ENABLED_LOCATIONS = {}
+GOLDENEYE_ENABLED_MISSIONS = {}
+GOLDENEYE_GOAL_GROUPS = {}
+
+function goldeneyeLocationEnabled(location_id)
+    if Tracker:ProviderCountForCode("ap_session") == 0 then return true end
+    return GOLDENEYE_ENABLED_LOCATIONS[tonumber(location_id)] == true
 end
 
+function goldeneyeMissionEnabled(mission_name)
+    if Tracker:ProviderCountForCode("ap_session") == 0 then return true end
+    return GOLDENEYE_ENABLED_MISSIONS[mission_name] == true
+end
+
+function goldeneyeGoalComplete()
+    if Tracker:ProviderCountForCode("victory") > 0 then return true end
+    Tracker:ProviderCountForCode("ap_session")
+    if #GOLDENEYE_GOAL_GROUPS == 0 then return false end
+    for _, group in ipairs(GOLDENEYE_GOAL_GROUPS) do
+        local complete = false
+        for _, path in ipairs(group) do
+            if Tracker:FindObjectForCode(path).AvailableChestCount == 0 then
+                complete = true
+            end
+        end
+        if not complete then return false end
+    end
+    return true
+end
 
 function has(item, amount)
 	local count = Tracker:ProviderCountForCode(item)

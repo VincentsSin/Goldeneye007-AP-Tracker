@@ -17,13 +17,13 @@
             "ref": "Missions/Depot/Safe Key"
           },
           {
-            "ref": "Missions/Depot/Obtain Safe Key (Secret Agent)"
+            "ref": "Missions/Depot/Obtain Depot Safe Key (Secret Agent)"
           },
           {
-            "ref": "Missions/Depot/Obtain Safe Key (Double Agent)"
+            "ref": "Missions/Depot/Obtain Depot Safe Key (Double Agent)"
           },
           {
-            "ref": "Missions/Depot/Obtain Safe Key"
+            "ref": "Missions/Depot/Obtain Depot Safe Key"
           }
         ],
         "map_locations": [
@@ -218,28 +218,28 @@
             "ref": "Missions/Depot/D5K On Floor"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 1 (Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Secret Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 1 (Secret Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 1 (Double Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 1 (Double Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 1"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 1"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 2 (Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Secret Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 2 (Secret Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 2 (Double Agent)"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 2 (Double Agent)"
           },
           {
-            "ref": "Missions/Depot/D5K On Top-Left Table 2"
+            "ref": "Missions/Depot/D5K On Bottom-Right Table 2"
           },
           {
             "ref": "Missions/Depot/D5K On Top-Right Table 1 (Agent)"

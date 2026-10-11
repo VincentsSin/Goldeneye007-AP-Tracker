@@ -606,136 +606,151 @@
     "codes": "streettank"
   },
   {
+    "name": "Tank (Missiles)",
+    "type": "toggle",
+    "img": "images/weapons/tank.png",
+    "codes": "tank"
+  },
+  {
+    "name": "Victory",
+    "type": "toggle",
+    "img": "images/missions/cradle.png",
+    "codes": "victory"
+  },
+  {
+    "name": "AP Session",
+    "type": "toggle",
+    "img": "images/missions/cheats.png",
+    "codes": "ap_session"
+  },
+  {
     "name": "Progressive Weapon",
     "type": "progressive",
     "codes": "progressive_weapon",
-    "allow_disabled": false,
+    "allow_disabled": true,
     "stages": [
       {
         "img": "images/weapons/klobb.png",
-        "codes": "klobb"
+        "name": "Klobb"
       },
       {
         "img": "images/weapons/hunting_knife.png",
-        "codes": "huntknife"
+        "name": "Hunting Knife"
       },
       {
         "img": "images/weapons/throwing_knife.png",
-        "codes": "throwknife"
+        "name": "Throwing Knife"
       },
       {
         "img": "images/weapons/taser.png",
-        "codes": "taser"
+        "name": "Taser"
       },
       {
         "img": "images/weapons/pp7.png",
-        "codes": "pp7"
+        "name": "PP7 Special Issue"
       },
       {
         "img": "images/weapons/silenced_pp7.png",
-        "codes": "silentpp7"
+        "name": "PP7 (Silenced)"
       },
       {
         "img": "images/weapons/dd44_dostovei.png",
-        "codes": "dd44"
+        "name": "DD44 Dostovei"
       },
       {
         "img": "images/weapons/kf7_soviet.png",
-        "codes": "kf7"
+        "name": "KF7 Soviet"
       },
       {
         "img": "images/weapons/zmg_9mm.png",
-        "codes": "zmg"
+        "name": "ZMG (9 mm)"
       },
       {
         "img": "images/weapons/d5k_deutsche.png",
-        "codes": "d5k"
+        "name": "D5K Deutsche"
       },
       {
         "img": "images/weapons/d5k_silenced.png",
-        "codes": "silentd5k"
+        "name": "D5K (Silenced)"
       },
       {
         "img": "images/weapons/sniper_rifle.png",
-        "codes": "sniper"
+        "name": "Sniper Rifle"
       },
       {
         "img": "images/weapons/hand_grenade.png",
-        "codes": "grenade"
+        "name": "Grenade"
       },
       {
         "img": "images/weapons/phantom.png",
-        "codes": "phantom"
+        "name": "Phantom"
       },
       {
         "img": "images/weapons/timed_mine.png",
-        "codes": "tmine"
+        "name": "Timed Mine"
       },
       {
         "img": "images/weapons/ar33.png",
-        "codes": "ar33"
+        "name": "AR33 Assault Rifle"
       },
       {
         "img": "images/weapons/proxy_mine.png",
-        "codes": "pmine"
+        "name": "Proximity Mine"
       },
       {
         "img": "images/weapons/rcp90.png",
-        "codes": "rcp90"
+        "name": "RC-P90"
       },
       {
         "img": "images/weapons/remote_mine.png",
-        "codes": "rmine"
+        "name": "Remote Mine"
       },
       {
         "img": "images/weapons/watch_laser.png",
-        "codes": "watchlaser"
+        "name": "Watch Laser"
       },
       {
         "img": "images/weapons/shotgun.png",
-        "codes": "shotgun"
+        "name": "Shotgun"
       },
       {
         "img": "images/weapons/magnum.png",
-        "codes": "magnum"
-      },      
-      {
-        "img": "images/weapons/hunting_knife.png",
-        "codes": "huntknife"
-      },
-      {
-        "img": "images/weapons/silver_pp7.png",
-        "codes": "silverpp7"
-      },
-      {
-        "img": "images/weapons/auto_shotgun.png",
-        "codes": "autoshotgun"
-      },
-      {
-        "img": "images/weapons/laser.png",
-        "codes": "laser"
-      },
-      {
-        "img": "images/weapons/grenade_launcher.png",
-        "codes": "glauncher"
-      },
-      {
-        "img": "images/weapons/rocket_launcher.png",
-        "codes": "rlauncher"
-      },
-      {
-        "img": "images/weapons/tank.png",
-        "codes": "tank"
+        "name": "Cougar Magnum"
       },
       {
         "img": "images/weapons/golden_gun.png",
-        "codes": "goldgun"
+        "name": "Silver PP7"
+      },
+      {
+        "img": "images/weapons/auto_shotgun.png",
+        "name": "Automatic Shotgun"
+      },
+      {
+        "img": "images/weapons/laser.png",
+        "name": "Military Laser"
+      },
+      {
+        "img": "images/weapons/grenade_launcher.png",
+        "name": "Grenade Launcher"
+      },
+      {
+        "img": "images/weapons/rocket_launcher.png",
+        "name": "Rocket Launcher"
+      },
+      {
+        "img": "images/weapons/tank.png",
+        "name": "Tank (Missiles)"
+      },
+      {
+        "img": "images/weapons/silver_pp7.png",
+        "name": "Golden Gun"
       },
       {
         "img": "images/weapons/gold_pp7.png",
-        "codes": "goldpp7"
+        "name": "Gold PP7"
       }
-    ]
+    ],
+    "loop": false
   },
   {
     "name": "Cheat Unlock - Paintball Mode",

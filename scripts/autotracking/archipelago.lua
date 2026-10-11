@@ -1,47 +1,7 @@
-CUR_INDEX = -1
-DEBUG_ENABLED = true
-FONT_SIZES_SET = false
-CHECKED_LOCATIONS = {}
-
-COUNTER_FONT_SIZE   = 16         
-COUNTER_COLOR       = "#ff2900"   
-COUNTER_BACKGROUND  = "#AA000000" 
-
-function debugPrint(message)
-    if DEBUG_ENABLED then
-        print("[GE DEBUG] " .. message)
-    end
-end
-
-local function dumpTableKeys(prefix, value, depth)
-    if type(value) ~= "table" or depth <= 0 then
-        return
-    end
-
-    local keys = {}
-    for key in pairs(value) do
-        keys[#keys + 1] = tostring(key)
-    end
-    table.sort(keys)
-
-    for _, key in ipairs(keys) do
-        local child = value[key]
-        debugPrint(prefix .. "[" .. key .. "] = " .. tostring(child))
-        if type(child) == "table" then
-            dumpTableKeys(prefix .. "[" .. key .. "]", child, depth - 1)
-        end
-    end
-end
-
-local function dumpSlotData(slot_data)
-    if type(slot_data) ~= "table" then
-        debugPrint("slot_data is not a table: " .. tostring(slot_data))
-        return
-    end
-
-    debugPrint("slot_data keys:")
-    dumpTableKeys("slot_data", slot_data, 2)
-end
+-- GoldenEye 007 AP item and location tracking.
+local CUR_INDEX = -1
+local PROGRESSIVE_COUNT = 0
+local CHECKED_LOCATIONS = {}
 
 local ITEM_MAPPING = {
     -- Weapons
@@ -132,7 +92,7 @@ local ITEM_MAPPING = {
     [17330050] = "launchdata",
     [17330051] = "runtank",
     [17330052] = "streettank",
-    
+
     -- Cheat Unlocks
     [17340000] = "paintball",
     [17340001] = "invincibility",
@@ -153,6 +113,9 @@ local ITEM_MAPPING = {
     [17340016] = "goldpp",
     [17340017] = "2xlaser",
     [17340018] = "allguns",
+
+    -- Goal
+    [17390000] = "victory",
 
     -- Mission Unlocks
     [73037001] = "dam",
@@ -177,1239 +140,1043 @@ local ITEM_MAPPING = {
     [73037020] = "egyptian"
 }
 
-local NAME_MAPPING = {
-    -- Weapon Unlocks
-    ["Progressive Weapon"] = "progressive_weapon",
-    ["Klobb"] = "klobb",
-    ["Hunting Knife"] = "huntknife",
-    ["Throwing Knife"] = "throwknife",
-    ["Taser"] = "taser",
-    ["PP7 Special Issue"] = "pp7",
-    ["PP7 (Silenced)"] = "silentpp7",
-    ["DD44 Dostovei"] = "dd44",
-    ["KF7 Soviet"] = "kf7",
-    ["ZMG (9mm)"] = "zmg",
-    ["D5K Deutsche"] = "d5k",
-    ["D5K (Silenced)"] = "silentd5k",
-    ["Sniper Rifle"] = "sniper",
-    ["Grenade"] = "grenade",
-    ["Phantom"] = "phantom",
-    ["Timed Mine"] = "tmine",
-    ["AR33 Assault Rifle"] = "ar33",
-    ["Proximity Mine"] = "pmine",
-    ["RC-P90"] = "rcp90",
-    ["Remote Mine"] = "rmine",
-    ["Watch Laser"] = "watchlaser",
-    ["Shotgun"] = "shotgun",
-    ["Cougar Magnum"] = "magnum",
-    ["Golden Gun"] = "goldgun",
-    ["Automatic Shotgun"] = "autoshotgun",
-    ["Military Laser"] = "laser",
-    ["Grenade Launcher"] = "glauncher",
-    ["Rocket Launcher"] = "rlauncher",
-    ["Tank (Missiles)"] = "tank",
-    ["Silver PP7"] = "silverpp",
-    ["Gold PP7"] = "goldpp",
-
-    -- Loadout Items
-    ["Covert Modem"] = "covertmodem",
-    ["Door Decoder"] = "doordecoder",
-    ["Key Analyzer Case"] = "keyanalyzer",
-    ["Datathief"] = "datathief",
-    ["Camera"] = "camera",
-    ["Plastique"] = "plastique",
-    ["Tracker Bug"] = "tracker",
-    ["Bomb Defuser"] = "bombdefuser",
-    ["Special Timed Mine"] = "stmine",
-    ["Watch Magnet"] = "watchmag",
-
-    -- Stage Items
-    ["Keycard A (Facility)"] = "fackeycarda",
-    ["Keycard B (Facility)"] = "fackeycardb",
-    ["Ignition Key"] = "planekey",
-    ["Hut Door Key"] = "hutkey",
-    ["Surface Safe Key"] = "surfacesafe",
-    ["Bunker Blueprints"] = "bunkerprints",
-    ["Computer Room Keycard"] = "comproomkey",
-    ["Security Room Keycard"] = "securitykey",
-    ["Goldeneye Key"] = "gekey",
-    ["I/O Circuit Board"] = "ioboard",
-    ["CPU Circuit Board"] = "cpuboard",
-    ["RSP Circuit Board"] = "rspboard",
-    ["RDP Circuit Board"] = "rdpboard",
-    ["Keycard Level 1"] = "keycard4h4",
-    ["Keycard Level 2"] = "keycard4c3",
-    ["Keycard Level 3"] = "keycard452",
-    ["DAT"] = "dat",
-    ["Comms Room Key"] = "commskey",
-    ["Cell Key 1"] = "cellkey1",
-    ["Cell Key 2"] = "cellkey2",
-    ["CCTV Tape"] = "cctv",
-    ["Staff List"] = "stafflist",
-    ["Casualty List"] = "casualtylist",
-    ["Goldeneye Operations Mnual"] = "geopmanual",
-    ["Keycard A (Bunker 2)"] = "b2keycarda",
-    ["Keycard B (Bunker 2)"] = "b2keycardb",
-    ["Bunker Safe Key 1"] = "bunkersafe1",
-    ["Bunker Safe Key 2"] = "bunkersafe2",
-    ["Flight Recorder"] = "recorder",
-    ["Interrogation Rooom Key"] = "archivekey",
-    ["Archives Safe Key"] = "archivesafe",
-    ["Depot Safe Key"] = "depotsafe",
-    ["Helicopter Blueprints"] = "heliprints",
-    ["Train Door Key"] = "trainkey",
-    ["DAT"] = "dat",
-    ["Comms Room Key"] = "commskey",
-    ["Cell Key 1"] = "cellkey1",
-    ["Cell Key 2"] = "cellkey2",
-    ["CCTV Tape"] = "cctv",
-    ["Staff List"] = "stafflist",
-    ["Casualty List"] = "casualtylist",
-    ["Goldeneye Operations Mnual"] = "geopmanual"
-}
-
 local LOCATION_SECTION_MAP = {
-  --Shared Objective Locations
-  [70101001] = "@Locations/Dam/Neutralize All Alarms",
-  [70101002] = "@Locations/Dam/Install Covert Modem",
-  [70101003] = "@Locations/Dam/Intercept Data Backup",
-  [70101004] = "@Locations/Dam/Bungee Jump From Platform",
-  [70201001] = "@Locations/Facility/Gain Entrance To Laboratory Area",
-  [70201002] = "@Locations/Facility/Contact Double Agent",
-  [70201003] = "@Locations/Facility/Rendezvous With 006",
-  [70201004] = "@Locations/Facility/Destroy All Tanks In Bottling Room",
-  [70201005] = "@Locations/Facility/Minimize Scientist Casualties",
-  [70301001] = "@Locations/Runway/Find Plane Ignition Key",
-  [70301002] = "@Locations/Runway/Destroy Heavy Gun Emplacements",
-  [70301003] = "@Locations/Runway/Destroy Missile Battery",
-  [70301004] = "@Locations/Runway/Escape In Plane",
-  [70401001] = "@Locations/Surface 1/Power Down Communications Dish",
-  [70401002] = "@Locations/Surface 1/Obtain Safe Key",
-  [70401003] = "@Locations/Surface 1/Steal Building Plans",
-  [70401004] = "@Locations/Surface 1/Enter Base Via Ventialtion Tower",
-  [70501001] = "@Locations/Bunker 1/Power Down Communications Dish",
-  [70501002] = "@Locations/Bunker 1/Copy Goldeneye Key And Leave Original",
-  [70501003] = "@Locations/Bunker 1/Get Personnel To Activate Computer",
-  [70501004] = "@Locations/Bunker 1/Download Data From Computer",
-  [70501005] = "@Locations/Bunker 1/Photograph Main Video Screen",
-  [70601001] = "@Locations/Silo/Plant Bombs In Fuel Rooms",
-  [70601002] = "@Locations/Silo/Photograph Satellite",
-  [70601003] = "@Locations/Silo/Obtain Telemetric Data",
-  [70601004] = "@Locations/Silo/Retrieve Satellite Circuitry",
-  [70601005] = "@Locations/Silo/Minimize Scientist Casualties",
-  [70701001] = "@Locations/Frigate/Rescue Hostages",
-  [70701002] = "@Locations/Frigate/Disarm Bridge Bomb",
-  [70701003] = "@Locations/Frigate/Disarm Engine Room Bomb",
-  [70701004] = "@Locations/Frigate/Plant Tracking Bug On Helicopter",
-  [70801001] = "@Locations/Surface 2/Disrupt All Surveillance Equipment",
-  [70801002] = "@Locations/Surface 2/Break Communications Link To Bunker",
-  [70801003] = "@Locations/Surface 2/Disable Spetznaz Support Aircraft",
-  [70801004] = "@Locations/Surface 2/Gain Entry To Bunker",
-  [70901001] = "@Locations/Bunker 2/Compare Staff & Casualty Lists",
-  [70901002] = "@Locations/Bunker 2/Recover CCTV Tape",
-  [70901003] = "@Locations/Bunker 2/Disable All Security Cameras",
-  [70901004] = "@Locations/Bunker 2/Recover Goldeneye Operation Manual",
-  [70901005] = "@Locations/Bunker 2/Escape With Natalya",
-  [71001001] = "@Locations/Statue/Contact Valentin",
-  [71001002] = "@Locations/Statue/Confront And Unmask Janus",
-  [71001003] = "@Locations/Statue/Locate Helicopter",
-  [71001004] = "@Locations/Statue/Rescue Natalya",
-  [71001005] = "@Locations/Statue/Find Flight Recorder",
-  [71101001] = "@Locations/Archives/Escape From Interrogation Room",
-  [71101002] = "@Locations/Archives/Find Natalya",
-  [71101003] = "@Locations/Archives/Recover Helicopter Black Box",
-  [71101004] = "@Locations/Archives/Escape With Natalya",
-  [71201001] = "@Locations/Streets/Contact Valentin",
-  [71201002] = "@Locations/Streets/Pursue Ouromov And Natalya",
-  [71201003] = "@Locations/Streets/Minimize Civilian Casualties",
-  [71301001] = "@Locations/Depot/Destroy Illegal Arms Cache",
-  [71301002] = "@Locations/Depot/Destroy Computer Network",
-  [71301003] = "@Locations/Depot/Obtain Safe Key",
-  [71301004] = "@Locations/Depot/Recover Helicopter Blueprints",
-  [71301005] = "@Locations/Depot/Locate Trevelyan's Train",
-  [71401001] = "@Locations/Train/Destroy Brake Units",
-  [71401002] = "@Locations/Train/Rescue Natalya",
-  [71401003] = "@Locations/Train/Locate Janus Secret Base",
-  [71401004] = "@Locations/Train/Crack Boris' Password",
-  [71401005] = "@Locations/Train/Escape With Natalya",
-  [71501001] = "@Locations/Jungle/Destroy Drone Guns",
-  [71501002] = "@Locations/Jungle/Eliminate Xenia",
-  [71501003] = "@Locations/Jungle/Blow Up Ammo Dump",
-  [71501004] = "@Locations/Jungle/Excort Natalya To Janus Base",
-  [71601001] = "@Locations/Control/Protect Natalya",
-  [71601002] = "@Locations/Control/Disable Goldeneye Satellite",
-  [71601003] = "@Locations/Control/Destroy Armored Mainframes",
-  [71701001] = "@Locations/Caverns/Destroy Inlet Pump Controls",
-  [71701002] = "@Locations/Caverns/Destroy Outlet Pump Controls",
-  [71701003] = "@Locations/Caverns/Destroy Master Control Console",
-  [71701004] = "@Locations/Caverns/Use Radio To Contact Jack Wade",
-  [71701005] = "@Locations/Caverns/Minimize Scientist Casualties",
-  [71801001] = "@Locations/Cradle/Destroy Control Console",
-  [71801002] = "@Locations/Cradle/Settle The Score With Trevelyan",
-  [71901001] = "@Locations/Aztec/Reprogram Shuttle Guidance",
-  [71901002] = "@Locations/Aztec/Launch Shuttle",
-  [72001001] = "@Locations/Egyptian/Recover The Golden Gun",
-  [72001002] = "@Locations/Egyptian/Defeat Baron Samedi?",
+    -- Dam
+    [70100001] = "@Missions/Dam/Dam - (Clear)",
+    [70101001] = "@Missions/Dam/Neutralize All Alarms",
+    [70101002] = "@Missions/Dam/Install Covert Modem",
+    [70101003] = "@Missions/Dam/Intercept Data Backup",
+    [70101004] = "@Missions/Dam/Bungee Jump From Platform",
+    [70103001] = "@Missions/Dam/Cheat - Paintball Mode",
+    [70104001] = "@Missions/Dam/Sniper Rifle",
+    [70105001] = "@Missions/Dam/Body Armor (Guard Tower 2)",
+    [70105002] = "@Missions/Dam/Body Armor (Last Dam Tower)",
+    [70110001] = "@Missions/Dam/Dam - Clear (Agent)",
+    [70111001] = "@Missions/Dam/Bungee Jump From Platform (Agent)",
+    [70114001] = "@Missions/Dam/Sniper Rifle (Agent)",
+    [70115001] = "@Missions/Dam/Body Armor (Guard Tower 2) (Agent)",
+    [70115002] = "@Missions/Dam/Body Armor (Last Dam Tower) (Agent)",
+    [70120001] = "@Missions/Dam/Dam - Clear (Secret Agent)",
+    [70121001] = "@Missions/Dam/Neutralize All Alarms (Secret Agent)",
+    [70121002] = "@Missions/Dam/Bungee Jump From Platform (Secret Agent)",
+    [70124001] = "@Missions/Dam/Sniper Rifle (Secret Agent)",
+    [70125002] = "@Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)",
+    [70130001] = "@Missions/Dam/Dam - Clear (Double Agent)",
+    [70131001] = "@Missions/Dam/Neutralize All Alarms (Double Agent)",
+    [70131002] = "@Missions/Dam/Install Covert Modem (Double Agent)",
+    [70131003] = "@Missions/Dam/Intercept Data Backup (Double Agent)",
+    [70131004] = "@Missions/Dam/Bungee Jump From Platform (Double Agent)",
+    [70134001] = "@Missions/Dam/Sniper Rifle (Double Agent)",
 
-  --Shared Clear Locations
-  [70100001] = "@Locations/Dam/Dam - (Clear)",
-  [70200001] = "@Locations/Facility/Facility - (Clear)",
-  [70300001] = "@Locations/Runway/Runway - (Clear)",
-  [70400001] = "@Locations/Surface 1/Surface 1 - (Clear)",
-  [70500001] = "@Locations/Bunker 1/Bunker 1 - (Clear)",
-  [70600001] = "@Locations/Silo/Silo - (Clear)",
-  [70700001] = "@Locations/Frigate/Frigate - (Clear)",
-  [70800001] = "@Locations/Surface 2/Surface 2 - (Clear)",
-  [70900001] = "@Locations/Bunker 2/Bunker 2 - (Clear)",
-  [71000001] = "@Locations/Statue/Statue - (Clear)",
-  [71100001] = "@Locations/Archives/Archives - (Clear)",
-  [71200001] = "@Locations/Streets/Streets - (Clear)",
-  [71300001] = "@Locations/Depot/Depot - (Clear)",
-  [71400001] = "@Locations/Train/Train - (Clear)",
-  [71500001] = "@Locations/Jungle/Jungle - (Clear)",
-  [71600001] = "@Locations/Control/Control - (Clear)",
-  [71700001] = "@Locations/Caverns/Caverns - (Clear)",
-  [71800001] = "@Locations/Cradle/Cradle - (Clear)",
-  [71900001] = "@Locations/Aztec/Aztec - (Clear)",
-  [72000001] = "@Locations/Egyptian/Egyptian - (Clear)",
+    -- Facility
+    [70200001] = "@Missions/Facility/Facility - (Clear)",
+    [70201001] = "@Missions/Facility/Gain Entry To Laboratory Area",
+    [70201002] = "@Missions/Facility/Contact Double Agent",
+    [70201003] = "@Missions/Facility/Rendezvous With 006",
+    [70201004] = "@Missions/Facility/Destroy All Tanks In Bottling Room",
+    [70201005] = "@Missions/Facility/Minimize Scientist Casualties",
+    [70202001] = "@Missions/Facility/Keycard A",
+    [70202002] = "@Missions/Facility/Keycard B",
+    [70202003] = "@Missions/Facility/Door Decoder",
+    [70203001] = "@Missions/Facility/Cheat - Invincibility",
+    [70205001] = "@Missions/Facility/Body Armor (On Hallway Crate)",
+    [70205002] = "@Missions/Facility/Body Armor (Inside Security Room 2)",
+    [70210001] = "@Missions/Facility/Facility - Clear (Agent)",
+    [70211001] = "@Missions/Facility/Gain Entry To Laboratory Area (Agent)",
+    [70211002] = "@Missions/Facility/Rendezvous With 006 (Agent)",
+    [70211003] = "@Missions/Facility/Destroy All Tanks In Bottling Room (Agent)",
+    [70211004] = "@Missions/Facility/Minimize Scientist Casualties (Agent)",
+    [70212001] = "@Missions/Facility/Keycard A (Agent)",
+    [70212002] = "@Missions/Facility/Keycard B (Agent)",
+    [70212003] = "@Missions/Facility/Door Decoder (Agent)",
+    [70215001] = "@Missions/Facility/Body Armor (On Hallway Crate) (Agent)",
+    [70215002] = "@Missions/Facility/Body Armor (Inside Security Room 2) (Agent)",
+    [70220001] = "@Missions/Facility/Facility - Clear (Secret Agent)",
+    [70221001] = "@Missions/Facility/Gain Entry To Laboratory Area (Secret Agent)",
+    [70221002] = "@Missions/Facility/Contact Double Agent (Secret Agent)",
+    [70221003] = "@Missions/Facility/Rendezvous With 006 (Secret Agent)",
+    [70221004] = "@Missions/Facility/Destroy All Tanks In Bottling Room (Secret Agent)",
+    [70221005] = "@Missions/Facility/Minimize Scientist Casualties (Secret Agent)",
+    [70222001] = "@Missions/Facility/Keycard A (Secret Agent)",
+    [70222002] = "@Missions/Facility/Keycard B (Secret Agent)",
+    [70222003] = "@Missions/Facility/Door Decoder (Secret Agent)",
+    [70225001] = "@Missions/Facility/Body Armor (On Hallway Crate) (Secret Agent)",
+    [70230001] = "@Missions/Facility/Facility - Clear (Double Agent)",
+    [70231001] = "@Missions/Facility/Gain Entry To Laboratory Area (Double Agent)",
+    [70231002] = "@Missions/Facility/Contact Double Agent (Double Agent)",
+    [70231003] = "@Missions/Facility/Rendezvous With 006 (Double Agent)",
+    [70231004] = "@Missions/Facility/Destroy All Tanks In Bottling Room (Double Agent)",
+    [70231005] = "@Missions/Facility/Minimize Scientist Casualties (Double Agent)",
+    [70232001] = "@Missions/Facility/Keycard A (Double Agent)",
+    [70232002] = "@Missions/Facility/Keycard B (Double Agent)",
+    [70232003] = "@Missions/Facility/Door Decoder (Double Agent)",
 
-  --Shared Key Item Pickups
-  [70202001] = "@Locations/Facility/Keycard A",
-  [70202002] = "@Locations/Facility/Keycard B",
-  [70202003] = "@Locations/Facility/Door Decoder",
-  [70312001] = "@Locations/Runway/Ignition Key",
-  [70402001] = "@Locations/Surface 1/Bunker Plans",
-  [70402002] = "@Locations/Surface 1/Hut Door Key",
-  [70402003] = "@Locations/Surface 1/Safe Key",
-  [70502001] = "@Locations/Bunker 1/Goldeneye Key",
-  [70502002] = "@Locations/Bunker 1/Computer Room Keycard",
-  [70502003] = "@Locations/Bunker 1/Security Keycard",
-  [70602001] = "@Locations/Silo/CPU Circuit Board",
-  [70602002] = "@Locations/Silo/DAT",
-  [70602003] = "@Locations/Silo/I-O Circuit Board",
-  [70602004] = "@Locations/Silo/RDP Circuit Board",
-  [70602005] = "@Locations/Silo/RSP Circuit Board",
-  [70602006] = "@Locations/Silo/Keycard Level 1",
-  [70602007] = "@Locations/Silo/Keycard Level 2",
-  [70602008] = "@Locations/Silo/Keycard Level 3",
-  [70802001] = "@Locations/Surface 2/Comms Room Key",
-  [70902001] = "@Locations/Bunker 2/Casualty List",
-  [70902002] = "@Locations/Bunker 2/CCTV Tape",
-  [70902003] = "@Locations/Bunker 2/Goldeneye Operations Manual",
-  [70902004] = "@Locations/Bunker 2/Staff List",
-  [70902005] = "@Locations/Bunker 2/Cell Key 1",
-  [70902006] = "@Locations/Bunker 2/Cell Key 2",
-  [70902007] = "@Locations/Bunker 2/Keycard A",
-  [70902008] = "@Locations/Bunker 2/Keycard B",
-  [70902009] = "@Locations/Bunker 2/Safe Key 1",
-  [70902010] = "@Locations/Bunker 2/Safe Key 2",
-  [71002001] = "@Locations/Statue/Flight Recorder",
-  [71102001] = "@Locations/Archives/Flight Recorder",
-  [71102002] = "@Locations/Archives/Interrogation Room Key",
-  [71102003] = "@Locations/Archives/Safe Key",
-  [71302001] = "@Locations/Depot/Blueprints",
-  [71302002] = "@Locations/Depot/Safe Key",
-  [71402001] = "@Locations/Train/Train Door Key",
-  [71702001] = "@Locations/Caverns/Code Card 1",
-  [71702002] = "@Locations/Caverns/Code Card 2",
-  [71702003] = "@Locations/Caverns/Code Card 3",
-  [71902001] = "@Locations/Aztec/Security Smart Card",
-  [71902002] = "@Locations/Aztec/Launch Protocol Data",
+    -- Runway
+    [70300001] = "@Missions/Runway/Runway - (Clear)",
+    [70301001] = "@Missions/Runway/Find Plane Ignition Key",
+    [70301002] = "@Missions/Runway/Destroy Heavy Gun Emplacements",
+    [70301003] = "@Missions/Runway/Destroy Missile Battery",
+    [70301004] = "@Missions/Runway/Escape In Plane",
+    [70302001] = "@Missions/Runway/Ignition Key",
+    [70303001] = "@Missions/Runway/Cheat - DK Mode",
+    [70306001] = "@Missions/Runway/Ammo Container (Timed Mines - Room Behind Start)",
+    [70306002] = "@Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start)",
+    [70306003] = "@Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building)",
+    [70310001] = "@Missions/Runway/Runway - Clear (Agent)",
+    [70311001] = "@Missions/Runway/Find Plane Ignition Key (Agent)",
+    [70311002] = "@Missions/Runway/Escape In Plane (Agent)",
+    [70312001] = "@Missions/Runway/Ignition Key (Agent)",
+    [70316001] = "@Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Agent)",
+    [70316002] = "@Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Agent)",
+    [70316003] = "@Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Agent)",
+    [70320001] = "@Missions/Runway/Runway - Clear (Secret Agent)",
+    [70321001] = "@Missions/Runway/Find Plane Ignition Key (Secret Agent)",
+    [70321002] = "@Missions/Runway/Destroy Missile Battery (Secret Agent)",
+    [70321003] = "@Missions/Runway/Escape In Plane (Secret Agent)",
+    [70322001] = "@Missions/Runway/Ignition Key (Secret Agent)",
+    [70326001] = "@Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Secret Agent)",
+    [70326002] = "@Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Secret Agent)",
+    [70326003] = "@Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Secret Agent)",
+    [70330001] = "@Missions/Runway/Runway - Clear (Double Agent)",
+    [70331001] = "@Missions/Runway/Find Plane Ignition Key (Double Agent)",
+    [70331002] = "@Missions/Runway/Destroy Heavy Gun Emplacements (Double Agent)",
+    [70331003] = "@Missions/Runway/Destroy Missile Battery (Double Agent)",
+    [70331004] = "@Missions/Runway/Escape In Plane (Double Agent)",
+    [70332001] = "@Missions/Runway/Ignition Key (Double Agent)",
+    [70336001] = "@Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Double Agent)",
+    [70336002] = "@Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Double Agent)",
+    [70336003] = "@Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Double Agent)",
 
+    -- Surface 1
+    [70400001] = "@Missions/Surface 1/Surface 1 - (Clear)",
+    [70401001] = "@Missions/Surface 1/Power Down Communications Dish",
+    [70401002] = "@Missions/Surface 1/Obtain Safe Key",
+    [70401003] = "@Missions/Surface 1/Steal Building Plans",
+    [70401004] = "@Missions/Surface 1/Enter Base Via Ventilation Tower",
+    [70402001] = "@Missions/Surface 1/Bunker Plans",
+    [70402002] = "@Missions/Surface 1/Hut Door Key",
+    [70402003] = "@Missions/Surface 1/Safe Key",
+    [70403001] = "@Missions/Surface 1/Cheat - 2x Grenade Launcher",
+    [70404001] = "@Missions/Surface 1/Grenade Launcher",
+    [70406001] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1)",
+    [70406002] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2)",
+    [70406003] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut)",
+    [70406004] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut)",
+    [70410001] = "@Missions/Surface 1/Surface 1 - Clear (Agent)",
+    [70411001] = "@Missions/Surface 1/Enter Base Via Ventilation Tower (Agent)",
+    [70411002] = "@Missions/Surface 1/Power Down Communications Dish (Agent)",
+    [70412001] = "@Missions/Surface 1/Bunker Plans (Agent)",
+    [70412002] = "@Missions/Surface 1/Hut Door Key (Agent)",
+    [70412003] = "@Missions/Surface 1/Safe Key (Agent)",
+    [70414001] = "@Missions/Surface 1/Grenade Launcher (Agent)",
+    [70416001] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Agent)",
+    [70416002] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Agent)",
+    [70416003] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Agent)",
+    [70416004] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Agent)",
+    [70420001] = "@Missions/Surface 1/Surface 1 - Clear (Secret Agent)",
+    [70421001] = "@Missions/Surface 1/Enter Base Via Ventilation Tower (Secret Agent)",
+    [70421002] = "@Missions/Surface 1/Obtain Safe Key (Secret Agent)",
+    [70421003] = "@Missions/Surface 1/Power Down Communications Dish (Secret Agent)",
+    [70421004] = "@Missions/Surface 1/Steal Building Plans (Secret Agent)",
+    [70422001] = "@Missions/Surface 1/Bunker Plans (Secret Agent)",
+    [70422002] = "@Missions/Surface 1/Hut Door Key (Secret Agent)",
+    [70422003] = "@Missions/Surface 1/Safe Key (Secret Agent)",
+    [70424001] = "@Missions/Surface 1/Grenade Launcher (Secret Agent)",
+    [70426001] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Secret Agent)",
+    [70426002] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Secret Agent)",
+    [70426003] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Secret Agent)",
+    [70426004] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Secret Agent)",
+    [70430001] = "@Missions/Surface 1/Surface 1 - Clear (Double Agent)",
+    [70431001] = "@Missions/Surface 1/Power Down Communications Dish (Double Agent)",
+    [70431002] = "@Missions/Surface 1/Obtain Safe Key (Double Agent)",
+    [70431003] = "@Missions/Surface 1/Steal Building Plans (Double Agent)",
+    [70431004] = "@Missions/Surface 1/Enter Base Via Ventilation Tower (Double Agent)",
+    [70432001] = "@Missions/Surface 1/Bunker Plans (Double Agent)",
+    [70432002] = "@Missions/Surface 1/Hut Door Key (Double Agent)",
+    [70432003] = "@Missions/Surface 1/Safe Key (Double Agent)",
+    [70434001] = "@Missions/Surface 1/Grenade Launcher (Double Agent)",
+    [70436001] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Double Agent)",
+    [70436002] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Double Agent)",
+    [70436003] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Double Agent)",
+    [70436004] = "@Missions/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Double Agent)",
 
-  --Shared Weapon & Ammo Pickups
-  [70104001] = "@Locations/Dam/Sniper Rifle",
-  [70306001] = "@Locations/Runway/Ammo Container (Timed Mines - Room Behind Start)",
-  [70306002] = "@Locations/Runway/Ammo Container (Hand Grenades - Next To Player Start)",
-  [70306003] = "@Locations/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building)",
-  [70404001] = "@Locations/Surface 1/Grenade Launcher",
-  [70406001] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1)",
-  [70406002] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2)",
-  [70406003] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut)",
-  [70406004] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut)",
-  [70506001] = "@Locations/Bunker 1/Ammo Container (Rifle Ammo - Room In Front Of Start)",
-  [70904001] = "@Locations/Bunker 2/Throwing Knives",
-  [70904002] = "@Locations/Bunker 2/Silenced PP7 1",
-  [70904003] = "@Locations/Bunker 2/Silenced PP7 2",
-  [71104001] = "@Locations/Archives/PP7",
-  [71204001] = "@Locations/Streets/Grenade Launcher",
-  [71206001] = "@Locations/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin)",
-  [71304001] = "@Locations/Depot/KF7 On Bottom-Right Table",
-  [71304002] = "@Locations/Depot/D5K On Bottom-Right Table 1",
-  [71304003] = "@Locations/Depot/D5K On Bottom-Right Table 2",
-  [71304004] = "@Locations/Depot/D5K On Floor",
-  [71304005] = "@Locations/Depot/D5K On Top-Right Table 1",
-  [71304006] = "@Locations/Depot/D5K On Top-Right Table 2",
-  [71304007] = "@Locations/Depot/D5K On Top-Right Table 3",
-  [71304008] = "@Locations/Depot/D5K On Top-Right Table 4",
-  [71304009] = "@Locations/Depot/Rocket Launcher",
-  [71304010] = "@Locations/Depot/KF7 On Bottom-Left Table 1",
-  [71304011] = "@Locations/Depot/KF7 On Bottom-Left Table 2",
-  [71304012] = "@Locations/Depot/KF7 On Bottom-Left Table 3",
-  [71304013] = "@Locations/Depot/KF7 On Bottom-Left Table 4",
-  [71304015] = "@Locations/Depot/KF7 On Bottom-Left Table 5",
-  [71306001] = "@Locations/Depot/Rockets 1",
-  [71306002] = "@Locations/Depot/Rockets 2",
-  [71306003] = "@Locations/Depot/Rockets 3",
-  [71306014] = "@Locations/Depot/Proximity Mines",
-  [71404001] = "@Locations/Train/Gun In Box",
-  [71602001] = "@Locations/Control/Boris' PP7",
-  [71606001] = "@Locations/Control/Ammo Container (Remote Mines - After First Blast Door)",
-  [71704001] = "@Locations/Caverns/AR33 Assault Rifle",
-  [72004001] = "@Locations/Egyptian/Golden Gun",
-  [72006001] = "@Locations/Egyptian/Golden Gun Ammo",
+    -- Bunker 1
+    [70500001] = "@Missions/Bunker 1/Bunker 1 - (Clear)",
+    [70501001] = "@Missions/Bunker 1/Disrupt All Surveillance Equipment",
+    [70501002] = "@Missions/Bunker 1/Copy Goldeneye Key And Leave Original",
+    [70501003] = "@Missions/Bunker 1/Get Personnel To Activate Computer",
+    [70501004] = "@Missions/Bunker 1/Download Data From Computer",
+    [70501005] = "@Missions/Bunker 1/Photograph Main Video Screen",
+    [70502001] = "@Missions/Bunker 1/Goldeneye Key",
+    [70502002] = "@Missions/Bunker 1/Computer Room Keycard",
+    [70502003] = "@Missions/Bunker 1/Security Keycard",
+    [70503001] = "@Missions/Bunker 1/Cheat - 2x Rocket Launcher",
+    [70505003] = "@Missions/Bunker 1/Body Armor (Kitchen)",
+    [70505005] = "@Missions/Bunker 1/Body Armor (Rear Tunnel)",
+    [70506001] = "@Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start)",
+    [70510001] = "@Missions/Bunker 1/Bunker 1 - Clear (Agent)",
+    [70511001] = "@Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Agent)",
+    [70511002] = "@Missions/Bunker 1/Photograph Main Video Screen (Agent)",
+    [70512001] = "@Missions/Bunker 1/Goldeneye Key (Agent)",
+    [70512002] = "@Missions/Bunker 1/Computer Room Keycard (Agent)",
+    [70512003] = "@Missions/Bunker 1/Security Keycard (Agent)",
+    [70515003] = "@Missions/Bunker 1/Body Armor (Kitchen) (Agent)",
+    [70515005] = "@Missions/Bunker 1/Body Armor (Rear Tunnel) (Agent)",
+    [70516001] = "@Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Agent)",
+    [70520001] = "@Missions/Bunker 1/Bunker 1 - Clear (Secret Agent)",
+    [70521001] = "@Missions/Bunker 1/Disrupt All Surveillance Equipment (Secret Agent)",
+    [70521002] = "@Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Secret Agent)",
+    [70521003] = "@Missions/Bunker 1/Photograph Main Video Screen (Secret Agent)",
+    [70522001] = "@Missions/Bunker 1/Goldeneye Key (Secret Agent)",
+    [70522002] = "@Missions/Bunker 1/Computer Room Keycard (Secret Agent)",
+    [70522003] = "@Missions/Bunker 1/Security Keycard (Secret Agent)",
+    [70525005] = "@Missions/Bunker 1/Body Armor (Rear Tunnel) (Secret Agent)",
+    [70526001] = "@Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Secret Agent)",
+    [70530001] = "@Missions/Bunker 1/Bunker 1 - Clear (Double Agent)",
+    [70531001] = "@Missions/Bunker 1/Disrupt All Surveillance Equipment (Double Agent)",
+    [70531002] = "@Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Double Agent)",
+    [70531003] = "@Missions/Bunker 1/Get Personnel To Activate Computer (Double Agent)",
+    [70531004] = "@Missions/Bunker 1/Download Data From Computer (Double Agent)",
+    [70531005] = "@Missions/Bunker 1/Photograph Main Video Screen (Double Agent)",
+    [70532001] = "@Missions/Bunker 1/Goldeneye Key (Double Agent)",
+    [70532002] = "@Missions/Bunker 1/Computer Room Keycard (Double Agent)",
+    [70532003] = "@Missions/Bunker 1/Security Keycard (Double Agent)",
+    [70536001] = "@Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Double Agent)",
 
-  --Shared Body Armor Locations
-  [70105001] = "@Locations/Dam/Body Armor (Guard Tower 2)",
-  [70105002] = "@Locations/Dam/Body Armor (Last Dam Tower)",
-  [70205001] = "@Locations/Facility/Body Armor (On Hallway Crate)",
-  [70205002] = "@Locations/Facility/Body Armor (Inside Security Room 2)",
-  [70505003] = "@Locations/Bunker 1/Body Armor (Kitchen)",
-  [70505005] = "@Locations/Bunker 1/Body Armor (Rear Tunnel)",
-  [70605001] = "@Locations/Silo/Body Armor (Second Fuel Room)",
-  [70605002] = "@Locations/Silo/Body Armor (Fourth Fuel Room)",
-  [70605003] = "@Locations/Silo/Body Armor (Walkway After Third Fuel Room)",
-  [70705001] = "@Locations/Frigate/Body Armor (Invisible On Crate In Cargo Room)",
-  [70705002] = "@Locations/Frigate/Body Armor (Radio Room Near Bridge Bomb)",
-  [70805001] = "@Locations/Surface 2/Body Armor (Cabin With Camera)",
-  [70805002] = "@Locations/Surface 2/Body Armor (Fenced Area Cabin)",
-  [70905001] = "@Locations/Bunker 2/Body Armor (Auto Turret Tunnel)",
-  [70905002] = "@Locations/Bunker 2/Body Armor (Shooting Range)",
-  [71005001] = "@Locations/Statue/Body Armor (Near Hand)",
-  [71105001] = "@Locations/Archives/Body Armor (Bottom Floor On Crate)",
-  [71105002] = "@Locations/Archives/Body Armor (Room Across From Start)",
-  [71205001] = "@Locations/Streets/Body Armor (Through Window Past Valentin)",
-  [71205002] = "@Locations/Streets/Body Armor (Mid Level Checkpoint)",
-  [71205003] = "@Locations/Streets/Body Armor (Ending Right Side Checkpoint)",
-  [71205004] = "@Locations/Streets/Body Armor (Ending Left Side Checkpoint)",
-  [71305000] = "@Locations/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start)",
-  [71305001] = "@Locations/Depot/Body Armor (Behind Crate In Front Of Start)",
-  [71305002] = "@Locations/Depot/Body Armor (Back Of Blue Hangar Near Start)",
-  [71305003] = "@Locations/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start)",
-  [71305004] = "@Locations/Depot/Body Armor (Back Of Grey Hangar Near Start)",
-  [71305005] = "@Locations/Depot/Body Armor (Back-Left Corner Three Door Hangar)",
-  [71305006] = "@Locations/Depot/Body Armor (Back Of Last Hangar On Middle Road)",
-  [71305007] = "@Locations/Depot/Body Armor (Back Of Hangar Across From Ammo Cache)",
-  [71305008] = "@Locations/Depot/Body Armor (Outside Behind Crate Under Orange Pipe)",
-  [71305009] = "@Locations/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate)",
-  [71305010] = "@Locations/Depot/Body Armor (Back Of Last Hangar)",
-  [71305011] = "@Locations/Depot/Body Armor (Inside Train Station)",
-  [71505001] = "@Locations/Jungle/Body Armor (First Area Back Corner)",
-  [71505002] = "@Locations/Jungle/Body Armor (Behind Second Turret)",
-  [71505003] = "@Locations/Jungle/Body Armor (Behind Guard Tower)",
-  [71605001] = "@Locations/Control/Body Armor (Locker Room Corner)",
-  [71605002] = "@Locations/Control/Body Armor (Top Floor Behind Grate)",
-  [71705001] = "@Locations/Caverns/Body Armor (Under Walkway On Crate)",
-  [71705002] = "@Locations/Caverns/Body Armor (Comms Room)",
-  [71805001] = "@Locations/Cradle/Body Armor (Start Tower)",
-  [71805002] = "@Locations/Cradle/Body Armor (Behind Antenna Control)",
-  [71805003] = "@Locations/Cradle/Body Armor (Left Tower)",
-  [71805004] = "@Locations/Cradle/Body Armor (Right Tower)",
-  [71905001] = "@Locations/Aztec/Body Armor (Inside Turret Tunnels)",
-  [72005001] = "@Locations/Egyptian/Body Armor (Corridor Northwest Of Start)",
-  [72005002] = "@Locations/Egyptian/Body Armor (After Golden Gun)",
-  [72005003] = "@Locations/Egyptian/Body Armor (Left Of Secret Corridor)",
+    -- Silo
+    [70600001] = "@Missions/Silo/Silo - (Clear)",
+    [70601001] = "@Missions/Silo/Plant Bombs In Fuel Rooms",
+    [70601002] = "@Missions/Silo/Photograph Satellite",
+    [70601003] = "@Missions/Silo/Obtain Telemetric Data",
+    [70601004] = "@Missions/Silo/Retrieve Satellite Circuitry",
+    [70601005] = "@Missions/Silo/Minimize Scientist Casualties",
+    [70602001] = "@Missions/Silo/CPU Circuit Board",
+    [70602002] = "@Missions/Silo/DAT",
+    [70602003] = "@Missions/Silo/I-O Circuit Board",
+    [70602004] = "@Missions/Silo/RDP Circuit Board",
+    [70602005] = "@Missions/Silo/RSP Circuit Board",
+    [70602006] = "@Missions/Silo/Keycard 4-H4",
+    [70602007] = "@Missions/Silo/Keycard 4-C3",
+    [70602008] = "@Missions/Silo/Keycard 4-52",
+    [70603001] = "@Missions/Silo/Cheat - Turbo Mode",
+    [70605001] = "@Missions/Silo/Body Armor (Second Fuel Room)",
+    [70605002] = "@Missions/Silo/Body Armor (Fourth Fuel Room)",
+    [70605003] = "@Missions/Silo/Body Armor (Walkway After Third Fuel Room)",
+    [70610001] = "@Missions/Silo/Silo - Clear (Agent)",
+    [70611001] = "@Missions/Silo/Photograph Satellite (Agent)",
+    [70611002] = "@Missions/Silo/Minimize Scientist Casualties (Agent)",
+    [70612001] = "@Missions/Silo/CPU Circuit Board (Agent)",
+    [70612002] = "@Missions/Silo/DAT (Agent)",
+    [70612003] = "@Missions/Silo/I-O Circuit Board (Agent)",
+    [70612004] = "@Missions/Silo/RDP Circuit Board (Agent)",
+    [70612005] = "@Missions/Silo/RSP Circuit Board (Agent)",
+    [70612006] = "@Missions/Silo/Keycard 4-H4 (Agent)",
+    [70612007] = "@Missions/Silo/Keycard 4-C3 (Agent)",
+    [70612008] = "@Missions/Silo/Keycard 4-52 (Agent)",
+    [70615001] = "@Missions/Silo/Body Armor (Second Fuel Room) (Agent)",
+    [70615002] = "@Missions/Silo/Body Armor (Fourth Fuel Room) (Agent)",
+    [70615003] = "@Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Agent)",
+    [70620001] = "@Missions/Silo/Silo - Clear (Secret Agent)",
+    [70621001] = "@Missions/Silo/Photograph Satellite (Secret Agent)",
+    [70621002] = "@Missions/Silo/Obtain Telemetric Data (Secret Agent)",
+    [70621003] = "@Missions/Silo/Retrieve Satellite Circuitry (Secret Agent)",
+    [70621004] = "@Missions/Silo/Minimize Scientist Casualties (Secret Agent)",
+    [70622001] = "@Missions/Silo/CPU Circuit Board (Secret Agent)",
+    [70622002] = "@Missions/Silo/DAT (Secret Agent)",
+    [70622003] = "@Missions/Silo/I-O Circuit Board (Secret Agent)",
+    [70622004] = "@Missions/Silo/RDP Circuit Board (Secret Agent)",
+    [70622005] = "@Missions/Silo/RSP Circuit Board (Secret Agent)",
+    [70622006] = "@Missions/Silo/Keycard 4-H4 (Secret Agent)",
+    [70622007] = "@Missions/Silo/Keycard 4-C3 (Secret Agent)",
+    [70622008] = "@Missions/Silo/Keycard 4-52 (Secret Agent)",
+    [70625002] = "@Missions/Silo/Body Armor (Fourth Fuel Room) (Secret Agent)",
+    [70625003] = "@Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Secret Agent)",
+    [70630001] = "@Missions/Silo/Silo - Clear (Double Agent)",
+    [70631001] = "@Missions/Silo/Plant Bombs In Fuel Rooms (Double Agent)",
+    [70631002] = "@Missions/Silo/Photograph Satellite (Double Agent)",
+    [70631003] = "@Missions/Silo/Obtain Telemetric Data (Double Agent)",
+    [70631004] = "@Missions/Silo/Retrieve Satellite Circuitry (Double Agent)",
+    [70631005] = "@Missions/Silo/Minimize Scientist Casualties (Double Agent)",
+    [70632001] = "@Missions/Silo/CPU Circuit Board (Double Agent)",
+    [70632002] = "@Missions/Silo/DAT (Double Agent)",
+    [70632003] = "@Missions/Silo/I-O Circuit Board (Double Agent)",
+    [70632004] = "@Missions/Silo/RDP Circuit Board (Double Agent)",
+    [70632005] = "@Missions/Silo/RSP Circuit Board (Double Agent)",
+    [70632006] = "@Missions/Silo/Keycard 4-H4 (Double Agent)",
+    [70632007] = "@Missions/Silo/Keycard 4-C3 (Double Agent)",
+    [70632008] = "@Missions/Silo/Keycard 4-52 (Double Agent)",
+    [70635003] = "@Missions/Silo/Body Armor (Walkway After Third Fuel Room) (Double Agent)",
 
-  --Per Difficulty Objective Locations
-  [70111001] = "@Locations/Dam/Bungee Jump From Platform (Agent)",
-  [70121001] = "@Locations/Dam/Neutralize All Alarms (Secret Agent)",
-  [70121002] = "@Locations/Dam/Bungee Jump From Platform (Secret Agent)",
-  [70131001] = "@Locations/Dam/Neutralize All Alarms (Double Agent)",
-  [70131002] = "@Locations/Dam/Install Covert Modem (Double Agent)",
-  [70131003] = "@Locations/Dam/Intercept Data Backup (Double Agent)",
-  [70131004] = "@Locations/Dam/Bungee Jump From Platform (Double Agent)",
-  [70211001] = "@Locations/Facility/Gain Entry To Laboratory Area (Agent)",
-  [70211002] = "@Locations/Facility/Rendezvous With 006 (Agent)",
-  [70211003] = "@Locations/Facility/Destroy All Tanks In Bottling Room (Agent)",
-  [70211004] = "@Locations/Facility/Minimize Scientist Casualties (Agent)",
-  [70221001] = "@Locations/Facility/Gain Entry To Laboratory Area (Secret Agent)",
-  [70221002] = "@Locations/Facility/Contact Double Agent (Secret Agent)",
-  [70221003] = "@Locations/Facility/Rendezvous With 006 (Secret Agent)",
-  [70221004] = "@Locations/Facility/Destroy All Tanks In Bottling Room (Secret Agent)",
-  [70221005] = "@Locations/Facility/Minimize Scientist Casualties (Secret Agent)",
-  [70231001] = "@Locations/Facility/Gain Entry To Laboratory Area (Double Agent)",
-  [70231002] = "@Locations/Facility/Contact Double Agent (Double Agent)",
-  [70231003] = "@Locations/Facility/Rendezvous With 006 (Double Agent)",
-  [70231004] = "@Locations/Facility/Destroy All Tanks In Bottling Room (Double Agent)",
-  [70231005] = "@Locations/Facility/Minimize Scientist Casualties (Double Agent)",
-  [70311001] = "@Locations/Runway/Find Plane Ignition Key (Agent)",
-  [70311002] = "@Locations/Runway/Escape In Plane (Agent)",
-  [70321001] = "@Locations/Runway/Find Plane Ignition Key (Secret Agent)",
-  [70321002] = "@Locations/Runway/Destroy Missile Battery (Secret Agent)",
-  [70321003] = "@Locations/Runway/Escape In Plane (Secret Agent)",
-  [70331001] = "@Locations/Runway/Find Plane Ignition Key (Double Agent)",
-  [70331002] = "@Locations/Runway/Destroy Heavy Gun Emplacements (Double Agent)",
-  [70331003] = "@Locations/Runway/Destroy Missile Battery (Double Agent)",
-  [70331004] = "@Locations/Runway/Escape In Plane (Double Agent)",
-  [70411001] = "@Locations/Surface 1/Enter Base Via Ventilation Tower (Agent)",
-  [70411002] = "@Locations/Surface 1/Power Down Communications Dish (Agent)",
-  [70421001] = "@Locations/Surface 1/Enter Base Via Ventilation Tower (Secret Agent)",
-  [70421002] = "@Locations/Surface 1/Obtain Safe Key (Secret Agent)",
-  [70421003] = "@Locations/Surface 1/Power Down Communications Dish (Secret Agent)",
-  [70421004] = "@Locations/Surface 1/Steal Building Plans (Secret Agent)",
-  [70431001] = "@Locations/Surface 1/Power Down Communications Dish (Double Agent)",
-  [70431002] = "@Locations/Surface 1/Obtain Safe Key (Double Agent)",
-  [70431003] = "@Locations/Surface 1/Steal Building Plans (Double Agent)",
-  [70431004] = "@Locations/Surface 1/Enter Base Via Ventilation Tower (Double Agent)",
-  [70511001] = "@Locations/Bunker 1/Copy Goldeneye Key And Leave Original (Agent)",
-  [70511002] = "@Locations/Bunker 1/Photograph Main Video Screen (Agent)",
-  [70521001] = "@Locations/Bunker 1/Disrupt All Surveillance Equipment (Secret Agent)",
-  [70521002] = "@Locations/Bunker 1/Copy Goldeneye Key And Leave Original (Secret Agent)",
-  [70521003] = "@Locations/Bunker 1/Photograph Main Video Screen (Secret Agent)",
-  [70531001] = "@Locations/Bunker 1/Disrupt All Surveillance Equipment (Double Agent)",
-  [70531002] = "@Locations/Bunker 1/Copy Goldeneye Key And Leave Original (Double Agent)",
-  [70531003] = "@Locations/Bunker 1/Get Personnel To Activate Computer (Double Agent)",
-  [70531004] = "@Locations/Bunker 1/Download Data From Computer (Double Agent)",
-  [70531005] = "@Locations/Bunker 1/Photograph Main Video Screen (Double Agent)",
-  [70611001] = "@Locations/Silo/Photograph Satellite (Agent)",
-  [70611002] = "@Locations/Silo/Minimize Scientist Casualties (Agent)",
-  [70621001] = "@Locations/Silo/Photograph Satellite (Secret Agent)",
-  [70621002] = "@Locations/Silo/Obtain Telemetric Data (Secret Agent)",
-  [70621003] = "@Locations/Silo/Retrieve Satellite Circuitry (Secret Agent)",
-  [70621004] = "@Locations/Silo/Minimize Scientist Casualties (Secret Agent)",
-  [70631001] = "@Locations/Silo/Plant Bombs In Fuel Rooms (Double Agent)",
-  [70631002] = "@Locations/Silo/Photograph Satellite (Double Agent)",
-  [70631003] = "@Locations/Silo/Obtain Telemetric Data (Double Agent)",
-  [70631004] = "@Locations/Silo/Retrieve Satellite Circuitry (Double Agent)",
-  [70631005] = "@Locations/Silo/Minimize Scientist Casualties (Double Agent)",
-  [70711001] = "@Locations/Frigate/Rescue Hostages (Agent)",
-  [70711002] = "@Locations/Frigate/Plant Tracking Bug On Helicopter (Agent)",
-  [70721001] = "@Locations/Frigate/Rescue Hostages (Secret Agent)",
-  [70721002] = "@Locations/Frigate/Disarm Bridge Bomb (Secret Agent)",
-  [70721003] = "@Locations/Frigate/Disarm Engine Room Bomb (Secret Agent)",
-  [70721004] = "@Locations/Frigate/Plant Tracking Bug On Helicopter (Secret Agent)",
-  [70731001] = "@Locations/Frigate/Rescue Hostages (Double Agent)",
-  [70731002] = "@Locations/Frigate/Disarm Bridge Bomb (Double Agent)",
-  [70731003] = "@Locations/Frigate/Disarm Engine Room Bomb (Double Agent)",
-  [70731004] = "@Locations/Frigate/Plant Tracking Bug On Helicopter (Double Agent)",
-  [70811001] = "@Locations/Surface 2/Break Communications Link To Bunker (Agent)",
-  [70811002] = "@Locations/Surface 2/Gain Entry To Bunker (Agent)",
-  [70821001] = "@Locations/Surface 2/Break Communications Link To Bunker (Secret Agent)",
-  [70821002] = "@Locations/Surface 2/Disable Spetznaz Support Aircraft (Secret Agent)",
-  [70821003] = "@Locations/Surface 2/Gain Entry To Bunker (Secret Agent)",
-  [70831001] = "@Locations/Surface 2/Disrupt All Surveillance Equipment (Double Agent)",
-  [70831002] = "@Locations/Surface 2/Break Communications Link To Bunker (Double Agent)",
-  [70831003] = "@Locations/Surface 2/Disable Spetznaz Support Aircraft (Double Agent)",
-  [70831004] = "@Locations/Surface 2/Gain Entry To Bunker (Double Agent)",
-  [70911001] = "@Locations/Bunker 2/Recover CCTV Tape (Agent)",
-  [70911002] = "@Locations/Bunker 2/Escape With Natalya (Agent)",
-  [70921001] = "@Locations/Bunker 2/Recover CCTV Tape (Secret Agent)",
-  [70921002] = "@Locations/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)",
-  [70921003] = "@Locations/Bunker 2/Disable All Security Cameras (Secret Agent)",
-  [70921004] = "@Locations/Bunker 2/Escape With Naatalya (Secret Agent)",
-  [70931001] = "@Locations/Bunker 2/Compare Staff & Casualty Lists (Double Agent)",
-  [70931002] = "@Locations/Bunker 2/Recover CCTV Tape (Double Agent)",
-  [70931003] = "@Locations/Bunker 2/Disable All Security Cameras (Double Agent)",
-  [70931004] = "@Locations/Bunker 2/Recover Goldeneye Operations Manual (Double Agent)",
-  [70931005] = "@Locations/Bunker 2/Escape With Natalya (Double Agent)",
-  [71011001] = "@Locations/Statue/Contact Valentin (Agent)",
-  [71011002] = "@Locations/Statue/Confront And Unmask Janus (Agent)",
-  [71011003] = "@Locations/Statue/Find Flight Recorder (Agent)",
-  [71011004] = "@Locations/Statue/Locate Helicopter (Agent)",
-  [71011005] = "@Locations/Statue/Rescue Natalya (Agent)",
-  [71021001] = "@Locations/Statue/Contact Valentin (Secret Agent)",
-  [71021002] = "@Locations/Statue/Confront And Unmask Janus (Secret Agent)",
-  [71021003] = "@Locations/Statue/Find Flight Recorder (Secret Agent)",
-  [71021004] = "@Locations/Statue/Locate Helicopter (Secret Agent)",
-  [71021005] = "@Locations/Statue/Rescue Natalya (Secret Agent)",
-  [71031001] = "@Locations/Statue/Contact Valentin (Double Agent)",
-  [71031002] = "@Locations/Statue/Confront And Unmask Janus (Double Agent)",
-  [71031003] = "@Locations/Statue/Locate Helicopter (Double Agent)",
-  [71031004] = "@Locations/Statue/Rescue Natalya (Double Agent)",
-  [71031005] = "@Locations/Statue/Find Flight Recorder (Double Agent)",
-  [71111001] = "@Locations/Archives/Escape From Interrogation Room (Agent)",
-  [71111002] = "@Locations/Archives/Escape With Natalya (Agent)",
-  [71111003] = "@Locations/Archives/Find Natalya (Agent)",
-  [71121001] = "@Locations/Archives/Escape With Natalya (Secret Agent)",
-  [71121002] = "@Locations/Archives/Find Natalya (Secret Agent)",
-  [71121003] = "@Locations/Archives/Recover Helicopter Black Box (Secret Agent)",
-  [71121004] = "@Locations/Archives/Escape From Interrogation Room (Secret Agent)",
-  [71131001] = "@Locations/Archives/Escape From Interrogation Room (Double Agent)",
-  [71131002] = "@Locations/Archives/Find Natalya (Double Agent)",
-  [71131003] = "@Locations/Archives/Recover Helicopter Black Box (Double Agent)",
-  [71131004] = "@Locations/Archives/Escape With Natalya (Double Agent)",
-  [71211001] = "@Locations/Streets/Pursue Ouromov And Natalya (Agent)",
-  [71211002] = "@Locations/Streets/Minimize Civilian Casualties (Agent)",
-  [71221001] = "@Locations/Streets/Contact Valentin (Secret Agent)",
-  [71221002] = "@Locations/Streets/Pursue Ouromov And Natalya (Secret Agent)",
-  [71221003] = "@Locations/Streets/Minimize Civilian Casualties (Secret Agent)",
-  [71231001] = "@Locations/Streets/Contact Valentin (Double Agent)",
-  [71231002] = "@Locations/Streets/Pursue Ouromov And Natalya (Double Agent)",
-  [71231003] = "@Locations/Streets/Minimize Civilian Casualties (Double Agent)",
-  [71311001] = "@Locations/Depot/Locate Trevelyan's Train (Agent)",
-  [71321001] = "@Locations/Depot/Destroy Computer Network (Secret Agent)",
-  [71321002] = "@Locations/Depot/Obtain Safe Key (Secret Agent)",
-  [71321003] = "@Locations/Depot/Recover Helicopter Blueprints (Secret Agent)",
-  [71321004] = "@Locations/Depot/Locate Trevelyan's Train (Secret Agent)",
-  [71331001] = "@Locations/Depot/Destroy Illegal Arms Cache (Double Agent)",
-  [71331002] = "@Locations/Depot/Destroy Computer Network (Double Agent)",
-  [71331003] = "@Locations/Depot/Obtain Safe Key (Double Agent)",
-  [71331004] = "@Locations/Depot/Recover Helicopter Blueprints (Double Agent)",
-  [71331005] = "@Locations/Depot/Locate Trevelyan's Train (Double Agent)",
-  [71411001] = "@Locations/Train/Destroy Brake Units (Agent)",
-  [71411002] = "@Locations/Train/Rescue Natalya (Agent)",
-  [71411003] = "@Locations/Train/Escape To Safety (Agent)",
-  [71421001] = "@Locations/Train/Destroy Brake Units (Secret Agent)",
-  [71421002] = "@Locations/Train/Rescue Natalya (Secret Agent)",
-  [71421003] = "@Locations/Train/Locate Janus Secret Base (Secret Agent)",
-  [71421004] = "@Locations/Train/Escape To Safety (Secret Agent)",
-  [71431001] = "@Locations/Train/Destroy Brake Units (Double Agent)",
-  [71431002] = "@Locations/Train/Rescue Natalya (Double Agent)",
-  [71431003] = "@Locations/Train/Locate Janus Secret Base (Double Agent)",
-  [71431004] = "@Locations/Train/Crack Boris' Password (Double Agent)",
-  [71431005] = "@Locations/Train/Escape To Safety (Double Agent)",
-  [71511001] = "@Locations/Jungle/Destroy Drone Guns (Agent)",
-  [71511002] = "@Locations/Jungle/Eliminate Xenia (Agent)",
-  [71511003] = "@Locations/Jungle/Escort Natalya To Janus Base (Agent)",
-  [71521001] = "@Locations/Jungle/Destroy Drone Guns (Secret Agent)",
-  [71521002] = "@Locations/Jungle/Eliminate Xenia (Secret Agent)",
-  [71521003] = "@Locations/Jungle/Blow Up Ammo Dump (Secret Agent)",
-  [71521004] = "@Locations/Jungle/Escort Natalya To Janus Base (Secret Agent)",
-  [71531001] = "@Locations/Jungle/Destroy Drone Guns (Double Agent)",
-  [71531002] = "@Locations/Jungle/Eliminate Xenia (Double Agent)",
-  [71531003] = "@Locations/Jungle/Blow Up Ammo Dump (Double Agent)",
-  [71531004] = "@Locations/Jungle/Escort Natalya To Janus Base (Double Agent)",
-  [71611001] = "@Locations/Control/Protect Natalya (Agent)",
-  [71611002] = "@Locations/Control/Disable Goldeneye Satellite (Agent)",
-  [71611003] = "@Locations/Control/Destroy Armored Mainframes (Agent)",
-  [71621001] = "@Locations/Control/Protect Natalya (Secret Agent)",
-  [71621002] = "@Locations/Control/Disable Goldeneye Satellite (Secret Agent)",
-  [71621003] = "@Locations/Control/Destroy Armored Mainframes (Secret Agent)",
-  [71631001] = "@Locations/Control/Protect Natalya (Double Agent)",
-  [71631002] = "@Locations/Control/Disable Goldeneye Satellite (Double Agent)",
-  [71631003] = "@Locations/Control/Destroy Armored Mainframes (Double Agent)",
-  [71711001] = "@Locations/Caverns/Minimize Scientist Casualties (Agent)",
-  [71721001] = "@Locations/Caverns/Destroy Inlet Pump Controls (Secret Agent)",
-  [71721002] = "@Locations/Caverns/Destroy Outlet Pump Controls (Secret Agent)",
-  [71721003] = "@Locations/Caverns/Destroy Master Control Console (Secret Agent)",
-  [71721004] = "@Locations/Caverns/Minimize Scientist Casualties (Secret Agent)",
-  [71731001] = "@Locations/Caverns/Destroy Inlet Pump Controls (Double Agent)",
-  [71731002] = "@Locations/Caverns/Destroy Outlet Pump Controls (Double Agent)",
-  [71731003] = "@Locations/Caverns/Destroy Master Control Console (Double Agent)",
-  [71731004] = "@Locations/Caverns/Use Radio To Contact Jack Wade (Double Agent)",
-  [71731005] = "@Locations/Caverns/Minimize Scientist Casualties (Double Agent)",
-  [71811001] = "@Locations/Cradle/Destroy Control Console (Agent)",
-  [71811002] = "@Locations/Cradle/Settle The Score With Trevelyan (Agent)",
-  [71821001] = "@Locations/Cradle/Destroy Control Console (Secret Agent)",
-  [71821002] = "@Locations/Cradle/Settle The Score With Trevelyan (Secret Agent)",
-  [71831001] = "@Locations/Cradle/Destroy Control Console (Double Agent)",
-  [71831002] = "@Locations/Cradle/Settle The Score With Trevelyan (Double Agent)",
-  [71911001] = "@Locations/Aztec/Reprogram Shuttle Guidance (Agent)",
-  [71911002] = "@Locations/Aztec/Launch Shuttle (Agent)",
-  [71921001] = "@Locations/Aztec/Reprogram Shuttle Guidance (Secret Agent)",
-  [71921002] = "@Locations/Aztec/Launch Shuttle (Secret Agent)",
-  [71931001] = "@Locations/Aztec/Reprogram Shuttle Guidance (Double Agent)",
-  [71931002] = "@Locations/Aztec/Launch Shuttle (Double Agent)",
-  [72011001] = "@Locations/Egyptian/Recover The Golden Gun (Agent)",
-  [72011002] = "@Locations/Egyptian/Defeat Baron Samedi? (Agent)",
-  [72021001] = "@Locations/Egyptian/Recover The Golden Gun (Secret Agent)",
-  [72021002] = "@Locations/Egyptian/Defeat Baron Samedi? (Secret Agent)",
-  [72031001] = "@Locations/Egyptian/Recover The Golden Gun (Double Agent)",
-  [72031002] = "@Locations/Egyptian/Defeat Baron Samedi? (Double Agent)",
+    -- Frigate
+    [70700001] = "@Missions/Frigate/Frigate - (Clear)",
+    [70701001] = "@Missions/Frigate/Rescue Hostages",
+    [70701002] = "@Missions/Frigate/Disarm Bridge Bomb",
+    [70701003] = "@Missions/Frigate/Disarm Engine Room Bomb",
+    [70701004] = "@Missions/Frigate/Plant Tracking Bug On Helicopter",
+    [70703001] = "@Missions/Frigate/Cheat - No Radar (Multi)",
+    [70705001] = "@Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold)",
+    [70705002] = "@Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb)",
+    [70710001] = "@Missions/Frigate/Frigate - Clear (Agent)",
+    [70711001] = "@Missions/Frigate/Rescue Hostages (Agent)",
+    [70711002] = "@Missions/Frigate/Plant Tracking Bug On Helicopter (Agent)",
+    [70715001] = "@Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold) (Agent)",
+    [70715002] = "@Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Agent)",
+    [70720001] = "@Missions/Frigate/Frigate - Clear (Secret Agent)",
+    [70721001] = "@Missions/Frigate/Rescue Hostages (Secret Agent)",
+    [70721002] = "@Missions/Frigate/Disarm Bridge Bomb (Secret Agent)",
+    [70721003] = "@Missions/Frigate/Disarm Engine Room Bomb (Secret Agent)",
+    [70721004] = "@Missions/Frigate/Plant Tracking Bug On Helicopter (Secret Agent)",
+    [70725002] = "@Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Secret Agent)",
+    [70730001] = "@Missions/Frigate/Frigate - Clear (Double Agent)",
+    [70731001] = "@Missions/Frigate/Rescue Hostages (Double Agent)",
+    [70731002] = "@Missions/Frigate/Disarm Bridge Bomb (Double Agent)",
+    [70731003] = "@Missions/Frigate/Disarm Engine Room Bomb (Double Agent)",
+    [70731004] = "@Missions/Frigate/Plant Tracking Bug On Helicopter (Double Agent)",
 
-  --Per Difficulty Clear Locations
-  [70110001] = "@Locations/Dam/Dam - Agent (Clear)",
-  [70210001] = "@Locations/Facility/Facility - Agent (Clear)",
-  [70310001] = "@Locations/Runway/Runway - Agent (Clear)",
-  [70410001] = "@Locations/Surface 1/Surface 1 - Agent (Clear)",
-  [70510001] = "@Locations/Bunker 1/Bunker 1 - Agent (Clear)",
-  [70610001] = "@Locations/Silo/Silo - Agent (Clear)",
-  [70710001] = "@Locations/Frigate/Frigate - Agent (Clear)",
-  [70810001] = "@Locations/Surface 2/Surface 2 - Agent (Clear)",
-  [70910001] = "@Locations/Bunker 2/Bunker 2 - Agent (Clear)",
-  [71010001] = "@Locations/Statue/Statue - Agent (Clear)",
-  [71110001] = "@Locations/Archives/Archives - Agent (Clear)",
-  [71210001] = "@Locations/Streets/Streets - Agent (Clear)",
-  [71310001] = "@Locations/Depot/Depot - Agent (Clear)",
-  [71410001] = "@Locations/Train/Train - Agent (Clear)",
-  [71510001] = "@Locations/Jungle/Jungle - Agent (Clear)",
-  [71610001] = "@Locations/Control/Control - Agent (Clear)",
-  [71710001] = "@Locations/Caverns/Caverns - Agent (Clear)",
-  [71810001] = "@Locations/Cradle/Cradle - Agent (Clear)",
-  [71910001] = "@Locations/Aztec/Aztec - Agent (Clear)",
-  [72010001] = "@Locations/Egyptian/Egyptian - Agent (Clear)",
-  [70120001] = "@Locations/Dam/Dam - Secret Agent (Clear)",
-  [70220001] = "@Locations/Facility/Facility - Secret Agent (Clear)",
-  [70320001] = "@Locations/Runway/Runway - Secret Agent (Clear)",
-  [70420001] = "@Locations/Surface 1/Surface 1 - Secret Agent (Clear)",
-  [70520001] = "@Locations/Bunker 1/Bunker 1 - Secret Agent (Clear)",
-  [70620001] = "@Locations/Silo/Silo - Secret Agent (Clear)",
-  [70720001] = "@Locations/Frigate/Frigate - Secret Agent (Clear)",
-  [70820001] = "@Locations/Surface 2/Surface 2 - Secret Agent (Clear)",
-  [70920001] = "@Locations/Bunker 2/Bunker 2 - Secret Agent (Clear)",
-  [71020001] = "@Locations/Statue/Statue - Secret Agent (Clear)",
-  [71120001] = "@Locations/Archives/Archives - Secret Agent (Clear)",
-  [71220001] = "@Locations/Streets/Streets - Secret Agent (Clear)",
-  [71320001] = "@Locations/Depot/Depot - Secret Agent (Clear)",
-  [71420001] = "@Locations/Train/Train - Secret Agent (Clear)",
-  [71520001] = "@Locations/Jungle/Jungle - Secret Agent (Clear)",
-  [71620001] = "@Locations/Control/Control - Secret Agent (Clear)",
-  [71720001] = "@Locations/Caverns/Caverns - Secret Agent (Clear)",
-  [71820001] = "@Locations/Cradle/Cradle - Secret Agent (Clear)",
-  [71920001] = "@Locations/Aztec/Aztec - Secret Agent (Clear)",
-  [72020001] = "@Locations/Egyptian/Egyptian - Secret Agent (Clear)",
-  [70130001] = "@Locations/Dam/Dam - Double Agent (Clear)",
-  [70230001] = "@Locations/Facility/Facility - Double Agent (Clear)",
-  [70330001] = "@Locations/Runway/Runway - Double Agent (Clear)",
-  [70430001] = "@Locations/Surface 1/Surface 1 - Double Agent (Clear)",
-  [70530001] = "@Locations/Bunker 1/Bunker 1 - Double Agent (Clear)",
-  [70630001] = "@Locations/Silo/Silo - Double Agent (Clear)",
-  [70730001] = "@Locations/Frigate/Frigate - Double Agent (Clear)",
-  [70830001] = "@Locations/Surface 2/Surface 2 - Double Agent (Clear)",
-  [70930001] = "@Locations/Bunker 2/Bunker 2 - Double Agent (Clear)",
-  [71030001] = "@Locations/Statue/Statue - Double Agent (Clear)",
-  [71130001] = "@Locations/Archives/Archives - Double Agent (Clear)",
-  [71230001] = "@Locations/Streets/Streets - Double Agent (Clear)",
-  [71330001] = "@Locations/Depot/Depot - Double Agent (Clear)",
-  [71430001] = "@Locations/Train/Train - Double Agent (Clear)",
-  [71530001] = "@Locations/Jungle/Jungle - Double Agent (Clear)",
-  [71630001] = "@Locations/Control/Control - Double Agent (Clear)",
-  [71730001] = "@Locations/Caverns/Caverns - Double Agent (Clear)",
-  [71830001] = "@Locations/Cradle/Cradle - Double Agent (Clear)",
-  [71930001] = "@Locations/Aztec/Aztec - Double Agent (Clear)",
-  [72030001] = "@Locations/Egyptian/Egyptian - Double Agent (Clear)",
+    -- Surface 2
+    [70800001] = "@Missions/Surface 2/Surface 2 - (Clear)",
+    [70801001] = "@Missions/Surface 2/Disrupt All Surveillance Equipment",
+    [70801002] = "@Missions/Surface 2/Break Communications Link To Bunker",
+    [70801003] = "@Missions/Surface 2/Disable Spetznaz Support Aircraft",
+    [70801004] = "@Missions/Surface 2/Gain Entry To Bunker",
+    [70802001] = "@Missions/Surface 2/Comms Room Key",
+    [70803001] = "@Missions/Surface 2/Cheat - Tiny Bond",
+    [70805001] = "@Missions/Surface 2/Body Armor (Cabin With Camera)",
+    [70805002] = "@Missions/Surface 2/Body Armor (Fenced Area Cabin)",
+    [70810001] = "@Missions/Surface 2/Surface 2 - Clear (Agent)",
+    [70811001] = "@Missions/Surface 2/Break Communications Link To Bunker (Agent)",
+    [70811002] = "@Missions/Surface 2/Gain Entry To Bunker (Agent)",
+    [70812001] = "@Missions/Surface 2/Comms Room Key (Agent)",
+    [70815001] = "@Missions/Surface 2/Body Armor (Cabin With Camera) (Agent)",
+    [70815002] = "@Missions/Surface 2/Body Armor (Fenced Area Cabin) (Agent)",
+    [70820001] = "@Missions/Surface 2/Surface 2 - Clear (Secret Agent)",
+    [70821001] = "@Missions/Surface 2/Break Communications Link To Bunker (Secret Agent)",
+    [70821002] = "@Missions/Surface 2/Disable Spetznaz Support Aircraft (Secret Agent)",
+    [70821003] = "@Missions/Surface 2/Gain Entry To Bunker (Secret Agent)",
+    [70822001] = "@Missions/Surface 2/Comms Room Key (Secret Agent)",
+    [70830001] = "@Missions/Surface 2/Surface 2 - Clear (Double Agent)",
+    [70831001] = "@Missions/Surface 2/Disrupt All Surveillance Equipment (Double Agent)",
+    [70831002] = "@Missions/Surface 2/Break Communications Link To Bunker (Double Agent)",
+    [70831003] = "@Missions/Surface 2/Disable Spetznaz Support Aircraft (Double Agent)",
+    [70831004] = "@Missions/Surface 2/Gain Entry To Bunker (Double Agent)",
+    [70832001] = "@Missions/Surface 2/Comms Room Key (Double Agent)",
 
-  --Per Difficulty Key Item Locations
-  [70212001] = "@Locations/Facility/Keycard A (Agent)",
-  [70212002] = "@Locations/Facility/Keycard B (Agent)",
-  [70212003] = "@Locations/Facility/Door Decoder (Agent)",
-  [70222001] = "@Locations/Facility/Keycard A (Secret Agent)",
-  [70222002] = "@Locations/Facility/Keycard B (Secret Agent)",
-  [70222003] = "@Locations/Facility/Door Decoder (Secret Agent)",
-  [70232001] = "@Locations/Facility/Keycard A (Double Agent)",
-  [70232002] = "@Locations/Facility/Keycard B (Double Agent)",
-  [70232003] = "@Locations/Facility/Door Decoder (Double Agent)",
-  [70312001] = "@Locations/Runway/Ignition Key (Agent)",
-  [70322001] = "@Locations/Runway/Ignition Key (Secret Agent)",
-  [70332001] = "@Locations/Runway/Ignition Key (Double Agent)",
-  [70412001] = "@Locations/Surface 1/Bunker Plans (Agent)",
-  [70412002] = "@Locations/Surface 1/Hut Door Key (Agent)",
-  [70412003] = "@Locations/Surface 1/Safe Key (Agent)",
-  [70422001] = "@Locations/Surface 1/Bunker Plans (Secret Agent)",
-  [70422002] = "@Locations/Surface 1/Hut Door Key (Secret Agent)",
-  [70422003] = "@Locations/Surface 1/Safe Key (Secret Agent)",
-  [70432001] = "@Locations/Surface 1/Bunker Plans (Double Agent)",
-  [70432002] = "@Locations/Surface 1/Hut Door Key (Double Agent)",
-  [70432003] = "@Locations/Surface 1/Safe Key (Double Agent)",
-  [70512001] = "@Locations/Bunker 1/Goldeneye Key (Agent)",
-  [70512002] = "@Locations/Bunker 1/Computer Room Keycard (Agent)",
-  [70512003] = "@Locations/Bunker 1/Security Keycard (Agent)",
-  [70522001] = "@Locations/Bunker 1/Goldeneye Key (Secret Agent)",
-  [70522002] = "@Locations/Bunker 1/Computer Room Keycard (Secret Agent)",
-  [70522003] = "@Locations/Bunker 1/Security Keycard (Secret Agent)",
-  [70532001] = "@Locations/Bunker 1/Goldeneye Key (Double Agent)",
-  [70532002] = "@Locations/Bunker 1/Computer Room Keycard (Double Agent)",
-  [70532003] = "@Locations/Bunker 1/Security Keycard (Double Agent)",
-  [70612001] = "@Locations/Silo/CPU Circuit Board (Agent)",
-  [70612002] = "@Locations/Silo/DAT (Agent)",
-  [70612003] = "@Locations/Silo/I-O Circuit Board (Agent)",
-  [70612004] = "@Locations/Silo/RDP Circuit Board (Agent)",
-  [70612005] = "@Locations/Silo/RSP Circuit Board (Agent)",
-  [70612006] = "@Locations/Silo/Keycard 4-H4 (Agent)",
-  [70612007] = "@Locations/Silo/Keycard 4-C3 (Agent)",
-  [70612008] = "@Locations/Silo/Keycard 4-52 (Agent)",
-  [70622001] = "@Locations/Silo/CPU Circuit Board (Secret Agent)",
-  [70622002] = "@Locations/Silo/DAT (Secret Agent)",
-  [70622003] = "@Locations/Silo/I-O Circuit Board (Secret Agent)",
-  [70622004] = "@Locations/Silo/RDP Circuit Board (Secret Agent)",
-  [70622005] = "@Locations/Silo/RSP Circuit Board (Secret Agent)",
-  [70622006] = "@Locations/Silo/Keycard 4-H4 (Secret Agent)",
-  [70622007] = "@Locations/Silo/Keycard 4-C3 (Secret Agent)",
-  [70622008] = "@Locations/Silo/Keycard 4-52 (Secret Agent)",
-  [70632001] = "@Locations/Silo/CPU Circuit Board (Double Agent)",
-  [70632002] = "@Locations/Silo/DAT (Double Agent)",
-  [70632003] = "@Locations/Silo/I-O Circuit Board (Double Agent)",
-  [70632004] = "@Locations/Silo/RDP Circuit Board (Double Agent)",
-  [70632005] = "@Locations/Silo/RSP Circuit Board (Double Agent)",
-  [70632006] = "@Locations/Silo/Keycard 4-H4 (Double Agent)",
-  [70632007] = "@Locations/Silo/Keycard 4-C3 (Double Agent)",
-  [70632008] = "@Locations/Silo/Keycard 4-52 (Double Agent)",
-  [70812001] = "@Locations/Surface 2/Comms Room Key (Agent)",
-  [70822001] = "@Locations/Surface 2/Comms Room Key (Secret Agent)",
-  [70832001] = "@Locations/Surface 2/Comms Room Key (Double Agent)",
-  [70912001] = "@Locations/Bunker 2/Casualty List (Agent)",
-  [70912002] = "@Locations/Bunker 2/CCTV Tape (Agent)",
-  [70912003] = "@Locations/Bunker 2/Goldeneye Operations Manual (Agent)",
-  [70912004] = "@Locations/Bunker 2/Staff List (Agent)",
-  [70912005] = "@Locations/Bunker 2/Cell Key 1 (Agent)",
-  [70912006] = "@Locations/Bunker 2/Cell Key 2 (Agent)",
-  [70912007] = "@Locations/Bunker 2/Keycard A (Agent)",
-  [70912008] = "@Locations/Bunker 2/Keycard B (Agent)",
-  [70912009] = "@Locations/Bunker 2/Safe Key 1 (Agent)",
-  [70912010] = "@Locations/Bunker 2/Safe Key 2 (Agent)",
-  [70922001] = "@Locations/Bunker 2/Casualty List (Secret Agent)",
-  [70922002] = "@Locations/Bunker 2/CCTV Tape (Secret Agent)",
-  [70922003] = "@Locations/Bunker 2/Goldeneye Operations Manual (Secret Agent)",
-  [70922004] = "@Locations/Bunker 2/Staff List (Secret Agent)",
-  [70922005] = "@Locations/Bunker 2/Cell Key 1 (Secret Agent)",
-  [70922006] = "@Locations/Bunker 2/Cell Key 2 (Secret Agent)",
-  [70922007] = "@Locations/Bunker 2/Keycard A (Secret Agent)",
-  [70922008] = "@Locations/Bunker 2/Keycard B (Secret Agent)",
-  [70922009] = "@Locations/Bunker 2/Safe Key 1 (Secret Agent)",
-  [70922010] = "@Locations/Bunker 2/Safe Key 2 (Secret Agent)",
-  [70932001] = "@Locations/Bunker 2/Casualty List (Double Agent)",
-  [70932002] = "@Locations/Bunker 2/CCTV Tape (Double Agent)",
-  [70932003] = "@Locations/Bunker 2/Goldeneye Operations Manual (Double Agent)",
-  [70932004] = "@Locations/Bunker 2/Staff List (Double Agent)",
-  [70932005] = "@Locations/Bunker 2/Cell Key 1 (Double Agent)",
-  [70932006] = "@Locations/Bunker 2/Cell Key 2 (Double Agent)",
-  [70932007] = "@Locations/Bunker 2/Keycard A (Double Agent)",
-  [70932008] = "@Locations/Bunker 2/Keycard B (Double Agent)",
-  [70932009] = "@Locations/Bunker 2/Safe Key 1 (Double Agent)",
-  [70932010] = "@Locations/Bunker 2/Safe Key 2 (Double Agent)",
-  [71012001] = "@Locations/Statue/Flght Recorder (Agent)",
-  [71022001] = "@Locations/Statue/Flght Recorder (Secret Agent)",
-  [71032001] = "@Locations/Statue/Flght Recorder (Double Agent)",
-  [71112001] = "@Locations/Archives/Flight Recorder (Agent)",
-  [71112002] = "@Locations/Archives/Interrogation Room Key (Agent)",
-  [71112003] = "@Locations/Archives/Safe Key (Agent)",
-  [71122001] = "@Locations/Archives/Flight Recorder (Secret Agent)",
-  [71122002] = "@Locations/Archives/Interrogation Room Key (Secret Agent)",
-  [71122003] = "@Locations/Archives/Safe Key (Secret Agent)",
-  [71132001] = "@Locations/Archives/Flight Recorder (Double Agent)",
-  [71132002] = "@Locations/Archives/Safe Key (Double Agent)",
-  [71132003] = "@Locations/Archives/Interrogation Room Key (Double Agent)",
-  [71312001] = "@Locations/Depot/Blueprints (Agent)",
-  [71312002] = "@Locations/Depot/Safe Key (Agent)",
-  [71322001] = "@Locations/Depot/Blueprints (Secret Agent)",
-  [71322002] = "@Locations/Depot/Safe Key (Secret Agent)",
-  [71332001] = "@Locations/Depot/Blueprints (Double Agent)",
-  [71332002] = "@Locations/Depot/Safe Key (Double Agent)",
-  [71412001] = "@Locations/Train/Train Door Key (Agent)",
-  [71422001] = "@Locations/Train/Train Door Key (Secret Agent)",
-  [71432001] = "@Locations/Train/Train Door Key (Double Agent)",
-  [71714001] = "@Locations/Caverns/Code Card 1 (Agent)",
-  [71714002] = "@Locations/Caverns/Code Card 2 (Agent)",
-  [71714003] = "@Locations/Caverns/Code Card 3 (Agent)",
-  [71724001] = "@Locations/Caverns/Code Card 1 (Secret Agent)",
-  [71724002] = "@Locations/Caverns/Code Card 2 (Secret Agent)",
-  [71724003] = "@Locations/Caverns/Code Card 3 (Secret Agent)",
-  [71734001] = "@Locations/Caverns/Code Card 1 (Double Agent)",
-  [71734002] = "@Locations/Caverns/Code Card 2 (Double Agent)",
-  [71734003] = "@Locations/Caverns/Code Card 3 (Double Agent)",
-  [71912001] = "@Locations/Aztec/Security Smart Card (Agent)",
-  [71912002] = "@Locations/Aztec/Launch Protocol Data (Agent)",
-  [71922001] = "@Locations/Aztec/Security Smart Card (Secret Agent)",
-  [71922002] = "@Locations/Aztec/Launch Protocol Data (Secret Agent)",
-  [71932001] = "@Locations/Aztec/Security Smart Card (Double Agent)",
-  [71932002] = "@Locations/Aztec/Launch Protocol Data (Double Agent)",
+    -- Bunker 2
+    [70900001] = "@Missions/Bunker 2/Bunker 2 - (Clear)",
+    [70901001] = "@Missions/Bunker 2/Compare Staff & Casualty Lists",
+    [70901002] = "@Missions/Bunker 2/Recover CCTV Tape",
+    [70901003] = "@Missions/Bunker 2/Disable All Security Cameras",
+    [70901004] = "@Missions/Bunker 2/Recover Goldeneye Operations Manual",
+    [70901005] = "@Missions/Bunker 2/Escape With Natalya",
+    [70902001] = "@Missions/Bunker 2/Casualty List",
+    [70902002] = "@Missions/Bunker 2/CCTV Tape",
+    [70902003] = "@Missions/Bunker 2/Goldeneye Operations Manual",
+    [70902004] = "@Missions/Bunker 2/Severnaya Stafflist",
+    [70902005] = "@Missions/Bunker 2/Cell Key 1",
+    [70902006] = "@Missions/Bunker 2/Cell Key 2",
+    [70902007] = "@Missions/Bunker 2/Keycard A",
+    [70902008] = "@Missions/Bunker 2/Keycard B",
+    [70902009] = "@Missions/Bunker 2/Safe Key 1",
+    [70902010] = "@Missions/Bunker 2/Safe Key 2",
+    [70903001] = "@Missions/Bunker 2/Cheat - 2x Throwing Knives",
+    [70904001] = "@Missions/Bunker 2/Throwing Knives",
+    [70904002] = "@Missions/Bunker 2/Silenced PP7 1",
+    [70904003] = "@Missions/Bunker 2/Silenced PP7 2",
+    [70905001] = "@Missions/Bunker 2/Body Armor (Auto Turret Tunnel)",
+    [70905002] = "@Missions/Bunker 2/Body Armor (Shooting Range)",
+    [70910001] = "@Missions/Bunker 2/Bunker 2 - Clear (Agent)",
+    [70911001] = "@Missions/Bunker 2/Recover CCTV Tape (Agent)",
+    [70911002] = "@Missions/Bunker 2/Escape With Natalya (Agent)",
+    [70912001] = "@Missions/Bunker 2/Casualty List (Agent)",
+    [70912002] = "@Missions/Bunker 2/CCTV Tape (Agent)",
+    [70912003] = "@Missions/Bunker 2/Goldeneye Operations Manual (Agent)",
+    [70912004] = "@Missions/Bunker 2/Severnaya Stafflist (Agent)",
+    [70912005] = "@Missions/Bunker 2/Cell Key 1 (Agent)",
+    [70912006] = "@Missions/Bunker 2/Cell Key 2 (Agent)",
+    [70912007] = "@Missions/Bunker 2/Keycard A (Agent)",
+    [70912008] = "@Missions/Bunker 2/Keycard B (Agent)",
+    [70912009] = "@Missions/Bunker 2/Safe Key 1 (Agent)",
+    [70912010] = "@Missions/Bunker 2/Safe Key 2 (Agent)",
+    [70914001] = "@Missions/Bunker 2/Throwing Knives (Agent)",
+    [70914002] = "@Missions/Bunker 2/Silenced PP7 1 (Agent)",
+    [70914003] = "@Missions/Bunker 2/Silenced PP7 2 (Agent)",
+    [70915001] = "@Missions/Bunker 2/Body Armor (Auto Turret Tunnel) (Agent)",
+    [70915002] = "@Missions/Bunker 2/Body Armor (Shooting Range) (Agent)",
+    [70920001] = "@Missions/Bunker 2/Bunker 2 - Clear (Secret Agent)",
+    [70921001] = "@Missions/Bunker 2/Recover CCTV Tape (Secret Agent)",
+    [70921002] = "@Missions/Bunker 2/Compare Staff & Casualty Lists (Secret Agent)",
+    [70921003] = "@Missions/Bunker 2/Disable All Security Cameras (Secret Agent)",
+    [70921004] = "@Missions/Bunker 2/Escape With Natalya (Secret Agent)",
+    [70922001] = "@Missions/Bunker 2/Casualty List (Secret Agent)",
+    [70922002] = "@Missions/Bunker 2/CCTV Tape (Secret Agent)",
+    [70922003] = "@Missions/Bunker 2/Goldeneye Operations Manual (Secret Agent)",
+    [70922004] = "@Missions/Bunker 2/Severnaya Stafflist (Secret Agent)",
+    [70922005] = "@Missions/Bunker 2/Cell Key 1 (Secret Agent)",
+    [70922006] = "@Missions/Bunker 2/Cell Key 2 (Secret Agent)",
+    [70922007] = "@Missions/Bunker 2/Keycard A (Secret Agent)",
+    [70922008] = "@Missions/Bunker 2/Keycard B (Secret Agent)",
+    [70922009] = "@Missions/Bunker 2/Safe Key 1 (Secret Agent)",
+    [70922010] = "@Missions/Bunker 2/Safe Key 2 (Secret Agent)",
+    [70924001] = "@Missions/Bunker 2/Throwing Knives (Secret Agent)",
+    [70924002] = "@Missions/Bunker 2/Silenced PP7 1 (Secret Agent)",
+    [70924003] = "@Missions/Bunker 2/Silenced PP7 2 (Secret Agent)",
+    [70925002] = "@Missions/Bunker 2/Body Armor (Shooting Range) (Secret Agent)",
+    [70930001] = "@Missions/Bunker 2/Bunker 2 - Clear (Double Agent)",
+    [70931001] = "@Missions/Bunker 2/Compare Staff & Casualty Lists (Double Agent)",
+    [70931002] = "@Missions/Bunker 2/Recover CCTV Tape (Double Agent)",
+    [70931003] = "@Missions/Bunker 2/Disable All Security Cameras (Double Agent)",
+    [70931004] = "@Missions/Bunker 2/Recover Goldeneye Operations Manual (Double Agent)",
+    [70931005] = "@Missions/Bunker 2/Escape With Natalya (Double Agent)",
+    [70932001] = "@Missions/Bunker 2/Casualty List (Double Agent)",
+    [70932002] = "@Missions/Bunker 2/CCTV Tape (Double Agent)",
+    [70932003] = "@Missions/Bunker 2/Goldeneye Operations Manual (Double Agent)",
+    [70932004] = "@Missions/Bunker 2/Severnaya Stafflist (Double Agent)",
+    [70932005] = "@Missions/Bunker 2/Cell Key 1 (Double Agent)",
+    [70932006] = "@Missions/Bunker 2/Cell Key 2 (Double Agent)",
+    [70932007] = "@Missions/Bunker 2/Keycard A (Double Agent)",
+    [70932008] = "@Missions/Bunker 2/Keycard B (Double Agent)",
+    [70932009] = "@Missions/Bunker 2/Safe Key 1 (Double Agent)",
+    [70932010] = "@Missions/Bunker 2/Safe Key 2 (Double Agent)",
+    [70934001] = "@Missions/Bunker 2/Throwing Knives (Double Agent)",
+    [70934002] = "@Missions/Bunker 2/Silenced PP7 1 (Double Agent)",
+    [70934003] = "@Missions/Bunker 2/Silenced PP7 2 (Double Agent)",
 
-  --Per Difficulty Weapon Pickups
-  [70114001] = "@Locations/Dam/Sniper Rifle (Agent)",
-  [70124001] = "@Locations/Dam/Sniper Rifle (Secret Agent)",
-  [70134001] = "@Locations/Dam/Sniper Rifle (Double Agent)",
-  [70316001] = "@Locations/Runway/Ammo Container (Timed Mines - Room Behind Start) (Agent)",
-  [70316002] = "@Locations/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Agent)",
-  [70316003] = "@Locations/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Agent)",
-  [70326001] = "@Locations/Runway/Ammo Container (Timed Mines - Room Behind Start) (Secret Agent)",
-  [70326002] = "@Locations/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Secret Agent)",
-  [70326003] = "@Locations/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Secret Agent)",
-  [70336001] = "@Locations/Runway/Ammo Container (Timed Mines - Room Behind Start) (Double Agent)",
-  [70336002] = "@Locations/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Double Agent)",
-  [70336003] = "@Locations/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Double Agent)",
-  [70414001] = "@Locations/Surface 1/Grenade Launcher (Agent)",
-  [70424001] = "@Locations/Surface 1/Grenade Launcher (Secret Agent)",
-  [70434001] = "@Locations/Surface 1/Grenade Launcher (Double Agent)",
-  [70416001] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Agent)",
-  [70416002] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Agent)",
-  [70416003] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Agent)",
-  [70416004] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Agent)",
-  [70426001] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Secret Agent)",
-  [70426002] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Secret Agent)",
-  [70426003] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Secret Agent)",
-  [70426004] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Secret Agent)",
-  [70436001] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 1) (Double Agent)",
-  [70436002] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Right Hut Near Start 2) (Double Agent)",
-  [70436003] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Grenade Launcher Hut) (Double Agent)",
-  [70436004] = "@Locations/Surface 1/Ammo Container (Grenade Rounds - Surveillance Camera Hut) (Double Agent)",
-  [70516001] = "@Locations/Bunker 1/Ammo Container (Rifle Ammo - Room In Front Of Start) (Agent)",
-  [70526001] = "@Locations/Bunker 1/Ammo Container (Rifle Ammo - Room In Front Of Start) (Secret Agent)",
-  [70536001] = "@Locations/Bunker 1/Ammo Container (Rifle Ammo - Room In Front Of Start) (Double Agent)",
-  [70914001] = "@Locations/Bunker 2/Throwing Knives (Agent)",
-  [70914002] = "@Locations/Bunker 2/Silenced PP7 1 (Agent)",
-  [70914003] = "@Locations/Bunker 2/Silenced PP7 2 (Agent)",
-  [70924001] = "@Locations/Bunker 2/Throwing Knives (Secret Agent)",
-  [70924002] = "@Locations/Bunker 2/Silenced PP7 1 (Secret Agent)",
-  [70924003] = "@Locations/Bunker 2/Silenced PP7 2 (Secret Agent)",
-  [70934001] = "@Locations/Bunker 2/Throwing Knives (Double Agent)",
-  [70934002] = "@Locations/Bunker 2/Silenced PP7 1 (Double Agent)",
-  [70934003] = "@Locations/Bunker 2/Silenced PP7 2 (Double Agent)",
-  [71114001] = "@Locations/Archives/PP7 (Agent)",
-  [71124001] = "@Locations/Archives/PP7 (Secret Agent)",
-  [71134001] = "@Locations/Archives/PP7 (Double Agent)",
-  [71214001] = "@Locations/Streets/Grenade Launcher (Agent)",
-  [71216001] = "@Locations/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Agent)",
-  [71224001] = "@Locations/Streets/Grenade Launcher (Secret Agent)",
-  [71226001] = "@Locations/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Secret Agent)",
-  [71234001] = "@Locations/Streets/Grenade Launcher (Double Agent)",
-  [71236001] = "@Locations/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Double Agent)",
-  [71314001] = "@Locations/Depot/KF7 On Bottom-Right Table (Agent)",
-  [71314002] = "@Locations/Depot/D5K On Bottom-Right Table 1 (Agent)",
-  [71314003] = "@Locations/Depot/D5K On Bottom-Right Table 2 (Agent)",
-  [71314004] = "@Locations/Depot/D5K On Floor (Agent)",
-  [71314005] = "@Locations/Depot/D5K On Top-Right Table 1 (Agent)",
-  [71314006] = "@Locations/Depot/D5K On Top-Right Table 2 (Agent)",
-  [71314007] = "@Locations/Depot/D5K On Top-Right Table 3 (Agent)",
-  [71314008] = "@Locations/Depot/D5K On Top-Right Table 4 (Agent)",
-  [71314009] = "@Locations/Depot/Rocket Launcher (Agent)",
-  [71314010] = "@Locations/Depot/KF7 On Bottom-Left Table 1 (Agent)",
-  [71314011] = "@Locations/Depot/KF7 On Bottom-Left Table 2 (Agent)",
-  [71314012] = "@Locations/Depot/KF7 On Bottom-Left Table 3 (Agent)",
-  [71314013] = "@Locations/Depot/KF7 On Bottom-Left Table 4 (Agent)",
-  [71314015] = "@Locations/Depot/KF7 On Bottom-Left Table 5 (Agent)",
-  [71316001] = "@Locations/Depot/Rockets 1 (Agent)",
-  [71316002] = "@Locations/Depot/Rockets 2 (Agent)",
-  [71316003] = "@Locations/Depot/Rockets 3 (Agent)",
-  [71316014] = "@Locations/Depot/Proximity Mines (Agent)",
-  [71324001] = "@Locations/Depot/KF7 On Bottom-Right Table (Secret Agent)",
-  [71324002] = "@Locations/Depot/D5K On Bottom-Right Table 1 (Secret Agent)",
-  [71324003] = "@Locations/Depot/D5K On Bottom-Right Table 2 (Secret Agent)",
-  [71324004] = "@Locations/Depot/D5K On Floor (Secret Agent)",
-  [71324005] = "@Locations/Depot/D5K On Top-Right Table 1 (Secret Agent)",
-  [71324006] = "@Locations/Depot/D5K On Top-Right Table 2 (Secret Agent)",
-  [71324007] = "@Locations/Depot/D5K On Top-Right Table 3 (Secret Agent)",
-  [71324008] = "@Locations/Depot/D5K On Top-Right Table 4 (Secret Agent)",
-  [71324009] = "@Locations/Depot/Rocket Launcher (Secret Agent)",
-  [71324010] = "@Locations/Depot/KF7 On Bottom-Left Table 1 (Secret Agent)",
-  [71324011] = "@Locations/Depot/KF7 On Bottom-Left Table 2 (Secret Agent)",
-  [71324012] = "@Locations/Depot/KF7 On Bottom-Left Table 3 (Secret Agent)",
-  [71324013] = "@Locations/Depot/KF7 On Bottom-Left Table 4 (Secret Agent)",
-  [71324015] = "@Locations/Depot/KF7 On Bottom-Left Table 5 (Secret Agent)",
-  [71326001] = "@Locations/Depot/Rockets 1 (Secret Agent)",
-  [71326002] = "@Locations/Depot/Rockets 2 (Secret Agent)",
-  [71326003] = "@Locations/Depot/Rockets 3 (Secret Agent)",
-  [71326014] = "@Locations/Depot/Proximity Mines (Secret Agent)",
-  [71334001] = "@Locations/Depot/KF7 On Bottom-Right Table (Double Agent)",
-  [71334002] = "@Locations/Depot/D5K On Bottom-Right Table 1 (Double Agent)",
-  [71334003] = "@Locations/Depot/D5K On Bottom-Right Table 2 (Double Agent)",
-  [71334004] = "@Locations/Depot/D5K On Floor (Double Agent)",
-  [71334005] = "@Locations/Depot/D5K On Top-Right Table 1 (Double Agent)",
-  [71334006] = "@Locations/Depot/D5K On Top-Right Table 2 (Double Agent)",
-  [71334007] = "@Locations/Depot/D5K On Top-Right Table 3 (Double Agent)",
-  [71334008] = "@Locations/Depot/D5K On Top-Right Table 4 (Double Agent)",
-  [71334009] = "@Locations/Depot/Rocket Launcher (Double Agent)",
-  [71334010] = "@Locations/Depot/KF7 On Bottom-Left Table 1 (Double Agent)",
-  [71334011] = "@Locations/Depot/KF7 On Bottom-Left Table 2 (Double Agent)",
-  [71334012] = "@Locations/Depot/KF7 On Bottom-Left Table 3 (Double Agent)",
-  [71334013] = "@Locations/Depot/KF7 On Bottom-Left Table 4 (Double Agent)",
-  [71334015] = "@Locations/Depot/KF7 On Bottom-Left Table 5 (Double Agent)",
-  [71336001] = "@Locations/Depot/Rockets 1 (Double Agent)",
-  [71336002] = "@Locations/Depot/Rockets 2 (Double Agent)",
-  [71336003] = "@Locations/Depot/Rockets 3 (Double Agent)",
-  [71336014] = "@Locations/Depot/Proximity Mines (Double Agent)",
-  [71414001] = "@Locations/Train/RC-P90 (Agent)",
-  [71424001] = "@Locations/Train/DD44 Dostovei (Secret Agent)",
-  [71612001] = "@Locations/Control/Boris' PP7 (Agent)",
-  [71616001] = "@Locations/Control/Ammo Container (Remote Mines - After First Blast Door) (Agent)",
-  [71622001] = "@Locations/Control/Boris' PP7 (Secret Agent)",
-  [71626001] = "@Locations/Control/Ammo Container (Remote Mines - After First Blast Door) (Secret Agent)",
-  [71632001] = "@Locations/Control/Boris' PP7 (Double Agent)",
-  [71636001] = "@Locations/Control/Ammo Container (Remote Mines - After First Blast Door) (Double Agent)",
-  [71714001] = "@Locations/Caverns/AR33 Assault Rifle (Agent)",
-  [71724001] = "@Locations/Caverns/AR33 Assault Rifle (Secret Agent)",
-  [71734001] = "@Locations/Caverns/AR33 Assault Rifle (Double Agent)",
-  [72014001] = "@Locations/Egyptian/Golden Gun (Agent)",
-  [72016001] = "@Locations/Egyptian/Golden Gun Ammo (Agent)",
-  [72024001] = "@Locations/Egyptian/Golden Gun (Secret Agent)",
-  [72026001] = "@Locations/Egyptian/Golden Gun Ammo (Secret Agent)",
-  [72034001] = "@Locations/Egyptian/Golden Gun (Double Agent)",
-  [72036001] = "@Locations/Egyptian/Golden Gun Ammo (Double Agent)",
+    -- Statue
+    [71000001] = "@Missions/Statue/Statue - (Clear)",
+    [71001001] = "@Missions/Statue/Contact Valentin",
+    [71001002] = "@Missions/Statue/Confront And Unmask Janus",
+    [71001003] = "@Missions/Statue/Locate Helicopter",
+    [71001004] = "@Missions/Statue/Rescue Natalya",
+    [71001005] = "@Missions/Statue/Find Flight Recorder",
+    [71002001] = "@Missions/Statue/Flight Recorder",
+    [71003001] = "@Missions/Statue/Cheat - Fast Animation",
+    [71005001] = "@Missions/Statue/Body Armor (Near Hand)",
+    [71010001] = "@Missions/Statue/Statue - Clear (Agent)",
+    [71011001] = "@Missions/Statue/Contact Valentin (Agent)",
+    [71011002] = "@Missions/Statue/Confront And Unmask Janus (Agent)",
+    [71011003] = "@Missions/Statue/Find Flight Recorder (Agent)",
+    [71011004] = "@Missions/Statue/Locate Helicopter (Agent)",
+    [71011005] = "@Missions/Statue/Rescue Natalya (Agent)",
+    [71012001] = "@Missions/Statue/Flight Recorder (Agent)",
+    [71015001] = "@Missions/Statue/Body Armor (Near Hand) (Agent)",
+    [71020001] = "@Missions/Statue/Statue - Clear (Secret Agent)",
+    [71021001] = "@Missions/Statue/Contact Valentin (Secret Agent)",
+    [71021002] = "@Missions/Statue/Confront And Unmask Janus (Secret Agent)",
+    [71021003] = "@Missions/Statue/Find Flight Recorder (Secret Agent)",
+    [71021004] = "@Missions/Statue/Locate Helicopter (Secret Agent)",
+    [71021005] = "@Missions/Statue/Rescue Natalya (Secret Agent)",
+    [71022001] = "@Missions/Statue/Flight Recorder (Secret Agent)",
+    [71025001] = "@Missions/Statue/Body Armor (Near Hand) (Secret Agent)",
+    [71030001] = "@Missions/Statue/Statue - Clear (Double Agent)",
+    [71031001] = "@Missions/Statue/Contact Valentin (Double Agent)",
+    [71031002] = "@Missions/Statue/Confront And Unmask Janus (Double Agent)",
+    [71031003] = "@Missions/Statue/Locate Helicopter (Double Agent)",
+    [71031004] = "@Missions/Statue/Rescue Natalya (Double Agent)",
+    [71031005] = "@Missions/Statue/Find Flight Recorder (Double Agent)",
+    [71032001] = "@Missions/Statue/Flight Recorder (Double Agent)",
+    [71035001] = "@Missions/Statue/Body Armor (Near Hand) (Double Agent)",
 
-  --Per Difficulty Body Armor Locations
-  [70115001] = "@Locations/Dam/Body Armor (Guard Tower 2) (Agent)",
-  [70115002] = "@Locations/Dam/Body Armor (Last Dam Tower) (Agent)",
-  [70125001] = "@Locations/Dam/Body Armor (Guard Tower 2) (Secret Agent)",
-  [70125002] = "@Locations/Dam/Body Armor (Last Dam Tower) (Secret Agent)",
-  [70215001] = "@Locations/Facility/Body Armor (On Hallway Crate) (Agent)",
-  [70215002] = "@Locations/Facility/Body Armor (Inside Security Room 2) (Agent)",
-  [70225001] = "@Locations/Facility/Body Armor (On Hallway Crate) (Secret Agent)",
-  [70225002] = "@Locations/Facility/Body Armor (Inside Security Room 2) (Secret Agent)",
-  [70515003] = "@Locations/Bunker 1/Body Armor (Kitchen) (Agent)",
-  [70515005] = "@Locations/Bunker 1/Body Armor (Rear Tunnel) (Agent)",
-  [70525005] = "@Locations/Bunker 1/Body Armor (Rear Tunnel) (Secret Agent)",
-  [70615001] = "@Locations/Silo/Body Armor (Second Fuel Room) (Agent)",
-  [70615002] = "@Locations/Silo/Body Armor (Fourth Fuel Room) (Agent)",
-  [70615003] = "@Locations/Silo/Body Armor (Walkway After Third Fuel Room) (Agent)",
-  [70625002] = "@Locations/Silo/Body Armor (Fourth Fuel Room) (Secret Agent)",
-  [70625003] = "@Locations/Silo/Body Armor (Walkway After Third Fuel Room) (Secret Agent)",
-  [70635003] = "@Locations/Silo/Body Armor (Walkway After Third Fuel Room) (Double Agent)",
-  [70715001] = "@Locations/Frigate/Body Armor (Invisible On Crate In Cargo Room) (Agent)",
-  [70715002] = "@Locations/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Agent)",
-  [70725002] = "@Locations/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Secret Agent)",
-  [70815001] = "@Locations/Surface 2/Body Armor (Cabin With Camera) (Agent)",
-  [70815002] = "@Locations/Surface 2/Body Armor (Fenced Area Cabin) (Agent)",
-  [70915001] = "@Locations/Bunker 2/Body Armor (Auto Turret Tunnel) (Agent)",
-  [70915002] = "@Locations/Bunker 2/Body Armor (Shooting Range) (Agent)",
-  [70925002] = "@Locations/Bunker 2/Body Armor (Shooting Range) (Secret Agent)",
-  [71015001] = "@Locations/Statue/Body Armor (Near Hand) (Agent)",
-  [71025001] = "@Locations/Statue/Body Armor (Near Hand) (Secret Agent)",
-  [71035001] = "@Locations/Statue/Body Armor (Near Hand) (Double Agent)",
-  [71115001] = "@Locations/Archives/Body Armor (Bottom Floor On Crate) (Agent)",
-  [71115002] = "@Locations/Archives/Body Armor (Room Across From Start) (Agent)",
-  [71125002] = "@Locations/Archives/Body Armor (Room Across From Start) (Secret Agent)",
-  [71215001] = "@Locations/Streets/Body Armor (Through Window Past Valentin) (Agent)",
-  [71215002] = "@Locations/Streets/Body Armor (Mid Level Checkpoint) (Agent)",
-  [71215003] = "@Locations/Streets/Body Armor (Ending Right Side Checkpoint) (Agent)",
-  [71215004] = "@Locations/Streets/Body Armor (Ending Left Side Checkpoint) (Agent)",
-  [71225001] = "@Locations/Streets/Body Armor (Through Window Past Valentin) (Secret Agent)",
-  [71225002] = "@Locations/Streets/Body Armor (Mid Level Checkpoint) (Secret Agent)",
-  [71225003] = "@Locations/Streets/Body Armor (Ending Right Side Checkpoint) (Secret Agent)",
-  [71225004] = "@Locations/Streets/Body Armor (Ending Left Side Checkpoint) (Secret Agent)",
-  [71235001] = "@Locations/Streets/Body Armor (Through Window Past Valentin) (Double Agent)",
-  [71235002] = "@Locations/Streets/Body Armor (Mid Level Checkpoint) (Double Agent)",
-  [71235003] = "@Locations/Streets/Body Armor (Ending Right Side Checkpoint) (Double Agent)",
-  [71235004] = "@Locations/Streets/Body Armor (Ending Left Side Checkpoint) (Double Agent)",
-  [71315000] = "@Locations/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start) (Agent)",
-  [71315001] = "@Locations/Depot/Body Armor (Behind Crate In Front Of Start) (Agent)",
-  [71315002] = "@Locations/Depot/Body Armor (Back Of Blue Hangar Near Start) (Agent)",
-  [71315003] = "@Locations/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start) (Agent)",
-  [71315004] = "@Locations/Depot/Body Armor (Back Of Grey Hangar Near Start) (Agent)",
-  [71315005] = "@Locations/Depot/Body Armor (Back-Left Corner Three Door Hangar) (Agent)",
-  [71315006] = "@Locations/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Agent)",
-  [71315007] = "@Locations/Depot/Body Armor (Back Of Hangar Across From Ammo Cache) (Agent)",
-  [71315008] = "@Locations/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Agent)",
-  [71315009] = "@Locations/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate) (Agent)",
-  [71315010] = "@Locations/Depot/Body Armor (Back Of Last Hangar) (Agent)",
-  [71315011] = "@Locations/Depot/Body Armor (Inside Train Station) (Agent)",
-  [71315002] = "@Locations/Depot/Body Armor (Back Of Blue Hangar Near Start) (Secret Agent)",
-  [71315004] = "@Locations/Depot/Body Armor (Back Of Grey Hangar Near Start) (Secret Agent)",
-  [71315005] = "@Locations/Depot/Body Armor (Back-Left Corner Three Door Hangar) (Secret Agent)",
-  [71315006] = "@Locations/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Secret Agent)",
-  [71315008] = "@Locations/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Secret Agent)",
-  [71315010] = "@Locations/Depot/Body Armor (Back Of Last Hangar) (Secret Agent)",
-  [71515001] = "@Locations/Jungle/Body Armor (First Area Back Corner) (Agent)",
-  [71515002] = "@Locations/Jungle/Body Armor (Behind Second Turret) (Agent)",
-  [71515003] = "@Locations/Jungle/Body Armor (Behind Guard Tower) (Agent)",
-  [71525001] = "@Locations/Jungle/Body Armor (First Area Back Corner) (Secret Agent)",
-  [71525002] = "@Locations/Jungle/Body Armor (Behind Second Turret) (Secret Agent)",
-  [71525003] = "@Locations/Jungle/Body Armor (Behind Guard Tower) (Secret Agent)",
-  [71535001] = "@Locations/Jungle/Body Armor (First Area Back Corner) (Double Agent)",
-  [71535002] = "@Locations/Jungle/Body Armor (Behind Second Turret) (Double Agent)",
-  [71615001] = "@Locations/Control/Body Armor (Locker Room Corner) (Agent)",
-  [71615002] = "@Locations/Control/Body Armor (Top Floor Behind Grate) (Agent)",
-  [71625001] = "@Locations/Control/Body Armor (Locker Room Corner) (Secret Agent)",
-  [71625002] = "@Locations/Control/Body Armor (Top Floor Behind Grate) (Secret Agent)",
-  [71635001] = "@Locations/Control/Body Armor (Locker Room Corner) (Double Agent)",
-  [71635002] = "@Locations/Control/Body Armor (Top Floor Behind Grate) (Double Agent)",
-  [71715001] = "@Locations/Caverns/Body Armor (Under Walkway On Crate) (Agent)",
-  [71715002] = "@Locations/Caverns/Body Armor (Comms Room) (Agent)",
-  [71725002] = "@Locations/Caverns/Body Armor (Comms Room) (Secret Agent)",
-  [71815001] = "@Locations/Cradle/Body Armor (Start Tower) (Agent)",
-  [71815002] = "@Locations/Cradle/Body Armor (Behind Antenna Control) (Agent)",
-  [71815003] = "@Locations/Cradle/Body Armor (Left Tower) (Agent)",
-  [71815004] = "@Locations/Cradle/Body Armor (Right Tower) (Agent)",
-  [71825001] = "@Locations/Cradle/Body Armor (Start Tower) (Secret Agent)",
-  [71825002] = "@Locations/Cradle/Body Armor (Behind Antenna Control) (Secret Agent)",
-  [71825003] = "@Locations/Cradle/Body Armor (Left Tower) (Secret Agent)",
-  [71825004] = "@Locations/Cradle/Body Armor (Right Tower) (Secret Agent)",
-  [71835001] = "@Locations/Cradle/Body Armor (Start Tower) (Double Agent)",
-  [71835002] = "@Locations/Cradle/Body Armor (Behind Antenna Control) (Double Agent)",
-  [71835003] = "@Locations/Cradle/Body Armor (Left Tower) (Double Agent)",
-  [71835004] = "@Locations/Cradle/Body Armor (Right Tower) (Double Agent)",
-  [71915001] = "@Locations/Aztec/Body Armor (Inside Turret Tunnels) (Agent)",
-  [71925001] = "@Locations/Aztec/Body Armor (Inside Turret Tunnels) (Secret Agent)",
-  [71935001] = "@Locations/Aztec/Body Armor (Inside Turret Tunnels) (Double Agent)",
-  [72015001] = "@Locations/Egyptian/Body Armor (Corridor Northwest Of Start) (Agent)",
-  [72015002] = "@Locations/Egyptian/Body Armor (After Golden Gun) (Agent)",
-  [72015003] = "@Locations/Egyptian/Body Armor (Left Of Secret Corridor) (Agent)",
-  [72025001] = "@Locations/Egyptian/Body Armor (Corridor Northwest Of Start) (Secret Agent)",
-  [72025002] = "@Locations/Egyptian/Body Armor (After Golden Gun) (Secret Agent)",
-  [72025003] = "@Locations/Egyptian/Body Armor (Left Of Secret Corridor) (Secret Agent)",
-  [72035001] = "@Locations/Egyptian/Body Armor (Corridor Northwest Of Start) (Double Agent)",
-  [72035002] = "@Locations/Egyptian/Body Armor (After Golden Gun) (Double Agent)",
-  [72035003] = "@Locations/Egyptian/Body Armor (Left Of Secret Corridor) (Double Agent)",
+    -- Archives
+    [71100001] = "@Missions/Archives/Archives - (Clear)",
+    [71101001] = "@Missions/Archives/Escape From Interrogation Room",
+    [71101002] = "@Missions/Archives/Find Natalya",
+    [71101003] = "@Missions/Archives/Recover Helicopter Black Box",
+    [71101004] = "@Missions/Archives/Escape With Natalya",
+    [71102001] = "@Missions/Archives/Flight Recorder",
+    [71102002] = "@Missions/Archives/Interrogation Room Key",
+    [71102003] = "@Missions/Archives/Safe Key",
+    [71103001] = "@Missions/Archives/Cheat - Invisibility",
+    [71104001] = "@Missions/Archives/PP7",
+    [71105001] = "@Missions/Archives/Body Armor (Bottom Floor On Crate)",
+    [71105002] = "@Missions/Archives/Body Armor (Room Across From Start)",
+    [71110001] = "@Missions/Archives/Archives - Clear (Agent)",
+    [71111001] = "@Missions/Archives/Escape From Interrogation Room (Agent)",
+    [71111002] = "@Missions/Archives/Escape With Natalya (Agent)",
+    [71111003] = "@Missions/Archives/Find Natalya (Agent)",
+    [71112001] = "@Missions/Archives/Flight Recorder (Agent)",
+    [71112002] = "@Missions/Archives/Interrogation Room Key (Agent)",
+    [71112003] = "@Missions/Archives/Safe Key (Agent)",
+    [71114001] = "@Missions/Archives/PP7 (Agent)",
+    [71115001] = "@Missions/Archives/Body Armor (Bottom Floor On Crate) (Agent)",
+    [71115002] = "@Missions/Archives/Body Armor (Room Across From Start) (Agent)",
+    [71120001] = "@Missions/Archives/Archives - Clear (Secret Agent)",
+    [71121001] = "@Missions/Archives/Escape With Natalya (Secret Agent)",
+    [71121002] = "@Missions/Archives/Find Natalya (Secret Agent)",
+    [71121003] = "@Missions/Archives/Recover Helicopter Black Box (Secret Agent)",
+    [71121004] = "@Missions/Archives/Escape From Interrogation Room (Secret Agent)",
+    [71122001] = "@Missions/Archives/Flight Recorder (Secret Agent)",
+    [71122002] = "@Missions/Archives/Interrogation Room Key (Secret Agent)",
+    [71122003] = "@Missions/Archives/Safe Key (Secret Agent)",
+    [71124001] = "@Missions/Archives/PP7 (Secret Agent)",
+    [71125002] = "@Missions/Archives/Body Armor (Room Across From Start) (Secret Agent)",
+    [71130001] = "@Missions/Archives/Archives - Clear (Double Agent)",
+    [71131001] = "@Missions/Archives/Escape From Interrogation Room (Double Agent)",
+    [71131002] = "@Missions/Archives/Find Natalya (Double Agent)",
+    [71131003] = "@Missions/Archives/Recover Helicopter Black Box (Double Agent)",
+    [71131004] = "@Missions/Archives/Escape With Natalya (Double Agent)",
+    [71132001] = "@Missions/Archives/Flight Recorder (Double Agent)",
+    [71132002] = "@Missions/Archives/Interrogation Room Key (Double Agent)",
+    [71132003] = "@Missions/Archives/Safe Key (Double Agent)",
+    [71134001] = "@Missions/Archives/PP7 (Double Agent)",
 
-  --Victory & Clear Conditions
-  [72100000] = "",
-  [72110002] = "@Locations/Cradle/Stopped Goldeneye"
+    -- Streets
+    [71200001] = "@Missions/Streets/Streets - (Clear)",
+    [71201001] = "@Missions/Streets/Contact Valentin",
+    [71201002] = "@Missions/Streets/Pursue Ouromov And Natalya",
+    [71201003] = "@Missions/Streets/Minimize Civilian Casualties",
+    [71203001] = "@Missions/Streets/Cheat - Enemy Rockets",
+    [71204001] = "@Missions/Streets/Grenade Launcher",
+    [71205001] = "@Missions/Streets/Body Armor (Through Window Past Valentin)",
+    [71205002] = "@Missions/Streets/Body Armor (Mid-Level Checkpoint)",
+    [71205003] = "@Missions/Streets/Body Armor (Ending Right Side Checkpoint)",
+    [71205004] = "@Missions/Streets/Body Armor (Ending Left Side Checkpoint)",
+    [71206001] = "@Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin)",
+    [71210001] = "@Missions/Streets/Streets - Clear (Agent)",
+    [71211001] = "@Missions/Streets/Pursue Ouromov And Natalya (Agent)",
+    [71211002] = "@Missions/Streets/Minimize Civilian Casualties (Agent)",
+    [71214001] = "@Missions/Streets/Grenade Launcher (Agent)",
+    [71215001] = "@Missions/Streets/Body Armor (Through Window Past Valentin) (Agent)",
+    [71215002] = "@Missions/Streets/Body Armor (Mid-Level Checkpoint) (Agent)",
+    [71215003] = "@Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Agent)",
+    [71215004] = "@Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Agent)",
+    [71216001] = "@Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Agent)",
+    [71220001] = "@Missions/Streets/Streets - Clear (Secret Agent)",
+    [71221001] = "@Missions/Streets/Contact Valentin (Secret Agent)",
+    [71221002] = "@Missions/Streets/Pursue Ouromov And Natalya (Secret Agent)",
+    [71221003] = "@Missions/Streets/Minimize Civilian Casualties (Secret Agent)",
+    [71224001] = "@Missions/Streets/Grenade Launcher (Secret Agent)",
+    [71225001] = "@Missions/Streets/Body Armor (Through Window Past Valentin) (Secret Agent)",
+    [71225002] = "@Missions/Streets/Body Armor (Mid-Level Checkpoint) (Secret Agent)",
+    [71225003] = "@Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Secret Agent)",
+    [71225004] = "@Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Secret Agent)",
+    [71226001] = "@Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Secret Agent)",
+    [71230001] = "@Missions/Streets/Streets - Clear (Double Agent)",
+    [71231001] = "@Missions/Streets/Contact Valentin (Double Agent)",
+    [71231002] = "@Missions/Streets/Pursue Ouromov And Natalya (Double Agent)",
+    [71231003] = "@Missions/Streets/Minimize Civilian Casualties (Double Agent)",
+    [71234001] = "@Missions/Streets/Grenade Launcher (Double Agent)",
+    [71235001] = "@Missions/Streets/Body Armor (Through Window Past Valentin) (Double Agent)",
+    [71235002] = "@Missions/Streets/Body Armor (Mid-Level Checkpoint) (Double Agent)",
+    [71235003] = "@Missions/Streets/Body Armor (Ending Right Side Checkpoint) (Double Agent)",
+    [71235004] = "@Missions/Streets/Body Armor (Ending Left Side Checkpoint) (Double Agent)",
+    [71236001] = "@Missions/Streets/Ammo Container (Grenade Rounds - Through Window Past Valentin) (Double Agent)",
+
+    -- Depot
+    [71300001] = "@Missions/Depot/Depot - (Clear)",
+    [71301001] = "@Missions/Depot/Destroy Illegal Arms Cache",
+    [71301002] = "@Missions/Depot/Destroy Computer Network",
+    [71301003] = "@Missions/Depot/Obtain Depot Safe Key",
+    [71301004] = "@Missions/Depot/Recover Helicopter Blueprints",
+    [71301005] = "@Missions/Depot/Locate Trevelyan's Train",
+    [71302001] = "@Missions/Depot/Blueprints",
+    [71302002] = "@Missions/Depot/Safe Key",
+    [71303001] = "@Missions/Depot/Cheat - Slow Animation",
+    [71304001] = "@Missions/Depot/KF7 On Bottom-Right Table",
+    [71304002] = "@Missions/Depot/D5K On Bottom-Right Table 1",
+    [71304003] = "@Missions/Depot/D5K On Bottom-Right Table 2",
+    [71304004] = "@Missions/Depot/D5K On Floor",
+    [71304005] = "@Missions/Depot/D5K On Top-Right Table 1",
+    [71304006] = "@Missions/Depot/D5K On Top-Right Table 2",
+    [71304007] = "@Missions/Depot/D5K On Top-Right Table 3",
+    [71304009] = "@Missions/Depot/Rocket Launcher",
+    [71304010] = "@Missions/Depot/KF7 On Bottom-Left Table 1",
+    [71304011] = "@Missions/Depot/KF7 On Bottom-Left Table 2",
+    [71304012] = "@Missions/Depot/KF7 On Bottom-Left Table 3",
+    [71304013] = "@Missions/Depot/KF7 On Bottom-Left Table 4",
+    [71304015] = "@Missions/Depot/KF7 On Bottom-Left Table 5",
+    [71305000] = "@Missions/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start)",
+    [71305001] = "@Missions/Depot/Body Armor (Behind Crate In Front Of Start)",
+    [71305002] = "@Missions/Depot/Body Armor (Back Of Blue Hangar Near Start)",
+    [71305003] = "@Missions/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start)",
+    [71305004] = "@Missions/Depot/Body Armor (Back Of Grey Hangar Near Start)",
+    [71305005] = "@Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar)",
+    [71305006] = "@Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road)",
+    [71305007] = "@Missions/Depot/Body Armor (Back Of Hangar Across From Ammo Cache)",
+    [71305008] = "@Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe)",
+    [71305009] = "@Missions/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate)",
+    [71305010] = "@Missions/Depot/Body Armor (Back Of Last Hangar)",
+    [71305011] = "@Missions/Depot/Body Armor (Inside Train Station)",
+    [71306001] = "@Missions/Depot/Rockets 1",
+    [71306002] = "@Missions/Depot/Rockets 2",
+    [71306003] = "@Missions/Depot/Rockets 3",
+    [71306014] = "@Missions/Depot/Proximity Mines",
+    [71310001] = "@Missions/Depot/Depot - Clear (Agent)",
+    [71311001] = "@Missions/Depot/Locate Trevelyan's Train (Agent)",
+    [71312001] = "@Missions/Depot/Blueprints (Agent)",
+    [71312002] = "@Missions/Depot/Safe Key (Agent)",
+    [71314001] = "@Missions/Depot/KF7 On Bottom-Right Table (Agent)",
+    [71314002] = "@Missions/Depot/D5K On Bottom-Right Table 1 (Agent)",
+    [71314003] = "@Missions/Depot/D5K On Bottom-Right Table 2 (Agent)",
+    [71314004] = "@Missions/Depot/D5K On Floor (Agent)",
+    [71314005] = "@Missions/Depot/D5K On Top-Right Table 1 (Agent)",
+    [71314006] = "@Missions/Depot/D5K On Top-Right Table 2 (Agent)",
+    [71314007] = "@Missions/Depot/D5K On Top-Right Table 3 (Agent)",
+    [71314009] = "@Missions/Depot/Rocket Launcher (Agent)",
+    [71314010] = "@Missions/Depot/KF7 On Bottom-Left Table 1 (Agent)",
+    [71314011] = "@Missions/Depot/KF7 On Bottom-Left Table 2 (Agent)",
+    [71314012] = "@Missions/Depot/KF7 On Bottom-Left Table 3 (Agent)",
+    [71314013] = "@Missions/Depot/KF7 On Bottom-Left Table 4 (Agent)",
+    [71314015] = "@Missions/Depot/KF7 On Bottom-Left Table 5 (Agent)",
+    [71315000] = "@Missions/Depot/Body Armor (Outside Behind Stacked Crates Right Of Start) (Agent)",
+    [71315001] = "@Missions/Depot/Body Armor (Behind Crate In Front Of Start) (Agent)",
+    [71315002] = "@Missions/Depot/Body Armor (Back Of Blue Hangar Near Start) (Agent)",
+    [71315003] = "@Missions/Depot/Body Armor (Behind House Left Of Blue Hangar Near Start) (Agent)",
+    [71315004] = "@Missions/Depot/Body Armor (Back Of Grey Hangar Near Start) (Agent)",
+    [71315005] = "@Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar) (Agent)",
+    [71315006] = "@Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Agent)",
+    [71315007] = "@Missions/Depot/Body Armor (Back Of Hangar Across From Ammo Cache) (Agent)",
+    [71315008] = "@Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Agent)",
+    [71315009] = "@Missions/Depot/Body Armor (Back Corner Behind Crates Before Train Station Gate) (Agent)",
+    [71315010] = "@Missions/Depot/Body Armor (Back Of Last Hangar) (Agent)",
+    [71315011] = "@Missions/Depot/Body Armor (Inside Train Station) (Agent)",
+    [71316001] = "@Missions/Depot/Rockets 1 (Agent)",
+    [71316002] = "@Missions/Depot/Rockets 2 (Agent)",
+    [71316003] = "@Missions/Depot/Rockets 3 (Agent)",
+    [71316014] = "@Missions/Depot/Proximity Mines (Agent)",
+    [71320001] = "@Missions/Depot/Depot - Clear (Secret Agent)",
+    [71321001] = "@Missions/Depot/Destroy Computer Network (Secret Agent)",
+    [71321002] = "@Missions/Depot/Obtain Depot Safe Key (Secret Agent)",
+    [71321003] = "@Missions/Depot/Recover Helicopter Blueprints (Secret Agent)",
+    [71321004] = "@Missions/Depot/Locate Trevelyan's Train (Secret Agent)",
+    [71322001] = "@Missions/Depot/Blueprints (Secret Agent)",
+    [71322002] = "@Missions/Depot/Safe Key (Secret Agent)",
+    [71324001] = "@Missions/Depot/KF7 On Bottom-Right Table (Secret Agent)",
+    [71324002] = "@Missions/Depot/D5K On Bottom-Right Table 1 (Secret Agent)",
+    [71324003] = "@Missions/Depot/D5K On Bottom-Right Table 2 (Secret Agent)",
+    [71324004] = "@Missions/Depot/D5K On Floor (Secret Agent)",
+    [71324005] = "@Missions/Depot/D5K On Top-Right Table 1 (Secret Agent)",
+    [71324006] = "@Missions/Depot/D5K On Top-Right Table 2 (Secret Agent)",
+    [71324007] = "@Missions/Depot/D5K On Top-Right Table 3 (Secret Agent)",
+    [71324009] = "@Missions/Depot/Rocket Launcher (Secret Agent)",
+    [71324010] = "@Missions/Depot/KF7 On Bottom-Left Table 1 (Secret Agent)",
+    [71324011] = "@Missions/Depot/KF7 On Bottom-Left Table 2 (Secret Agent)",
+    [71324012] = "@Missions/Depot/KF7 On Bottom-Left Table 3 (Secret Agent)",
+    [71324013] = "@Missions/Depot/KF7 On Bottom-Left Table 4 (Secret Agent)",
+    [71324015] = "@Missions/Depot/KF7 On Bottom-Left Table 5 (Secret Agent)",
+    [71325002] = "@Missions/Depot/Body Armor (Back Of Blue Hangar Near Start) (Secret Agent)",
+    [71325004] = "@Missions/Depot/Body Armor (Back Of Grey Hangar Near Start) (Secret Agent)",
+    [71325005] = "@Missions/Depot/Body Armor (Back-Left Corner Of Three Door Hangar) (Secret Agent)",
+    [71325006] = "@Missions/Depot/Body Armor (Back Of Last Hangar On Middle Road) (Secret Agent)",
+    [71325008] = "@Missions/Depot/Body Armor (Outside Behind Crate Under Orange Pipe) (Secret Agent)",
+    [71325010] = "@Missions/Depot/Body Armor (Back Of Last Hangar) (Secret Agent)",
+    [71326001] = "@Missions/Depot/Rockets 1 (Secret Agent)",
+    [71326002] = "@Missions/Depot/Rockets 2 (Secret Agent)",
+    [71326003] = "@Missions/Depot/Rockets 3 (Secret Agent)",
+    [71326014] = "@Missions/Depot/Proximity Mines (Secret Agent)",
+    [71330001] = "@Missions/Depot/Depot - Clear (Double Agent)",
+    [71331001] = "@Missions/Depot/Destroy Illegal Arms Cache (Double Agent)",
+    [71331002] = "@Missions/Depot/Destroy Computer Network (Double Agent)",
+    [71331003] = "@Missions/Depot/Obtain Depot Safe Key (Double Agent)",
+    [71331004] = "@Missions/Depot/Recover Helicopter Blueprints (Double Agent)",
+    [71331005] = "@Missions/Depot/Locate Trevelyan's Train (Double Agent)",
+    [71332001] = "@Missions/Depot/Blueprints (Double Agent)",
+    [71332002] = "@Missions/Depot/Safe Key (Double Agent)",
+    [71334001] = "@Missions/Depot/KF7 On Bottom-Right Table (Double Agent)",
+    [71334002] = "@Missions/Depot/D5K On Bottom-Right Table 1 (Double Agent)",
+    [71334003] = "@Missions/Depot/D5K On Bottom-Right Table 2 (Double Agent)",
+    [71334004] = "@Missions/Depot/D5K On Floor (Double Agent)",
+    [71334005] = "@Missions/Depot/D5K On Top-Right Table 1 (Double Agent)",
+    [71334006] = "@Missions/Depot/D5K On Top-Right Table 2 (Double Agent)",
+    [71334007] = "@Missions/Depot/D5K On Top-Right Table 3 (Double Agent)",
+    [71334009] = "@Missions/Depot/Rocket Launcher (Double Agent)",
+    [71334010] = "@Missions/Depot/KF7 On Bottom-Left Table 1 (Double Agent)",
+    [71334011] = "@Missions/Depot/KF7 On Bottom-Left Table 2 (Double Agent)",
+    [71334012] = "@Missions/Depot/KF7 On Bottom-Left Table 3 (Double Agent)",
+    [71334013] = "@Missions/Depot/KF7 On Bottom-Left Table 4 (Double Agent)",
+    [71334015] = "@Missions/Depot/KF7 On Bottom-Left Table 5 (Double Agent)",
+    [71336001] = "@Missions/Depot/Rockets 1 (Double Agent)",
+    [71336002] = "@Missions/Depot/Rockets 2 (Double Agent)",
+    [71336003] = "@Missions/Depot/Rockets 3 (Double Agent)",
+    [71336014] = "@Missions/Depot/Proximity Mines (Double Agent)",
+
+    -- Train
+    [71400001] = "@Missions/Train/Train - (Clear)",
+    [71401001] = "@Missions/Train/Destroy Brake Units",
+    [71401002] = "@Missions/Train/Rescue Natalya",
+    [71401003] = "@Missions/Train/Locate Janus Secret Base",
+    [71401004] = "@Missions/Train/Crack Boris' Password",
+    [71401005] = "@Missions/Train/Escape To Safety",
+    [71402001] = "@Missions/Train/Train Door Key",
+    [71403001] = "@Missions/Train/Cheat - Silver PP7",
+    [71404001] = "@Missions/Train/Gun In Box",
+    [71410001] = "@Missions/Train/Train - Clear (Agent)",
+    [71411001] = "@Missions/Train/Destroy Brake Units (Agent)",
+    [71411002] = "@Missions/Train/Rescue Natalya (Agent)",
+    [71411003] = "@Missions/Train/Escape To Safety (Agent)",
+    [71412001] = "@Missions/Train/Train Door Key (Agent)",
+    [71414001] = "@Missions/Train/RC-P90 (Agent)",
+    [71420001] = "@Missions/Train/Train - Clear (Secret Agent)",
+    [71421001] = "@Missions/Train/Destroy Brake Units (Secret Agent)",
+    [71421002] = "@Missions/Train/Rescue Natalya (Secret Agent)",
+    [71421003] = "@Missions/Train/Locate Janus Secret Base (Secret Agent)",
+    [71421004] = "@Missions/Train/Escape To Safety (Secret Agent)",
+    [71422001] = "@Missions/Train/Train Door Key (Secret Agent)",
+    [71424001] = "@Missions/Train/DD44 Dostovei (Secret Agent)",
+    [71430001] = "@Missions/Train/Train - Clear (Double Agent)",
+    [71431001] = "@Missions/Train/Destroy Brake Units (Double Agent)",
+    [71431002] = "@Missions/Train/Rescue Natalya (Double Agent)",
+    [71431003] = "@Missions/Train/Locate Janus Secret Base (Double Agent)",
+    [71431004] = "@Missions/Train/Crack Boris' Password (Double Agent)",
+    [71431005] = "@Missions/Train/Escape To Safety (Double Agent)",
+    [71432001] = "@Missions/Train/Train Door Key (Double Agent)",
+
+    -- Jungle
+    [71500001] = "@Missions/Jungle/Jungle - (Clear)",
+    [71501001] = "@Missions/Jungle/Destroy Drone Guns",
+    [71501002] = "@Missions/Jungle/Eliminate Xenia",
+    [71501003] = "@Missions/Jungle/Blow Up Ammo Dump",
+    [71501004] = "@Missions/Jungle/Escort Natalya To Janus Base",
+    [71503001] = "@Missions/Jungle/Cheat - 2x Hunting Knives",
+    [71505001] = "@Missions/Jungle/Body Armor (First Area Back Corner)",
+    [71505002] = "@Missions/Jungle/Body Armor (Behind Second Turret)",
+    [71505003] = "@Missions/Jungle/Body Armor (Behind Guard Tower)",
+    [71510001] = "@Missions/Jungle/Jungle - Clear (Agent)",
+    [71511001] = "@Missions/Jungle/Destroy Drone Guns (Agent)",
+    [71511002] = "@Missions/Jungle/Eliminate Xenia (Agent)",
+    [71511003] = "@Missions/Jungle/Escort Natalya To Janus Base (Agent)",
+    [71515001] = "@Missions/Jungle/Body Armor (First Area Back Corner) (Agent)",
+    [71515002] = "@Missions/Jungle/Body Armor (Behind Second Turret) (Agent)",
+    [71515003] = "@Missions/Jungle/Body Armor (Behind Guard Tower) (Agent)",
+    [71520001] = "@Missions/Jungle/Jungle - Clear (Secret Agent)",
+    [71521001] = "@Missions/Jungle/Destroy Drone Guns (Secret Agent)",
+    [71521002] = "@Missions/Jungle/Eliminate Xenia (Secret Agent)",
+    [71521003] = "@Missions/Jungle/Blow Up Ammo Dump (Secret Agent)",
+    [71521004] = "@Missions/Jungle/Escort Natalya To Janus Base (Secret Agent)",
+    [71525001] = "@Missions/Jungle/Body Armor (First Area Back Corner) (Secret Agent)",
+    [71525002] = "@Missions/Jungle/Body Armor (Behind Second Turret) (Secret Agent)",
+    [71525003] = "@Missions/Jungle/Body Armor (Behind Guard Tower) (Secret Agent)",
+    [71530001] = "@Missions/Jungle/Jungle - Clear (Double Agent)",
+    [71531001] = "@Missions/Jungle/Destroy Drone Guns (Double Agent)",
+    [71531002] = "@Missions/Jungle/Eliminate Xenia (Double Agent)",
+    [71531003] = "@Missions/Jungle/Blow Up Ammo Dump (Double Agent)",
+    [71531004] = "@Missions/Jungle/Escort Natalya To Janus Base (Double Agent)",
+    [71535001] = "@Missions/Jungle/Body Armor (First Area Back Corner) (Double Agent)",
+    [71535002] = "@Missions/Jungle/Body Armor (Behind Second Turret) (Double Agent)",
+
+    -- Control
+    [71600001] = "@Missions/Control/Control - (Clear)",
+    [71601001] = "@Missions/Control/Protect Natalya",
+    [71601002] = "@Missions/Control/Disable Goldeneye Satellite",
+    [71601003] = "@Missions/Control/Destroy Armored Mainframes",
+    [71602001] = "@Missions/Control/Boris' PP7",
+    [71603001] = "@Missions/Control/Cheat - Infinite Ammo",
+    [71605001] = "@Missions/Control/Body Armor (Locker Room Corner)",
+    [71605002] = "@Missions/Control/Body Armor (Top Floor Behind Grate)",
+    [71606001] = "@Missions/Control/Ammo Container (Remote Mines - After First Blast Door)",
+    [71610001] = "@Missions/Control/Control - Clear (Agent)",
+    [71611001] = "@Missions/Control/Protect Natalya (Agent)",
+    [71611002] = "@Missions/Control/Disable Goldeneye Satellite (Agent)",
+    [71611003] = "@Missions/Control/Destroy Armored Mainframes (Agent)",
+    [71612001] = "@Missions/Control/Boris' PP7 (Agent)",
+    [71615001] = "@Missions/Control/Body Armor (Locker Room Corner) (Agent)",
+    [71615002] = "@Missions/Control/Body Armor (Top Floor Behind Grate) (Agent)",
+    [71616001] = "@Missions/Control/Ammo Container (Remote Mines - After First Blast Door) (Agent)",
+    [71620001] = "@Missions/Control/Control - Clear (Secret Agent)",
+    [71621001] = "@Missions/Control/Protect Natalya (Secret Agent)",
+    [71621002] = "@Missions/Control/Disable Goldeneye Satellite (Secret Agent)",
+    [71621003] = "@Missions/Control/Destroy Armored Mainframes (Secret Agent)",
+    [71622001] = "@Missions/Control/Boris' PP7 (Secret Agent)",
+    [71625001] = "@Missions/Control/Body Armor (Locker Room Corner) (Secret Agent)",
+    [71625002] = "@Missions/Control/Body Armor (Top Floor Behind Grate) (Secret Agent)",
+    [71626001] = "@Missions/Control/Ammo Container (Remote Mines - After First Blast Door) (Secret Agent)",
+    [71630001] = "@Missions/Control/Control - Clear (Double Agent)",
+    [71631001] = "@Missions/Control/Protect Natalya (Double Agent)",
+    [71631002] = "@Missions/Control/Disable Goldeneye Satellite (Double Agent)",
+    [71631003] = "@Missions/Control/Destroy Armored Mainframes (Double Agent)",
+    [71632001] = "@Missions/Control/Boris' PP7 (Double Agent)",
+    [71635001] = "@Missions/Control/Body Armor (Locker Room Corner) (Double Agent)",
+    [71635002] = "@Missions/Control/Body Armor (Top Floor Behind Grate) (Double Agent)",
+    [71636001] = "@Missions/Control/Ammo Container (Remote Mines - After First Blast Door) (Double Agent)",
+
+    -- Caverns
+    [71700001] = "@Missions/Caverns/Caverns - (Clear)",
+    [71701001] = "@Missions/Caverns/Destroy Inlet Pump Controls",
+    [71701002] = "@Missions/Caverns/Destroy Outlet Pump Controls",
+    [71701003] = "@Missions/Caverns/Destroy Master Control Console",
+    [71701004] = "@Missions/Caverns/Use Radio To Contact Jack Wade",
+    [71701005] = "@Missions/Caverns/Minimize Scientist Casualties",
+    [71702001] = "@Missions/Caverns/Code Card 1",
+    [71702002] = "@Missions/Caverns/Code Card 2",
+    [71702003] = "@Missions/Caverns/Code Card 3",
+    [71703001] = "@Missions/Caverns/Cheat - 2x RC-P90",
+    [71704001] = "@Missions/Caverns/AR33 Assault Rifle",
+    [71705001] = "@Missions/Caverns/Body Armor (Under Walkway On Crate)",
+    [71705003] = "@Missions/Caverns/Body Armor (Comms Room)",
+    [71710001] = "@Missions/Caverns/Caverns - Clear (Agent)",
+    [71711001] = "@Missions/Caverns/Minimize Scientist Casualties (Agent)",
+    [71712001] = "@Missions/Caverns/Code Card 1 (Agent)",
+    [71712002] = "@Missions/Caverns/Code Card 2 (Agent)",
+    [71712003] = "@Missions/Caverns/Code Card 3 (Agent)",
+    [71714001] = "@Missions/Caverns/AR33 Assault Rifle (Agent)",
+    [71715001] = "@Missions/Caverns/Body Armor (Under Walkway On Crate) (Agent)",
+    [71715003] = "@Missions/Caverns/Body Armor (Comms Room) (Agent)",
+    [71720001] = "@Missions/Caverns/Caverns - Clear (Secret Agent)",
+    [71721001] = "@Missions/Caverns/Destroy Inlet Pump Controls (Secret Agent)",
+    [71721002] = "@Missions/Caverns/Destroy Outlet Pump Controls (Secret Agent)",
+    [71721003] = "@Missions/Caverns/Destroy Master Control Console (Secret Agent)",
+    [71721004] = "@Missions/Caverns/Minimize Scientist Casualties (Secret Agent)",
+    [71722001] = "@Missions/Caverns/Code Card 1 (Secret Agent)",
+    [71722002] = "@Missions/Caverns/Code Card 2 (Secret Agent)",
+    [71722003] = "@Missions/Caverns/Code Card 3 (Secret Agent)",
+    [71724001] = "@Missions/Caverns/AR33 Assault Rifle (Secret Agent)",
+    [71725003] = "@Missions/Caverns/Body Armor (Comms Room) (Secret Agent)",
+    [71730001] = "@Missions/Caverns/Caverns - Clear (Double Agent)",
+    [71731001] = "@Missions/Caverns/Destroy Inlet Pump Controls (Double Agent)",
+    [71731002] = "@Missions/Caverns/Destroy Outlet Pump Controls (Double Agent)",
+    [71731003] = "@Missions/Caverns/Destroy Master Control Console (Double Agent)",
+    [71731004] = "@Missions/Caverns/Use Radio To Contact Jack Wade (Double Agent)",
+    [71731005] = "@Missions/Caverns/Minimize Scientist Casualties (Double Agent)",
+    [71732001] = "@Missions/Caverns/Code Card 1 (Double Agent)",
+    [71732002] = "@Missions/Caverns/Code Card 2 (Double Agent)",
+    [71732003] = "@Missions/Caverns/Code Card 3 (Double Agent)",
+    [71734001] = "@Missions/Caverns/AR33 Assault Rifle (Double Agent)",
+
+    -- Cradle
+    [71800001] = "@Missions/Cradle/Cradle - (Clear)",
+    [71801001] = "@Missions/Cradle/Destroy Control Console",
+    [71801002] = "@Missions/Cradle/Settle The Score With Trevelyan",
+    [71803001] = "@Missions/Cradle/Cheat - Gold PP7",
+    [71805001] = "@Missions/Cradle/Body Armor (Start Tower)",
+    [71805002] = "@Missions/Cradle/Body Armor (Behind Antenna Control)",
+    [71805003] = "@Missions/Cradle/Body Armor (Left Tower)",
+    [71805004] = "@Missions/Cradle/Body Armor (Right Tower)",
+    [71810001] = "@Missions/Cradle/Cradle - Clear (Agent)",
+    [71811001] = "@Missions/Cradle/Destroy Control Console (Agent)",
+    [71811002] = "@Missions/Cradle/Settle The Score With Trevelyan (Agent)",
+    [71815001] = "@Missions/Cradle/Body Armor (Start Tower) (Agent)",
+    [71815002] = "@Missions/Cradle/Body Armor (Behind Antenna Control) (Agent)",
+    [71815003] = "@Missions/Cradle/Body Armor (Left Tower) (Agent)",
+    [71815004] = "@Missions/Cradle/Body Armor (Right Tower) (Agent)",
+    [71820001] = "@Missions/Cradle/Cradle - Clear (Secret Agent)",
+    [71821001] = "@Missions/Cradle/Destroy Control Console (Secret Agent)",
+    [71821002] = "@Missions/Cradle/Settle The Score With Trevelyan (Secret Agent)",
+    [71825001] = "@Missions/Cradle/Body Armor (Start Tower) (Secret Agent)",
+    [71825002] = "@Missions/Cradle/Body Armor (Behind Antenna Control) (Secret Agent)",
+    [71825003] = "@Missions/Cradle/Body Armor (Left Tower) (Secret Agent)",
+    [71825004] = "@Missions/Cradle/Body Armor (Right Tower) (Secret Agent)",
+    [71830001] = "@Missions/Cradle/Cradle - Clear (Double Agent)",
+    [71831001] = "@Missions/Cradle/Destroy Control Console (Double Agent)",
+    [71831002] = "@Missions/Cradle/Settle The Score With Trevelyan (Double Agent)",
+    [71835001] = "@Missions/Cradle/Body Armor (Start Tower) (Double Agent)",
+    [71835002] = "@Missions/Cradle/Body Armor (Behind Antenna Control) (Double Agent)",
+    [71835003] = "@Missions/Cradle/Body Armor (Left Tower) (Double Agent)",
+    [71835004] = "@Missions/Cradle/Body Armor (Right Tower) (Double Agent)",
+    [72110002] = "@Missions/Cradle/Stopped Goldeneye",
+
+    -- Aztec
+    [71900001] = "@Missions/Aztec/Aztec - (Clear)",
+    [71901001] = "@Missions/Aztec/Reprogram Shuttle Guidance",
+    [71901002] = "@Missions/Aztec/Launch Shuttle",
+    [71902002] = "@Missions/Aztec/Security Smart Card",
+    [71902003] = "@Missions/Aztec/Launch Protocol Data",
+    [71903001] = "@Missions/Aztec/Cheat - 2x Laser",
+    [71905003] = "@Missions/Aztec/Body Armor (Inside Turret Tunnels)",
+    [71910001] = "@Missions/Aztec/Aztec - Clear (Agent)",
+    [71911001] = "@Missions/Aztec/Reprogram Shuttle Guidance (Agent)",
+    [71911002] = "@Missions/Aztec/Launch Shuttle (Agent)",
+    [71912002] = "@Missions/Aztec/Security Smart Card (Agent)",
+    [71912003] = "@Missions/Aztec/Launch Protocol Data (Agent)",
+    [71915003] = "@Missions/Aztec/Body Armor (Inside Turret Tunnels) (Agent)",
+    [71920001] = "@Missions/Aztec/Aztec - Clear (Secret Agent)",
+    [71921001] = "@Missions/Aztec/Reprogram Shuttle Guidance (Secret Agent)",
+    [71921002] = "@Missions/Aztec/Launch Shuttle (Secret Agent)",
+    [71922002] = "@Missions/Aztec/Security Smart Card (Secret Agent)",
+    [71922003] = "@Missions/Aztec/Launch Protocol Data (Secret Agent)",
+    [71925003] = "@Missions/Aztec/Body Armor (Inside Turret Tunnels) (Secret Agent)",
+    [71930001] = "@Missions/Aztec/Aztec - Clear (Double Agent)",
+    [71931001] = "@Missions/Aztec/Reprogram Shuttle Guidance (Double Agent)",
+    [71931002] = "@Missions/Aztec/Launch Shuttle (Double Agent)",
+    [71932002] = "@Missions/Aztec/Security Smart Card (Double Agent)",
+    [71932003] = "@Missions/Aztec/Launch Protocol Data (Double Agent)",
+    [71935003] = "@Missions/Aztec/Body Armor (Inside Turret Tunnels) (Double Agent)",
+
+    -- Egyptian
+    [72000001] = "@Missions/Egyptian/Egyptian - (Clear)",
+    [72001001] = "@Missions/Egyptian/Recover The Golden Gun",
+    [72001002] = "@Missions/Egyptian/Defeat Baron Samedi?",
+    [72003001] = "@Missions/Egyptian/Cheat - All Guns",
+    [72004001] = "@Missions/Egyptian/Golden Gun",
+    [72005001] = "@Missions/Egyptian/Body Armor (Corridor Northwest Of Start)",
+    [72005002] = "@Missions/Egyptian/Body Armor (After Golden Gun)",
+    [72005003] = "@Missions/Egyptian/Body Armor (Left Of Secret Corridor)",
+    [72006001] = "@Missions/Egyptian/Golden Gun Ammo",
+    [72010001] = "@Missions/Egyptian/Egyptian - Clear (Agent)",
+    [72011001] = "@Missions/Egyptian/Recover The Golden Gun (Agent)",
+    [72011002] = "@Missions/Egyptian/Defeat Baron Samedi? (Agent)",
+    [72014001] = "@Missions/Egyptian/Golden Gun (Agent)",
+    [72015001] = "@Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Agent)",
+    [72015002] = "@Missions/Egyptian/Body Armor (After Golden Gun) (Agent)",
+    [72015003] = "@Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Agent)",
+    [72016001] = "@Missions/Egyptian/Golden Gun Ammo (Agent)",
+    [72020001] = "@Missions/Egyptian/Egyptian - Clear (Secret Agent)",
+    [72021001] = "@Missions/Egyptian/Recover The Golden Gun (Secret Agent)",
+    [72021002] = "@Missions/Egyptian/Defeat Baron Samedi? (Secret Agent)",
+    [72024001] = "@Missions/Egyptian/Golden Gun (Secret Agent)",
+    [72025001] = "@Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Secret Agent)",
+    [72025002] = "@Missions/Egyptian/Body Armor (After Golden Gun) (Secret Agent)",
+    [72025003] = "@Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Secret Agent)",
+    [72026001] = "@Missions/Egyptian/Golden Gun Ammo (Secret Agent)",
+    [72030001] = "@Missions/Egyptian/Egyptian - Clear (Double Agent)",
+    [72031001] = "@Missions/Egyptian/Recover The Golden Gun (Double Agent)",
+    [72031002] = "@Missions/Egyptian/Defeat Baron Samedi? (Double Agent)",
+    [72034001] = "@Missions/Egyptian/Golden Gun (Double Agent)",
+    [72035001] = "@Missions/Egyptian/Body Armor (Corridor Northwest Of Start) (Double Agent)",
+    [72035002] = "@Missions/Egyptian/Body Armor (After Golden Gun) (Double Agent)",
+    [72035003] = "@Missions/Egyptian/Body Armor (Left Of Secret Corridor) (Double Agent)",
+    [72036001] = "@Missions/Egyptian/Golden Gun Ammo (Double Agent)",
+
 }
 
-local markSectionChecked
-
-local function setToggleActive(code, active)
-    local obj = Tracker:FindObjectForCode(code)
-    if obj and obj.Active ~= nil then
-        obj.Active = active and true or false
-    end
-end
-
-local function getToggleActive(code)
-    local obj = Tracker:FindObjectForCode(code)
-    return obj and obj.Active == true
-end
-
-local function hasItem(code)
-    return getToggleActive(code)
-end
-
-local function resetObjectByCode(code)
-    local obj = Tracker:FindObjectForCode(code)
-    if obj then
-        if obj.AcquiredCount ~= nil then
-            obj.AcquiredCount = 0
-        elseif obj.Active ~= nil then
-            obj.Active = false
-        end
-    end
-end
-
-local function setDefaultActiveCodes()
-    for code, value in pairs(DEFAULT_ACTIVE_CODES) do
-        local obj = Tracker:FindObjectForCode(code)
-        if obj and obj.Active ~= nil then
-            obj.Active = value
-        end
-    end
-end
-
-function updateItemFromReceipt(item_id, item_name)
-    debugPrint("Attempting item unlock - ID: " .. tostring(item_id) .. ", Name: " .. tostring(item_name))
-    if not FONT_SIZES_SET then setupCounterFontSizes() end
-    local tracker_code = nil
-    if item_name and NAME_MAPPING[item_name] then
-        tracker_code = NAME_MAPPING[item_name]
-        debugPrint("Found item by name: " .. tracker_code)
-    elseif item_id and ITEM_MAPPING[item_id] then
-        tracker_code = ITEM_MAPPING[item_id]
-        debugPrint("Found item by ID: " .. tracker_code)
-    end
-    if not tracker_code then
-        debugPrint("No mapping found for Name: " .. tostring(item_name) .. ", ID: " .. tostring(item_id))
-        return false
-    end
-    local obj = Tracker:FindObjectForCode(tracker_code)
-    if not obj then
-        debugPrint("ERROR: Could not find tracker object: " .. tracker_code)
-        return false
-    end
-    if obj.Active ~= nil then
-        if not obj.Active then
-            obj.Active = true
-            debugPrint("SUCCESS: Activated " .. tracker_code)
-        else
-            debugPrint("Item already active: " .. tracker_code)
-        end
-    end
-    debugPrint("ERROR: Toggle object has no Active field: " .. tracker_code)
-    return false
-end
-
---function onItem(index, item_id, item_name, player_number)
-    --local is_bk_item = false
-    --if item_id then
-        --if (item_id >= 0x0001FBE2 and item_id <= 0x0001FBE9) or
-           --(item_id >= 0x0001FBF1 and item_id <= 0x0001FBF5) or
-           --(item_id >= 0x0001FFB0 and item_id <= 0x0001FFB4) or
-           --(item_id >= 0x0001FFC0 and item_id <= 0x0001FFC3) or
-           --(item_id >= 0x0001FFD0 and item_id <= 0x0001FFD3) or
-           --item_id == 0x0001FFA0 or
-           --(item_id >= 0x0001FFE3 and item_id <= 0x0001FFEB) or
-           --(item_id >= 0x04000000 and item_id <= 0x04000013) or
-           --(item_id >= 0x05000001 and item_id <= 0x05000007) or
-           --(item_id >= 0xFF01FBE2 and item_id <= 0xFF01FBE4) then
-            --is_bk_item = true
-        --end
-    --end
-    --if item_id == 130018 or item_id == 130019 or item_id == 130020 or
-       --item_id == 130021 or item_id == 130022 or item_id == 130023 or
-       --item_id == 130024 or item_id == 130025 then
-        --is_bk_item = true
-    --end
-    --if not is_bk_item then return end
-    --debugPrint("Item: " .. tostring(item_name or "unknown") .. " (ID: " .. string.format("0x%X", item_id or 0) .. ", Player: " .. tostring(player_number) .. ")")
-    --if index > CUR_INDEX then CUR_INDEX = index end
-    --updateItemFromReceipt(item_id, item_name)
---end
-
-local SCENE_TAB_MAP = {
-    [0x07] = "Mission Select",
-    [0x21] = "Dam",
-    [0x22] = "Facility",
-    [0x23] = "Runway",
-    [0x24] = "Surface 1",
-    [0x09] = "Bunker 1",
-    [0x14] = "Silo",
-    [0x1A] = "Frigate",
-    [0x2B] = "Surface 2",
-    [0x1B] = "Bunker 2",
-    [0x16] = "Statue",
-    [0x18] = "Archives",
-    [0x1D] = "Streets",
-    [0x1E] = "Depot",
-    [0x19] = "Train",
-    [0x25] = "Jungle",
-    [0x17] = "Control",
-    [0x27] = "Caverns",
-    [0x29] = "Cradle",
-    [0x1C] = "Aztec",
-    [0x20] = "Egyptian"
+local PROGRESSIVE_WEAPONS = {
+    "klobb",
+    "huntknife",
+    "throwknife",
+    "taser",
+    "pp7",
+    "silentpp7",
+    "dd44",
+    "kf7",
+    "zmg",
+    "d5k",
+    "silentd5k",
+    "sniper",
+    "grenade",
+    "phantom",
+    "tmine",
+    "ar33",
+    "pmine",
+    "rcp90",
+    "rmine",
+    "watchlaser",
+    "shotgun",
+    "magnum",
+    "goldgun",
+    "autoshotgun",
+    "laser",
+    "glauncher",
+    "rlauncher",
+    "tank",
+    "silverpp7",
+    "goldpp7",
 }
 
-local TAB_TITLE_MAP = {
-    ["Mission Select"] = " Mission Select ",
-    ["Dam"] = " Missions/Dam ",
-    ["Facility"] = " Missions/Facility ",
-    ["Runway"] = " Missions/Runway ",
-    ["Surface 1"] = " Missions/Surface 1 ",
-    ["Bunker 1"] = " Missions/Bunker 1 ",
-    ["Silo"] = " Missions/Silo ",
-    ["Frigate"] = " Missions/Frigate ",
-    ["Surface 2"] = " Missions/Surface 2 ",
-    ["Bunker 2"] = " Missions/Bunker 2 ",
-    ["Statue"] = " Missions/Statue ",
-    ["Archives"] = " Missions/Archives ",
-    ["Streets"] = " Missions/Streets ",
-    ["Depot"] = " Missions/Depot ",
-    ["Train"] = " Missions/Train ",
-    ["Jungle"] = " Missions/Jungle ",
-    ["Control"] = " Missions/Control ",
-    ["Caverns"] = " Missions/Caverns ",
-    ["Cradle"] = " Missions/Cradle ",
-    ["Aztec"] = " Missions/Aztec ",
-    ["Egyptian"] = " Missions/Egyptian ",
+local UNMAPPED_SECTIONS = {
+    "@Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)",
+    "@Missions/Facility/Body Armor (Inside Security Room 2) (Secret Agent)",
+    "@Missions/Depot/D5K On Top-Right Table 4 (Agent)",
+    "@Missions/Depot/D5K On Top-Right Table 4 (Secret Agent)",
+    "@Missions/Depot/D5K On Top-Right Table 4 (Double Agent)",
+    "@Missions/Depot/D5K On Top-Right Table 4",
 }
 
-local function switchTabForScene(scene_id)
-    if type(scene_id) == "string" and string.sub(scene_id, 1, 2) == "0x" then
-        scene_id = tonumber(string.sub(scene_id, 3), 16)
+-- Temporary effects have no persistent tracker state.
+local IGNORED_ITEMS = {
+    [17320000] = true, -- Health Pack
+    [17320001] = true, -- Body Armor
+    [17320002] = true, -- 9mm Ammo
+    [17320003] = true, -- Rifle Ammo
+    [17320004] = true, -- Shotgun Shells
+    [17320005] = true, -- Magnum Rounds
+    [17320006] = true, -- Golden Bullets
+    [17320007] = true, -- Grenade Rounds
+    [17320008] = true, -- Rockets
+    [17350000] = true, -- Goldeneye Trap
+    [17350002] = true, -- Holster Gun Trap
+    [17350004] = true, -- Auto Fail Trap
+}
+
+local function resetItem(code)
+    local item = Tracker:FindObjectForCode(code)
+    if item.Type == "progressive" then
+        item.CurrentStage = 0
+    elseif item.Type == "consumable" then
+        item.AcquiredCount = 0
     else
-        scene_id = tonumber(scene_id)
-    end
-    local tab = SCENE_TAB_MAP[scene_id]
-    tab = TAB_TITLE_MAP[tab] or tab
-    if tab then
-        Tracker:UiHint("ActivateTab", tab)
-        debugPrint("Scene tab switched to: " .. tab)
+        item.Active = false
     end
 end
 
-local MAP_DATASTORAGE_KEY = nil
-
-function onSceneNotify(key, value, old_value)
-    debugPrint("DataStorage notify: " .. tostring(key) .. " = " .. tostring(value))
-    if key == MAP_DATASTORAGE_KEY then
-        switchTabForScene(value)
+local function onItem(index, item_id, item_name, player_number)
+    if index <= CUR_INDEX then return end
+    CUR_INDEX = index
+    if not AUTOTRACKER_ENABLE_ITEM_TRACKING or IGNORED_ITEMS[item_id] then return end
+    local code = ITEM_MAPPING[item_id]
+    if not code then return end
+    local item = Tracker:FindObjectForCode(code)
+    if item_id == 17310000 then
+        PROGRESSIVE_COUNT = math.min(PROGRESSIVE_COUNT + 1, #PROGRESSIVE_WEAPONS)
+        item.CurrentStage = PROGRESSIVE_COUNT
+        Tracker:FindObjectForCode(PROGRESSIVE_WEAPONS[PROGRESSIVE_COUNT]).Active = true
+    elseif item.Type == "consumable" then
+        item.AcquiredCount = item.AcquiredCount + 1
+    else
+        item.Active = true
     end
 end
 
-function onSceneRetrieved(key, value)
-    debugPrint("DataStorage retrieved: " .. tostring(key) .. " = " .. tostring(value))
-    if key == MAP_DATASTORAGE_KEY then
-        switchTabForScene(value)
+local function onLocation(location_id, location_name)
+    if CHECKED_LOCATIONS[location_id] then return end
+    CHECKED_LOCATIONS[location_id] = true
+    if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then return end
+    local path = LOCATION_SECTION_MAP[location_id]
+    if path then
+        Tracker:FindObjectForCode(path).AvailableChestCount = 0
     end
 end
 
-local function sanityRangeMatches(rule, location_id)
-    if location_id < rule.first or location_id > rule.last then
-        return false
-    end
-    local nibble = location_id % 16
-    if rule.nibble ~= nil then
-        return nibble == rule.nibble
-    end
-    if rule.honey then
-        return nibble >= 1 and nibble <= 3
-    end
-    return true
-end
-
-local function scanSanityLocation(location_id, found)
-    if type(location_id) ~= "number" then
-        return
-    end
-    for _, rule in ipairs(SANITY_LOCATION_RANGES) do
-        if sanityRangeMatches(rule, location_id) then
-            found[rule.code] = true
-        end
-    end
-end
-
-local function refreshSanityTogglesFromLocations()
-    local found = {}
-    local sources = {}
-    if Archipelago then
-        sources = { Archipelago.CheckedLocations, Archipelago.MissingLocations }
-    end
-    for _, source in ipairs(sources) do
-        if type(source) == "table" then
-            for _, location_id in ipairs(source) do
-                scanSanityLocation(location_id, found)
-            end
-        end
-    end
-    for _, rule in ipairs(SANITY_LOCATION_RANGES) do
-        setToggleActive(rule.code, found[rule.code] == true)
-    end
-end
-
-function onLocation(location_id, location_name)
-    if not location_id then return end
-    local location_key = getLocationCheckKey(location_id, location_name)
-    if CHECKED_LOCATIONS[location_key] then return end
-    CHECKED_LOCATIONS[location_key] = true
-    local location_hex = string.format("0x%08X", location_id)
-    debugPrint("Location checked: " .. tostring(location_name) .. " (" .. location_hex .. ")")
-    markSectionChecked(location_id, location_name)
-    setDefaultActiveCodes()
-    refreshSanityTogglesFromLocations()
-end
-
-function onClear(slot_data)
-    debugPrint("Clearing tracker state")
-    dumpSlotData(slot_data)
-    applySessionOptions(slot_data)
+local function onClear(slot_data)
+    Tracker.BulkUpdate = true
+    Tracker:FindObjectForCode("ap_session").Active = false
     CUR_INDEX = -1
-    FONT_SIZES_SET = false
+    PROGRESSIVE_COUNT = 0
     CHECKED_LOCATIONS = {}
-    local seen = {}
+    GOLDENEYE_ENABLED_LOCATIONS = {}
+    GOLDENEYE_ENABLED_MISSIONS = {}
+    GOLDENEYE_GOAL_GROUPS = {}
     for _, code in pairs(ITEM_MAPPING) do
-        if not seen[code] then
-            resetObjectByCode(code)
-            seen[code] = true
+        resetItem(code)
+    end
+    if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
+        for _, path in pairs(LOCATION_SECTION_MAP) do
+            local section = Tracker:FindObjectForCode(path)
+            section.AvailableChestCount = section.ChestCount
+        end
+        for _, path in ipairs(UNMAPPED_SECTIONS) do
+            local section = Tracker:FindObjectForCode(path)
+            section.AvailableChestCount = section.ChestCount
         end
     end
-    for _, requirement in ipairs(MUMBO_PAYMENT_REQUIREMENTS) do
-        resetObjectByCode(requirement.code)
-    end
-    setDefaultActiveCodes()
-    if Archipelago and Archipelago.CheckedLocations then
-        for _, location_id in ipairs(Archipelago.CheckedLocations) do
-            CHECKED_LOCATIONS[location_id] = true
-            markSectionChecked(location_id)
+    for _, id in ipairs(Archipelago.MissingLocations) do
+        GOLDENEYE_ENABLED_LOCATIONS[id] = true
+        local path = LOCATION_SECTION_MAP[id]
+        if path then
+            GOLDENEYE_ENABLED_MISSIONS[path:match("@Missions/([^/]+)/")] = true
         end
-        debugPrint("Loaded " .. tostring(#Archipelago.CheckedLocations) .. " checked locations from AP")
     end
-    setDefaultActiveCodes()
-    refreshSanityTogglesFromLocations()
-    if Archipelago then
-        MAP_DATASTORAGE_KEY = "Banjo-Kazooie_Recompiled_" .. tostring(Archipelago.TeamNumber or 0) .. "_" .. tostring(Archipelago.PlayerNumber or -1) .. "_map"
-        debugPrint("Subscribing to map key: " .. MAP_DATASTORAGE_KEY)
-        Archipelago:SetNotify({MAP_DATASTORAGE_KEY})
-        Archipelago:Get({MAP_DATASTORAGE_KEY})
+    for _, id in ipairs(Archipelago.CheckedLocations) do
+        GOLDENEYE_ENABLED_LOCATIONS[id] = true
+        local path = LOCATION_SECTION_MAP[id]
+        if path then
+            GOLDENEYE_ENABLED_MISSIONS[path:match("@Missions/([^/]+)/")] = true
+        end
+        onLocation(id)
     end
-    debugPrint("Tracker reset complete")
+    for _, group in ipairs(slot_data.goal_clear_groups or {}) do
+        local paths = {}
+        for _, id in ipairs(group) do
+            paths[#paths + 1] = LOCATION_SECTION_MAP[id]
+        end
+        GOLDENEYE_GOAL_GROUPS[#GOLDENEYE_GOAL_GROUPS + 1] = paths
+    end
+    local options = slot_data.options or {}
+    local starting_mission = options.starting_mission
+    if starting_mission then
+        Tracker:FindObjectForCode(ITEM_MAPPING[73037000 + starting_mission]).Active = true
+    end
+    Tracker:FindObjectForCode("ap_session").Active = true
+    Tracker.BulkUpdate = false
 end
 
-if Archipelago then
-    Archipelago:AddClearHandler("bk_clear", onClear)
-    Archipelago:AddItemHandler("bk_item", onItem)
-    Archipelago:AddLocationHandler("bk_location", onLocation)
-    Archipelago:AddSetReplyHandler("bk_scene_notify", onSceneNotify)
-    Archipelago:AddRetrievedHandler("bk_scene_retrieved", onSceneRetrieved)
-    print("==========================================")
-    print("gOLDENeYE 007 Archipelago Tracker")
-    print("Auto-tracking: ENABLED")
-    print("==========================================")
-else
-    print("ERROR: Archipelago object not found!")
-end
-
-if ScriptHost and ScriptHost.AddOnVariableChangedHandler then
-    ScriptHost:AddOnVariableChangedHandler("setupFonts", "*", function()
-        if not FONT_SIZES_SET then setupCounterFontSizes() end
-    end)
-end
-
-pcall(setupCounterFontSizes)
-
-
+Archipelago:AddClearHandler("goldeneye_clear", onClear)
+Archipelago:AddItemHandler("goldeneye_item", onItem)
+Archipelago:AddLocationHandler("goldeneye_location", onLocation)

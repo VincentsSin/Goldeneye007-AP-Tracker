@@ -10,6 +10,7 @@
         "v_alignment": "center",
         "item_margin": "1,1",
         "rows": [
+          ["progressive_weapon"],
           [
             "huntknife",
             "throwknife",

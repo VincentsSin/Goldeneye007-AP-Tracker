@@ -1,5 +1,9 @@
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/weapons.jsonc")
-Tracker:AddLayouts("layouts/tracker.jsonc")
+if IS_ITEMS_ONLY then
+    Tracker:AddLayouts("layouts/items_only.jsonc")
+else
+    Tracker:AddLayouts("layouts/tracker.jsonc")
+end
 Tracker:AddLayouts("layouts/missions.jsonc")
 Tracker:AddLayouts("layouts/cheats.jsonc")

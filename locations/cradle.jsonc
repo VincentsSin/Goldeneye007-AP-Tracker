@@ -5,16 +5,16 @@
       {
         "sections": [
           {
-            "ref": "Missions/Cradle/Destroy Console Control (Agent)"
+            "ref": "Missions/Cradle/Destroy Control Console (Agent)"
           },
           {
-            "ref": "Missions/Cradle/Destroy Console Control (Secret Agent)"
+            "ref": "Missions/Cradle/Destroy Control Console (Secret Agent)"
           },
           {
-            "ref": "Missions/Cradle/Destroy Console Control (Double Agent)"
+            "ref": "Missions/Cradle/Destroy Control Console (Double Agent)"
           },
           {
-            "ref": "Missions/Cradle/Destroy Console Control"
+            "ref": "Missions/Cradle/Destroy Control Console"
           }
         ],
         "map_locations": [
