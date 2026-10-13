@@ -1,0 +1,128 @@
+[
+  {
+    "name": "broadcast_mission_select",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/mission_select.png"
+  },
+  {
+    "name": "broadcast_dam",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/dam.png"
+  },
+  {
+    "name": "broadcast_facility",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/facility.png"
+  },
+  {
+    "name": "broadcast_runway",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/runway.png"
+  },
+  {
+    "name": "broadcast_surface_one",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/surface_one.png"
+  },
+  {
+    "name": "broadcast_bunker_one",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/bunker_one.png"
+  },
+  {
+    "name": "broadcast_silo",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/silo.png"
+  },
+  {
+    "name": "broadcast_frigate",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/frigate.png"
+  },
+  {
+    "name": "broadcast_surface_two",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/surface_two.png"
+  },
+  {
+    "name": "broadcast_bunker_two",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/bunker_two.png"
+  },
+  {
+    "name": "broadcast_statue",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/statue.png"
+  },
+  {
+    "name": "broadcast_archives",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/archives.png"
+  },
+  {
+    "name": "broadcast_streets",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/streets.png"
+  },
+  {
+    "name": "broadcast_depot",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/depot.png"
+  },
+  {
+    "name": "broadcast_train",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/train.png"
+  },
+  {
+    "name": "broadcast_jungle",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/jungle.png"
+  },
+  {
+    "name": "broadcast_control",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/control.png"
+  },
+  {
+    "name": "broadcast_caverns",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/caverns.png"
+  },
+  {
+    "name": "broadcast_cradle",
+    "location_size": 40,
+    "location_border_thickness": 2,
+    "img": "images/maps/cradle.png"
+  },
+  {
+    "name": "broadcast_aztec",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/aztec.png"
+  },
+  {
+    "name": "broadcast_egyptian",
+    "location_size": 40,
+    "location_border_thickness": 1,
+    "img": "images/maps/egyptian.png"
+  }
+]

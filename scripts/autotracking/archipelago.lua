@@ -1153,9 +1153,17 @@ local MISSION_TABS = {
 
 local function onMission(key, value)
     if key ~= MISSION_KEY then return end
+    if value == 0 then
+        Tracker:UiHint("ActivateTab", "Mission Select")
+        Tracker:UiHint("ActivateTab", "Select")
+        return
+    end
     local tab = MISSION_TABS[value]
     if tab then
         Tracker:UiHint("ActivateTab", "Missions")
+        Tracker:UiHint("ActivateTab", tab)
+        local compactTabs = {["Mission Select"] = "Select", ["Dam"] = "Dam", ["Facility"] = "Fac", ["Runway"] = "Run", ["Surface 1"] = "S1", ["Bunker 1"] = "B1", ["Silo"] = "Silo", ["Frigate"] = "Fri", ["Surface 2"] = "S2", ["Bunker 2"] = "B2", ["Statue"] = "Sta", ["Archives"] = "Arc", ["Streets"] = "Str", ["Depot"] = "Dep", ["Train"] = "Trn", ["Jungle"] = "Jng", ["Control"] = "Ctl", ["Caverns"] = "Cav", ["Cradle"] = "Crd", ["Aztec"] = "Azt", ["Egyptian"] = "Egy"}
+        tab = compactTabs[tab]
         Tracker:UiHint("ActivateTab", tab)
     end
 end

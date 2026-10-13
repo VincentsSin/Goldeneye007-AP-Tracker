@@ -1,0 +1,4302 @@
+{
+  "broadcast_map_tabs": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Select",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_mission_select"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Dam",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Dam · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "covertmodem"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_dam"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Fac",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Facility · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "doordecoder",
+                          "fackeycarda",
+                          "fackeycardb"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 210,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_facility"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Run",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Runway · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "planekey",
+                          "runtank"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 240,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_runway"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "S1",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Surface 1 · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "bunkerprints",
+                          "hutkey",
+                          "surfacesafe"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 210,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_surface_one"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "B1",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bunker 1 · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "securitykey",
+                          "gekey",
+                          "comproomkey"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "camera",
+                          "datathief",
+                          "keyanalyzer"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 150,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_bunker_one"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Silo",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Silo · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "ioboard",
+                          "keycard4h4",
+                          "cpuboard",
+                          "keycard4c3",
+                          "rspboard",
+                          "keycard452",
+                          "rdpboard",
+                          "dat"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "camera",
+                          "plastique"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 30,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_silo"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Fri",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Frigate · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "bombdefuser",
+                          "tracker"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 240,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_frigate"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "S2",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Surface 2 · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "commskey"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "stmine"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_surface_two"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "B2",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bunker 2 · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "cctv",
+                          "cellkey1",
+                          "stafflist",
+                          "cellkey2",
+                          "casualtylist",
+                          "bunkersafe1",
+                          "geopmanual",
+                          "bunkersafe2",
+                          "b2keycarda",
+                          "b2keycardb"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "watchmag"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 0,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_bunker_two"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Sta",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Statue · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "recorder"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_statue"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Arc",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Archives · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "recorder",
+                          "archivekey",
+                          "archivesafe"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 210,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_archives"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Str",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Streets · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "streettank"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_streets"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Dep",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Depot · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "heliprints",
+                          "depotsafe"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 240,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_depot"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Trn",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Train · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "trainkey"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_train"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Jng",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Jungle · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_jungle"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Ctl",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Control · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_control"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Cav",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Caverns · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "codecard1",
+                          "codecard2",
+                          "codecard3"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 210,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_caverns"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Crd",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Cradle · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_cradle"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Azt",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Aztec · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "launchdata",
+                          "smartcard"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          "guidance"
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 240,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_aztec"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      },
+      {
+        "title": "Egy",
+        "content": {
+          "type": "dock",
+          "margin": 0,
+          "content": [
+            {
+              "type": "dock",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "itemgrid",
+                  "margin": 0,
+                  "item_width": 42,
+                  "item_height": 42,
+                  "item_margin": 0,
+                  "rows": [
+                    [
+                      "dam",
+                      "facility",
+                      "runway",
+                      "surface1",
+                      "bunker1",
+                      "silo",
+                      "frigate",
+                      "surface2",
+                      "bunker2",
+                      "statue"
+                    ],
+                    [
+                      "archives",
+                      "streets",
+                      "depot",
+                      "train",
+                      "jungle",
+                      "control",
+                      "caverns",
+                      "cradle",
+                      "aztec",
+                      "egyptian"
+                    ]
+                  ]
+                }
+              ],
+              "dock": "bottom"
+            },
+            {
+              "type": "dock",
+              "dock": "bottom",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Egyptian · Loadout / Key items",
+                  "dock": "top",
+                  "h_alignment": "right",
+                  "margin": 0
+                },
+                {
+                  "type": "dock",
+                  "height": 30,
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "itemgrid",
+                      "dock": "right",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "dock": "left",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "rows": [
+                        [
+                          ""
+                        ]
+                      ]
+                    },
+                    {
+                      "type": "canvas",
+                      "margin": 0,
+                      "width": 270,
+                      "height": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "margin": 0,
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "margin": 0,
+                  "content": [
+                    {
+                      "type": "dock",
+                      "dock": "top",
+                      "margin": 0,
+                      "content": [
+                        {
+                          "type": "itemgrid",
+                          "margin": 0,
+                          "item_width": 32,
+                          "item_height": 32,
+                          "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                          "rows": [
+                            [
+                              "progressive_weapon"
+                            ]
+                          ],
+                          "dock": "right"
+                        },
+                        {
+                          "type": "text",
+                          "text": "Weapons",
+                          "margin": 0
+                        }
+                      ]
+                    },
+                    {
+                      "type": "itemgrid",
+                      "margin": 0,
+                      "item_width": 32,
+                      "item_height": 32,
+                      "item_margin": 0,
+                      "item_h_alignment": "center",
+                      "item_v_alignment": "center",
+                      "rows": [
+                        [
+                          "huntknife",
+                          "throwknife",
+                          "pp7",
+                          "silentpp7",
+                          "dd44"
+                        ],
+                        [
+                          "klobb",
+                          "kf7",
+                          "zmg",
+                          "d5k",
+                          "silentd5k"
+                        ],
+                        [
+                          "phantom",
+                          "ar33",
+                          "rcp90",
+                          "shotgun",
+                          "autoshotgun"
+                        ],
+                        [
+                          "sniper",
+                          "magnum",
+                          "goldgun",
+                          "silverpp7",
+                          "goldpp7"
+                        ],
+                        [
+                          "laser",
+                          "watchlaser",
+                          "glauncher",
+                          "rlauncher",
+                          "grenade"
+                        ],
+                        [
+                          "tmine",
+                          "pmine",
+                          "rmine",
+                          "taser",
+                          "tank"
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "map",
+              "maps": [
+                "broadcast_egyptian"
+              ],
+              "margin": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

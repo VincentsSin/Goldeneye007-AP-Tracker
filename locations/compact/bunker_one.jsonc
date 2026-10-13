@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Bunker 1",
+    "children": [
+      {
+        "name": "Roams Halls Wearing Dark Beret",
+        "sections": [
+          { "name": "Security Keycard (Agent)", "ref": "Missions/Bunker 1/Security Keycard (Agent)" },
+          { "name": "Security Keycard (Secret Agent)", "ref": "Missions/Bunker 1/Security Keycard (Secret Agent)" },
+          { "name": "Security Keycard (Double Agent)", "ref": "Missions/Bunker 1/Security Keycard (Double Agent)" },
+          { "name": "Security Keycard", "ref": "Missions/Bunker 1/Security Keycard" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 325,
+            "y": 450,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Roams Halls Wearing Dark Beret",
+        "sections": [
+          { "name": "Computer Room Keycard (Agent)", "ref": "Missions/Bunker 1/Computer Room Keycard (Agent)" },
+          { "name": "Computer Room Keycard (Secret Agent)", "ref": "Missions/Bunker 1/Computer Room Keycard (Secret Agent)" },
+          { "name": "Computer Room Keycard (Double Agent)", "ref": "Missions/Bunker 1/Computer Room Keycard (Double Agent)" },
+          { "name": "Computer Room Keycard", "ref": "Missions/Bunker 1/Computer Room Keycard" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 575,
+            "y": 450,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Goldeneye Key (Agent)", "ref": "Missions/Bunker 1/Goldeneye Key (Agent)" },
+          { "name": "Goldeneye Key (Secret Agent)", "ref": "Missions/Bunker 1/Goldeneye Key (Secret Agent)" },
+          { "name": "Goldeneye Key (Double Agent)", "ref": "Missions/Bunker 1/Goldeneye Key (Double Agent)" },
+          { "name": "Goldeneye Key", "ref": "Missions/Bunker 1/Goldeneye Key" },
+          { "name": "Copy Goldeneye Key And Leave Original (Agent)", "ref": "Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Agent)" },
+          { "name": "Copy Goldeneye Key And Leave Original (Secret Agent)", "ref": "Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Secret Agent)" },
+          { "name": "Copy Goldeneye Key And Leave Original (Double Agent)", "ref": "Missions/Bunker 1/Copy Goldeneye Key And Leave Original (Double Agent)" },
+          { "name": "Copy Goldeneye Key And Leave Original", "ref": "Missions/Bunker 1/Copy Goldeneye Key And Leave Original" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 35,
+            "y": 615,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Photograph Main Video Screen (Agent)", "ref": "Missions/Bunker 1/Photograph Main Video Screen (Agent)" },
+          { "name": "Photograph Main Video Screen (Secret Agent)", "ref": "Missions/Bunker 1/Photograph Main Video Screen (Secret Agent)" },
+          { "name": "Photograph Main Video Screen (Double Agent)", "ref": "Missions/Bunker 1/Photograph Main Video Screen (Double Agent)" },
+          { "name": "Photograph Main Video Screen", "ref": "Missions/Bunker 1/Photograph Main Video Screen" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 280,
+            "y": 650,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Disrupt All Surveillance Equipment (Secret Agent)", "ref": "Missions/Bunker 1/Disrupt All Surveillance Equipment (Secret Agent)" },
+          { "name": "Disrupt All Surveillance Equipment (Double Agent)", "ref": "Missions/Bunker 1/Disrupt All Surveillance Equipment (Double Agent)" },
+          { "name": "Disrupt All Surveillance Equipment", "ref": "Missions/Bunker 1/Disrupt All Surveillance Equipment" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 340,
+            "y": 215,
+            "size": 40
+          },
+          {
+            "map": "bunker_one",
+            "x": 585,
+            "y": 480,
+            "size": 40
+          },
+          {
+            "map": "bunker_one",
+            "x": 490,
+            "y": 490,
+            "size": 40
+          },
+          {
+            "map": "bunker_one",
+            "x": 85,
+            "y": 870,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Get Personnel To Activate Computer (Double Agent)", "ref": "Missions/Bunker 1/Get Personnel To Activate Computer (Double Agent)" },
+          { "name": "Get Personnel To Activate Computer", "ref": "Missions/Bunker 1/Get Personnel To Activate Computer" },
+          { "name": "Download Data From Computer (Double Agent)", "ref": "Missions/Bunker 1/Download Data From Computer (Double Agent)" },
+          { "name": "Download Data From Computer", "ref": "Missions/Bunker 1/Download Data From Computer" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 450,
+            "y": 650,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Ammo Container (Rifle Ammo - Room Ahead Of Start) (Agent)", "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Agent)" },
+          { "name": "Ammo Container (Rifle Ammo - Room Ahead Of Start) (Secret Agent)", "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Secret Agent)" },
+          { "name": "Ammo Container (Rifle Ammo - Room Ahead Of Start) (Double Agent)", "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start) (Double Agent)" },
+          { "name": "Ammo Container (Rifle Ammo - Room Ahead Of Start)", "ref": "Missions/Bunker 1/Ammo Container (Rifle Ammo - Room Ahead Of Start)" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 435,
+            "y": 320,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Kitchen) (Agent)", "ref": "Missions/Bunker 1/Body Armor (Kitchen) (Agent)" },
+          { "name": "Body Armor (Kitchen)", "ref": "Missions/Bunker 1/Body Armor (Kitchen)" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 100,
+            "y": 555,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Rear Tunnel) (Agent)", "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel) (Agent)" },
+          { "name": "Body Armor (Rear Tunnel) (Secret Agent)", "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel) (Secret Agent)" },
+          { "name": "Body Armor (Rear Tunnel)", "ref": "Missions/Bunker 1/Body Armor (Rear Tunnel)" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 590,
+            "y": 410,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Bunker 1 - Clear (Agent)", "ref": "Missions/Bunker 1/Bunker 1 - Clear (Agent)" },
+          { "name": "Bunker 1 - Clear (Secret Agent)", "ref": "Missions/Bunker 1/Bunker 1 - Clear (Secret Agent)" },
+          { "name": "Bunker 1 - Clear (Double Agent)", "ref": "Missions/Bunker 1/Bunker 1 - Clear (Double Agent)" },
+          { "name": "Bunker 1 - (Clear)", "ref": "Missions/Bunker 1/Bunker 1 - (Clear)" },
+          { "name": "Cheat - 2x Rocket Launcher", "ref": "Missions/Bunker 1/Cheat - 2x Rocket Launcher" }
+        ],
+        "map_locations": [
+          {
+            "map": "bunker_one",
+            "x": 0,
+            "y": 50,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

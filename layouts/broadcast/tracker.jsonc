@@ -1,0 +1,22 @@
+{
+  "layouts": {
+    "tracker_broadcast": {
+      "type": "container",
+      "background": "#000000",
+      "margin": 0,
+      "content": [
+        {
+          "type": "layout",
+          "key": "broadcast_map_tabs",
+          "margin": 0
+        },
+        {
+          "type": "canvas",
+          "width": 348,
+          "height": 368,
+          "margin": 0
+        }
+      ]
+    }
+  }
+}
