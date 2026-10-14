@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Cradle",
+    "children": [
+      {
+        "sections": [
+          { "name": "Destroy Control Console (Agent)", "ref": "Missions/Cradle/Destroy Control Console (Agent)" },
+          { "name": "Destroy Control Console (Secret Agent)", "ref": "Missions/Cradle/Destroy Control Console (Secret Agent)" },
+          { "name": "Destroy Control Console (Double Agent)", "ref": "Missions/Cradle/Destroy Control Console (Double Agent)" },
+          { "name": "Destroy Control Console", "ref": "Missions/Cradle/Destroy Control Console" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 650,
+            "y": 525,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "Trevelyan Runs Around To Any Of These Spots",
+        "sections": [
+          { "name": "Settle The Score With Trevelyan (Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Agent)" },
+          { "name": "Settle The Score With Trevelyan (Secret Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Secret Agent)" },
+          { "name": "Settle The Score With Trevelyan (Double Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Double Agent)" },
+          { "name": "Settle The Score With Trevelyan", "ref": "Missions/Cradle/Settle The Score With Trevelyan" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 365,
+            "y": 345,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 540,
+            "y": 260,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 525,
+            "y": 460,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 675,
+            "y": 725,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 750,
+            "y": 500,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 870,
+            "y": 315,
+            "size": 40
+          },
+          {
+            "map": "cradle",
+            "x": 980,
+            "y": 890,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "name": "'Finish The Job, James - If You Can' (Final Location)",
+        "sections": [
+          { "name": "Settle The Score With Trevelyan (Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Agent)" },
+          { "name": "Settle The Score With Trevelyan (Secret Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Secret Agent)" },
+          { "name": "Settle The Score With Trevelyan (Double Agent)", "ref": "Missions/Cradle/Settle The Score With Trevelyan (Double Agent)" },
+          { "name": "Settle The Score With Trevelyan", "ref": "Missions/Cradle/Settle The Score With Trevelyan" },
+          { "name": "Stopped Goldeneye", "ref": "Missions/Cradle/Stopped Goldeneye" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 1075,
+            "y": 600,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Start Tower) (Agent)", "ref": "Missions/Cradle/Body Armor (Start Tower) (Agent)" },
+          { "name": "Body Armor (Start Tower) (Secret Agent)", "ref": "Missions/Cradle/Body Armor (Start Tower) (Secret Agent)" },
+          { "name": "Body Armor (Start Tower) (Double Agent)", "ref": "Missions/Cradle/Body Armor (Start Tower) (Double Agent)" },
+          { "name": "Body Armor (Start Tower)", "ref": "Missions/Cradle/Body Armor (Start Tower)" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 575,
+            "y": 875,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Left Tower) (Agent)", "ref": "Missions/Cradle/Body Armor (Left Tower) (Agent)" },
+          { "name": "Body Armor (Left Tower) (Secret Agent)", "ref": "Missions/Cradle/Body Armor (Left Tower) (Secret Agent)" },
+          { "name": "Body Armor (Left Tower) (Double Agent)", "ref": "Missions/Cradle/Body Armor (Left Tower) (Double Agent)" },
+          { "name": "Body Armor (Left Tower)", "ref": "Missions/Cradle/Body Armor (Left Tower)" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 25,
+            "y": 135,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Right Tower) (Agent)", "ref": "Missions/Cradle/Body Armor (Right Tower) (Agent)" },
+          { "name": "Body Armor (Right Tower) (Secret Agent)", "ref": "Missions/Cradle/Body Armor (Right Tower) (Secret Agent)" },
+          { "name": "Body Armor (Right Tower) (Double Agent)", "ref": "Missions/Cradle/Body Armor (Right Tower) (Double Agent)" },
+          { "name": "Body Armor (Right Tower)", "ref": "Missions/Cradle/Body Armor (Right Tower)" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 900,
+            "y": 25,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Behind Antenna Control) (Agent)", "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Agent)" },
+          { "name": "Body Armor (Behind Antenna Control) (Secret Agent)", "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Secret Agent)" },
+          { "name": "Body Armor (Behind Antenna Control) (Double Agent)", "ref": "Missions/Cradle/Body Armor (Behind Antenna Control) (Double Agent)" },
+          { "name": "Body Armor (Behind Antenna Control)", "ref": "Missions/Cradle/Body Armor (Behind Antenna Control)" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 815,
+            "y": 725,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Cradle - Clear (Agent)", "ref": "Missions/Cradle/Cradle - Clear (Agent)" },
+          { "name": "Cradle - Clear (Secret Agent)", "ref": "Missions/Cradle/Cradle - Clear (Secret Agent)" },
+          { "name": "Cradle - Clear (Double Agent)", "ref": "Missions/Cradle/Cradle - Clear (Double Agent)" },
+          { "name": "Cradle - (Clear)", "ref": "Missions/Cradle/Cradle - (Clear)" }
+        ],
+        "map_locations": [
+          {
+            "map": "cradle",
+            "x": 0,
+            "y": 25,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

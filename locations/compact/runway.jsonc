@@ -1,0 +1,149 @@
+[
+  {
+    "name": "Runway",
+    "children": [
+      {
+        "sections": [
+          { "name": "Ignition Key (Agent)", "ref": "Missions/Runway/Ignition Key (Agent)" },
+          { "name": "Ignition Key (Secret Agent)", "ref": "Missions/Runway/Ignition Key (Secret Agent)" },
+          { "name": "Ignition Key (Double Agent)", "ref": "Missions/Runway/Ignition Key (Double Agent)" },
+          { "name": "Ignition Key", "ref": "Missions/Runway/Ignition Key" },
+          { "name": "Find Plane Ignition Key (Agent)", "ref": "Missions/Runway/Find Plane Ignition Key (Agent)" },
+          { "name": "Find Plane Ignition Key (Secret Agent)", "ref": "Missions/Runway/Find Plane Ignition Key (Secret Agent)" },
+          { "name": "Find Plane Ignition Key (Double Agent)", "ref": "Missions/Runway/Find Plane Ignition Key (Double Agent)" },
+          { "name": "Find Plane Ignition Key", "ref": "Missions/Runway/Find Plane Ignition Key" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 80,
+            "y": 750,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Escape In Plane (Agent)", "ref": "Missions/Runway/Escape In Plane (Agent)" },
+          { "name": "Escape In Plane (Secret Agent)", "ref": "Missions/Runway/Escape In Plane (Secret Agent)" },
+          { "name": "Escape In Plane (Double Agent)", "ref": "Missions/Runway/Escape In Plane (Double Agent)" },
+          { "name": "Escape In Plane", "ref": "Missions/Runway/Escape In Plane" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 300,
+            "y": 250,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Destroy Missile Battery (Secret Agent)", "ref": "Missions/Runway/Destroy Missile Battery (Secret Agent)" },
+          { "name": "Destroy Missile Battery (Double Agent)", "ref": "Missions/Runway/Destroy Missile Battery (Double Agent)" },
+          { "name": "Destroy Missile Battery", "ref": "Missions/Runway/Destroy Missile Battery" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 305,
+            "y": 320,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Destroy Heavy Gun Emplacements (Double Agent)", "ref": "Missions/Runway/Destroy Heavy Gun Emplacements (Double Agent)" },
+          { "name": "Destroy Heavy Gun Emplacements", "ref": "Missions/Runway/Destroy Heavy Gun Emplacements" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 325,
+            "y": 30,
+            "size": 40
+          },
+          {
+            "map": "runway",
+            "x": 220,
+            "y": 30,
+            "size": 40
+          },
+          {
+            "map": "runway",
+            "x": 220,
+            "y": 375,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Ammo Container (Timed Mines - Room Behind Start) (Agent)", "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Agent)" },
+          { "name": "Ammo Container (Timed Mines - Room Behind Start) (Secret Agent)", "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Secret Agent)" },
+          { "name": "Ammo Container (Timed Mines - Room Behind Start) (Double Agent)", "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start) (Double Agent)" },
+          { "name": "Ammo Container (Timed Mines - Room Behind Start)", "ref": "Missions/Runway/Ammo Container (Timed Mines - Room Behind Start)" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 240,
+            "y": 895,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Ammo Container (Hand Grenades - Next To Player Start) (Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Next To Player Start) (Secret Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Secret Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Next To Player Start) (Double Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start) (Double Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Next To Player Start)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Next To Player Start)" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 210,
+            "y": 875,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Ammo Container (Hand Grenades - Outside Ignition Key Building) (Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Outside Ignition Key Building) (Secret Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Secret Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Outside Ignition Key Building) (Double Agent)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building) (Double Agent)" },
+          { "name": "Ammo Container (Hand Grenades - Outside Ignition Key Building)", "ref": "Missions/Runway/Ammo Container (Hand Grenades - Outside Ignition Key Building)" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 60,
+            "y": 805,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Runway - Clear (Agent)", "ref": "Missions/Runway/Runway - Clear (Agent)" },
+          { "name": "Runway - Clear (Secret Agent)", "ref": "Missions/Runway/Runway - Clear (Secret Agent)" },
+          { "name": "Runway - Clear (Double Agent)", "ref": "Missions/Runway/Runway - Clear (Double Agent)" },
+          { "name": "Runway - (Clear)", "ref": "Missions/Runway/Runway - (Clear)" },
+          { "name": "Cheat - DK Mode", "ref": "Missions/Runway/Cheat - DK Mode" }
+        ],
+        "map_locations": [
+          {
+            "map": "runway",
+            "x": 0,
+            "y": 50,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

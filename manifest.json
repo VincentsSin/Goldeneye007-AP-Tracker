@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "GoldenEye",
     "game_name": "GoldenEye 007",
     "package_version": "1.0.0",
@@ -10,15 +10,21 @@
     "variants": {
         "standard": {
             "display_name": "Maps and items",
-            "flags": ["ap"]
+            "flags": [
+                "ap"
+            ]
         },
         "itemsonly": {
             "display_name": "Items only",
-            "flags": ["ap"]
+            "flags": [
+                "ap"
+            ]
         },
         "mapsonly": {
             "display_name": "Maps only",
-            "flags": ["ap"]
+            "flags": [
+                "ap"
+            ]
         }
     }
 }

@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Frigate",
+    "children": [
+      {
+        "sections": [
+          { "name": "Rescue Hostages (Agent)", "ref": "Missions/Frigate/Rescue Hostages (Agent)" },
+          { "name": "Rescue Hostages (Secret Agent)", "ref": "Missions/Frigate/Rescue Hostages (Secret Agent)" },
+          { "name": "Rescue Hostages (Double Agent)", "ref": "Missions/Frigate/Rescue Hostages (Double Agent)" },
+          { "name": "Rescue Hostages", "ref": "Missions/Frigate/Rescue Hostages" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 600,
+            "y": 460,
+            "size": 40
+          },
+          {
+            "map": "frigate",
+            "x": 950,
+            "y": 425,
+            "size": 40
+          },
+          {
+            "map": "frigate",
+            "x": 1080,
+            "y": 500,
+            "size": 40
+          },
+          {
+            "map": "frigate",
+            "x": 945,
+            "y": 950,
+            "size": 40
+          },
+          {
+            "map": "frigate",
+            "x": 1025,
+            "y": 810,
+            "size": 40
+          },
+          {
+            "map": "frigate",
+            "x": 1360,
+            "y": 860,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Plant Tracking Bug On Helicopter (Agent)", "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Agent)" },
+          { "name": "Plant Tracking Bug On Helicopter (Secret Agent)", "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Secret Agent)" },
+          { "name": "Plant Tracking Bug On Helicopter (Double Agent)", "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter (Double Agent)" },
+          { "name": "Plant Tracking Bug On Helicopter", "ref": "Missions/Frigate/Plant Tracking Bug On Helicopter" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1450,
+            "y": 200,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Disarm Bridge Bomb (Secret Agent)", "ref": "Missions/Frigate/Disarm Bridge Bomb (Secret Agent)" },
+          { "name": "Disarm Bridge Bomb (Double Agent)", "ref": "Missions/Frigate/Disarm Bridge Bomb (Double Agent)" },
+          { "name": "Disarm Bridge Bomb", "ref": "Missions/Frigate/Disarm Bridge Bomb" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 590,
+            "y": 500,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Disarm Engine Room Bomb (Secret Agent)", "ref": "Missions/Frigate/Disarm Engine Room Bomb (Secret Agent)" },
+          { "name": "Disarm Engine Room Bomb (Double Agent)", "ref": "Missions/Frigate/Disarm Engine Room Bomb (Double Agent)" },
+          { "name": "Disarm Engine Room Bomb", "ref": "Missions/Frigate/Disarm Engine Room Bomb" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1275,
+            "y": 975,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Radio Room Near Bridge Bomb) (Agent)", "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Agent)" },
+          { "name": "Body Armor (Radio Room Near Bridge Bomb) (Secret Agent)", "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb) (Secret Agent)" },
+          { "name": "Body Armor (Radio Room Near Bridge Bomb)", "ref": "Missions/Frigate/Body Armor (Radio Room Near Bridge Bomb)" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 750,
+            "y": 500,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Body Armor (Invisible On Crate In Cargo Hold) (Agent)", "ref": "Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold) (Agent)" },
+          { "name": "Body Armor (Invisible On Crate In Cargo Hold)", "ref": "Missions/Frigate/Body Armor (Invisible On Crate In Cargo Hold)" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 1000,
+            "y": 680,
+            "size": 40
+          }
+        ]
+      },
+      {
+        "sections": [
+          { "name": "Frigate - Clear (Agent)", "ref": "Missions/Frigate/Frigate - Clear (Agent)" },
+          { "name": "Frigate - Clear (Secret Agent)", "ref": "Missions/Frigate/Frigate - Clear (Secret Agent)" },
+          { "name": "Frigate - Clear (Double Agent)", "ref": "Missions/Frigate/Frigate - Clear (Double Agent)" },
+          { "name": "Frigate - (Clear)", "ref": "Missions/Frigate/Frigate - (Clear)" }
+        ],
+        "map_locations": [
+          {
+            "map": "frigate",
+            "x": 0,
+            "y": 50,
+            "size": 40
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -92,9 +92,9 @@
           { "name": "Neutralize All Alarms (Secret Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)" },
           { "name": "Neutralize All Alarms (Double Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)" },
           { "name": "Neutralize All Alarms", "ref": "Missions/Dam/Neutralize All Alarms" },
-          { "name": "Body Armor (Guard Tower 2) (Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)" },
-          { "name": "Body Armor (Guard Tower 2) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)" },
-          { "name": "Body Armor (Guard Tower 2)", "ref": "Missions/Dam/Body Armor (Guard Tower 2)" }
+          { "name": "Body Armor (Last Dam Tower) (Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)" },
+          { "name": "Body Armor (Last Dam Tower) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)" },
+          { "name": "Body Armor (Last Dam Tower)", "ref": "Missions/Dam/Body Armor (Last Dam Tower)" }
         ],
         "map_locations": [
           {
@@ -107,9 +107,9 @@
       },
       {
         "sections": [
-          { "name": "Body Armor (Last Dam Tower) (Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)" },
-          { "name": "Body Armor (Last Dam Tower) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)" },
-          { "name": "Body Armor (Last Dam Tower)", "ref": "Missions/Dam/Body Armor (Last Dam Tower)" }
+          { "name": "Body Armor (Guard Tower 2) (Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)" },
+          { "name": "Body Armor (Guard Tower 2) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)" },
+          { "name": "Body Armor (Guard Tower 2)", "ref": "Missions/Dam/Body Armor (Guard Tower 2)" }
         ],
         "map_locations": [
           {
@@ -130,8 +130,8 @@
         "map_locations": [
           {
             "map": "dam",
-            "x": 0,
-            "y": 10
+            "x": 450,
+            "y": 150
           }
         ]
       }
