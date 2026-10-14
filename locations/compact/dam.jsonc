@@ -92,9 +92,15 @@
           { "name": "Neutralize All Alarms (Secret Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Secret Agent)" },
           { "name": "Neutralize All Alarms (Double Agent)", "ref": "Missions/Dam/Neutralize All Alarms (Double Agent)" },
           { "name": "Neutralize All Alarms", "ref": "Missions/Dam/Neutralize All Alarms" },
+<<<<<<< HEAD
           { "name": "Body Armor (Last Dam Tower) (Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)" },
           { "name": "Body Armor (Last Dam Tower) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)" },
           { "name": "Body Armor (Last Dam Tower)", "ref": "Missions/Dam/Body Armor (Last Dam Tower)" }
+=======
+          { "name": "Body Armor (Guard Tower 2) (Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)" },
+          { "name": "Body Armor (Guard Tower 2) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)" },
+          { "name": "Body Armor (Guard Tower 2)", "ref": "Missions/Dam/Body Armor (Guard Tower 2)" }
+>>>>>>> 5f886aea6282ed1c5e9dcffc3b5b169cc7f1a76e
         ],
         "map_locations": [
           {
@@ -107,9 +113,15 @@
       },
       {
         "sections": [
+<<<<<<< HEAD
           { "name": "Body Armor (Guard Tower 2) (Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Agent)" },
           { "name": "Body Armor (Guard Tower 2) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)" },
           { "name": "Body Armor (Guard Tower 2)", "ref": "Missions/Dam/Body Armor (Guard Tower 2)" }
+=======
+          { "name": "Body Armor (Last Dam Tower) (Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Agent)" },
+          { "name": "Body Armor (Last Dam Tower) (Secret Agent)", "ref": "Missions/Dam/Body Armor (Last Dam Tower) (Secret Agent)" },
+          { "name": "Body Armor (Last Dam Tower)", "ref": "Missions/Dam/Body Armor (Last Dam Tower)" }
+>>>>>>> 5f886aea6282ed1c5e9dcffc3b5b169cc7f1a76e
         ],
         "map_locations": [
           {
@@ -130,8 +142,13 @@
         "map_locations": [
           {
             "map": "dam",
+<<<<<<< HEAD
             "x": 450,
             "y": 150
+=======
+            "x": 0,
+            "y": 10
+>>>>>>> 5f886aea6282ed1c5e9dcffc3b5b169cc7f1a76e
           }
         ]
       }
