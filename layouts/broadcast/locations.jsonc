@@ -7697,7 +7697,7 @@
             "name": "Cheat - 2x Grenade Launcher",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "surface1, hutkey, surfacesafe"
+              "surface1, hutkey, surfacesafe, bunkerprints, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70403001"
