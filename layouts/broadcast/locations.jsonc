@@ -12474,7 +12474,7 @@
             "name": "Cheat - Slow Animation",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "depot"
+              "depot, depotsafe, heliprints"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71303001"
