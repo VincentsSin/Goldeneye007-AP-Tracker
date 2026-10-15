@@ -1060,6 +1060,17 @@ local PROGRESSIVE_WEAPONS = {
     "goldpp7",
 }
 
+local CHEAT_WEAPONS = {
+    ["2xgrenade"] = "glauncher",
+    ["2xrocket"] = "rlauncher",
+    ["2xthrow"] = "throwknife",
+    ["silverpp"] = "silverpp7",
+    ["2xhunt"] = "huntknife",
+    ["2xrcp90"] = "rcp90",
+    ["goldpp"] = "goldpp7",
+    ["2xlaser"] = "laser",
+}
+
 local UNMAPPED_SECTIONS = {
     "@Missions/Dam/Body Armor (Guard Tower 2) (Secret Agent)",
     "@Missions/Facility/Body Armor (Inside Security Room 2) (Secret Agent)",
@@ -1107,6 +1118,18 @@ local function onItem(index, item_id, item_name, player_number)
         PROGRESSIVE_COUNT = math.min(PROGRESSIVE_COUNT + 1, #PROGRESSIVE_WEAPONS)
         item.CurrentStage = PROGRESSIVE_COUNT
         Tracker:FindObjectForCode(PROGRESSIVE_WEAPONS[PROGRESSIVE_COUNT]).Active = true
+
+    elseif code == "allguns" then
+        item.Active = true
+        for _, weapon_code in ipairs(PROGRESSIVE_WEAPONS) do
+            Tracker:FindObjectForCode(weapon_code).Active = true
+        end
+
+    elseif CHEAT_WEAPONS[code] then
+        item.Active = true
+        local weapon_code = CHEAT_WEAPONS[code]
+        Tracker:FindObjectForCode(weapon_code).Active = true
+
     elseif item.Type == "consumable" then
         item.AcquiredCount = item.AcquiredCount + 1
     else

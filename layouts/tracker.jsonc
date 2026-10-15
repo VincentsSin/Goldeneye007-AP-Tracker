@@ -1,6 +1,6 @@
-﻿{
-	"layouts": {
-		"tracker_default": {
+{
+  "layouts": {
+    "tracker_default": {
       "type": "container",
       "background": "#000000",
       "content": {
@@ -18,118 +18,120 @@
                     "title": "Loadouts",
                     "content": [
                       {
-                        "type": "dock",
-                        "dock": "left",
+                        "type": "array",
+                        "orientation": "vertical",
                         "content": [
                           {
-                            "type": "group",
-                            "header": "Dam",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "damloadout_grid"
-                            }
+                            "type": "array",
+                            "orientation": "horizontal",
+                            "content": [
+                              {
+                                "type": "group",
+                                "header": "Dam",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "damloadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Bunker1",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "bunker1loadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Silo",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "siloloadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Frigate",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "frigateloadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Surface 2",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "surface2loadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Bunker2",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "bunker2loadout_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Aztec",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "aztecloadout_grid"
+                                }
+                              }
+                            ]
                           },
                           {
-                            "type": "group",
-                            "header": "Bunker1",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "bunker1loadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Silo",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "siloloadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Frigate",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "frigateloadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Surface 2",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "surface2loadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Bunker2",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "bunker2loadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Aztec",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "aztecloadout_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Missions",
-                            "dock": "left",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "missions_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Weapons",
-                            "dock": "center",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "weapons_grid"
-                            }
-                          },
-                          {
-                            "type": "group",
-                            "header": "Cheat Unlocks",
-                            "dock": "center",
-                            "content": {
-                              "type": "layout",
-                              "h_alignment": "center",
-                              "v_alignment": "center",
-                              "key": "cheats_grid"
-                            }
+                            "type": "array",
+                            "orientation": "horizontal",
+                            "content": [
+                              {
+                                "type": "group",
+                                "header": "Missions",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "missions_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Weapons",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "weapons_grid"
+                                }
+                              },
+                              {
+                                "type": "group",
+                                "header": "Cheat Unlocks",
+                                "content": {
+                                  "type": "layout",
+                                  "h_alignment": "center",
+                                  "v_alignment": "center",
+                                  "key": "cheats_grid"
+                                }
+                              }
+                            ]
                           }
                         ]
                       }
@@ -316,5 +318,5 @@
         ]
       }
     }
-	}
+  }
 }
