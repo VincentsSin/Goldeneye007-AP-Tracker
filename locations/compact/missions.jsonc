@@ -1755,7 +1755,7 @@
             "name": "Cheat - Turbo Mode",
             //"visibility_rules": ["$cheat_shuffle"],
             "chest_unopened_img": "images/missions/cheats.png",
-            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, camera"],
+            "access_rules": ["silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera, plastique"],
             "visibility_rules": ["$goldeneyeLocationEnabled|70603001"]
           }
         ],
