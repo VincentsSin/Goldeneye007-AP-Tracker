@@ -418,19 +418,19 @@
           {
             "name": "Rendezvous With 006",
             //"visibility_rules": ["$shared_objective"],
-            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"],
+            "access_rules": ["facility, fackeycardb", "facility, fackeycarda"],
             "visibility_rules": ["$goldeneyeLocationEnabled|70201003"]
           },
           {
             "name": "Destroy All Tanks In Bottling Room",
             //"visibility_rules": ["$shared_objective"],
-            "access_rules": ["facility, fackeycardb, doordecoder, rmine", "facility, fackeycardb, fackeycarda, rmine"],
+            "access_rules": ["facility, fackeycardb, rmine", "facility, fackeycarda, rmine"],
             "visibility_rules": ["$goldeneyeLocationEnabled|70201004"]
           },
           {
             "name": "Minimize Scientist Casualties",
             //"visibility_rules": ["$shared_objective"],
-            "access_rules": ["facility, fackeycardb, doordecoder", "facility, fackeycarda, doordecoder"],
+            "access_rules": ["facility, fackeycardb", "facility, fackeycarda"],
             "visibility_rules": ["$goldeneyeLocationEnabled|70201005"]
           },
           {
