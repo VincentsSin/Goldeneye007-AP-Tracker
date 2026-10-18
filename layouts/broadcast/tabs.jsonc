@@ -10,46 +10,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -205,46 +165,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -403,46 +323,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -607,46 +487,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -804,46 +644,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -1006,46 +806,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -1206,46 +966,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -1414,46 +1134,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -1613,46 +1293,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -1809,46 +1449,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -2018,46 +1618,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -2214,46 +1774,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -2416,46 +1936,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -2612,46 +2092,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -2813,46 +2253,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -3009,46 +2409,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -3209,46 +2569,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -3405,46 +2725,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -3607,46 +2887,6 @@
           "content": [
             {
               "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
-            {
-              "type": "dock",
               "dock": "bottom",
               "margin": 0,
               "content": [
@@ -3803,46 +3043,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",
@@ -4002,46 +3202,6 @@
           "type": "dock",
           "margin": 0,
           "content": [
-            {
-              "type": "dock",
-              "margin": 0,
-              "content": [
-                {
-                  "type": "itemgrid",
-                  "margin": 0,
-                  "item_width": 42,
-                  "item_height": 42,
-                  "item_margin": 0,
-                  "rows": [
-                    [
-                      "dam",
-                      "facility",
-                      "runway",
-                      "surface1",
-                      "bunker1",
-                      "silo",
-                      "frigate",
-                      "surface2",
-                      "bunker2",
-                      "statue"
-                    ],
-                    [
-                      "archives",
-                      "streets",
-                      "depot",
-                      "train",
-                      "jungle",
-                      "control",
-                      "caverns",
-                      "cradle",
-                      "aztec",
-                      "egyptian"
-                    ]
-                  ]
-                }
-              ],
-              "dock": "bottom"
-            },
             {
               "type": "dock",
               "dock": "bottom",

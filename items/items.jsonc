@@ -3,120 +3,160 @@
     "name": "Dam Unlocked",
     "type": "toggle",
     "img": "images/missions/dam.png",
+    "disabled_img": "images/missions/locked/dam.png",
+    "disabled_img_mods": "",
     "codes": "dam"
   },
   {
     "name": "Facility Unlocked",
     "type": "toggle",
     "img": "images/missions/facility.png",
+    "disabled_img": "images/missions/locked/facility.png",
+    "disabled_img_mods": "",
     "codes": "facility"
   },
   {
     "name": "Runway Unlocked",
     "type": "toggle",
     "img": "images/missions/runway.png",
+    "disabled_img": "images/missions/locked/runway.png",
+    "disabled_img_mods": "",
     "codes": "runway"
   },
   {
     "name": "Surface 1 Unlocked",
     "type": "toggle",
     "img": "images/missions/surface_one.png",
+    "disabled_img": "images/missions/locked/surface_one.png",
+    "disabled_img_mods": "",
     "codes": "surface1"
   },
   {
     "name": "Bunker 1 Unlocked",
     "type": "toggle",
     "img": "images/missions/bunker_one.png",
+    "disabled_img": "images/missions/locked/bunker_one.png",
+    "disabled_img_mods": "",
     "codes": "bunker1"
   },
   {
     "name": "Silo Unlocked",
     "type": "toggle",
     "img": "images/missions/silo.png",
+    "disabled_img": "images/missions/locked/silo.png",
+    "disabled_img_mods": "",
     "codes": "silo"
   },
   {
     "name": "Frigate Unlocked",
     "type": "toggle",
     "img": "images/missions/frigate.png",
+    "disabled_img": "images/missions/locked/frigate.png",
+    "disabled_img_mods": "",
     "codes": "frigate"
   },
   {
     "name": "Surface 2 Unlocked",
     "type": "toggle",
     "img": "images/missions/surface_two.png",
+    "disabled_img": "images/missions/locked/surface_two.png",
+    "disabled_img_mods": "",
     "codes": "surface2"
   },
   {
     "name": "Bunker 2 Unlocked",
     "type": "toggle",
     "img": "images/missions/bunker_two.png",
+    "disabled_img": "images/missions/locked/bunker_two.png",
+    "disabled_img_mods": "",
     "codes": "bunker2"
   },
   {
     "name": "Statue Unlocked",
     "type": "toggle",
     "img": "images/missions/statue.png",
+    "disabled_img": "images/missions/locked/statue.png",
+    "disabled_img_mods": "",
     "codes": "statue"
   },
   {
     "name": "Archives Unlocked",
     "type": "toggle",
     "img": "images/missions/archives.png",
+    "disabled_img": "images/missions/locked/archives.png",
+    "disabled_img_mods": "",
     "codes": "archives"
   },
   {
     "name": "Streets Unlocked",
     "type": "toggle",
     "img": "images/missions/streets.png",
+    "disabled_img": "images/missions/locked/streets.png",
+    "disabled_img_mods": "",
     "codes": "streets"
   },
   {
     "name": "Depot Unlocked",
     "type": "toggle",
     "img": "images/missions/depot.png",
+    "disabled_img": "images/missions/locked/depot.png",
+    "disabled_img_mods": "",
     "codes": "depot"
   },
   {
     "name": "Train Unlocked",
     "type": "toggle",
     "img": "images/missions/train.png",
+    "disabled_img": "images/missions/locked/train.png",
+    "disabled_img_mods": "",
     "codes": "train"
   },
   {
     "name": "Jungle Unlocked",
     "type": "toggle",
     "img": "images/missions/jungle.png",
+    "disabled_img": "images/missions/locked/jungle.png",
+    "disabled_img_mods": "",
     "codes": "jungle"
   },
   {
     "name": "Control Unlocked",
     "type": "toggle",
     "img": "images/missions/control.png",
+    "disabled_img": "images/missions/locked/control.png",
+    "disabled_img_mods": "",
     "codes": "control"
   },
   {
     "name": "Caverns Unlocked",
     "type": "toggle",
     "img": "images/missions/caverns.png",
+    "disabled_img": "images/missions/locked/caverns.png",
+    "disabled_img_mods": "",
     "codes": "caverns"
   },
   {
     "name": "Cradle Unlocked",
     "type": "toggle",
     "img": "images/missions/cradle.png",
+    "disabled_img": "images/missions/locked/cradle.png",
+    "disabled_img_mods": "",
     "codes": "cradle"
   },
   {
     "name": "Aztec Unlocked",
     "type": "toggle",
     "img": "images/missions/aztec.png",
+    "disabled_img": "images/missions/locked/aztec.png",
+    "disabled_img_mods": "",
     "codes": "aztec"
   },
   {
     "name": "Egyptian Unlocked",
     "type": "toggle",
     "img": "images/missions/egyptian.png",
+    "disabled_img": "images/missions/locked/egyptian.png",
+    "disabled_img_mods": "",
     "codes": "egyptian"
   },
   {
