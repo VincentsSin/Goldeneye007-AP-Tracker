@@ -3,12 +3,12 @@ GOLDENEYE_ENABLED_MISSIONS = {}
 GOLDENEYE_GOAL_GROUPS = {}
 
 function goldeneyeLocationEnabled(location_id)
-    if Tracker:ProviderCountForCode("ap_session") == 0 then return true end
+    if Tracker:ProviderCountForCode("ap_session") == 0 or next(GOLDENEYE_ENABLED_LOCATIONS) == nil then return true end
     return GOLDENEYE_ENABLED_LOCATIONS[tonumber(location_id)] == true
 end
 
 function goldeneyeMissionEnabled(mission_name)
-    if Tracker:ProviderCountForCode("ap_session") == 0 then return true end
+    if Tracker:ProviderCountForCode("ap_session") == 0 or next(GOLDENEYE_ENABLED_LOCATIONS) == nil then return true end
     return GOLDENEYE_ENABLED_MISSIONS[mission_name] == true
 end
 
