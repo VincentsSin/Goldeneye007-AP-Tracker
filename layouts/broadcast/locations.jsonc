@@ -6871,7 +6871,7 @@
           {
             "name": "Find Plane Ignition Key (Agent)",
             "access_rules": [
-              "runway"
+              "runway, planekey"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70311001"
@@ -6938,7 +6938,7 @@
           {
             "name": "Find Plane Ignition Key (Secret Agent)",
             "access_rules": [
-              "runway"
+              "runway, planekey"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70321001"
@@ -7016,7 +7016,7 @@
           {
             "name": "Find Plane Ignition Key (Double Agent)",
             "access_rules": [
-              "runway"
+              "runway, planekey"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70331001"
@@ -7104,7 +7104,7 @@
           {
             "name": "Find Plane Ignition Key",
             "access_rules": [
-              "runway"
+              "runway, planekey"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70301001"
