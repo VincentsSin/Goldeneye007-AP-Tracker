@@ -10764,7 +10764,7 @@
             "name": "Cheat - Invisibility",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "runway, planekey"
+              "archives, archivekey, recorder"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71103001"

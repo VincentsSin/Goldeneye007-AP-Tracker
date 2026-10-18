@@ -1,9 +1,4 @@
-if IS_COMPACT then
-    Tracker:AddLayouts("layouts/compact/items.jsonc")
-else
-    Tracker:AddLayouts("layouts/items.jsonc")
-end
-
+Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/weapons.jsonc")
 if IS_ITEMS_ONLY then
     Tracker:AddLayouts("layouts/items_only.jsonc")
