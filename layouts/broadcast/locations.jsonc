@@ -11569,7 +11569,7 @@
           {
             "name": "Obtain Depot Safe Key (Secret Agent)",
             "access_rules": [
-              "depot"
+              "depot, depotsafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71321002"
@@ -11883,7 +11883,7 @@
           {
             "name": "Obtain Depot Safe Key (Double Agent)",
             "access_rules": [
-              "depot"
+              "depot, depotsafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71331003"
@@ -12137,7 +12137,7 @@
           {
             "name": "Obtain Depot Safe Key",
             "access_rules": [
-              "depot"
+              "depot, depotsafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71301003"
