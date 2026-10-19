@@ -1,6 +1,6 @@
 ### GoldenEye 007 tracker pack for [PopTracker](https://github.com/black-sliver/PopTracker/) with auto-tracking, made by VincentsSin.
 
-[Example of tracker](images/example.png)
+![Example of tracker](images/example.png)
 
 PopTracker 0.32.0 is the earliest fully functional version. Any previous one will lack the latest features and some operations might not function properly.
 
@@ -15,10 +15,16 @@ PopTracker 0.32.0 is the earliest fully functional version. Any previous one wil
 3. Enter the slot name. This is the player name that was written in the yaml used to generate. Click `OK`.
 4. If applicable, enter the password. Click `OK`.
 
-If entered correctly, the `AP` button will turn green, meaning it is connected to the server and is autotracking. If it remains red, make sure the server is opened.
+If entered correctly, the `AP` button will turn green, meaning it is connected to the server and is autotracking. If it remains red, make sure the server is opened or that your port number has not changed.
 
-## More Info
-This pack is a work in progress and is developed as the logic and features are being worked on. It follows the [GoldenEye 007 Archipelago](https://github.com/NotFamilyJules/goldeneye_ap) as it is being developed and maintained by FamilyJules.
+## About This Pack
+This is a tracker intended for use with the [GoldenEye 007 Archipelago](https://github.com/NotFamilyJules/goldeneye_ap) randomizer by FamilyJules. Features include the following:
+- 1:1 remastered maps pulled from the official player's guide.
+- Auto-tabbing for switching maps as you enter a new mission.
+- Key item grouping by the mission(s) they are intended, rather than one bulk display.
+- Compact broadcast view for streamers & laptop users to display maps and item tracking w/o the large real estate of the standard view.
+- Static enemy markers for each mission map. Plan your stealth more accordingly!
+- Per-mission target time display for you crazies willing to do cheat unlocks as checks.
 
 ## Special Thanks
 Huge thank you to FamilyJules for not only assisting with the more technical aspects of making the pack work, but for also including me in the overall process after asking to build off my Manual APworld for GoldenEye. This whole process has been a fun learning experience, and I'm excited to see how we can make this grow!
