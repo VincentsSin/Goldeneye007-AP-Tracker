@@ -163,493 +163,578 @@
     "name": "Covert Modem",
     "type": "toggle",
     "img": "images/items/covert_modem.png",
-    "codes": "covertmodem"
+    "codes": "covertmodem",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Door Decoder",
     "type": "toggle",
     "img": "images/items/door_decoder.png",
-    "codes": "doordecoder"
+    "codes": "doordecoder",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard A (Facility)",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "fackeycarda"
+    "codes": "fackeycarda",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard B (Facility)",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "fackeycardb"
+    "codes": "fackeycardb",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Ignition Key",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "planekey"
+    "codes": "planekey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Hut Door Key",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "hutkey"
+    "codes": "hutkey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Surface Safe Key",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "surfacesafe"
+    "codes": "surfacesafe",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Bunker Blueprints",
     "type": "toggle",
     "img": "images/items/bunker_blueprints.png",
-    "codes": "bunkerprints"
+    "codes": "bunkerprints",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Camera",
     "type": "toggle",
     "img": "images/items/camera.png",
-    "codes": "camera"
+    "codes": "camera",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Key Analyzer",
     "type": "toggle",
     "img": "images/items/key_analyzer.png",
-    "codes": "keyanalyzer"
+    "codes": "keyanalyzer",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Goldeneye Key",
     "type": "toggle",
     "img": "images/items/goldeneye_key.png",
-    "codes": "gekey"
+    "codes": "gekey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Datathief",
     "type": "toggle",
     "img": "images/items/datathief.png",
-    "codes": "datathief"
+    "codes": "datathief",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Computer Room Keycard",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "comproomkey"
+    "codes": "comproomkey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Security Room Keycard",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "securitykey"
+    "codes": "securitykey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Plastique",
     "type": "toggle",
     "img": "images/items/plastique.png",
-    "codes": "plastique"
+    "codes": "plastique",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "I/O Circuit Board",
     "type": "toggle",
     "img": "images/items/circuit_board.png",
-    "codes": "ioboard"
+    "codes": "ioboard",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "CPU Circuit Board",
     "type": "toggle",
     "img": "images/items/circuit_board.png",
-    "codes": "cpuboard"
+    "codes": "cpuboard",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "RSP Circuit Board",
     "type": "toggle",
     "img": "images/items/circuit_board.png",
-    "codes": "rspboard"
+    "codes": "rspboard",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "RDP Circuit Board",
     "type": "toggle",
     "img": "images/items/circuit_board.png",
-    "codes": "rdpboard"
+    "codes": "rdpboard",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard Level 1",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "keycard4h4"
+    "codes": "keycard4h4",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard Level 2",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "keycard4c3"
+    "codes": "keycard4c3",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard Level 3",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "keycard452"
+    "codes": "keycard452",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "DAT",
     "type": "toggle",
     "img": "images/items/dat.png",
-    "codes": "dat"
+    "codes": "dat",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Tracker Bug",
     "type": "toggle",
     "img": "images/items/tracker_bug.png",
-    "codes": "tracker"
+    "codes": "tracker",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Bomb Defuser",
     "type": "toggle",
     "img": "images/items/bomb_defuser.png",
-    "codes": "bombdefuser"
+    "codes": "bombdefuser",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Comms Room Key",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "commskey"
+    "codes": "commskey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Special Timed Mine",
     "type": "toggle",
     "img": "images/weapons/remote_mine.png",
-    "codes": "stmine"
+    "codes": "stmine",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Watch Magnet Attract",
     "type": "toggle",
     "img": "images/weapons/watch_laser.png",
-    "codes": "watchmag"
+    "codes": "watchmag",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Cell Key 1",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "cellkey1"
+    "codes": "cellkey1",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Cell Key 2",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "cellkey2"
+    "codes": "cellkey2",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Bunker Safe Key 1",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "bunkersafe1"
+    "codes": "bunkersafe1",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Bunker Safe Key 2",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "bunkersafe2"
+    "codes": "bunkersafe2",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Goldeneye Operations Manual",
     "type": "toggle",
     "img": "images/items/goldeneye_manual.png",
-    "codes": "geopmanual"
+    "codes": "geopmanual",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Staff List",
     "type": "toggle",
     "img": "images/items/staff_list.png",
-    "codes": "stafflist"
+    "codes": "stafflist",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Casualty List",
     "type": "toggle",
     "img": "images/items/casualty_list.png",
-    "codes": "casualtylist"
+    "codes": "casualtylist",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "CCTV Tape",
     "type": "toggle",
     "img": "images/items/videotape.png",
-    "codes": "cctv"
+    "codes": "cctv",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard A (Bunker 2)",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "b2keycarda"
+    "codes": "b2keycarda",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Keycard B (Bunker 2)",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "b2keycardb"
+    "codes": "b2keycardb",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Flight Recorder",
     "type": "toggle",
     "img": "images/items/flight_recorder.png",
-    "codes": "recorder"
+    "codes": "recorder",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Interrogation Room Key",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "archivekey"
+    "codes": "archivekey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Archive Safe Key",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "archivesafe"
+    "codes": "archivesafe",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Depot Safe Key",
     "type": "toggle",
     "img": "images/items/key_2.png",
-    "codes": "depotsafe"
+    "codes": "depotsafe",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Helicopter Blueprints",
     "type": "toggle",
     "img": "images/items/helicopter_blueprints.png",
-    "codes": "heliprints"
+    "codes": "heliprints",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Train Door Key",
     "type": "toggle",
     "img": "images/items/key_1.png",
-    "codes": "trainkey"
+    "codes": "trainkey",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Code Card 1",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "codecard1"
+    "codes": "codecard1",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Code Card 2",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "codecard2"
+    "codes": "codecard2",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Code Card 3",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "codecard3"
+    "codes": "codecard3",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Security Smart Card",
     "type": "toggle",
     "img": "images/items/keycard.png",
-    "codes": "smartcard"
+    "codes": "smartcard",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Guidance Data",
     "type": "toggle",
     "img": "images/items/guidance_data.png",
-    "codes": "guidance"
+    "codes": "guidance",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Launch Protocol Data",
     "type": "toggle",
     "img": "images/items/dat.png",
-    "codes": "launchdata"
+    "codes": "launchdata",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Throwing Knife",
     "type": "toggle",
     "img": "images/weapons/throwing_knife.png",
-    "codes": "throwknife"
+    "codes": "throwknife",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Hunting Knife",
     "type": "toggle",
     "img": "images/weapons/hunting_knife.png",
-    "codes": "huntknife"
+    "codes": "huntknife",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "PP7",
     "type": "toggle",
     "img": "images/weapons/pp7.png",
-    "codes": "pp7"
+    "codes": "pp7",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Silenced PP7",
     "type": "toggle",
     "img": "images/weapons/silenced_pp7.png",
-    "codes": "silentpp7"
+    "codes": "silentpp7",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "DD44 Dostovei",
     "type": "toggle",
     "img": "images/weapons/dd44_dostovei.png",
-    "codes": "dd44"
+    "codes": "dd44",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Klobb",
     "type": "toggle",
     "img": "images/weapons/klobb.png",
-    "codes": "klobb"
+    "codes": "klobb",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "KF7 Soviet",
     "type": "toggle",
     "img": "images/weapons/kf7_soviet.png",
-    "codes": "kf7"
+    "codes": "kf7",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "ZMG (9mm)",
     "type": "toggle",
     "img": "images/weapons/zmg_9mm.png",
-    "codes": "zmg"
+    "codes": "zmg",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "D5K Deutsche",
     "type": "toggle",
     "img": "images/weapons/d5k_deutsche.png",
-    "codes": "d5k"
+    "codes": "d5k",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "D5K (Silenced)",
     "type": "toggle",
     "img": "images/weapons/d5k_silenced.png",
-    "codes": "silentd5k"
+    "codes": "silentd5k",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Phantom",
     "type": "toggle",
     "img": "images/weapons/phantom.png",
-    "codes": "phantom"
+    "codes": "phantom",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "AR33 Assault Rifle",
     "type": "toggle",
     "img": "images/weapons/ar33.png",
-    "codes": "ar33"
+    "codes": "ar33",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "RC-P90",
     "type": "toggle",
     "img": "images/weapons/rcp90.png",
-    "codes": "rcp90"
+    "codes": "rcp90",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Shotgun",
     "type": "toggle",
     "img": "images/weapons/shotgun.png",
-    "codes": "shotgun"
+    "codes": "shotgun",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Automatic Shotgun",
     "type": "toggle",
     "img": "images/weapons/auto_shotgun.png",
-    "codes": "autoshotgun"
+    "codes": "autoshotgun",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Sniper Rifle",
     "type": "toggle",
     "img": "images/weapons/sniper_rifle.png",
-    "codes": "sniper"
+    "codes": "sniper",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Cougar Magnum",
     "type": "toggle",
     "img": "images/weapons/magnum.png",
-    "codes": "magnum"
+    "codes": "magnum",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Golden Gun",
     "type": "toggle",
     "img": "images/weapons/golden_gun.png",
-    "codes": "goldgun"
+    "codes": "goldgun",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Silver PP7",
     "type": "toggle",
     "img": "images/weapons/silver_pp7.png",
-    "codes": "silverpp7"
+    "codes": "silverpp7",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Gold PP7",
     "type": "toggle",
     "img": "images/weapons/gold_pp7.png",
-    "codes": "goldpp7"
+    "codes": "goldpp7",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Moonraker Laser",
     "type": "toggle",
     "img": "images/weapons/laser.png",
-    "codes": "laser"
+    "codes": "laser",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Watch Laser",
     "type": "toggle",
     "img": "images/weapons/watch_laser.png",
-    "codes": "watchlaser"
+    "codes": "watchlaser",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Grenade Launcher",
     "type": "toggle",
     "img": "images/weapons/grenade_launcher.png",
-    "codes": "glauncher"
+    "codes": "glauncher",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Rocket Launcher",
     "type": "toggle",
     "img": "images/weapons/rocket_launcher.png",
-    "codes": "rlauncher"
+    "codes": "rlauncher",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Grenade",
     "type": "toggle",
     "img": "images/weapons/hand_grenade.png",
-    "codes": "grenade"
+    "codes": "grenade",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Timed Mine",
     "type": "toggle",
     "img": "images/weapons/timed_mine.png",
-    "codes": "tmine"
+    "codes": "tmine",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Proximity Mine",
     "type": "toggle",
     "img": "images/weapons/proxy_mine.png",
-    "codes": "pmine"
+    "codes": "pmine",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Remote Mine",
     "type": "toggle",
     "img": "images/weapons/remote_mine.png",
-    "codes": "rmine"
+    "codes": "rmine",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Taser",
     "type": "toggle",
     "img": "images/weapons/taser.png",
-    "codes": "taser"
+    "codes": "taser",
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Tank (Runway)",
     "type": "toggle",
     "img": "images/weapons/tank.png",
-    "codes": "runtank"
+    "codes": "runtank",
+    "disabled_img_mods": "greyscale,brightness|0.2",
+    "img_mods": "brightness|2"
   },
   {
     "name": "Tank (Streets)",
     "type": "toggle",
     "img": "images/weapons/tank.png",
-    "codes": "streettank"
+    "codes": "streettank",
+    "disabled_img_mods": "greyscale,brightness|0.2",
+    "img_mods": "brightness|2"
   },
   {
     "name": "Tank (Missiles)",
     "type": "toggle",
     "img": "images/weapons/tank.png",
-    "codes": "tank"
+    "codes": "tank",
+    "disabled_img_mods": "greyscale,brightness|0.2",
+    "img_mods": "brightness|2"
   },
   {
     "name": "Victory",
@@ -671,126 +756,157 @@
     "stages": [
       {
         "img": "images/weapons/klobb.png",
-        "name": "Klobb"
+        "name": "Klobb",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/hunting_knife.png",
-        "name": "Hunting Knife"
+        "name": "Hunting Knife",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/throwing_knife.png",
-        "name": "Throwing Knife"
+        "name": "Throwing Knife",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/taser.png",
-        "name": "Taser"
+        "name": "Taser",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/pp7.png",
-        "name": "PP7 Special Issue"
+        "name": "PP7 Special Issue",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/silenced_pp7.png",
-        "name": "PP7 (Silenced)"
+        "name": "PP7 (Silenced)",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/dd44_dostovei.png",
-        "name": "DD44 Dostovei"
+        "name": "DD44 Dostovei",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/kf7_soviet.png",
-        "name": "KF7 Soviet"
+        "name": "KF7 Soviet",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/zmg_9mm.png",
-        "name": "ZMG (9 mm)"
+        "name": "ZMG (9 mm)",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/d5k_deutsche.png",
-        "name": "D5K Deutsche"
+        "name": "D5K Deutsche",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/d5k_silenced.png",
-        "name": "D5K (Silenced)"
+        "name": "D5K (Silenced)",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/sniper_rifle.png",
-        "name": "Sniper Rifle"
+        "name": "Sniper Rifle",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/hand_grenade.png",
-        "name": "Grenade"
+        "name": "Grenade",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/phantom.png",
-        "name": "Phantom"
+        "name": "Phantom",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/timed_mine.png",
-        "name": "Timed Mine"
+        "name": "Timed Mine",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/ar33.png",
-        "name": "AR33 Assault Rifle"
+        "name": "AR33 Assault Rifle",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/proxy_mine.png",
-        "name": "Proximity Mine"
+        "name": "Proximity Mine",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/rcp90.png",
-        "name": "RC-P90"
+        "name": "RC-P90",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/remote_mine.png",
-        "name": "Remote Mine"
+        "name": "Remote Mine",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/watch_laser.png",
-        "name": "Watch Laser"
+        "name": "Watch Laser",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/shotgun.png",
-        "name": "Shotgun"
+        "name": "Shotgun",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/magnum.png",
-        "name": "Cougar Magnum"
+        "name": "Cougar Magnum",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/golden_gun.png",
-        "name": "Silver PP7"
+        "name": "Silver PP7",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/auto_shotgun.png",
-        "name": "Automatic Shotgun"
+        "name": "Automatic Shotgun",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/laser.png",
-        "name": "Military Laser"
+        "name": "Military Laser",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/grenade_launcher.png",
-        "name": "Grenade Launcher"
+        "name": "Grenade Launcher",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/rocket_launcher.png",
-        "name": "Rocket Launcher"
+        "name": "Rocket Launcher",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/tank.png",
-        "name": "Tank (Missiles)"
+        "name": "Tank (Missiles)",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/silver_pp7.png",
-        "name": "Golden Gun"
+        "name": "Golden Gun",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       },
       {
         "img": "images/weapons/gold_pp7.png",
-        "name": "Gold PP7"
+        "name": "Gold PP7",
+        "disabled_img_mods": "greyscale,brightness|0.2"
       }
     ],
-    "loop": false
+    "loop": false,
+    "disabled_img_mods": "greyscale,brightness|0.2"
   },
   {
     "name": "Cheat Unlock - Paintball Mode",
