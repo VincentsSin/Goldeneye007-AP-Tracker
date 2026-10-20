@@ -3696,7 +3696,7 @@
           {
             "name": "Obtain Depot Safe Key (Secret Agent)",
             //"visibility_rules": ["$per_difficulty_objective"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71321002"]
           },
           {
@@ -3882,7 +3882,7 @@
           {
             "name": "Depot - Clear (Secret Agent)",
             //"visibility_rules": ["$per_difficulty_mission"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe, heliprints"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71320001"]
           },
           {
@@ -3914,7 +3914,7 @@
           {
             "name": "Obtain Depot Safe Key (Double Agent)",
             //"visibility_rules": ["$per_difficulty_objective"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71331003"]
           },
           {
@@ -4058,7 +4058,7 @@
           {
             "name": "Depot - Clear (Double Agent)",
             //"visibility_rules": ["$per_difficulty_mission"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe, heliprints"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71330001"]
           },
           {
