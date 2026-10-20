@@ -4090,7 +4090,7 @@
           {
             "name": "Obtain Depot Safe Key",
             //"visibility_rules": ["$shared_objective"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71301003"]
           },
           {
@@ -4318,14 +4318,14 @@
           {
             "name": "Depot - (Clear)",
             //"visibility_rules": ["$shared_mission"],
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe, heliprints"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71300001"]
           },
           {
             "name": "Cheat - Slow Animation",
             //"visibility_rules": ["$cheat_shuffle"],
             "chest_unopened_img": "images/missions/cheats.png",
-            "access_rules": ["depot"],
+            "access_rules": ["depot, depotsafe, heliprints"],
             "visibility_rules": ["$goldeneyeLocationEnabled|71303001"]
           }
         ],

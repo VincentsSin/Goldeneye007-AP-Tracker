@@ -11836,7 +11836,7 @@
           {
             "name": "Depot - Clear (Secret Agent)",
             "access_rules": [
-              "depot"
+              "depot, depotsafe, heliprints"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71320001"
@@ -12090,7 +12090,7 @@
           {
             "name": "Depot - Clear (Double Agent)",
             "access_rules": [
-              "depot"
+              "depot, depotsafe, heliprints"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71330001"
