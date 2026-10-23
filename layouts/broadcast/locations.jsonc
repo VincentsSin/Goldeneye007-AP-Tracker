@@ -6141,7 +6141,7 @@
           {
             "name": "Bungee Jump From Platform (Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70111001"
@@ -6171,7 +6171,7 @@
             "name": "Body Armor (Last Dam Tower) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70115002"
@@ -6180,7 +6180,7 @@
           {
             "name": "Dam - Clear (Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70110001"
@@ -6189,7 +6189,7 @@
           {
             "name": "Neutralize All Alarms (Secret Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70121001"
@@ -6198,7 +6198,7 @@
           {
             "name": "Bungee Jump From Platform (Secret Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70121002"
@@ -6228,7 +6228,7 @@
             "name": "Body Armor (Last Dam Tower) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70125002"
@@ -6237,7 +6237,7 @@
           {
             "name": "Dam - Clear (Secret Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70120001"
@@ -6246,7 +6246,7 @@
           {
             "name": "Neutralize All Alarms (Double Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70131001"
@@ -6264,7 +6264,7 @@
           {
             "name": "Intercept Data Backup (Double Agent)",
             "access_rules": [
-              "dam, covertmodem"
+              "dam, covertmodem, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70131003"
@@ -6273,7 +6273,7 @@
           {
             "name": "Bungee Jump From Platform (Double Agent)",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70131004"
@@ -6292,7 +6292,7 @@
           {
             "name": "Dam - Clear (Double Agent)",
             "access_rules": [
-              "dam, covertmodem"
+              "dam, covertmodem, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70130001"
@@ -6301,7 +6301,7 @@
           {
             "name": "Neutralize All Alarms",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70101001"
@@ -6319,7 +6319,7 @@
           {
             "name": "Intercept Data Backup",
             "access_rules": [
-              "dam, covertmodem"
+              "dam, covertmodem, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70101003"
@@ -6328,7 +6328,7 @@
           {
             "name": "Bungee Jump From Platform",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70101004"
@@ -6358,7 +6358,7 @@
             "name": "Body Armor (Last Dam Tower)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70105002"
@@ -6367,7 +6367,7 @@
           {
             "name": "Dam - (Clear)",
             "access_rules": [
-              "dam, covertmodem"
+              "dam, covertmodem, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70100001"
@@ -6377,7 +6377,7 @@
             "name": "Cheat - Paintball Mode",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "dam"
+              "dam, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70103001"
