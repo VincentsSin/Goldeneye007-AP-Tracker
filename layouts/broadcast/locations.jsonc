@@ -5714,7 +5714,7 @@
     ]
   },
   {
-    "name": "Jungle",
+    "name": "jungle, $has_gun",
     "children": [
       {
         "sections": [
@@ -5737,43 +5737,43 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 130,
             "y": 675,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1350,
             "y": 475,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 600,
             "y": 675,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 660,
             "y": 175,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 975,
             "y": 125,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1150,
             "y": 360,
             "size": 25
           },
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1425,
             "y": 520,
             "size": 25
@@ -5843,7 +5843,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 900,
             "y": 140,
             "size": 25
@@ -5877,7 +5877,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1300,
             "y": 775,
             "size": 25
@@ -5907,7 +5907,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1400,
             "y": 425,
             "size": 25
@@ -5941,7 +5941,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 90,
             "y": 610,
             "size": 25
@@ -5975,7 +5975,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 725,
             "y": 675,
             "size": 25
@@ -6005,7 +6005,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 600,
             "y": 90,
             "size": 25
@@ -6027,7 +6027,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1455,
             "y": 1000,
             "size": 25
@@ -6049,7 +6049,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1455,
             "y": 1050,
             "size": 25
@@ -6071,7 +6071,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1455,
             "y": 1100,
             "size": 25
@@ -6093,7 +6093,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 1455,
             "y": 1160,
             "size": 25
@@ -6115,7 +6115,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle",
+            "map": "jungle, $has_gun",
             "x": 650,
             "y": 1195,
             "size": 25
@@ -6460,7 +6460,8 @@
           {
             "name": "Destroy All Tanks In Bottling Room (Agent)",
             "access_rules": [
-              "facility, fackeycardb, rmine"
+              "facility, fackeycardb, $has_explosive",
+              "facility, fackeycarda, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70211003"
@@ -6500,8 +6501,8 @@
           {
             "name": "Facility - Clear (Agent)",
             "access_rules": [
-              "facility, fackeycardb, rmine",
-              "facility, fackeycarda, rmine"
+              "facility, fackeycardb, $has_explosive",
+              "facility, fackeycarda, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70210001"
@@ -6572,8 +6573,8 @@
           {
             "name": "Destroy All Tanks In Bottling Room (Secret Agent)",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycarda, doordecoder, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycarda, doordecoder, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70221004"
@@ -6613,8 +6614,8 @@
           {
             "name": "Facility - Clear (Secret Agent)",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycarda, doordecoder, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycarda, doordecoder, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70220001"
@@ -6685,8 +6686,8 @@
           {
             "name": "Destroy All Tanks In Bottling Room (Double Agent)",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycardb, fackeycarda, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycardb, fackeycarda, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70231004"
@@ -6705,8 +6706,8 @@
           {
             "name": "Facility - Clear (Double Agent)",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycarda, doordecoder, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycarda, doordecoder, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70230001"
@@ -6767,8 +6768,8 @@
           {
             "name": "Rendezvous With 006",
             "access_rules": [
-              "facility, fackeycardb, doordecoder",
-              "facility, fackeycarda, doordecoder"
+              "facility, fackeycardb",
+              "facility, fackeycarda"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70201003"
@@ -6777,8 +6778,8 @@
           {
             "name": "Destroy All Tanks In Bottling Room",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycardb, fackeycarda, rmine"
+              "facility, fackeycardb, $has_explosive",
+              "facility, fackeycarda, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70201004"
@@ -6787,8 +6788,8 @@
           {
             "name": "Minimize Scientist Casualties",
             "access_rules": [
-              "facility, fackeycardb, doordecoder",
-              "facility, fackeycarda, doordecoder"
+              "facility, fackeycardb",
+              "facility, fackeycarda"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70201005"
@@ -6818,8 +6819,8 @@
           {
             "name": "Facility - (Clear)",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycarda, doordecoder, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycarda, doordecoder, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70200001"
@@ -6829,8 +6830,8 @@
             "name": "Cheat - Invincibility",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "facility, fackeycardb, doordecoder, rmine",
-              "facility, fackeycarda, doordecoder, rmine"
+              "facility, fackeycardb, doordecoder, $has_explosive",
+              "facility, fackeycarda, doordecoder, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70203001"
@@ -6947,8 +6948,7 @@
           {
             "name": "Destroy Missile Battery (Secret Agent)",
             "access_rules": [
-              "runway, tmine",
-              "runway, tank"
+              "runway, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70321002"
@@ -6996,8 +6996,7 @@
           {
             "name": "Runway - Clear (Secret Agent)",
             "access_rules": [
-              "runway, planekey, tmine",
-              "runway, planekey, tank"
+              "runway, planekey, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70320001"
@@ -7025,8 +7024,7 @@
           {
             "name": "Destroy Heavy Gun Emplacements (Double Agent)",
             "access_rules": [
-              "runway, tmine",
-              "runway, tank"
+              "runway, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70331002"
@@ -7035,8 +7033,7 @@
           {
             "name": "Destroy Missile Battery (Double Agent)",
             "access_rules": [
-              "runway, tmine",
-              "runway, tank"
+              "runway, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70331003"
@@ -7084,8 +7081,7 @@
           {
             "name": "Runway - Clear (Double Agent)",
             "access_rules": [
-              "runway, planekey, tmine",
-              "runway, planekey, tank"
+              "runway, planekey, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70330001"
@@ -7113,8 +7109,7 @@
           {
             "name": "Destroy Heavy Gun Emplacements",
             "access_rules": [
-              "runway, tmine",
-              "runway, tank"
+              "runway, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70301002"
@@ -7123,8 +7118,7 @@
           {
             "name": "Destroy Missile Battery",
             "access_rules": [
-              "runway, tmine",
-              "runway, tank"
+              "runway, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70301003"
@@ -7172,8 +7166,7 @@
           {
             "name": "Runway - (Clear)",
             "access_rules": [
-              "runway, planekey, tmine",
-              "runway, planekey, tank"
+              "runway, planekey, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70300001"
@@ -7845,7 +7838,8 @@
           {
             "name": "Disrupt All Surveillance Equipment (Secret Agent)",
             "access_rules": [
-              "bunker1"
+              "bunker1, $has_gun",
+              "bunker1, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70521001"
@@ -7892,7 +7886,8 @@
           {
             "name": "Bunker 1 - Clear (Secret Agent)",
             "access_rules": [
-              "bunker1, keyanalyzer, gekey, camera"
+              "bunker1, keyanalyzer, gekey, camera, $has_gun",
+              "bunker1, keyanalyzer, gekey, camera, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70520001"
@@ -7931,7 +7926,8 @@
           {
             "name": "Disrupt All Surveillance Equipment (Double Agent)",
             "access_rules": [
-              "bunker1"
+              "bunker1, $has_gun",
+              "bunker1, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70531001"
@@ -7986,7 +7982,8 @@
           {
             "name": "Bunker 1 - Clear (Double Agent)",
             "access_rules": [
-              "bunker1, keyanalyzer, gekey, camera, datathief"
+              "bunker1, keyanalyzer, gekey, camera, datathief, $has_gun",
+              "bunker1, keyanalyzer, gekey, camera, datathief, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70530001"
@@ -8025,7 +8022,8 @@
           {
             "name": "Disrupt All Surveillance Equipment",
             "access_rules": [
-              "bunker1"
+              "bunker1, $has_gun",
+              "bunker1, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70501001"
@@ -8110,7 +8108,8 @@
             "name": "Cheat - 2x Rocket Launcher",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "bunker1, keyanalyzer, gekey, camera, datathief"
+              "bunker1, keyanalyzer, gekey, camera, datathief, $has_gun",
+              "bunker1, keyanalyzer, gekey, camera, datathief, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70503001"
@@ -8142,7 +8141,7 @@
             "name": "Keycard 4-H4 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612006"
@@ -8152,7 +8151,7 @@
             "name": "Keycard 4-C3 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612007"
@@ -8162,7 +8161,7 @@
             "name": "Keycard 4-52 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612008"
@@ -8172,7 +8171,7 @@
             "name": "I-O Circuit Board (Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612003"
@@ -8182,7 +8181,7 @@
             "name": "CPU Circuit Board (Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612001"
@@ -8192,7 +8191,7 @@
             "name": "RSP Circuit Board (Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612005"
@@ -8202,7 +8201,7 @@
             "name": "RDP Circuit Board (Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612004"
@@ -8212,7 +8211,7 @@
             "name": "DAT (Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70612002"
@@ -8221,7 +8220,7 @@
           {
             "name": "Photograph Satellite (Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70611001"
@@ -8240,7 +8239,7 @@
             "name": "Body Armor (Second Fuel Room) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70615001"
@@ -8250,7 +8249,7 @@
             "name": "Body Armor (Walkway After Third Fuel Room) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70615003"
@@ -8260,7 +8259,7 @@
             "name": "Body Armor (Fourth Fuel Room) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70615002"
@@ -8269,7 +8268,7 @@
           {
             "name": "Silo - Clear (Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70610001"
@@ -8279,7 +8278,7 @@
             "name": "Keycard 4-H4 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622006"
@@ -8289,7 +8288,7 @@
             "name": "Keycard 4-C3 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622007"
@@ -8299,7 +8298,7 @@
             "name": "Keycard 4-52 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622008"
@@ -8309,7 +8308,7 @@
             "name": "I-O Circuit Board (Secret Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622003"
@@ -8319,7 +8318,7 @@
             "name": "CPU Circuit Board (Secret Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622001"
@@ -8329,7 +8328,7 @@
             "name": "RSP Circuit Board (Secret Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622005"
@@ -8339,7 +8338,7 @@
             "name": "RDP Circuit Board (Secret Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622004"
@@ -8349,7 +8348,7 @@
             "name": "DAT (Secret Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70622002"
@@ -8358,7 +8357,7 @@
           {
             "name": "Obtain Telemetric Data (Secret Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, dat"
+              "silo, keycard4h4, keycard4c3, dat, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70621002"
@@ -8367,7 +8366,7 @@
           {
             "name": "Retrieve Satellite Circuitry (Secret Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"
+              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70621003"
@@ -8376,7 +8375,7 @@
           {
             "name": "Photograph Satellite (Secret Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70621001"
@@ -8395,7 +8394,7 @@
             "name": "Body Armor (Walkway After Third Fuel Room) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70625003"
@@ -8405,7 +8404,7 @@
             "name": "Body Armor (Fourth Fuel Room) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70625002"
@@ -8414,7 +8413,7 @@
           {
             "name": "Silo - Clear (Secret Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70620001"
@@ -8424,7 +8423,7 @@
             "name": "Keycard 4-H4 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632006"
@@ -8434,7 +8433,7 @@
             "name": "Keycard 4-C3 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632007"
@@ -8444,7 +8443,7 @@
             "name": "Keycard 4-52 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632008"
@@ -8454,7 +8453,7 @@
             "name": "I-O Circuit Board (Double Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632003"
@@ -8464,7 +8463,7 @@
             "name": "CPU Circuit Board (Double Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632001"
@@ -8474,7 +8473,7 @@
             "name": "RSP Circuit Board (Double Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632005"
@@ -8484,7 +8483,7 @@
             "name": "RDP Circuit Board (Double Agent)",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632004"
@@ -8494,7 +8493,7 @@
             "name": "DAT (Double Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70632002"
@@ -8503,7 +8502,7 @@
           {
             "name": "Obtain Telemetric Data (Double Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, dat"
+              "silo, keycard4h4, keycard4c3, dat, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70631003"
@@ -8512,7 +8511,7 @@
           {
             "name": "Retrieve Satellite Circuitry (Double Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"
+              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70631004"
@@ -8521,7 +8520,7 @@
           {
             "name": "Plant Bombs In Fuel Rooms (Double Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, plastique"
+              "silo, keycard4h4, keycard4c3, keycard452, plastique, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70631001"
@@ -8530,7 +8529,7 @@
           {
             "name": "Photograph Satellite (Double Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70631002"
@@ -8549,7 +8548,7 @@
             "name": "Body Armor (Walkway After Third Fuel Room) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70635003"
@@ -8558,7 +8557,7 @@
           {
             "name": "Silo - Clear (Double Agent)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera, plastique"
+              "silo, keycard4h4, keycard4c3, keycard452, ioboard, cpuboard, rspboard, rdpboard, dat, camera, plastique, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70630001"
@@ -8568,7 +8567,7 @@
             "name": "Keycard 4-H4",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602006"
@@ -8578,7 +8577,7 @@
             "name": "Keycard 4-C3",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602007"
@@ -8588,7 +8587,7 @@
             "name": "Keycard 4-52",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602008"
@@ -8598,7 +8597,7 @@
             "name": "I-O Circuit Board",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602003"
@@ -8608,7 +8607,7 @@
             "name": "CPU Circuit Board",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo"
+              "silo, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602001"
@@ -8618,7 +8617,7 @@
             "name": "RSP Circuit Board",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4"
+              "silo, keycard4h4, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602005"
@@ -8628,7 +8627,7 @@
             "name": "RDP Circuit Board",
             "chest_unopened_img": "images/items/circuit_board.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602004"
@@ -8638,7 +8637,7 @@
             "name": "DAT",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70602002"
@@ -8647,7 +8646,7 @@
           {
             "name": "Obtain Telemetric Data",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, dat"
+              "silo, keycard4h4, keycard4c3, dat, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70601003"
@@ -8656,7 +8655,7 @@
           {
             "name": "Retrieve Satellite Circuitry",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard"
+              "silo, keycard4h4, keycard4c3, ioboard, cpuboard, rspboard, rdpboard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70601004"
@@ -8665,7 +8664,7 @@
           {
             "name": "Plant Bombs In Fuel Rooms",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, plastique"
+              "silo, keycard4h4, keycard4c3, keycard452, plastique, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70601001"
@@ -8674,7 +8673,7 @@
           {
             "name": "Photograph Satellite",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70601002"
@@ -8693,7 +8692,7 @@
             "name": "Body Armor (Second Fuel Room)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3"
+              "silo, keycard4h4, keycard4c3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70605001"
@@ -8703,7 +8702,7 @@
             "name": "Body Armor (Walkway After Third Fuel Room)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70605003"
@@ -8713,7 +8712,7 @@
             "name": "Body Armor (Fourth Fuel Room)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452"
+              "silo, keycard4h4, keycard4c3, keycard452, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70605002"
@@ -8722,7 +8721,7 @@
           {
             "name": "Silo - (Clear)",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70600001"
@@ -8732,7 +8731,7 @@
             "name": "Cheat - Turbo Mode",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "silo, keycard4h4, keycard4c3, keycard452, camera"
+              "silo, keycard4h4, keycard4c3, keycard452, camera, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70603001"
@@ -8801,7 +8800,7 @@
           {
             "name": "Frigate - Clear (Agent)",
             "access_rules": [
-              "frigate, tracker"
+              "frigate, tracker, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70710001"
@@ -8856,7 +8855,7 @@
           {
             "name": "Frigate - Clear (Secret Agent)",
             "access_rules": [
-              "frigate, bombdefuser, tracker"
+              "frigate, bombdefuser, tracker, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70720001"
@@ -8901,7 +8900,7 @@
           {
             "name": "Frigate - Clear (Double Agent)",
             "access_rules": [
-              "frigate, bombdefuser, tracker"
+              "frigate, bombdefuser, tracker, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70730001"
@@ -8966,7 +8965,7 @@
           {
             "name": "Frigate - (Clear)",
             "access_rules": [
-              "frigate, bombdefuser, tracker"
+              "frigate, bombdefuser, tracker, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70700001"
@@ -9017,7 +9016,7 @@
           {
             "name": "Break Communications Link To Bunker (Agent)",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70811001"
@@ -9055,7 +9054,7 @@
           {
             "name": "Surface 2 - Clear (Agent)",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70810001"
@@ -9074,7 +9073,7 @@
           {
             "name": "Break Communications Link To Bunker (Secret Agent)",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70821001"
@@ -9101,7 +9100,7 @@
           {
             "name": "Surface 2 - Clear (Secret Agent)",
             "access_rules": [
-              "surface2, commskey, stmine"
+              "surface2, commskey, stmine, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70820001"
@@ -9120,7 +9119,7 @@
           {
             "name": "Break Communications Link To Bunker (Double Agent)",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70831002"
@@ -9156,7 +9155,7 @@
           {
             "name": "Surface 2 - Clear (Double Agent)",
             "access_rules": [
-              "surface2, commskey, stmine"
+              "surface2, commskey, stmine, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70830001"
@@ -9175,7 +9174,7 @@
           {
             "name": "Break Communications Link To Bunker",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70801002"
@@ -9231,7 +9230,7 @@
           {
             "name": "Surface 2 - (Clear)",
             "access_rules": [
-              "surface2, commskey"
+              "surface2, commskey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70800001"
@@ -9241,7 +9240,7 @@
             "name": "Cheat - Tiny Bond",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "surface2, commskey, stmine"
+              "surface2, commskey, stmine, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70803001"
@@ -9567,7 +9566,7 @@
           {
             "name": "Disable All Security Cameras (Secret Agent)",
             "access_rules": [
-              "bunker2, watchmag, cellkey2"
+              "bunker2, watchmag, cellkey2, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70921003"
@@ -9625,7 +9624,7 @@
           {
             "name": "Bunker 2 - Clear (Secret Agent)",
             "access_rules": [
-              "bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist"
+              "bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70920001"
@@ -9752,7 +9751,7 @@
           {
             "name": "Recover Goldeneye Operations Manual (Double Agent)",
             "access_rules": [
-              "bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"
+              "bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2, geopmanual"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70931004"
@@ -9761,7 +9760,8 @@
           {
             "name": "Disable All Security Cameras (Double Agent)",
             "access_rules": [
-              "bunker2, watchmag, cellkey2"
+              "bunker2, watchmag, cellkey2, $has_gun",
+              "bunker2, watchmag, cellkey2, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70931003"
@@ -9809,7 +9809,7 @@
           {
             "name": "Bunker 2 - Clear (Double Agent)",
             "access_rules": [
-              "bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist"
+              "bunker2, watchmag, cellkey2, cellkey1, b2keycarda, cctv, stafflist, casualtylist, geopmanual, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70930001"
@@ -9936,7 +9936,7 @@
           {
             "name": "Recover Goldeneye Operations Manual",
             "access_rules": [
-              "bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2"
+              "bunker2, watchmag, cellkey2, bunkersafe1, bunkersafe2, geopmanual"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70901004"
@@ -9945,7 +9945,8 @@
           {
             "name": "Disable All Security Cameras",
             "access_rules": [
-              "bunker2, watchmag, cellkey2"
+              "bunker2, watchmag, cellkey2, $has_gun",
+              "bunker2, watchmag, cellkey2, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70901003"
@@ -10421,7 +10422,7 @@
           {
             "name": "Find Natalya (Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71111003"
@@ -10430,7 +10431,7 @@
           {
             "name": "Escape With Natalya (Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71111002"
@@ -10469,7 +10470,7 @@
           {
             "name": "Archives - Clear (Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71110001"
@@ -10517,7 +10518,7 @@
           {
             "name": "Find Natalya (Secret Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71121002"
@@ -10535,7 +10536,7 @@
           {
             "name": "Escape With Natalya (Secret Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71121001"
@@ -10564,7 +10565,7 @@
           {
             "name": "Archives - Clear (Secret Agent)",
             "access_rules": [
-              "archives, archivekey, archivesafe, recorder"
+              "archives, archivekey, archivesafe, recorder, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71120001"
@@ -10612,7 +10613,7 @@
           {
             "name": "Find Natalya (Double Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71131002"
@@ -10630,7 +10631,7 @@
           {
             "name": "Escape With Natalya (Double Agent)",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71131004"
@@ -10649,7 +10650,7 @@
           {
             "name": "Archives - Clear (Double Agent)",
             "access_rules": [
-              "archives, archivekey, archivesafe, recorder"
+              "archives, archivekey, archivesafe, recorder, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71130001"
@@ -10697,7 +10698,7 @@
           {
             "name": "Find Natalya",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71101002"
@@ -10715,7 +10716,7 @@
           {
             "name": "Escape With Natalya",
             "access_rules": [
-              "archives, archivekey"
+              "archives, archivekey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71101004"
@@ -10754,7 +10755,7 @@
           {
             "name": "Archives - (Clear)",
             "access_rules": [
-              "archives, archivekey, archivesafe, recorder"
+              "archives, archivekey, archivesafe, recorder, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71100001"
@@ -10764,7 +10765,7 @@
             "name": "Cheat - Invisibility",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "archives, archivekey, recorder"
+              "archives, archivekey, archivesafe, recorder, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71103001"
@@ -11560,7 +11561,8 @@
           {
             "name": "Destroy Computer Network (Secret Agent)",
             "access_rules": [
-              "depot"
+              "depot, $has_gun",
+              "depot, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71321001"
@@ -11836,7 +11838,8 @@
           {
             "name": "Depot - Clear (Secret Agent)",
             "access_rules": [
-              "depot, depotsafe, heliprints"
+              "depot, depotsafe, heliprints, $has_gun",
+              "depot, depotsafe, heliprints, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71320001"
@@ -11865,7 +11868,8 @@
           {
             "name": "Destroy Computer Network (Double Agent)",
             "access_rules": [
-              "depot"
+              "depot, $has_gun",
+              "depot, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71331002"
@@ -11874,7 +11878,8 @@
           {
             "name": "Destroy Illegal Arms Cache (Double Agent)",
             "access_rules": [
-              "depot"
+              "depot, $has_gun",
+              "depot, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71331001"
@@ -12090,7 +12095,8 @@
           {
             "name": "Depot - Clear (Double Agent)",
             "access_rules": [
-              "depot, depotsafe, heliprints"
+              "depot, depotsafe, heliprints, $has_gun",
+              "depot, depotsafe, heliprints, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71330001"
@@ -12119,7 +12125,8 @@
           {
             "name": "Destroy Computer Network",
             "access_rules": [
-              "depot"
+              "depot, $has_gun",
+              "depot, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71301002"
@@ -12128,7 +12135,8 @@
           {
             "name": "Destroy Illegal Arms Cache",
             "access_rules": [
-              "depot"
+              "depot, $has_gun",
+              "depot, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71301001"
@@ -12474,7 +12482,8 @@
             "name": "Cheat - Slow Animation",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "depot, depotsafe, heliprints"
+              "depot, depotsafe, heliprints, $has_gun",
+              "depot, depotsafe, heliprints, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71303001"
@@ -12506,7 +12515,7 @@
             "name": "Train Door Key (Agent)",
             "chest_unopened_img": "images/items/key_2.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71412001"
@@ -12515,7 +12524,7 @@
           {
             "name": "Destroy Brake Units (Agent)",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71411001"
@@ -12524,7 +12533,7 @@
           {
             "name": "Rescue Natalya (Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71411002"
@@ -12533,7 +12542,7 @@
           {
             "name": "Escape To Safety (Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71411003"
@@ -12543,7 +12552,7 @@
             "name": "RC-P90 (Agent)",
             "chest_unopened_img": "images/weapons/rcp90.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71414001"
@@ -12552,7 +12561,7 @@
           {
             "name": "Train - Clear (Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71410001"
@@ -12562,7 +12571,7 @@
             "name": "Train Door Key (Secret Agent)",
             "chest_unopened_img": "images/items/key_2.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71422001"
@@ -12571,7 +12580,7 @@
           {
             "name": "Destroy Brake Units (Secret Agent)",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71421001"
@@ -12580,7 +12589,7 @@
           {
             "name": "Rescue Natalya (Secret Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71421002"
@@ -12589,7 +12598,7 @@
           {
             "name": "Locate Janus Secret Base (Secret Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71421003"
@@ -12598,7 +12607,7 @@
           {
             "name": "Escape To Safety (Secret Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71421004"
@@ -12608,7 +12617,7 @@
             "name": "DD44 Dostovei (Secret Agent)",
             "chest_unopened_img": "images/weapons/dd44_dostovei.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71424001"
@@ -12617,7 +12626,7 @@
           {
             "name": "Train - Clear (Secret Agent)",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71420001"
@@ -12627,7 +12636,7 @@
             "name": "Train Door Key (Double Agent)",
             "chest_unopened_img": "images/items/key_2.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71432001"
@@ -12636,7 +12645,7 @@
           {
             "name": "Destroy Brake Units (Double Agent)",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71431001"
@@ -12645,7 +12654,7 @@
           {
             "name": "Rescue Natalya (Double Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71431002"
@@ -12654,7 +12663,7 @@
           {
             "name": "Locate Janus Secret Base (Double Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71431003"
@@ -12663,7 +12672,7 @@
           {
             "name": "Crack Boris' Password (Double Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71431004"
@@ -12672,7 +12681,7 @@
           {
             "name": "Escape To Safety (Double Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71431005"
@@ -12681,7 +12690,7 @@
           {
             "name": "Train - Clear (Double Agent)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71430001"
@@ -12691,7 +12700,7 @@
             "name": "Train Door Key",
             "chest_unopened_img": "images/items/key_2.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71402001"
@@ -12700,7 +12709,7 @@
           {
             "name": "Destroy Brake Units",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71401001"
@@ -12709,7 +12718,7 @@
           {
             "name": "Rescue Natalya",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71401002"
@@ -12718,7 +12727,7 @@
           {
             "name": "Locate Janus Secret Base",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71401003"
@@ -12727,7 +12736,7 @@
           {
             "name": "Crack Boris' Password",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71401004"
@@ -12736,7 +12745,7 @@
           {
             "name": "Escape To Safety",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71401005"
@@ -12746,7 +12755,7 @@
             "name": "Gun In Box",
             "chest_unopened_img": "images/weapons/ammo_crate.png",
             "access_rules": [
-              "train"
+              "train, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71404001"
@@ -12755,7 +12764,7 @@
           {
             "name": "Train - (Clear)",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71400001"
@@ -12765,7 +12774,7 @@
             "name": "Cheat - Silver PP7",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "train, trainkey"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71403001"
@@ -12796,7 +12805,7 @@
           {
             "name": "Destroy Drone Guns (Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71511001"
@@ -12805,7 +12814,7 @@
           {
             "name": "Eliminate Xenia (Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71511002"
@@ -12814,7 +12823,7 @@
           {
             "name": "Escort Natalya To Janus Base (Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71511003"
@@ -12824,7 +12833,7 @@
             "name": "Body Armor (First Area Back Corner) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71515001"
@@ -12834,7 +12843,7 @@
             "name": "Body Armor (Behind Second Turret) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71515002"
@@ -12844,7 +12853,7 @@
             "name": "Body Armor (Behind Guard Tower) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71515003"
@@ -12853,7 +12862,7 @@
           {
             "name": "Jungle - Clear (Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71510001"
@@ -12862,7 +12871,7 @@
           {
             "name": "Destroy Drone Guns (Secret Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71521001"
@@ -12871,7 +12880,7 @@
           {
             "name": "Eliminate Xenia (Secret Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71521002"
@@ -12880,7 +12889,7 @@
           {
             "name": "Blow Up Ammo Dump (Secret Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71521003"
@@ -12889,7 +12898,7 @@
           {
             "name": "Escort Natalya To Janus Base (Secret Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71521004"
@@ -12899,7 +12908,7 @@
             "name": "Body Armor (First Area Back Corner) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71525001"
@@ -12909,7 +12918,7 @@
             "name": "Body Armor (Behind Second Turret) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71525002"
@@ -12919,7 +12928,7 @@
             "name": "Body Armor (Behind Guard Tower) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71525003"
@@ -12928,7 +12937,7 @@
           {
             "name": "Jungle - Clear (Secret Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71520001"
@@ -12937,7 +12946,7 @@
           {
             "name": "Destroy Drone Guns (Double Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71531001"
@@ -12946,7 +12955,7 @@
           {
             "name": "Eliminate Xenia (Double Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71531002"
@@ -12955,7 +12964,7 @@
           {
             "name": "Blow Up Ammo Dump (Double Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71531003"
@@ -12964,7 +12973,7 @@
           {
             "name": "Escort Natalya To Janus Base (Double Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71531004"
@@ -12974,7 +12983,7 @@
             "name": "Body Armor (First Area Back Corner) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71535001"
@@ -12984,7 +12993,7 @@
             "name": "Body Armor (Behind Second Turret) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71535002"
@@ -12993,7 +13002,7 @@
           {
             "name": "Jungle - Clear (Double Agent)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71530001"
@@ -13002,7 +13011,7 @@
           {
             "name": "Destroy Drone Guns",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71501001"
@@ -13011,7 +13020,7 @@
           {
             "name": "Eliminate Xenia",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71501002"
@@ -13020,7 +13029,7 @@
           {
             "name": "Blow Up Ammo Dump",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71501003"
@@ -13029,7 +13038,7 @@
           {
             "name": "Escort Natalya To Janus Base",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71501004"
@@ -13039,7 +13048,7 @@
             "name": "Body Armor (First Area Back Corner)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71505001"
@@ -13049,7 +13058,7 @@
             "name": "Body Armor (Behind Second Turret)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71505002"
@@ -13059,7 +13068,7 @@
             "name": "Body Armor (Behind Guard Tower)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71505003"
@@ -13068,7 +13077,7 @@
           {
             "name": "Jungle - (Clear)",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71500001"
@@ -13078,7 +13087,7 @@
             "name": "Cheat - 2x Hunting Knives",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "jungle"
+              "jungle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71503001"
@@ -13109,7 +13118,7 @@
           {
             "name": "Protect Natalya (Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71611001"
@@ -13118,7 +13127,7 @@
           {
             "name": "Disable Goldeneye Satellite (Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71611002"
@@ -13127,7 +13136,7 @@
           {
             "name": "Destroy Armored Mainframes (Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71611003"
@@ -13137,7 +13146,7 @@
             "name": "Boris' PP7 (Agent)",
             "chest_unopened_img": "images/weapons/pp7.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71612001"
@@ -13147,7 +13156,7 @@
             "name": "Ammo Container (Remote Mines - After First Blast Door) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71616001"
@@ -13157,7 +13166,7 @@
             "name": "Body Armor (Locker Room Corner) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71615001"
@@ -13167,7 +13176,7 @@
             "name": "Body Armor (Top Floor Behind Grate) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71615002"
@@ -13176,7 +13185,7 @@
           {
             "name": "Control - Clear (Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71610001"
@@ -13185,7 +13194,7 @@
           {
             "name": "Protect Natalya (Secret Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71621001"
@@ -13194,7 +13203,7 @@
           {
             "name": "Disable Goldeneye Satellite (Secret Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71621002"
@@ -13203,7 +13212,7 @@
           {
             "name": "Destroy Armored Mainframes (Secret Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71621003"
@@ -13213,7 +13222,7 @@
             "name": "Boris' PP7 (Secret Agent)",
             "chest_unopened_img": "images/weapons/pp7.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71622001"
@@ -13223,7 +13232,7 @@
             "name": "Ammo Container (Remote Mines - After First Blast Door) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71626001"
@@ -13243,7 +13252,7 @@
             "name": "Body Armor (Top Floor Behind Grate) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71625002"
@@ -13252,7 +13261,7 @@
           {
             "name": "Control - Clear (Secret Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71620001"
@@ -13261,7 +13270,7 @@
           {
             "name": "Protect Natalya (Double Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71631001"
@@ -13270,7 +13279,7 @@
           {
             "name": "Disable Goldeneye Satellite (Double Agent)",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71631002"
@@ -13279,7 +13288,7 @@
           {
             "name": "Destroy Armored Mainframes (Double Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71631003"
@@ -13289,7 +13298,7 @@
             "name": "Boris' PP7 (Double Agent)",
             "chest_unopened_img": "images/weapons/pp7.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71632001"
@@ -13299,7 +13308,7 @@
             "name": "Ammo Container (Remote Mines - After First Blast Door) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71636001"
@@ -13309,7 +13318,7 @@
             "name": "Body Armor (Locker Room Corner) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71635001"
@@ -13319,7 +13328,7 @@
             "name": "Body Armor (Top Floor Behind Grate) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71635002"
@@ -13328,7 +13337,7 @@
           {
             "name": "Control - Clear (Double Agent)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71630001"
@@ -13337,7 +13346,7 @@
           {
             "name": "Protect Natalya",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71601001"
@@ -13346,7 +13355,7 @@
           {
             "name": "Disable Goldeneye Satellite",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71601002"
@@ -13355,7 +13364,7 @@
           {
             "name": "Destroy Armored Mainframes",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71601003"
@@ -13365,7 +13374,7 @@
             "name": "Boris' PP7",
             "chest_unopened_img": "images/weapons/pp7.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71602001"
@@ -13375,7 +13384,7 @@
             "name": "Ammo Container (Remote Mines - After First Blast Door)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71606001"
@@ -13385,7 +13394,7 @@
             "name": "Body Armor (Locker Room Corner)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71605001"
@@ -13395,7 +13404,7 @@
             "name": "Body Armor (Top Floor Behind Grate)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "control"
+              "control, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71605002"
@@ -13404,7 +13413,7 @@
           {
             "name": "Control - (Clear)",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71600001"
@@ -13414,7 +13423,7 @@
             "name": "Cheat - Infinite Ammo",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "control, rmine"
+              "control, $has_gun, $has_explosive"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71603001"
@@ -13446,7 +13455,7 @@
             "name": "Code Card 1 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71712001"
@@ -13456,7 +13465,7 @@
             "name": "Code Card 2 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71712002"
@@ -13466,7 +13475,7 @@
             "name": "Code Card 3 (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71712003"
@@ -13475,8 +13484,8 @@
           {
             "name": "Minimize Scientist Casualties (Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71711001"
@@ -13486,7 +13495,7 @@
             "name": "AR33 Assault Rifle (Agent)",
             "chest_unopened_img": "images/weapons/ar33.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71714001"
@@ -13496,7 +13505,7 @@
             "name": "Body Armor (Under Walkway On Crate) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71715001"
@@ -13506,7 +13515,7 @@
             "name": "Body Armor (Comms Room) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71715003"
@@ -13515,8 +13524,8 @@
           {
             "name": "Caverns - Clear (Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71710001"
@@ -13526,7 +13535,7 @@
             "name": "Code Card 1 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71722001"
@@ -13536,7 +13545,7 @@
             "name": "Code Card 2 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns, codecard1"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71722002"
@@ -13546,7 +13555,7 @@
             "name": "Code Card 3 (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71722003"
@@ -13555,7 +13564,7 @@
           {
             "name": "Destroy Inlet Pump Controls (Secret Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71721001"
@@ -13564,7 +13573,7 @@
           {
             "name": "Destroy Outlet Pump Controls (Secret Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71721002"
@@ -13573,7 +13582,7 @@
           {
             "name": "Destroy Master Control Console (Secret Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71721003"
@@ -13582,8 +13591,8 @@
           {
             "name": "Minimize Scientist Casualties (Secret Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71721004"
@@ -13593,7 +13602,7 @@
             "name": "AR33 Assault Rifle (Secret Agent)",
             "chest_unopened_img": "images/weapons/ar33.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71724001"
@@ -13603,7 +13612,7 @@
             "name": "Body Armor (Comms Room) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71725003"
@@ -13612,8 +13621,8 @@
           {
             "name": "Caverns - Clear (Secret Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71720001"
@@ -13623,7 +13632,7 @@
             "name": "Code Card 1 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71732001"
@@ -13633,7 +13642,7 @@
             "name": "Code Card 2 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns, codecard1"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71732002"
@@ -13643,7 +13652,7 @@
             "name": "Code Card 3 (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71732003"
@@ -13652,7 +13661,7 @@
           {
             "name": "Destroy Inlet Pump Controls (Double Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71731001"
@@ -13661,7 +13670,7 @@
           {
             "name": "Destroy Outlet Pump Controls (Double Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71731002"
@@ -13670,7 +13679,7 @@
           {
             "name": "Destroy Master Control Console (Double Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71731003"
@@ -13679,7 +13688,7 @@
           {
             "name": "Use Radio To Contact Jack Wade (Double Agent)",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71731004"
@@ -13688,8 +13697,8 @@
           {
             "name": "Minimize Scientist Casualties (Double Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71731005"
@@ -13699,7 +13708,7 @@
             "name": "AR33 Assault Rifle (Double Agent)",
             "chest_unopened_img": "images/weapons/ar33.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71734001"
@@ -13708,8 +13717,8 @@
           {
             "name": "Caverns - Clear (Double Agent)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71730001"
@@ -13719,7 +13728,7 @@
             "name": "Code Card 1",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71702001"
@@ -13729,7 +13738,7 @@
             "name": "Code Card 2",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns, codecard1"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71702002"
@@ -13739,7 +13748,7 @@
             "name": "Code Card 3",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71702003"
@@ -13748,7 +13757,7 @@
           {
             "name": "Destroy Inlet Pump Controls",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71701001"
@@ -13757,7 +13766,7 @@
           {
             "name": "Destroy Outlet Pump Controls",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71701002"
@@ -13766,7 +13775,7 @@
           {
             "name": "Destroy Master Control Console",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71701003"
@@ -13775,7 +13784,7 @@
           {
             "name": "Use Radio To Contact Jack Wade",
             "access_rules": [
-              "caverns, codecard1"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71701004"
@@ -13784,8 +13793,8 @@
           {
             "name": "Minimize Scientist Casualties",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71701005"
@@ -13795,7 +13804,7 @@
             "name": "AR33 Assault Rifle",
             "chest_unopened_img": "images/weapons/ar33.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71704001"
@@ -13805,7 +13814,7 @@
             "name": "Body Armor (Under Walkway On Crate)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71705001"
@@ -13815,7 +13824,7 @@
             "name": "Body Armor (Comms Room)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "caverns"
+              "caverns, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71705003"
@@ -13824,8 +13833,8 @@
           {
             "name": "Caverns - (Clear)",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71700001"
@@ -13835,8 +13844,8 @@
             "name": "Cheat - 2x RC-P90",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "caverns, codecard1, codecard3",
-              "caverns, codecard2, codecard3"
+              "caverns, codecard1, codecard3, $has_gun",
+              "caverns, codecard2, codecard3, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71703001"
@@ -13867,7 +13876,7 @@
           {
             "name": "Destroy Control Console (Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71811001"
@@ -13876,7 +13885,7 @@
           {
             "name": "Settle The Score With Trevelyan (Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71811002"
@@ -13925,7 +13934,7 @@
           {
             "name": "Cradle - Clear (Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71810001"
@@ -13934,7 +13943,7 @@
           {
             "name": "Destroy Control Console (Secret Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71821001"
@@ -13943,7 +13952,7 @@
           {
             "name": "Settle The Score With Trevelyan (Secret Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71821002"
@@ -13992,7 +14001,7 @@
           {
             "name": "Cradle - Clear (Secret Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71820001"
@@ -14001,7 +14010,7 @@
           {
             "name": "Destroy Control Console (Double Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71831001"
@@ -14010,7 +14019,7 @@
           {
             "name": "Settle The Score With Trevelyan (Double Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71831002"
@@ -14059,7 +14068,7 @@
           {
             "name": "Cradle - Clear (Double Agent)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71830001"
@@ -14068,7 +14077,7 @@
           {
             "name": "Destroy Control Console",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71801001"
@@ -14077,7 +14086,7 @@
           {
             "name": "Settle The Score With Trevelyan",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71801002"
@@ -14126,7 +14135,7 @@
           {
             "name": "Cradle - (Clear)",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71800001"
@@ -14145,7 +14154,7 @@
             "name": "Cheat - Gold PP7",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "cradle"
+              "cradle, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71803001"
@@ -14177,7 +14186,7 @@
             "name": "Security Smart Card (Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71912002"
@@ -14187,7 +14196,7 @@
             "name": "Launch Protocol Data (Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "aztec, smartcard"
+              "aztec, smartcard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71912003"
@@ -14196,7 +14205,7 @@
           {
             "name": "Reprogram Shuttle Guidance (Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance"
+              "aztec, smartcard, guidance, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71911001"
@@ -14205,7 +14214,7 @@
           {
             "name": "Launch Shuttle (Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71911002"
@@ -14215,7 +14224,7 @@
             "name": "Body Armor (Inside Turret Tunnels) (Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71915003"
@@ -14224,7 +14233,7 @@
           {
             "name": "Aztec - Clear (Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71910001"
@@ -14234,7 +14243,7 @@
             "name": "Security Smart Card (Secret Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71922002"
@@ -14244,7 +14253,7 @@
             "name": "Launch Protocol Data (Secret Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "aztec, smartcard"
+              "aztec, smartcard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71922003"
@@ -14253,7 +14262,7 @@
           {
             "name": "Reprogram Shuttle Guidance (Secret Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance"
+              "aztec, smartcard, guidance, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71921001"
@@ -14262,7 +14271,7 @@
           {
             "name": "Launch Shuttle (Secret Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71921002"
@@ -14272,7 +14281,7 @@
             "name": "Body Armor (Inside Turret Tunnels) (Secret Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71925003"
@@ -14281,7 +14290,7 @@
           {
             "name": "Aztec - Clear (Secret Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71920001"
@@ -14291,7 +14300,7 @@
             "name": "Security Smart Card (Double Agent)",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71932002"
@@ -14301,7 +14310,7 @@
             "name": "Launch Protocol Data (Double Agent)",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "aztec, smartcard"
+              "aztec, smartcard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71932003"
@@ -14310,7 +14319,7 @@
           {
             "name": "Reprogram Shuttle Guidance (Double Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance"
+              "aztec, smartcard, guidance, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71931001"
@@ -14319,7 +14328,7 @@
           {
             "name": "Launch Shuttle (Double Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71931002"
@@ -14329,7 +14338,7 @@
             "name": "Body Armor (Inside Turret Tunnels) (Double Agent)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71935003"
@@ -14338,7 +14347,7 @@
           {
             "name": "Aztec - Clear (Double Agent)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71930001"
@@ -14348,7 +14357,7 @@
             "name": "Security Smart Card",
             "chest_unopened_img": "images/items/keycard.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71902002"
@@ -14358,7 +14367,7 @@
             "name": "Launch Protocol Data",
             "chest_unopened_img": "images/items/dat.png",
             "access_rules": [
-              "aztec, smartcard"
+              "aztec, smartcard, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71902003"
@@ -14367,7 +14376,7 @@
           {
             "name": "Reprogram Shuttle Guidance",
             "access_rules": [
-              "aztec, smartcard, guidance"
+              "aztec, smartcard, guidance, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71901001"
@@ -14376,7 +14385,7 @@
           {
             "name": "Launch Shuttle",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71901002"
@@ -14386,7 +14395,7 @@
             "name": "Body Armor (Inside Turret Tunnels)",
             "chest_unopened_img": "images/items/body_armor.png",
             "access_rules": [
-              "aztec"
+              "aztec, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71905003"
@@ -14395,7 +14404,7 @@
           {
             "name": "Aztec - (Clear)",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71900001"
@@ -14405,7 +14414,7 @@
             "name": "Cheat - 2x Laser",
             "chest_unopened_img": "images/missions/cheats.png",
             "access_rules": [
-              "aztec, smartcard, guidance, launchdata"
+              "aztec, smartcard, guidance, launchdata, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71903001"
@@ -17302,7 +17311,7 @@
     ]
   },
   {
-    "name": "Train",
+    "name": "train, $has_gun",
     "children": [
       {
         "name": "Enemy Spawns After Destroying Brake Panels",
@@ -17326,7 +17335,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1700,
             "y": 225,
             "size": 20
@@ -17356,7 +17365,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 615,
             "y": 90,
             "size": 20
@@ -17390,37 +17399,37 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 640,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1365,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 2080,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 45,
             "y": 225,
             "size": 20
           },
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1375,
             "y": 230,
             "size": 20
           },
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1460,
             "y": 290,
             "size": 20
@@ -17505,7 +17514,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1880,
             "y": 245,
             "size": 20
@@ -17539,7 +17548,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 1785,
             "y": 225,
             "size": 20
@@ -17561,7 +17570,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 2075,
             "y": 355,
             "size": 30
@@ -17583,7 +17592,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 2075,
             "y": 415,
             "size": 30
@@ -17605,7 +17614,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 2075,
             "y": 475,
             "size": 30
@@ -17627,7 +17636,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 2075,
             "y": 550,
             "size": 30
@@ -17649,7 +17658,7 @@
         ],
         "map_locations": [
           {
-            "map": "train",
+            "map": "train, $has_gun",
             "x": 460,
             "y": 585,
             "size": 30

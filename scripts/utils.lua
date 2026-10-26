@@ -39,7 +39,11 @@ function has(item, amount)
 end
 
 function has_gun()
-  return has("pp7") or has("silentpp7") or has("dd44") or has("klobb") or has("kf7") or has("zmg") or has("d5k") or has("silentd5k") or has("phantom") or has("ar33") or has("rcp90") or has("shotgun") or has("autoshotgun") or has("sniper") or has("magnum") or has("goldgun") or has("silverpp7") or has("goldpp7") or has("laser") or has("progressive_weapon, 1")
+  return has("pp7") or has("silentpp7") or has("dd44") or has("klobb") or has("kf7") or has("zmg") or has("d5k") or has("silentd5k") or has("phantom") or has("ar33") or has("rcp90") or has("shotgun") or has("autoshotgun") or has("sniper") or has("magnum") or has("goldgun") or has("silverpp7") or has("goldpp7") or has("laser") or has("taser") or has("progressive_weapon, 1") or has("silverpp") or has("2xrcp90") or has("goldpp") or has("2xlaser") or has("allguns")
+end
+
+function has_explosive()
+  return has("tmine") or has("pmine") or has("rmine") or has("rlauncher") or has("tank") or has("2xrocket") or has("allguns")
 end
 
 function checkRequirements(reference, check_count)
