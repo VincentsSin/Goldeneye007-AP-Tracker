@@ -28,13 +28,13 @@ local ITEM_MAPPING = {
     [17310020] = "watchlaser",
     [17310021] = "shotgun",
     [17310022] = "magnum",
-    [17310023] = "goldgun",
+    [17310023] = "silverpp7",
     [17310024] = "autoshotgun",
     [17310025] = "laser",
     [17310026] = "glauncher",
     [17310027] = "rlauncher",
     [17310028] = "tank",
-    [17310029] = "silverpp7",
+    [17310029] = "goldgun",
     [17310030] = "goldpp7",
 
     -- Loadout Items
