@@ -5737,43 +5737,43 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 130,
             "y": 675,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1350,
             "y": 475,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 600,
             "y": 675,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 660,
             "y": 175,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 975,
             "y": 125,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1150,
             "y": 360,
             "size": 25
           },
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1425,
             "y": 520,
             "size": 25
@@ -5843,7 +5843,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 900,
             "y": 140,
             "size": 25
@@ -5877,7 +5877,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1300,
             "y": 775,
             "size": 25
@@ -5907,7 +5907,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1400,
             "y": 425,
             "size": 25
@@ -5941,7 +5941,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 90,
             "y": 610,
             "size": 25
@@ -5975,7 +5975,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 725,
             "y": 675,
             "size": 25
@@ -6005,7 +6005,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 600,
             "y": 90,
             "size": 25
@@ -6027,7 +6027,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1455,
             "y": 1000,
             "size": 25
@@ -6049,7 +6049,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1455,
             "y": 1050,
             "size": 25
@@ -6071,7 +6071,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1455,
             "y": 1100,
             "size": 25
@@ -6093,7 +6093,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 1455,
             "y": 1160,
             "size": 25
@@ -6115,7 +6115,7 @@
         ],
         "map_locations": [
           {
-            "map": "jungle, $has_gun",
+            "map": "jungle",
             "x": 650,
             "y": 1195,
             "size": 25
@@ -17335,7 +17335,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1700,
             "y": 225,
             "size": 20
@@ -17365,7 +17365,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 615,
             "y": 90,
             "size": 20
@@ -17399,37 +17399,37 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 640,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1365,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 2080,
             "y": 150,
             "size": 20
           },
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 45,
             "y": 225,
             "size": 20
           },
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1375,
             "y": 230,
             "size": 20
           },
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1460,
             "y": 290,
             "size": 20
@@ -17514,7 +17514,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1880,
             "y": 245,
             "size": 20
@@ -17548,7 +17548,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 1785,
             "y": 225,
             "size": 20
@@ -17570,7 +17570,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 2075,
             "y": 355,
             "size": 30
@@ -17592,7 +17592,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 2075,
             "y": 415,
             "size": 30
@@ -17614,7 +17614,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 2075,
             "y": 475,
             "size": 30
@@ -17636,7 +17636,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 2075,
             "y": 550,
             "size": 30
@@ -17658,7 +17658,7 @@
         ],
         "map_locations": [
           {
-            "map": "train, $has_gun",
+            "map": "train",
             "x": 460,
             "y": 585,
             "size": 30
