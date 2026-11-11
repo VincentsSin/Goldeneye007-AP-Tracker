@@ -7353,7 +7353,7 @@
           {
             "name": "Obtain Safe Key (Secret Agent)",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1, hutkey, surfacesafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70421002"
@@ -7478,7 +7478,7 @@
           {
             "name": "Obtain Safe Key (Double Agent)",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1, hutkey, surfacesafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70431002"
@@ -7603,7 +7603,7 @@
           {
             "name": "Obtain Safe Key",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1, hutkey, surfacesafe"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70401002"
