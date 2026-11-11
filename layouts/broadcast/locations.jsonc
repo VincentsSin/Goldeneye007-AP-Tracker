@@ -12626,7 +12626,7 @@
           {
             "name": "Train - Clear (Secret Agent)",
             "access_rules": [
-              "train, $has_gun"
+              "train, trainkey, $has_gun"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|71420001"
