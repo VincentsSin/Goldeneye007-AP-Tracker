@@ -7237,7 +7237,7 @@
           {
             "name": "Power Down Communications Dish (Agent)",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70411002"
@@ -7344,7 +7344,7 @@
           {
             "name": "Power Down Communications Dish (Secret Agent)",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70421003"
@@ -7469,7 +7469,7 @@
           {
             "name": "Power Down Communications Dish (Double Agent)",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70431001"
@@ -7594,7 +7594,7 @@
           {
             "name": "Power Down Communications Dish",
             "access_rules": [
-              "surface1, hutkey"
+              "surface1"
             ],
             "visibility_rules": [
               "$goldeneyeLocationEnabled|70401001"
